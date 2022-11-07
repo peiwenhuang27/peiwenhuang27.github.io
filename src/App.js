@@ -3,42 +3,23 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
 import Works from './Components/Pages/Works';
-import NavBar from './Components/NavBar';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 import './scss/main.scss';
 
 function App() {
   return (
-    <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/About">About</Link>
-          </li>
-          <li>
-            <Link to="/Works">Works</Link>
-          </li>
-        </ul>
+    <div>
+      <Header />
 
-        {/* <NavBar /> */}
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Works" element={<Works />} />
+      </Routes>
 
-        <hr />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-
-          <Route path="/About" element={<About />} />
-
-          <Route path="/Works" element={<Works />} />
-
-        </Routes>
-
-        <h2>Footer</h2>
-      </div>      
-    </Router> 
-    
+      <Footer />
+    </div>      
   );
 }
 
