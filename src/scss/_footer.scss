@@ -1,0 +1,41 @@
+.footer {
+    margin: 0 auto;
+    background-color: $gray-100;
+    padding: 20px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $gray-900;
+        // h2 {
+        //     line-height: 1.5;
+        //     font-size: 18px;
+        //     font-weight: bold;
+        // }
+    }
+
+
+}
+
+.contact-menu {
+    display: flex;
+    align-items: flex-end;
+    margin: 20px 0;
+
+    li {
+        padding: 0 20px;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        color: $gray-900;
+        
+        &:hover {
+            
+            transition: .3s;
+            color: $black;
+        }
+    }
+}
