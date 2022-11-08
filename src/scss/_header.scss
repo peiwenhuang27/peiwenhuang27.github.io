@@ -4,10 +4,11 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 1;
     background-color: #fff;
     padding: 4px 0;
     height: 7vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: $box-shadow;
     .container {
         @include pad-sm {
             // max-width: 100%;

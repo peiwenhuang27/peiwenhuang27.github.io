@@ -94,3 +94,6 @@ $theme-colors: (
   "dark":       $dark
 ) !default;
 // scss-docs-end theme-colors-map
+
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+$text-shadow: 0 0 8px $gray-900;

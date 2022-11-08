@@ -1,21 +1,28 @@
-function Home () {
+import Item from "antd/lib/list/Item";
+import { Routes, Route, Link, useParams, useMatch, Outlet } from "react-router-dom";
+import Banner from "./Banner";
+
+
+function Home (meta) {
+    let prefix = "Works";
+    const data = meta.data;
+
     return (
         <div className="main">
-            <div className="banner">
-                <div className="container">
-                    <h2>
-                        Hey! I'm Joanne.
-                    </h2>
-                    <h3>
-                        Advocate for Humanity by Way of HCI, UX, and Social Computing.
-                    </h3>
+            <Banner />
+            <div className="container">
+                <div className="main-body">
+                    <ul>
+                        {data.map(item =>
+                            <li>
+                                <Link to={`${prefix}/${item.suffix}`}>{item.name}</Link>
+                            </li>
+                        )}
+                    </ul>
                 </div>
-                
-            </div>
-            <div className="container main-body">
-                <h2>TEST</h2>
             </div>
 
+            <Outlet />
         </div>
     );
 };
