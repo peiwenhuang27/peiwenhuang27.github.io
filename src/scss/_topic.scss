@@ -1,0 +1,36 @@
+.topic {
+    @include pad-hdr;
+}
+
+.card {
+    overflow: hidden;
+    border: none;
+}
+
+.topic-card {
+    h3 {
+        font-size: 24px;
+        @include hover-transition;
+        @include underline-animation($highlight);
+    }
+    p {
+        font-size: 18px;
+        color: $gray-600;
+        @include hover-transition;
+    }
+    img {
+        border-radius: 16px;
+        @include img-hover;
+    }
+    
+
+    &:hover {
+        h3 {
+            @include underline-hover($highlight);
+        }
+        p {
+            color: $gray-500;
+        }
+        // image brightness, saturation, vignette
+    }
+}

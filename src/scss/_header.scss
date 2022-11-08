@@ -1,13 +1,10 @@
-@import "variables";
-
 .header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
     z-index: 1;
     background-color: #fff;
-    padding: 4px 0;
-    height: 7vh;
+    padding: 16px 0;
+    // height: 7vh;
     box-shadow: $box-shadow;
     .container {
         @include pad-sm {
@@ -57,12 +54,15 @@
     text-decoration: none;
     color: $primary;
     display: flex;
-    align-items: center;
-    margin: 16px;
+    height: 100%;
+
+    h1 {
+        margin: 0;
+    }
 
     &:hover {
         color: $highlight;
-        transition: 0.3s;
+        @include hover-transition;
     }
 
     @include pad-sm {
@@ -94,13 +94,16 @@ display: block;
 }
 .header-menu {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 
     li {
-        transition: all 0.3s;
+        @include hover-transition;
+        margin: 0 16px;
 
         a {
-            margin: 16px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -108,13 +111,14 @@ display: block;
             line-height: 30px;
             font-weight: 500;
             text-decoration: none;
-            color: $gray-600;
+            color: $gray-600 !important;
+
+            @include underline-animation($highlight);
             
             @include pad-sm {
                 max-width: 100%;
                 width: 100%;
                 text-align: center;
-                color: #fff;
             }
         }
         span {
@@ -128,8 +132,8 @@ display: block;
                 display: block;
                 width: 0;
                 height: 3px;
-                background: $tan;
-                transition: width .3s;
+                @include hover-transition;
+                // transition: width .3s;
             }
             &:hover::after {
                 width: 100%;
@@ -139,8 +143,7 @@ display: block;
         &:hover {
             cursor: pointer;
             a {
-                color: $highlight;
-                transition: all 0.3s;
+                color: $highlight !important;
             }
         }
 

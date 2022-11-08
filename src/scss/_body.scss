@@ -1,7 +1,7 @@
 .banner {
     background-image: url("../img/bg.png");
     background-attachment: fixed;
-    height: 93vh;
+    height: 100vh;
     background-size: cover;
 
     .container {
@@ -31,8 +31,9 @@
     }
 }
 
-.main-body {
-    height: 1000px;
+.works {
+    position: relative;
+    top: 200px;
 }
 
 .logo-svg, .arrow-svg {

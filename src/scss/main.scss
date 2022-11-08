@@ -1,11 +1,16 @@
 @import "mixin";
 @import "reset";
 @import "variables";
+@import "~bootstrap/scss/bootstrap";
 
 @import "general";
 @import "header";
 @import "body";
 @import "footer";
+
+@import "category";;
+@import "topic";
+@import "about";
 
 body {
     margin: 0 auto;

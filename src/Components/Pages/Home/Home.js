@@ -1,6 +1,7 @@
 import Item from "antd/lib/list/Item";
 import { Routes, Route, Link, useParams, useMatch, Outlet } from "react-router-dom";
 import Banner from "./Banner";
+import WorkDisplay from "./WorkDisplay";
 
 
 function Home (meta) {
@@ -10,16 +11,8 @@ function Home (meta) {
     return (
         <div className="main">
             <Banner />
-            <div className="container">
-                <div className="main-body">
-                    <ul>
-                        {data.map(item =>
-                            <li>
-                                <Link to={`${prefix}/${item.suffix}`}>{item.name}</Link>
-                            </li>
-                        )}
-                    </ul>
-                </div>
+            <div id="works">
+                <WorkDisplay data={data} />
             </div>
 
             <Outlet />

@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Home from './Pages/Home';
+import Home from './Pages/Home/Home';
 import About from './Pages/About';
-import Category from './Pages/Category';
-import Topic from './Pages/Topic';
+import Category from './Category';
+import Topic from './Topic';
 
 function Switch (meta) {
   const data = meta.data;
