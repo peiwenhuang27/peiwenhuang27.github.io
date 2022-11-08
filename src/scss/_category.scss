@@ -1,0 +1,48 @@
+.category-menu {
+    border-right: 1px solid $gray-100;
+
+    h5 {
+        color: $secondary;
+        font-weight: bold;
+    }
+
+    li {
+        @include hover-transition;
+
+        &:hover {
+            cursor: pointer;
+            color: $primary;
+        }
+    }
+
+    a {
+        color: $gray-600;
+        text-decoration: none;
+        @include underline-animation($primary);        
+    }
+}
+
+.category-page {
+    @include pad-hdr;
+}
+
+.category-box {
+    .title {
+        h2 {
+            color: $gray-600;
+            font-weight: bold;
+            @include hover-transition;
+
+            &:hover {
+                color: $primary;
+                
+            }
+        }
+        span {
+            font-size: 18px;
+            color: $gray-600;
+            
+            @include underline-animation($primary);
+        }
+    }
+}

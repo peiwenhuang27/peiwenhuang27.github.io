@@ -33,3 +33,47 @@
         @content;
     }
 }
+
+@mixin underline-animation($color) {
+    display: inline-block;
+    padding-bottom:2px;
+    background-image: linear-gradient($color, $color);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+        background-size 0.3s,
+        background-position 0s 0.3s; /*change after the size immediately*/
+    
+    &:hover {
+        color: $color;
+        background-position: 100% 100%; /*OR bottom right*/
+        background-size: 100% 2px;
+    }
+}
+
+@mixin underline-hover($color) {
+    color: $color;
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
+
+@mixin hover-transition {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+@mixin img-hover {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    @include hover-transition;
+
+    &:hover {
+        filter: brightness(104%);
+        -webkit-filter: brightness(104%);
+    }
+}
+
+@mixin pad-hdr {
+    padding-top: 64px;
+}

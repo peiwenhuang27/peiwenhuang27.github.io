@@ -1,4 +1,4 @@
-import { Logo, Arrow } from '../Icons';
+import { Logo, Arrow } from '../../Icons';
 
 function Banner () {
     return (
