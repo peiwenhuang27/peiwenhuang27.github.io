@@ -1,8 +1,10 @@
-import { Link, Outlet } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import CategoryBox from "./CategoryBox";
-import LeftNav from "./LeftNav";
+import { LeftLinkNav } from "./LeftNav";
 
 function WorkDisplay (meta) {
+
     let prefix = "Works";
     const data = meta.data;
 
@@ -10,7 +12,7 @@ function WorkDisplay (meta) {
         <div className="main-body">
             <div className="container pt-5">
                 <div className="row">
-                    <LeftNav prefix={prefix} data={data} />
+                    <LeftLinkNav showTitle={true} prefix={prefix} data={data} />
 
                     <div className="work-list col-10">
                         <ul className="work-cards flex-column">

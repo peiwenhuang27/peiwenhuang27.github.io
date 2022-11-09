@@ -77,3 +77,32 @@
 @mixin pad-hdr {
     padding-top: 64px;
 }
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin text-shadow {
+    text-shadow: $text-shadow;
+}
+
+@mixin box-shadow {
+    box-shadow: $box-shadow;
+}
+
+@mixin text-image-fill($src) {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background: url($src) 90% 0 no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 2px $gray-600);
+    -webkit-filter: drop-shadow(0 1px 2px $gray-600);
+}

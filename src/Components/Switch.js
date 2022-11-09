@@ -16,7 +16,7 @@ function Switch (meta) {
           <Route path={`${item.suffix}/:workId`} element={<Topic name={item.name}/>} />
         )}
 
-        <Route path=":categoryId" element={<Category />} />
+        <Route path=":categoryId" element={<Category prefix="/Works" data={data} />} />
       </Route>
     </Routes>
   );

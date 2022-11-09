@@ -3,7 +3,7 @@ import { Routes, Route, Link, useParams, useMatch, Outlet } from "react-router-d
 function Topic () {
     
     let { workId } = useParams();
-    console.log(workId);
+    // console.log(workId);
     
     return (
         <div className="topic">
