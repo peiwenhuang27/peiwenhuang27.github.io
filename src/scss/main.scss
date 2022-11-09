@@ -12,6 +12,10 @@
 @import "topic";
 @import "about";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 auto;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

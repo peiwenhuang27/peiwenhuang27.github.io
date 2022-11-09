@@ -1,15 +1,15 @@
 import { Link, Outlet } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 
-function getPxfromVh(vh) {
-    const { innerWidth: width, innerHeight: height } = window;
+// function getPxfromVh(vh) {
+//     const { innerWidth: width, innerHeight: height } = window;
   
-    return (vh * height)/100;
-}
+//     return (vh * height)/100;
+// }
 
 function Header (meta) {
     const data = meta.data;
-    var offset = getPxfromVh(7); 
+    // var offset = getPxfromVh(7); 
     // TODO: refine
 
     return (
@@ -24,7 +24,7 @@ function Header (meta) {
                             <Link to="/About">About</Link>
                         </li>
                         <li>
-                            <ScrollLink to="works" spy={true} smooth={true} offset={-offset}>Works</ScrollLink>
+                            <Link to="/#works">Works</Link>
                         </li>
                     </ul>
                     {/* TODO: Dropdown Menu */}

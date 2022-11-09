@@ -22,8 +22,25 @@
     }
 }
 
+.large-list-container {
+    .category-menu {
+        width: 100%;
+    }
+}
+
 .category-page {
-    @include pad-hdr;
+    .category-title {
+        color: $gray-500;
+        text-shadow: none;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .topic-card {
+        h3 {
+            font-size: 32px;
+        }
+    }
 }
 
 .category-box {

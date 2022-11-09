@@ -6,16 +6,16 @@ function Footer () {
             <div className="container">
                 <ul className="contact-menu">
                     <li>
-                        <a href="#">Résumé</a>
+                        <a href="#" target="_blank" rel="noreferrer noopener">Résumé</a>
                     </li>
                     <li>
-                        <a href="#">Email</a>
+                        <a href="mailto:peiwenhuang@ntu.im" target="_blank" rel="noreferrer noopener">Email</a>
                     </li>
                     <li>
-                        <a href="#">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/joanne-huang-756649205/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
                     </li>
                     <li>
-                        <a href="#">GitHub</a>
+                        <a href="https://github.com/peiwenhuang27" target="_blank" rel="noreferrer noopener">GitHub</a>
                     </li>
                 </ul>
                 <p>Made with Love © 2022 Joanne Huang</p>
