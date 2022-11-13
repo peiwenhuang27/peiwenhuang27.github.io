@@ -1,19 +1,16 @@
-import { Routes, Route, Link, useParams, useMatch, Outlet } from "react-router-dom";
+import { useParams, Outlet } from "react-router-dom";
+import PetitMood from './Pages/Works/UXUI/PetitMood';
+import ToDone from './Pages/Works/UXUI/2Done';
 
 function Topic () {
-    
     let { workId } = useParams();
-    // console.log(workId);
-    
-    return (
-        <div className="topic">
-            <div className="container">
-                <h1>This is {workId}</h1>
-            </div>
 
-            <Outlet />
-        </div>
-    );
+    if(workId === 'Petit-Mood') {
+        return <PetitMood />;
+    }
+    if(workId === '2Done') {
+        return <ToDone />;
+    }
 };
 
 export default Topic;

@@ -1,10 +1,38 @@
-.topic {
-    // @include pad-hdr;
+ul {
+    padding-left: 0;
 }
 
-.card {
-    overflow: hidden;
-    border: none;
+.list-disc {
+    padding-left: 1rem;
+
+    li {
+        list-style: disc;
+    }
+}
+
+.color-bright {
+    color: $highlight !important;
+}
+
+.color-dark {
+    color: $secondary !important;
+}
+
+.color-gray {
+    color: $gray-600 !important;
+}
+
+.color-gray-800 {
+    color: $gray-800 !important;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.bg-1 {
+    width: 100%;
+    background-color: $gray-100;
 }
 
 .topic-card {
@@ -17,12 +45,7 @@
         font-size: 18px;
         color: $gray-600;
         @include hover-transition;
-    }
-    img {
-        border-radius: 16px;
-        @include img-hover;
-    }
-    
+    }    
 
     &:hover {
         h3 {
@@ -34,3 +57,222 @@
         // image brightness, saturation, vignette
     }
 }
+
+.topic-card-img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    border-radius: 16px;
+    background-size: cover;
+
+    @include img-hover;
+}
+
+/////////////////////////////////////////////
+
+.topic-container {
+    width: 80%;
+    margin: 0 auto;
+    color: $primary;
+
+    @include pad-sm {
+        width: 100%;
+    }
+
+    .heading-1 {
+        font-size: 24px;  
+    }
+
+    .heading-2 {
+        font-size: 21px;
+    }
+
+    .heading-3 {
+        font-size: 18px;
+    }
+    
+    .heading-4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+
+        line-height: 1.5;
+    }
+}
+
+.topic-title-container {
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: $primary;
+    }
+    h3 {
+        font-size: 21px;
+        font-weight: normal;
+        color: $gray-600;
+    }
+}
+
+.topic-desc-container {
+    color: $primary;
+    h3 {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    li {
+        font-size: 16px;
+        color: $gray-900;
+        
+    }
+}
+
+.topic-cover-img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.recog-list {
+    padding-left: 1rem;
+    color: $primary;
+    font-size: 16px;
+
+    li {
+        list-style: disc;
+    }
+}
+
+.description {
+    font-size: 16px;
+    font-weight: normal;
+    color: $gray-600;
+}
+
+.design-statement {
+    div {
+        width: 90%;
+        @include pad-sm {
+            width: 100%;
+        }
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 21px;
+        font-weight: normal;
+        line-height: 2;
+        text-align: center;
+    }
+}
+
+.interview-box-container {
+    @include pad-sm {
+        justify-content: center !important;
+    }
+}
+.interview-box {
+    background-color: #FCF6E6;
+    border-radius: 50px;
+    height: 160px;
+
+    h2 {
+        color: $gray-900;
+    }
+
+    @include pad-sm {
+        height: auto;
+        flex-direction: column !important;
+
+    }
+}
+
+.statistics-container {
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        color: $highlight;
+    }
+    p {
+        width: 60%;
+        text-align: center;
+        color: $gray-800;
+    }
+}
+
+.table-container {
+    .w-sizer {
+        width: 75%;
+        @include pad-sm {
+            width: 90%;
+        }
+    }
+
+    b {
+        // color: $secondary;
+    }
+}
+
+.table-header {
+    border-top: 1px solid $gray-600;
+    border-bottom: 1px solid $gray-600;
+}
+
+.table-body {
+    border-bottom: 1px solid $gray-600;
+}
+
+.table-caption {
+    color: $gray-900;
+}
+
+#petit-table-1 {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.result-statement {
+
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 2;
+        text-align: center;
+    }
+}
+
+.references {
+    color: $gray-600;
+    font-size: 14px !important;
+}
+
+.poster-img {
+    @include img-hover;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// .card {
+//     overflow: hidden;
+//     border: none;
+//     border-radius: 16px;
+//     width: 100%;
+//     height: 0;
+//     padding-bottom: 75%;
+// }
+// .card-img {
+//     position: absolute !important;
+//     width: 100% !important;
+//     height: 100% !important;
+//     object-fit: cover !important;
+
+//     @include img-hover;
+// }
