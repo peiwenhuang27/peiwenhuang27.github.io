@@ -11,25 +11,29 @@ function App() {
       'items': [
       {
         'title': 'Petit Mood', 
+        'id': 'Petit-Mood',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': '../img/UXUI/Book/cover.jpg',
+        'img': '/works/UXUI/petit-mood/cover.png',
       },
       {
         'title': '2Done', 
+        'id': '2Done',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'img': '/works/UXUI/petit-mood/cover.png',
       },
       {
         'title': 'Bookworm Meeter', 
+        'id': 'Bookworm-Meeter',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
         'workId': 'Petit-Mood',
       },
       {
-        'title': 'Mindful Diary', 
+        'title': 'Mindful Diary',
+        'id': 'Mindful-Diary',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
@@ -39,12 +43,14 @@ function App() {
       'items': [
       {
         'title': 'TourBot', 
+        'id': 'TourBot', 
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
         'title': 'EasyManager', // 系羽 
+        'id': 'EasyManager',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
@@ -54,12 +60,14 @@ function App() {
       'items': [
       {
         'title': 'NTU Academic Counseling', 
+        'id': 'NTU-Academic-Counseling', 
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
-        'title': 'IMDB: NTU-IM Camp',
+        'title': 'IMDB: NTU IM Camp',
+        'id': 'IMDB-NTU-IM-Camp-Web',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
@@ -69,24 +77,28 @@ function App() {
       'items': [
       {
         'title': 'Les Saisons', 
+        'id': 'Les-Saisons', 
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
         'title': 'New Era',
+        'id': 'New-Era',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
         'title': 'FREE',
+        'id': 'FREE',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
         'title': 'Vegan Is the New Black',
+        'id': 'Vegan-Is-the-New-Black',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
@@ -95,25 +107,29 @@ function App() {
     {'suffix': 'Event-Visuals', 'name': 'Event Visuals',
       'items': [
       {
-        'title': 'Fireworks: NTU-IM Night', 
+        'title': 'Fireworks: NTU IM Night',
+        'id':  'Fireworks-NTU-IM-Night',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
         'title': 'SSWIM: Orientation Camp',
+        'id': 'SSWIM-Orientation-Camp',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
-        'title': 'UnlIMted: NTU-IM Week',
+        'title': 'UnlIMted: NTU IM Week',
+        'id': 'UnlIMted-NTU-IM-Week',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
-        'title': 'IMDB: NTU-IM Camp',
+        'title': 'IMDB: NTU IM Camp',
+        'id': 'IMDB-NTU-IM-Camp-Event',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
@@ -123,24 +139,28 @@ function App() {
       'items': [
       {
         'title': 'Mindfulness', 
+        'id': 'Mindfulness', 
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
         'title': 'Music',
+        'id': 'Music',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
-        'title': 'NTU-IM Graduation Book',
+        'title': 'NTU IM Graduation Book',
+        'id': 'NTU-IM-Graduation-Book',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
       },
       {
         'title': 'Elite Camp Brochure',
+        'id': 'Elite-Camp-Brochure',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
         'img': 'src/img/UXUI/Book/cover.jpg',
