@@ -9,7 +9,7 @@ $gray-600: #888A99 !default;
 $gray-700: #818a91 !default;
 $gray-800: #848484 !default;
 $gray-900: #707070 !default;
-$black:    #050E41 !default;
+$black:    #080b19 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -71,7 +71,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $indigo-dk !default;
+$primary:       $black !default; //$indigo-dk !default;
 $secondary:     $indigo !default;
 $highlight:     $orange !default;
 $success:       $green !default;
@@ -97,3 +97,11 @@ $theme-colors: (
 
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
 $text-shadow: 0 0 8px $gray-900;
+
+.w-90 {
+  width: 90%;
+}
+
+.w-80 {
+  width: 80%;
+}
