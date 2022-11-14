@@ -18,6 +18,10 @@ ul {
     color: $secondary !important;
 }
 
+.color-black {
+    color: $primary !important;
+}
+
 .color-gray {
     color: $gray-600 !important;
 }
@@ -33,6 +37,21 @@ ul {
 .bg-1 {
     width: 100%;
     background-color: $gray-100;
+}
+
+.w-sizer {
+    width: 60%;
+    @include pad-sm {
+        width: 90%;
+    }
+}
+
+.img-src-cap {
+    font-size: 12px;
+    color: $gray-500;
+    a {
+        color: $gray-500;
+    }
 }
 
 .topic-card {
@@ -64,6 +83,7 @@ ul {
     padding-bottom: 75%;
     border-radius: 16px;
     background-size: cover;
+    background-position: center;
 
     @include img-hover;
 }
@@ -257,6 +277,112 @@ ul {
     @include img-hover;
     &:hover {
         cursor: pointer;
+    }
+}
+
+#todone-problem-statement {
+    padding: 20px 0;
+}
+
+.emph {
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.emph-2 {
+    // font-size: 24px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#problem-list {
+    li {
+        text-align: center;
+        background-color: $secondary;
+        color: $white;
+        height: 70px;
+        border-radius: 16px;
+
+        @include box-shadow-darker;
+    }
+}
+
+#pain-point-list {
+    // width: 75%;
+    @include pad-sm {
+        width: 100px;
+    }
+    li {
+        text-align: center;
+        background-color: #efcd51;
+        height: 120px;
+        border-radius: 32px;
+        @include box-shadow-darker;
+    }
+
+    .heading-2 {
+        line-height: 1.5;
+        color: $black;
+    }
+}
+
+#todone-hmw {
+    line-height: 1.5;
+}
+
+#todone-hmw-container {
+    margin: 120px 0;
+}
+
+#todone-stats {
+    .statistics-container {
+        h2 {
+            color: $secondary;
+        }
+        p {
+            font-size: 18px;
+            color: $primary;
+        }
+    }
+}
+
+#user-journey-map {
+    z-index: 0;
+    width: 80%;
+    @include pad-sm {
+        width: 95%;
+    }
+}
+
+#todone-map-title {
+    padding-top: 80px;
+}
+.journey-map-img {
+    padding: 6%;
+}
+
+.section-wrapper {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.subsection-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.feat-box {
+    background-color: $secondary;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: $white;
+    margin: 0;
+    font-weight: bold;
+    width: max-content;
+
+    @include pad-sm {
+        width: 90%;
     }
 }
 
