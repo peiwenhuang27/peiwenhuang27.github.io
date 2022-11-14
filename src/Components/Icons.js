@@ -1,5 +1,4 @@
-import {ReactComponent as LogoSvg} from "../img/logo.svg"
-import {ReactComponent as ArrowSvg} from "../img/arrow-down.svg"
+import { ReactComponent as LogoSvg } from "../img/logo.svg"
 
 const Logo = () => (
     <div className="logo-svg">
@@ -7,10 +6,4 @@ const Logo = () => (
     </div>
 );
 
-const Arrow = () => {
-    <div className="arrow-svg">
-        <ArrowSvg />
-    </div>
-}
-
-export { Logo, Arrow };
+export { Logo };
