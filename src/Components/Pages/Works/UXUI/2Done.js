@@ -16,7 +16,7 @@ function ToDone () {
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
                             <h2 className="mb-3">2Done Gamified To-Do List</h2>
-                            <h3>Tags: Course project, UX, Procrastination, Anxiety</h3>
+                            <h3>Tags: UX, Procrastination, Anxiety</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4">
@@ -51,6 +51,32 @@ function ToDone () {
                 </div>
             </div>
 
+            {/* <div className="">
+                <div className="container">
+                    <div className="topic-container">
+                        <h3 className="heading-3 color-dark my-5">Design Preview</h3>
+                    </div>
+                </div>
+                
+                <div className="row">
+                    <div id="todone-prev-box-1" className="col-md-4 m-0 p-0">
+                        <div className="my-3 d-flex flex-column align-items-center">
+                            <img className="w-100" src="/works/UXUI/2done/proto-1.png" alt="prototype" />
+                        </div>
+                    </div>
+                    <div id="todone-prev-box-2" className="col-md-4 m-0 p-0">
+                        <div className="my-3 d-flex flex-column align-items-center">
+                            <img className="w-100" src="/works/UXUI/2done/proto-2.png" alt="prototype" />
+                        </div>
+                    </div>
+                    <div id="todone-prev-box-3" className="col-md-4 m-0 p-0">
+                        <div className="my-3 d-flex flex-column align-items-center">
+                            <img className="w-100" src="/works/UXUI/2done/proto-3.png" alt="prototype" />
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+
             <div className="bg-1">
                 <div className="container">
                     <div className="topic-container section-wrapper">
@@ -79,7 +105,7 @@ function ToDone () {
 
             {/* <div style={{backgroundColor: "#f4ffff"}}> */}
                 <div className="container">
-                    <div className="topic-container section-wrapper">
+                    <div className="topic-container subsection-wrapper">
                         <h3 className="heading-1 my-5">Objective</h3>
                         <p className="w-sizer">
                         Motivated by the concern of anxiety-induced procrastination,<br/>
@@ -107,7 +133,7 @@ function ToDone () {
             <div className="container section-wrapper">
                 <div className="topic-container">
                     <h3 className="heading-3 color-dark mt-5">Design Process</h3>
-                    <h3 className="heading-2 my-3">Empathize</h3>
+                    <h3 className="heading-1 my-3">Empathize</h3>
                     <p><b>User interview:</b> 11 students who suffered from procrastination in face of overwhelming workload <br/><br/>
                     The interview questions centered around</p>
                     <ul className="list-disc">
@@ -121,7 +147,7 @@ function ToDone () {
                 </div>
 
                 <div className="topic-container subsection-wrapper">
-                    <h3 className="heading-2 my-3">Define</h3>
+                    <h3 className="heading-1 my-3">Define</h3>
                     <p className="">In the interview, most respondents tended to first evaluate the time needed for tasks upon receiving them. Yet they proceeded to procrastinate, because <b>they thought there was enough time for them to relax</b> before starting working. <br/>
 However, 3 participants mentioned experiencing significant stress before deadlines either because
                     </p>
@@ -144,7 +170,7 @@ However, 3 participants mentioned experiencing significant stress before deadlin
 
                     
                     <div className="my-5 d-flex flex-column align-items-center">
-                        <h3 id="todone-map-title" className="heading-3 mt-5">User Journey Maps</h3>
+                        <h3 id="todone-map-title" className="heading-2 mt-5">User Journey Maps</h3>
                         <Swiper
                             cssMode={true}
                             navigation={true}
@@ -188,7 +214,7 @@ However, 3 participants mentioned experiencing significant stress before deadlin
                     </div>
                     
                     <div className="pt-5">
-                        <h3 className="heading-3 my-3">Pain Points</h3>
+                        <h3 className="heading-2 my-3">Pain Points</h3>
                         <p>The problems discussed in interviews were converged into two pain points:</p>
                         <div className="d-flex justify-content-center">
                             <ul id="pain-point-list" className="row my-5 d-flex align-items-center">
@@ -201,7 +227,7 @@ However, 3 participants mentioned experiencing significant stress before deadlin
                             </ul>
                         </div>
                         <div id="todone-hmw-container">
-                            <h3 className="heading-3 mt-3 mb-5">How Might We- Design Mission</h3>
+                            <h3 className="heading-2 mt-3 mb-5">How Might We- Design Mission</h3>
                             <h2 id="todone-hmw" className="heading-2 m-5 color-gray-800">
                             How might we <b className="color-bright">develop a mobile application</b> to help <b className="color-bright">people who suffer from procrastination</b> when 
                             under significant workload learn to <b className="color-bright">organize and complete tasks efficiently</b> to reduce the anxiety induced by unfinished work?
@@ -214,7 +240,7 @@ However, 3 participants mentioned experiencing significant stress before deadlin
             <div className="bg-1">
                 <div className="container">
                     <div className="topic-container subsection-wrapper">
-                        <h3 className="heading-2 my-5">Ideate</h3>
+                        <h3 className="heading-1 my-5">Ideate</h3>
                         <div id="todone-stats">
                             <div className="row statistics-container my-5">
                                 <div className="col-md-4 d-flex flex-column align-items-center">
@@ -292,7 +318,7 @@ However, 3 participants mentioned experiencing significant stress before deadlin
                             </div>
                             <div>
                                 <h3>
-                                We aim to build a <b>gamified to-do list</b> that allows encourages users to 
+                                We aim to build a <b>gamified to-do list</b> that encourages users to 
                                 complete tasks with a fun user interface consisting of <b>Tower of Today’s Tasks</b> and <b>Project Treasure Map</b>, 
                                 and uses <b>PERT</b> to assist users in controlling the amount of procrastination time.
                                 </h3>
@@ -305,7 +331,7 @@ However, 3 participants mentioned experiencing significant stress before deadlin
 
             <div className="container">
                 <div className="topic-container subsection-wrapper">
-                    <h2 className="heading-2 text-bold my-5">Prototype</h2>
+                    <h2 className="heading-1 text-bold my-5">Prototype</h2>
                     <div className="w-100 mb-5 d-flex flex-column align-items-center">
                         <img className="w-75" src="/works/UXUI/2done/IA.png" alt="information structure" />
                         <p className="table-caption mt-3">Information Structure</p>
@@ -314,19 +340,229 @@ However, 3 participants mentioned experiencing significant stress before deadlin
                     <div className="row subsection-wrapper">
                         <div className="col-md-6 d-flex align-items-center">
                             <div className="d-flex flex-column">
-                                <h3 className="heading-3 mb-3">Low-Fi Prototype</h3>
+                                <h3 className="heading-2 mb-3">Low-Fi Prototype</h3>
                                 <p>A low-fidelity prototype was developed with Figma, which would undergo a usability test in the next process.</p>
                             </div>
                             
                         </div>
                         <div className="col-md-6">
-                            <div className="w-100 mb-5 d-flex flex-column align-items-center">
+                            <div className="w-100 d-flex flex-column align-items-center">
                                 <img className="w-100" src="/works/UXUI/2done/6.png" alt="low-fi prototype figma screenshot" />
                                 <p className="table-caption mt-3">Wireflow of the low-fi prototype</p>   
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="container">
+                <div className="topic-container subsection-wrapper">
+                    <h2 className="heading-1 text-bold my-3">Test & Iteration</h2>
+                    <div className="mb-5">
+                        <div>
+                            <p className="heading-3 m-0"><b>Usability Test</b>: 3 participants</p>
+                            <p className="heading-3 m-0"><b>Test Objective</b>: Add a new task and a new project in 2Done</p>
+                        </div>
+                        <h3 className="heading-3 mt-5 mb-3">Results and Improvements</h3>
+                        <p>After the test, a post-test interview was conducted for each participant to collect their feedback.</p>
+                    </div>
                     
+                    <div className="subsubsection-wrapper pb-3">
+                        <h2 className="mb-5">1. Avoid Vague Visual Representations</h2>
+                        <div className="row mx-5">
+                            <div className="col-md-3 my-3">
+                                <img className="w-100 box-shadow" src="/works/UXUI/2done/7-1.png" alt="low-fi prototype- PERT project map" />
+                            </div>
+                            <div className="col-md-9 d-flex flex-column align-items-center justify-content-center"> 
+                                <div className="w-sizer">
+                                    <p>
+                                        All 3 users reported that they had <b>difficulty comprehending the geometric symbols of the treasure map</b>.
+                                    </p>
+                                    <ul className="list-disc">
+                                        <li>
+                                            No visual cue indicating a direction of the diagram
+                                        </li>
+                                        <li>
+                                            Meaning of numbers hovering above the activities (estimated duration time of an activity) is ambiguous
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="todone-proto-1">
+                <div className="container">
+                    <div className="topic-container subsection-wrapper">
+                        <div className="row">
+                            <div className="col-md-3 d-flex flex-column justify-content-center">
+                                <div className="my-5">
+                                    <h3 className="heading-1 mb-5">Improvements</h3>
+                                    <ul className="list-disc">
+                                        <li className="mb-3">
+                                            Straight-forward visual cues to help users guess the meaning of the symbols in PERT diagram
+                                        </li>
+                                        <li className="mb-3">
+                                            Details regarding PERT reduced to the minimum by keeping only information users needed
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="col-md-9 my-3 d-flex flex-column align-items-center">
+                                <img className="w-100" src="/works/UXUI/2done/proto-1.png" alt="prototype" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container">
+                <div className="topic-container subsection-wrapper">
+                <div className="subsubsection-wrapper pb-3">
+                        <h2 className="mb-5">2. Information Simplification</h2>
+                        <div className="row mx-5">
+                            <div className="col-md-6 row my-3">
+                                <img className="col w-50 box-shadow" src="/works/UXUI/2done/7-2-1.png" alt="low-fi prototype- adding project" />
+                                <img className="col w-50 box-shadow" src="/works/UXUI/2done/7-2-2.png" alt="low-fi prototype- adding activity to to-do" />
+                            </div>
+                            <div className="col-md-6 d-flex flex-column align-items-center justify-content-center"> 
+                                <div className="w-sizer">
+                                    <p>
+                                    Users could not add projects with the same “+” button in navigation tab used to add both tasks and projects because they <b>could not associate the two operations together</b>. Additionally, users found it redundant to manually add a project activity into to-do list.
+                                    </p>
+                                    <ul className="list-disc">
+                                        <li>
+                                        Ambiguity of the difference between tasks and a project activities
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="todone-proto-2">
+                <div className="container">
+                    <div className="topic-container subsection-wrapper">
+                        <div className="row">
+                            <div className="col-md-3 d-flex flex-column justify-content-center">
+                                <div className="my-5">
+                                    <h3 className="heading-1 mb-5">Improvements</h3>
+                                    <ul className="list-disc">
+                                        <li className="mb-3">
+                                        Separating the operations of adding projects or tasks
+                                        </li>
+                                        <li className="mb-3">
+                                        Minimizing users’ actions when adding projects by automatically importing project activities into the to-do list
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="col-md-9 my-3 d-flex flex-column align-items-center">
+                                <img className="w-100" src="/works/UXUI/2done/proto-2.png" alt="prototype" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container">
+                <div className="topic-container subsection-wrapper">
+                <div className="subsubsection-wrapper pb-3">
+                        <h2 className="mb-5">3. Emphasis on Interactive Items</h2>
+                        <div className="row mx-5">
+                            <div className="col-md-3 my-3">
+                                <img className="w-100 box-shadow" src="/works/UXUI/2done/7-3.png" alt="low-fi prototype- to-do list" />
+                            </div>
+                            <div className="col-md-9 d-flex flex-column align-items-center justify-content-center"> 
+                                <div className="w-sizer">
+                                    <p>
+                                    User could not tell that the activity items in the Add Project Page were editable but rather thought of them as view-only objects. On the other hand, users did not know where to tap to edit or complete a task when exploring the to-do list page.
+                                    </p>
+                                    <ul className="list-disc">
+                                        <li>
+                                        Interactivity of items were not suggestive enough to be distinguished from other view-only attributes
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="todone-proto-3">
+                <div className="container">
+                    <div className="topic-container subsection-wrapper">
+                        <div className="row">
+                            <div className="col-md-3 d-flex flex-column justify-content-center">
+                                <div className="my-5">
+                                    <h3 className="heading-1 mb-5">Improvements</h3>
+                                    <ul className="list-disc">
+                                        <li className="mb-3">
+                                        Using shadows to emphasize interactive buttons or boxes
+                                        </li>
+                                        <li className="mb-3">
+                                        Adopting commonly used symbols, e.g. arrows to signify a collapsable tab
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="col-md-9 my-3 d-flex flex-column align-items-center">
+                                <img className="w-100" src="/works/UXUI/2done/proto-3.png" alt="prototype" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="container">
+                <div className="topic-container subsection-wrapper">
+                    <h3 className="heading-3 color-dark mt-5">Challenges</h3>
+                    <div className="mb-5">
+                        <h2 className="heading-2 text-bold my-3">How does 2Done address the user pain points?</h2>
+                        <p>
+                        The user pain points include overestimation of one’s efficiency and lack of awareness of dependencies of tasks. The dependencies of tasks have been addressed with PERT to visualize the temporal order of task completion. Unfortunately, since our current system still requires the user to put down their own estimated task duration, users may still input underestimated task duration resulting in delays. <br/><br/>However, we propose that further enhancement can <b>incorporate AI to adjust user estimation to a more accurate number</b>. Specifically, our system collects user data of previous estimations and their completion dates which is fed to <b>machine learning models to learn patterns of the user’s overestimation and makes suggestions accordingly</b>. For instance, the model may learn that a user tends to spend 25% more time than initial estimation on a task. Next time if the user inputs a task requiring 4 days to complete, the AI may suggest expanding the duration to 5 days to minimize user’s estimation error.
+                        </p>
+                    </div>
+                    <div className="mb-5">
+                        <h2 className="heading-2 text-bold my-3">Can 2Done really reduce the anxiety induced by academic workload?</h2>
+                        <p>
+                        In order to verify this, an in-depth <b>diary study</b> spanning over longer time durations along with rigorously defined questionnaires evaluating users’ daily psychological states is required. The diary study participant may evaluate their psychological state daily with questionnaires and write about how 2Done helped manage their academic workload over the semester. Without the diary study, we currently cannot attest to the effectiveness of 2Done in reducing students’ academic anxiety. Our usability test has limited reliability due to the small number of test participants and the lack of a clear evaluation of one’s psychological states.
+                        </p>
+                    </div>
+                    <div className="mb-5">
+                        <h2 className="heading-2 text-bold my-3">Projects are often done in a collaborative effort. What happens when others are responsible for activities that precede yours, so that you cannot use the project map before others complete their tasks?</h2>
+                        <p>
+                        We recognize this as a critical issue that could significantly harm the efficacy of our application. To resolve this problem, <b>making projects accessible by multiple people</b> seems to be a feasible solution. This way, everyone contributes by managing their respective activities in the map. It also makes clear the implication of one’s delayed activity in regards to others’ activities succeeding it, so that members will be more responsible with their tasks to avoid causing delay of the whole project.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="topic-container subsection-wrapper">
+                    <h3 className="heading-3 color-dark mb-5">Takeaways</h3>
+                    <p>
+                    In this project, I attempted to incorporate several past experience. Throughout years in college, I often experienced symptoms of academic anxiety and perceived several peers suffering from anxiety-induced procrastination, thus it became a strong motive for me to develop a solution to help students break away from the pattern of procrastination. 
+<br/><br/>
+I learned another thing the hard way: designers can NEVER assume what a user would do in a context. More often than not, users do not react to the user interface the way designers expected. Therefore, usability tests are essential to verify whether we as designers <b>successfully met users’ needs to intuitively interact with the interface in the simplest way</b>. For instance, users in our usability test pointed out many issues that we never expected to occur. We can encourage users to use “thinking out loud” technique to help us understand what works best for them.
+<br/><br/>
+On the other hand, the Project Management course I took in junior year inspired me to use PERT to address the problem of procrastination and task dependencies. This was one of the few times I got to put theories taught in classrooms into practice, and it reminded me of how HCI and UX requires an interdisciplinary expertise and cross-domain collaborations to approach problems in different fields with UX techniques. It <b>strengthened my confidence to explore the field of HCI as an Information Management student who is also passionate about design and psychology</b>.
+                    </p>
+                </div>
+            </div>
+
+            <div className="bg-1 pb-5">
+                <div className="container">
+                    <div className="topic-container py-3">
+                        <h3 className="heading-3 color-gray my-5">References</h3>
+                        <p className="references">
+                        [1] Hooda, M., & Saini, A. (2017). Academic anxiety: An overview. Educational Quest, 8(3), 807-810.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
