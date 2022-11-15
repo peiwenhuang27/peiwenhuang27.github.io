@@ -558,7 +558,7 @@ On the other hand, the Project Management course I took in junior year inspired 
             <div className="bg-1 pb-5">
                 <div className="container">
                     <div className="topic-container py-3">
-                        <h3 className="heading-3 color-gray my-5">References</h3>
+                        <h3 className="heading-3 color-gray mt-5">References</h3>
                         <p className="references">
                         [1] Hooda, M., & Saini, A. (2017). Academic anxiety: An overview. Educational Quest, 8(3), 807-810.
                         </p>
