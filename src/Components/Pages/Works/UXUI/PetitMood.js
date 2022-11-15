@@ -30,7 +30,7 @@ function PetitMood () {
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
                             <h2 className="mb-3">Petit Mood: AR Pet Game as Negative Emotion Reliever for Depressed University Students</h2>
-                            <h3>Tags: Course Project, HCI, UX, AR, Game Design, Mental Health</h3>
+                            <h3>Tags: HCI, UX, AR, Game Design, Mental Health</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4">
@@ -255,7 +255,7 @@ function PetitMood () {
             <div className="container">
                 <div className="topic-container py-3">
                     <h3 className="heading-3 color-dark mt-5">Prototype Design</h3>
-                    <h3 className="heading-2 my-3">Feature Proposal</h3>
+                    <h3 className="heading-1 my-3">Feature Proposal</h3>
                     <div className="mt-5 topic-desc-container color-gray">
                         <h3>Implementation Tool</h3>
                         <ul>
@@ -301,7 +301,7 @@ function PetitMood () {
                             </div>
                         </div>
                     </div>
-                    <h3 className="heading-2 mt-5 mb-3">Implementation</h3>
+                    <h3 className="heading-1 mt-5 mb-3">Implementation</h3>
                     Petit Mood as a game had inherent status scores regarding each category, 
                     therefore the player needs to play the mini game in all categories to boost the pet’s status scores.
                     <div className="my-5 row">
@@ -360,7 +360,7 @@ The stimuli are translated to healthy diet and junk food in the feeding scenario
                 <div className="container">
                     <div className="topic-container py-3">
                         <h3 className="heading-3 color-dark mt-5">Preliminary Findings</h3>
-                        <h3 className="heading-2 my-3">Comparative Analysis </h3>
+                        <h3 className="heading-1 my-3">Comparative Analysis </h3>
                         <div className="w-100 my-5 d-flex flex-column align-items-center">
                             <img className="w-75" src="/works/UXUI/petit-mood/comp-anal.png" alt="comparative analysis with 24 existing mobile pet games" />
                         </div>
@@ -371,7 +371,7 @@ The stimuli are translated to healthy diet and junk food in the feeding scenario
                         illustrated pet encyclopedia, and coins and shops. The overlapping features are mostly pet-centric, while the lacking ones are concerned with game design.
                         </p>
 
-                        <h3 className="heading-2 mt-5 mb-3">SWOT Analysis </h3>
+                        <h3 className="heading-1 mt-5 mb-3">SWOT Analysis </h3>
                         <div className="row w-100">
                             <p className="col-md-6">
                             Results of the SWOT analysis suggested apparent strengths of Petit Mood in <b>a clear goal to help users relieve negative emotions, the use of AR technology to simulate an immersive environment, dialogues relevant to the subject of mood, and a novel yet light gaming experience aimed at reducing stress</b>. These strengths validate the major objective of Petit Mood to facilitate users’ awareness and relief of their mental states. In addition, Petit Mood not only has similar basic functionalities to most existing pet games, but also provides users with more immersive and interactive spatial experiences through the application of AR, which breaks through the mostly flat and narrative interfaces and interaction. 
@@ -386,7 +386,7 @@ The stimuli are translated to healthy diet and junk food in the feeding scenario
 
             <div className="container">
                 <div className="topic-container py-3">
-                    <h3 className="heading-2 mt-5 my-3">Usability Evaluation</h3>
+                    <h3 className="heading-1 mt-5 my-3">Usability Evaluation</h3>
                     <div className="mt-5 topic-desc-container color-gray">
                         <h3>Participants</h3>
                         <ul>
@@ -398,7 +398,7 @@ The stimuli are translated to healthy diet and junk food in the feeding scenario
                     It should be noted that the questionnaires are intended to elicit emotional responses in the respondants, 
                     thus the objectiveness of the results may be tainted to an extent.
                     </p>
-                    <h3 className="heading-4 mt-5 mb-3">Results</h3>
+                    <h3 className="heading-2 mt-5 mb-3">Results</h3>
                     <div className="row d-flex align-items-center">
                         <div className="col-md-6 d-flex flex-column align-items-center">
                             <img className="w-100" src="/works/UXUI/petit-mood/table4.png" alt="Usability test results" />
