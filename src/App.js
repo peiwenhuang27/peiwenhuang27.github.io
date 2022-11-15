@@ -21,15 +21,14 @@ function App() {
         'id': '2Done',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': '/works/UXUI/2done/proto-1.png',
+        'img': '/works/UXUI/2done/cover.png',
       },
       {
         'title': 'Bookworm Meeter', 
         'id': 'Bookworm-Meeter',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
-        'workId': 'Petit-Mood',
+        'img': '/works/UXUI/bookworm/cover.png',
       },
       {
         'title': 'Mindful Diary',

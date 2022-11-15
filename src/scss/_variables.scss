@@ -106,3 +106,7 @@ $text-shadow: 0 0 8px $gray-900;
 .w-80 {
   width: 80%;
 }
+
+.box-shadow {
+  @include box-shadow;
+}
