@@ -422,7 +422,7 @@ The stimuli are translated to healthy diet and junk food in the feeding scenario
             <div className="bg-1 pb-5">
                 <div className="container">
                     <div className="topic-container py-3">
-                        <h3 className="heading-3 color-gray my-5">References</h3>
+                        <h3 className="heading-3 color-gray mt-5">References</h3>
                         <p className="references">
                         [1] Fraser Anderson, Michelle Annett, Walter F. Bischof, and Pierre Boulanger. 2010. Virtual equine assisted therapy. In 2010 IEEE Virtual Reality Conference (VR). 255–256. https://doi.org/10.1109/VR.2010.5444776 
 [2] Sandra Barker, Randolph Barker, Nancy McCain, and Christine Schubert. 2016. A Randomized Cross-over Exploratory Study of the Effect of Visiting Therapy Dogs on College Student Stress Before Final Exams. Anthrozoös 29 (01 2016), 35–46. https://doi.org/10.1080/08927936.2015.1069988 

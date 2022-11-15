@@ -498,7 +498,7 @@ Moreover, my teammates and I also found it especially challenging to <b>group ou
             <div className="bg-1 pb-5">
                 <div className="container">
                     <div className="topic-container py-3">
-                        <h3 className="heading-3 color-gray my-5">Resources</h3>
+                        <h3 className="heading-3 color-gray mt-5">Resources</h3>
                         <p className="references">
                             Chat Messages by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/chat-messages/" target="_blank" title="Chat Messages Icons">Noun Project</a>
                             <br/>
