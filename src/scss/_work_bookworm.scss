@@ -1,0 +1,36 @@
+#bookworm-value {
+    div {
+        width: 90%;
+        @include pad-sm {
+            width: 100%;
+        }
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 21px;
+        font-weight: normal;
+        line-height: 2;
+        // text-align: center;
+    }
+}
+
+#book-pain-point-list {
+    // width: 75%;
+    @include pad-sm {
+        width: 100px;
+    }
+    li {
+        text-align: center;
+        background-color: #d7ddfd;
+        height: 200px;
+        border-radius: 32px;
+        @include box-shadow-darker;
+    }
+
+    .heading-2 {
+        line-height: 1.5;
+        color: $secondary;
+    }
+}
