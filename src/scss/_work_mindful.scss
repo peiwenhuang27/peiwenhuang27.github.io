@@ -1,0 +1,30 @@
+.mindful-intro-box {
+    background-color: #78611E;
+    border-radius: 16px;
+    @include box-shadow;
+    color: $white;
+}
+
+#mindful-value {
+    font-weight: normal;
+}
+
+.val-containe {
+    width: 80%;
+}
+
+.mindful-row {
+    flex-direction: row;
+
+    @include pad-sm {
+        flex-direction: column;
+    }
+}
+
+.mindful-row-reverse {
+    flex-direction: row-reverse;
+
+    @include pad-sm {
+        flex-direction: column;
+    }
+}
