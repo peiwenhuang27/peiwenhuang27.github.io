@@ -1,0 +1,25 @@
+.easy-pain-point-box {
+    background-color: #E8EEF3;
+    // color: $secondary;
+    // font-weight: 500;
+    border-radius: 20px;
+
+    @include box-shadow-darker;
+}
+
+.easy-design-statement {
+    div {
+        width: 90%;
+        @include pad-sm {
+            width: 100%;
+        }
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 21px;
+        font-weight: normal;
+        line-height: 2;
+    }
+}

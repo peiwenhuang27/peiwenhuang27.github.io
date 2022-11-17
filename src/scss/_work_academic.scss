@@ -1,0 +1,35 @@
+.academic-link {
+    color: $secondary;
+    font-weight: bold;
+    &:hover {
+        color: $highlight;
+        @include hover-transition;
+    }
+}
+
+.color-round {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#color-round-1 {
+    background-color: #1C3B6A;
+    color: $white;
+}
+#color-round-2 {
+    background-color: #9FCDCC;
+    color: $white;
+}
+#color-round-3 {
+    background-color: #FACF84;
+    color: #1C3B6A;
+}
+#color-round-4 {
+    background-color: #E2DECF;
+    color: #1C3B6A;
+}
