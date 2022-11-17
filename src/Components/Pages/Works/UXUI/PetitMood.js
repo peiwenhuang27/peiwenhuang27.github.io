@@ -1,7 +1,6 @@
 import { useState, useCallback } from "react";
 import { Link, Outlet } from "react-router-dom";
 import ReactPlayer from "react-player";
-import ImageViewer from 'react-simple-image-viewer';
 
 function PetitMood () {
     let img = '/works/UXUI/petit-mood/cover.png';

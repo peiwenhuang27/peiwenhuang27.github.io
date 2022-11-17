@@ -12,19 +12,3 @@
 .val-containe {
     width: 80%;
 }
-
-.mindful-row {
-    flex-direction: row;
-
-    @include pad-sm {
-        flex-direction: column;
-    }
-}
-
-.mindful-row-reverse {
-    flex-direction: row-reverse;
-
-    @include pad-sm {
-        flex-direction: column;
-    }
-}

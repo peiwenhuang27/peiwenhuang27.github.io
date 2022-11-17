@@ -16,7 +16,7 @@ function ToDone () {
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
                             <h2 className="mb-3">2Done Gamified To-Do List</h2>
-                            <h3>Tags: UX, Procrastination, Anxiety</h3>
+                            <h3>Tags: UX Design, UI Design, Procrastination, Anxiety</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4">
@@ -80,7 +80,7 @@ function ToDone () {
             <div className="bg-1">
                 <div className="container">
                     <div className="topic-container section-wrapper">
-                        <h3 className="heading-1 my-4">Background</h3>
+                        <h3 className="heading-1 my-4">Introduction</h3>
                         <div id="todone-problem-statement">
                             <h2 className="heading-2 my-3 color-bright text-bold">Have you ever felt anxious when a flood of assignments or exams rush your way?</h2>
                             <h2 className="heading-2 my-3 color-bright text-bold">Or felt frustrated when you attempt to multi-task but then fail to concentrate on any task? </h2>
