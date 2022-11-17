@@ -44,15 +44,15 @@ function App() {
         'title': 'TourBot', 
         'id': 'TourBot', 
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'desc': 'Task-oriented chatbot for travel recommendation.',
+        'img': '/works/Frontend/tourbot/cover.png',
       },
       {
         'title': 'EasyManager', // 系羽 
         'id': 'EasyManager',
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'desc': 'Account/point management system for a sport team.',
+        'img': '/works/Frontend/easymanager/cover.png',
       },]
     },
     {'suffix': 'Web-Visuals', 'name': 'Web Visuals',
@@ -61,16 +61,17 @@ function App() {
         'title': 'NTU Academic Counseling', 
         'id': 'NTU-Academic-Counseling', 
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'desc': 'Website visuals of NTU Academic Counseling Services.',
+        'img': '/works/Web/ntu-academic/cover.png',
       },
-      {
-        'title': 'IMDB: NTU IM Camp',
-        'id': 'IMDB-NTU-IM-Camp-Web',
-        'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
-      },]
+      // {
+      //   'title': 'IMDB: NTU IM Camp',
+      //   'id': 'IMDB-NTU-IM-Camp-Web',
+      //   'tags': ['tag1', 'tag2'], 
+      //   'desc': 'This is a description.',
+      //   'img': 'https://live.staticflickr.com/65535/52504771272_c9ae575513_k.jpg',
+      // }
+      ]
     },
     {'suffix': 'Poster', 'name': 'Poster Design',
       'items': [
@@ -78,29 +79,29 @@ function App() {
         'title': 'Les Saisons', 
         'id': 'Les-Saisons', 
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'desc': 'Collection of collage design posters.',
+        'img': 'https://live.staticflickr.com/65535/52505805268_7fce1ebdc9_k.jpg',
       },
       {
         'title': 'New Era',
         'id': 'New-Era',
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'desc': 'Surreal sci-fi poster design.',
+        'img': 'https://live.staticflickr.com/65535/52505805468_8e26ceb65e_k.jpg',
       },
       {
         'title': 'FREE',
         'id': 'FREE',
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'desc': 'Kaleidoscope-like poster design.',
+        'img': 'https://live.staticflickr.com/65535/52505520319_656134774d_k.jpg',
       },
       {
         'title': 'Vegan Is the New Black',
         'id': 'Vegan-Is-the-New-Black',
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'desc': 'Healthy diet promotion poster.',
+        'img': 'https://live.staticflickr.com/65535/52505520719_3c9b2793c2_k.jpg',
       },]
     },
     {'suffix': 'Event-Visuals', 'name': 'Event Visuals',
@@ -110,28 +111,28 @@ function App() {
         'id':  'Fireworks-NTU-IM-Night',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'img': 'https://live.staticflickr.com/65535/52505936586_9dd5f32352_k.jpg',
       },
       {
         'title': 'SSWIM: Orientation Camp',
         'id': 'SSWIM-Orientation-Camp',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'img': 'https://live.staticflickr.com/65535/52505951201_745d16f0cf_k.jpg',
       },
       {
         'title': 'UnlIMted: NTU IM Week',
         'id': 'UnlIMted-NTU-IM-Week',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'img': 'https://live.staticflickr.com/65535/52505948056_db90c20dbe_k.jpg',
       },
       {
         'title': 'IMDB: NTU IM Camp',
         'id': 'IMDB-NTU-IM-Camp-Event',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'img': 'https://live.staticflickr.com/65535/52506491998_65d1511159_k.jpg',
       },]
     },
     {'suffix': 'Editorial-Print', 'name': 'Editorials & Prints',
@@ -141,28 +142,28 @@ function App() {
         'id': 'Mindfulness', 
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'img': 'https://live.staticflickr.com/65535/52504768682_1880429a5b_k.jpg',
       },
       {
         'title': 'Music',
         'id': 'Music',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'img': 'https://live.staticflickr.com/65535/52504768712_45f044d13d_k.jpg',
       },
       {
         'title': 'NTU IM Graduation Book',
         'id': 'NTU-IM-Graduation-Book',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'img': 'https://live.staticflickr.com/65535/52505254131_1829f61a92_k.jpg',
       },
       {
         'title': 'Elite Camp Brochure',
         'id': 'Elite-Camp-Brochure',
         'tags': ['tag1', 'tag2'], 
         'desc': 'This is a description.',
-        'img': 'src/img/UXUI/Book/cover.jpg',
+        'img': 'https://live.staticflickr.com/65535/52505254991_a38b03d4a3_k.jpg',
       },]
     },
     // {'suffix': 'Photagraphy', 'name': 'Photagraphy'},
@@ -179,4 +180,4 @@ function App() {
 
 export default App;
 
-// TODO: add page transition
+// TODO: add page transition 
