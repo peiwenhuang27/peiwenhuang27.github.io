@@ -16,7 +16,7 @@ function Mindful () {
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
                             <h2 className="mb-3">Mindful Diary</h2>
-                            <h3>Tags: UI, Diary, Mental Health</h3>
+                            <h3>Tags: UI Design, Diary, Mental Health</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4">
@@ -175,7 +175,7 @@ function Mindful () {
                     Mindful Diary strives to <b>make journaling an enjoyable process</b>.
                     </h3>
                     
-                    <div className="row d-flex mindful-row">
+                    <div className="row d-flex display-row">
                         <div className="col-md-5">
                             <div className="w-100 mt-5 d-flex flex-column align-items-center">
                                 <img className="w-75" src="/works/UXUI/mindful/val-1.png" alt="Information Structure" />
@@ -192,7 +192,7 @@ function Mindful () {
                             </p>
                         </div>
                     </div>
-                    <div className="row d-flex mindful-row-reverse">
+                    <div className="row d-flex display-row-reverse">
                         <div className="col-md-5">
                             <div className="w-100 mt-5 d-flex flex-column align-items-center">
                                 <img className="w-75" src="/works/UXUI/mindful/val-2.png" alt="Information Structure" />
@@ -207,7 +207,7 @@ function Mindful () {
                             </p>
                         </div>
                     </div>
-                    <div className="row d-flex mindful-row">
+                    <div className="row d-flex display-row">
                         <div className="col-md-5">
                             <div className="w-100 mt-5 d-flex flex-column align-items-center">
                                 <img className="w-75" src="/works/UXUI/mindful/val-3.png" alt="Information Structure" />
@@ -232,7 +232,7 @@ function Mindful () {
                             </div>
                         </div>
                     </div>
-                    <div className="row d-flex mindful-row-reverse">
+                    <div className="row d-flex display-row-reverse">
                         <div className="col-md-5">
                             <div className="w-100 mt-5 d-flex flex-column align-items-center">
                                 <img className="w-75" src="/works/UXUI/mindful/val-4.png" alt="Information Structure" />
@@ -261,7 +261,7 @@ function Mindful () {
 
                     <div className="subsection-wrapper">
                     <h3 className="heading-1 mt-3 mb-5">User Interface</h3>
-                        <div className="row my-5 d-flex mindful-row">
+                        <div className="row my-5 d-flex display-row">
                             <div className="col-md-6 d-flex flex-column justify-content-center">
                                 <h3 className="heading-2 mb-4">Explore</h3>
                                 <ul className="list-disc">
@@ -278,7 +278,7 @@ function Mindful () {
                             </div>
                         </div>
 
-                        <div className="row my-5 mindful-row-reverse">
+                        <div className="row my-5 display-row-reverse">
                             <div className="col-md-6 d-flex flex-column justify-content-center">
                                 <h3 className="heading-2 mb-4">Diary</h3>
                                 <ul className="list-disc">
@@ -296,7 +296,7 @@ function Mindful () {
                             </div>
                         </div>
 
-                        <div className="row my-5 mindful-row">
+                        <div className="row my-5 display-row">
                             <div className="col-md-6 d-flex flex-column justify-content-center">
                                 <h3 className="heading-2 mb-4">Diary Writing</h3>
                                 <ul className="list-disc">
@@ -307,12 +307,12 @@ function Mindful () {
                             </div>
                             <div className="col-md-6">
                                 <div className="w-100 mt-5 d-flex flex-column align-items-center">
-                                    <img src="https://media.giphy.com/media/CKKzR9E2I6aF3qVuoo/giphy.gif" alt="prototype gif"/>
+                                    <img src="https://media.giphy.com/media/UUHrcFY2ZMVvHaavpf/giphy.gif" alt="prototype gif"/>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="row my-5 mindful-row-reverse">
+                        <div className="row my-5 display-row-reverse">
                             <div className="col-md-6 d-flex flex-column justify-content-center">
                                 <h3 className="heading-2 mb-4">Progress</h3>
                                 <ul className="list-disc">
@@ -425,11 +425,11 @@ However, the system must be carefully designed so as not to place further burden
                         <p className="references">
                         [1] Hiemstra, R. (2001). Uses and benefits of journal writing. New directions for adult and continuing education, 2001(90), 19.
                         <br/>
-                        [2] https://apps.who.int/iris/bitstream/handle/10665/254610/WHO-MSD-MER-2017.2-eng.pdf
+                        [2] World Health Organization (WHO). (2017). Depression and Other Common Mental Disorders: Global Health Estimates. World Health Organization. Retrieved November 14, 2022, from https://apps.who.int/iris/bitstream/handle/10665/254610/WHO-MSD-MER-2017.2-eng.pdf
                         <br/>
-                        [3] https://www.linkedin.com/pulse/3-reasons-people-hate-journaling-joan-gagnon/ 
+                        [3] Gagnon, Joan. (2017, March 7). 3 Reasons People Hate Journaling. LinkedIn. https://www.linkedin.com/pulse/3-reasons-people-hate-journaling-joan-gagnon/ 
                         <br/>
-                        [4] https://alternativedoubt.medium.com/why-keeping-a-diary-is-so-hard-40eabca43ffd 
+                        [4] alternativedoubt. (2018, December 25). Why Keeping a Diary is so Hard??. Medium. https://alternativedoubt.medium.com/why-keeping-a-diary-is-so-hard-40eabca43ffd 
                         </p>
                         <h3 className="heading-3 color-gray mt-5">Resources</h3>
                         <p className="references">
