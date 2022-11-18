@@ -73,6 +73,38 @@ function App() {
       // }
       ]
     },
+    {'suffix': 'Editorial-Print', 'name': 'Editorials & Prints',
+      'items': [
+      {
+        'title': 'Elite Camp Brochure',
+        'id': 'Elite-Camp-Brochure',
+        'tags': ['tag1', 'tag2'], 
+        'desc': 'Publication for 18th NTU x PKU Elite Camp.',
+        'img': 'https://live.staticflickr.com/65535/52505254991_f45213c95a_h.jpg',
+      },
+      {
+        'title': 'NTU IM Graduation Book',
+        'id': 'NTU-IM-Graduation-Book',
+        'tags': ['tag1', 'tag2'], 
+        'desc': 'Graduation book design for NTU IM Class of 2022.',
+        'img': 'https://live.staticflickr.com/65535/52505254131_1829f61a92_k.jpg',
+      },
+      {
+        'title': 'Mindfulness', 
+        'id': 'Mindfulness', 
+        'tags': ['tag1', 'tag2'], 
+        'desc': 'Book Cover Design.',
+        'img': 'https://live.staticflickr.com/65535/52504768682_1880429a5b_k.jpg',
+      },
+      {
+        'title': 'Music',
+        'id': 'Music',
+        'tags': ['tag1', 'tag2'], 
+        'desc': 'Magazine Cover Design.',
+        'img': 'https://live.staticflickr.com/65535/52504768712_45f044d13d_k.jpg',
+      },
+      ]
+    },
     {'suffix': 'Poster', 'name': 'Poster Design',
       'items': [
       {
@@ -108,64 +140,35 @@ function App() {
       'items': [
       {
         'title': 'Fireworks: NTU IM Night',
-        'id':  'Fireworks-NTU-IM-Night',
+        'id':  'Fireworks--NTU-IM-Night',
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
+        'desc': 'Designing for annual performance- 2020 NTU IM Night.',
         'img': 'https://live.staticflickr.com/65535/52505936586_9dd5f32352_k.jpg',
       },
       {
         'title': 'SSWIM: Orientation Camp',
-        'id': 'SSWIM-Orientation-Camp',
+        'id': 'SSWIM--Orientation-Camp',
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
+        'desc': 'Joint camp held for NTU freshmen from 3 majors.',
         'img': 'https://live.staticflickr.com/65535/52505951201_745d16f0cf_k.jpg',
       },
       {
         'title': 'UnlIMted: NTU IM Week',
-        'id': 'UnlIMted-NTU-IM-Week',
+        'id': 'UnlIMted--NTU-IM-Week',
         'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
+        'desc': 'Students-held event for promoting the IM department.',
         'img': 'https://live.staticflickr.com/65535/52505948056_db90c20dbe_k.jpg',
       },
-      {
-        'title': 'IMDB: NTU IM Camp',
-        'id': 'IMDB-NTU-IM-Camp-Event',
-        'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'https://live.staticflickr.com/65535/52506491998_65d1511159_k.jpg',
-      },]
+      // {
+      //   'title': 'IMDB: NTU IM Camp',
+      //   'id': 'IMDB-NTU-IM-Camp-Event',
+      //   'tags': ['tag1', 'tag2'], 
+      //   'desc': 'This is a description.',
+      //   'img': 'https://live.staticflickr.com/65535/52506491998_65d1511159_k.jpg',
+      // },
+      ]
     },
-    {'suffix': 'Editorial-Print', 'name': 'Editorials & Prints',
-      'items': [
-      {
-        'title': 'Mindfulness', 
-        'id': 'Mindfulness', 
-        'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'https://live.staticflickr.com/65535/52504768682_1880429a5b_k.jpg',
-      },
-      {
-        'title': 'Music',
-        'id': 'Music',
-        'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'https://live.staticflickr.com/65535/52504768712_45f044d13d_k.jpg',
-      },
-      {
-        'title': 'NTU IM Graduation Book',
-        'id': 'NTU-IM-Graduation-Book',
-        'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'https://live.staticflickr.com/65535/52505254131_1829f61a92_k.jpg',
-      },
-      {
-        'title': 'Elite Camp Brochure',
-        'id': 'Elite-Camp-Brochure',
-        'tags': ['tag1', 'tag2'], 
-        'desc': 'This is a description.',
-        'img': 'https://live.staticflickr.com/65535/52505254991_a38b03d4a3_k.jpg',
-      },]
-    },
+    
     // {'suffix': 'Photagraphy', 'name': 'Photagraphy'},
 ];
 
