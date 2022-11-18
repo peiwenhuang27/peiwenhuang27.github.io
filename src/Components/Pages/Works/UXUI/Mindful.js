@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import Iframe from 'react-iframe';
 
 function Mindful () {
     let img = "/works/UXUI/mindful/cover.png";
@@ -46,6 +47,19 @@ function Mindful () {
                             </ul>
                          </div>
                     </div>
+
+                    <div className="my-3">
+                        <h3 className="heading-1 mb-5">Figma Prototype</h3>
+                        <div className="d-flex justify-content-center">
+                            <Iframe 
+                            style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                            width="800" height="450" 
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9SVmWWLfpluAwwZUnX4iXI%2FMindful-Diary-App%3Fpage-id%3D0%253A1%26node-id%3D202%253A1042%26viewport%3D-2209%252C-980%252C0.24%26scaling%3Dscale-down%26starting-point-node-id%3D227%253A3664" 
+                            allowfullscreen />
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
 
@@ -381,7 +395,7 @@ function Mindful () {
                             <h4 className="heading-3 text-bold">Solution Proposal- Notification & Incorporating Streak</h4>
                             <ul className="list-disc">
                                 <li>Notifications can be set up so that user can be reminded every day at a specific time to write the journal.</li>
-                                <li>Referencing to the success of <a href="https://www.duolingo.com" target="_blank" rel="noreferrer noopener">Duolingo</a>, <b>the streak system</b> could be incorporated in Mindful Diary to motivate user to keep the habit of journaling daily.</li>
+                                <li>Referencing the success of <a className="link" href="https://www.duolingo.com" target="_blank" rel="noreferrer noopener">Duolingo</a>, <b>the streak system</b> could be incorporated in Mindful Diary to motivate user to keep the habit of journaling daily.</li>
                             </ul>
                             <p>
 The idea of a streak system is like an accumulated achievement, which records the number of days user has successively performed the required activity. In order not to reset the daily incremental number, user will <b>consciously make an effort to use the application at least once a day</b>. 
