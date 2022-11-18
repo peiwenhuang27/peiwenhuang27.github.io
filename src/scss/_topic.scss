@@ -391,3 +391,39 @@ p {
 .graphic-cover-img {
     border-radius: 4px;
 }
+
+.link {
+    @include link-hover;
+}
+
+.link-btn {
+    color: $secondary;
+    padding: 8px 16px;
+    border: 1.5px solid $secondary;
+    border-radius: 4px;
+    margin-right: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    @include hover-transition;
+
+    &:hover {
+        color: $white;
+        background-color: $secondary;
+    }
+
+    @include pad-sm {
+        margin: 16px;
+    }
+}
+
+.fanpage {
+    border-radius: 8px;
+    border: 16px solid $white;
+    @include box-shadow-darker;
+}
+
+.fanpage-sm {
+    border-radius: 20px;
+    border: 2px solid $white;
+    @include box-shadow-darker;
+}
