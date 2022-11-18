@@ -11,6 +11,12 @@ import Surreal from "./Pages/Works/Poster/Surreal";
 import Free from "./Pages/Works/Poster/Free";
 import Vegan from "./Pages/Works/Poster/Vegan";
 import Mindfulness from "./Pages/Works/Editorial/Mindfulness";
+import Music from "./Pages/Works/Editorial/Music";
+import Graduation from "./Pages/Works/Editorial/Graduation";
+import Elite from "./Pages/Works/Editorial/Elite";
+import Fireworks from "./Pages/Works/Event/Fireworks";
+import Sswim from "./Pages/Works/Event/Sswim";
+import Unlimited from "./Pages/Works/Event/Unlimited";
 
 function Topic () {
     let { workId } = useParams();
@@ -50,6 +56,24 @@ function Topic () {
     }
     if ( workId === 'FREE') {
         return <Free />;
+    }
+    if ( workId === 'Music') {
+        return <Music />;
+    }
+    if ( workId === 'NTU-IM-Graduation-Book') {
+        return <Graduation />;
+    }
+    if ( workId === 'Elite-Camp-Brochure') {
+        return <Elite />;
+    }
+    if ( workId === 'Fireworks--NTU-IM-Night') {
+        return <Fireworks />;
+    }
+    if ( workId === 'SSWIM--Orientation-Camp') {
+        return <Sswim />;
+    }
+    if ( workId === 'UnlIMted--NTU-IM-Week') {
+        return <Unlimited />;
     }
 };
 

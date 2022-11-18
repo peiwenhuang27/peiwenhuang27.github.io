@@ -74,6 +74,14 @@
     }
 }
 
+@mixin link-hover {
+    @include hover-transition;
+
+    &:hover {
+        color: $highlight;
+    }
+}
+
 @mixin pad-hdr {
     padding-top: 64px;
 }
