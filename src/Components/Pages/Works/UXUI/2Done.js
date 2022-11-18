@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import Iframe from 'react-iframe';
 
 function ToDone () {
     let img = "/works/UXUI/2done/cover.png";
@@ -15,7 +16,7 @@ function ToDone () {
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
-                            <h2 className="mb-3">2Done Gamified To-Do List</h2>
+                            <h2 className="mb-3">2Done Gamified To-Do Planner</h2>
                             <h3>Tags: UX Design, UI Design, Procrastination, Anxiety</h3>
                     </div>
                     <div className="row mb-5">
@@ -47,6 +48,16 @@ function ToDone () {
                                 <li className="col-md-8">Implementing the low-fi & hi-fi prototype</li>
                             </ul>
                          </div>
+                    </div>
+
+                    <div className="my-3">
+                        <h3 className="heading-1 mb-5">Figma Prototype</h3>
+                        <div className="d-flex justify-content-center">
+                        <Iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                        width="800" height="450" 
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbL9iAnQEF29yMpo5mfpUNj%2FGamified-To-Do-Planner%3Fpage-id%3D75%253A18%26node-id%3D79%253A1598%26viewport%3D412%252C256%252C0.15%26scaling%3Dscale-down%26starting-point-node-id%3D79%253A1598" 
+                        allowfullscreen />
+                        </div>
                     </div>
                 </div>
             </div>

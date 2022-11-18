@@ -50,7 +50,7 @@ function Academic() {
                          </div>
                     </div>
 
-                    <a className="academic-link heading-3 my-5" href="https://ntuacounseling.ntu.edu.tw/web/" target="_blank" rel="noreferrer noopener">
+                    <a className="link-btn heading-3 my-5" href="https://ntuacounseling.ntu.edu.tw/web/" target="_blank" rel="noreferrer noopener">
                         Website Link
                     </a>
                     
