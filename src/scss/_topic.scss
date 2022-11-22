@@ -91,15 +91,37 @@ ul {
     }
 }
 
+.topic-card-img-container {
+    // width: 500px;
+    // height: 400px;
+    width: 100%;
+    height: 360px;
+    // padding-bottom: 75%;
+    // background-color: $highlight;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    @include pad-sm {
+        height: 300px;
+    }
+}
+
 .topic-card-img {
     width: 100%;
-    height: 0;
-    padding-bottom: 75%;
-    border-radius: 16px;
-    background-size: cover;
+    height: 100%;
     background-position: center;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+    @include hover-transition;
     @include img-hover;
+
+
+    &:hover {
+        transform: scale(1.08);
+    }
 }
 
 /////////////////////////////////////////////

@@ -3,10 +3,8 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import CategoryBox from "./CategoryBox";
 import { LeftLinkNav } from "./LeftNav";
 
-function WorkDisplay (meta) {
-
+function WorkDisplay ({ data }) {
     let prefix = "Works";
-    const data = meta.data;
 
     return (
         <div className="main-body intro-body">

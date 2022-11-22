@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { Link, Outlet } from "react-router-dom";
+// import Transitions from "../../../Transition";
 import ReactPlayer from "react-player";
 
 function PetitMood () {
