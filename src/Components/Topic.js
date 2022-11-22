@@ -1,4 +1,6 @@
 import { useParams, Outlet } from "react-router-dom";
+import Transitions from "./Transition";
+
 import PetitMood from './Pages/Works/UXUI/PetitMood';
 import ToDone from './Pages/Works/UXUI/2Done';
 import Bookworm from "./Pages/Works/UXUI/Bookworm";
@@ -20,61 +22,68 @@ import Unlimited from "./Pages/Works/Event/Unlimited";
 
 function Topic () {
     let { workId } = useParams();
+    var work;
 
     if(workId === 'Petit-Mood') {
-        return <PetitMood />;
+        work = <PetitMood />;
     }
     if(workId === '2Done') {
-        return <ToDone />;
+        work = <ToDone />;
     }
     if(workId === 'Bookworm-Meeter') {
-        return <Bookworm />;
+        work = <Bookworm />;
     } 
     if (workId === 'Mindful-Diary') {
-        return <Mindful />;
+        work = <Mindful />;
     }
     if ( workId === 'TourBot') {
-        return <TourBot />;
+        work = <TourBot />;
     }
     if ( workId === 'EasyManager') {
-        return <EasyManager />;
+        work = <EasyManager />;
     }
     if ( workId === 'NTU-Academic-Counseling') {
-        return <Academic />;
+        work = <Academic />;
     }
     if ( workId === 'Les-Saisons') {
-        return <Saisons />;
+        work = <Saisons />;
     }
     if ( workId === 'New-Era') {
-        return <Surreal />;
+        work = <Surreal />;
     }
     if ( workId === 'Vegan-Is-the-New-Black') {
-        return <Vegan />;
+        work = <Vegan />;
     }
     if ( workId === 'Mindfulness') {
-        return <Mindfulness />;
+        work = <Mindfulness />;
     }
     if ( workId === 'FREE') {
-        return <Free />;
+        work = <Free />;
     }
     if ( workId === 'Music') {
-        return <Music />;
+        work = <Music />;
     }
     if ( workId === 'NTU-IM-Graduation-Book') {
-        return <Graduation />;
+        work = <Graduation />;
     }
     if ( workId === 'Elite-Camp-Brochure') {
-        return <Elite />;
+        work = <Elite />;
     }
     if ( workId === 'Fireworks--NTU-IM-Night') {
-        return <Fireworks />;
+        work = <Fireworks />;
     }
     if ( workId === 'SSWIM--Orientation-Camp') {
-        return <Sswim />;
+        work = <Sswim />;
     }
     if ( workId === 'UnlIMted--NTU-IM-Week') {
-        return <Unlimited />;
+        work = <Unlimited />;
     }
+
+    return (
+        <Transitions key="topic">
+            {work}
+        </Transitions>
+    );
 };
 
 export default Topic;
