@@ -1,16 +1,27 @@
 import { Link, Outlet } from "react-router-dom";
-import { Link as ScrollLink } from 'react-scroll';
+import { useEffect, useState, useLocation } from "react";
+// import { Link as ScrollLink } from 'react-scroll';
 
-// function getPxfromVh(vh) {
-//     const { innerWidth: width, innerHeight: height } = window;
-  
-//     return (vh * height)/100;
-// }
+const useScrollToWorks = (setScrollToWorks) => {
+    const [match, setMatch] = useState("Hello");
+    const scroll = () => {
+        let elem = document.getElementsByClassName('intro-body')[0];
+        if (!elem) {
+            // redirect to home page
+            window.location.href = "/";
+            elem = document.getElementsByClassName('intro-body')[0];
+        }
+        let h = elem.offsetTop - document.getElementsByClassName('header')[0].offsetHeight;
+        window.setTimeout( ()=>{ window.scrollTo({top: h, left: 0, behavior: "smooth"}) }, 50 );
+        
+        setMatch("scroll");
+    };
+    return {match, scroll};
+  };
 
 function Header (meta) {
     const data = meta.data;
-    // var offset = getPxfromVh(7); 
-    // TODO: refine
+    // const {match, scroll} = useScrollToWorks("");
 
     return (
         <div className="header">

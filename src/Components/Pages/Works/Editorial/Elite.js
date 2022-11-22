@@ -23,32 +23,38 @@ function Elite() {
                             <h3>Tags: Design System, Book Cover Design, Book Layout Design, Graphic Design</h3>
                     </div>
                     <div className="row mb-5">
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Duration </h3>
                             <ul>
                                 <li>1 week</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Role</h3>
                             <ul>
                                 <li>Director of Arts</li>
                                 <li>Lead Designer</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
+                            <h3>Team</h3>
+                            <ul>
+                                <li>10 people</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Tool</h3>
                             <ul>
                                 <li>Illustrator</li>
                                 <li>InDesign</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col">
+                        <div className="topic-desc-container col mb-5">
                             <h3>Responsibilities</h3>
                             <ul className="row">
-                                <li className="col-md-4">Designing book cover</li>
-                                <li className="col-md-4">Designing section covers</li>
-                                <li className="col-md-4">Constructing the design system, including fonts, color palette, and visual assets</li>
+                                <li className="col-md-6">Designing book cover</li>
+                                <li className="col-md-6">Designing section covers</li>
+                                <li className="col-md-6">Constructing the design system, including fonts, color palette, and visual assets</li>
                             </ul>
                         </div>
                     </div>

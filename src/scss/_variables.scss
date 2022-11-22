@@ -97,7 +97,7 @@ $theme-colors: (
 
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
 $box-shadow-darker: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-$text-shadow: 0 0 8px $gray-900;
+$text-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
 
 .w-90 {
   width: 90%;
