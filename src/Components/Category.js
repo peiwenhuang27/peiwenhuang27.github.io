@@ -57,7 +57,7 @@ function LargeList (meta) {
                     <ul className="w-100 d-flex flex-column align-items-center">
                         {
                             category.items.map(item =>
-                                <li className="w-100 m-0">
+                                <li className="w-100 m-0 pb-5">
                                     <TopicCard link={item.id} data={item} />
                                 </li>
                             )

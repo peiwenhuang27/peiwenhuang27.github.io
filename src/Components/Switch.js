@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import Home from './Pages/Home/Home';
 import About from './Pages/About';
 import Category from './Category';
@@ -6,19 +7,26 @@ import Topic from './Topic';
 
 function Switch (meta) {
   const data = meta.data;
+  // const location = useLocation();
 
   return (
-    <Routes>
-      <Route exact path="/" element={<Home data={data}/>} />
-      <Route path="/About" element={<About />} />
-      <Route path="/Works">
-        {data.map(item =>
-          <Route path={`${item.suffix}/:workId`} element={<Topic name={item.name}/>} />
-        )}
+    // AnimatePresence: initial={false}
+    // Routes: location={location} key={location.pathname}
+    <AnimatePresence mode="wait">
+      
+      <Routes >
+        <Route exact path="/" element={<Home data={data}/>} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Works">
+          {data.map((item) =>
+            <Route path={`${item.suffix}/:workId`} element={<Topic name={item.name}/>} />
+          )}
 
-        <Route path=":categoryId" element={<Category prefix="/Works" data={data} />} />
-      </Route>
-    </Routes>
+          <Route path=":categoryId" element={<Category prefix="/Works" data={data} />} />
+        </Route>
+      </Routes>
+    </AnimatePresence>
+    
   );
 }
 

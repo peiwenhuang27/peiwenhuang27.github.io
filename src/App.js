@@ -15,6 +15,7 @@ function App() {
         'tags': ['tag1', 'tag2'], 
         'desc': 'An AR Pet game to relieve university students\' emotions.',
         'img': '/works/UXUI/petit-mood/cover.png',
+        'ph': ','
       },
       {
         'title': '2Done', 
