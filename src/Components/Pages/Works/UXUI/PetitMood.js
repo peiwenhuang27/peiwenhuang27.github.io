@@ -1,31 +1,21 @@
 import { useState, useCallback } from "react";
 import { Link, Outlet } from "react-router-dom";
-// import Transitions from "../../../Transition";
+import ProgressiveImage from 'react-progressive-bg-image';
 import ReactPlayer from "react-player";
 
 function PetitMood () {
-    let img = '/works/UXUI/petit-mood/cover.png';
-    const images = [
-        "/works/UXUI/petit-mood/poster.png",
-    ];
-    
-    const [currentImage, setCurrentImage] = useState(0);
-    const [isViewerOpen, setIsViewerOpen] = useState(false);
-
-    const openImageViewer = useCallback((index) => {
-        setCurrentImage(index);
-        setIsViewerOpen(true);
-    }, []);
-
-    const closeImageViewer = () => {
-        setCurrentImage(0);
-        setIsViewerOpen(false);
-    };
+    const img_src = 'https://live.staticflickr.com/65535/52515678782_7a973a13a8_k.jpg';
+    const img_ph  = 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_c.jpg';
 
     return (
         <div>
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} />
-
+            {/* <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} /> */}
+            <ProgressiveImage
+                className="topic-cover-img"
+                src={img_src}
+                placeholder={img_ph}
+                
+            />
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">

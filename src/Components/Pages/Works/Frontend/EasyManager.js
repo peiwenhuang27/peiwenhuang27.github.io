@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { Outlet } from "react-router-dom";
+import ProgressiveImage from 'react-progressive-bg-image';
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -9,11 +10,18 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import ReactPlayer from "react-player";
 
 function EasyManager() {
-    let img = "/works/Frontend/easymanager/cover.png";
+    const img_src = 'https://live.staticflickr.com/65535/52516708823_aaf0e9bd18_k.jpg';
+    const img_ph  = 'https://live.staticflickr.com/65535/52516708823_be717f02d0_c.jpg';
 
     return (
         <div>
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} />
+            {/* <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} /> */}
+            <ProgressiveImage
+                className="topic-cover-img"
+                src={img_src}
+                placeholder={img_ph}
+                
+            />
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">

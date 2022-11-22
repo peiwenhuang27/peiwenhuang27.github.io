@@ -9,7 +9,19 @@ function TopicCard (meta) {
         <div className="mb-5 px-3">
             <Link to={link} className="topic-card text-decoration-none">
                 <div className="topic-card-img-container" >
-                    <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} />
+                    {/* <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} /> */}
+                    <ProgressiveImage
+                    className="topic-card-img"
+                    src={data.img}
+                    placeholder={data.ph}
+                    style={{
+                        width: '100%',
+                        height: '100%',
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat'
+                    }}
+                    />
                 </div>
                 <div className="topic-text-container my-4">
                     <div className="flex-column align-items-start">
