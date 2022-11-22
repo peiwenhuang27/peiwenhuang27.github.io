@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { Outlet } from "react-router-dom";
+import ProgressiveImage from 'react-progressive-bg-image';
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -10,13 +11,20 @@ import ReactPlayer from "react-player";
 var Latex = require("react-latex");
 
 function TourBot() {
-    let img = "/works/Frontend/tourbot/cover.png";
+    const img_src = 'https://live.staticflickr.com/65535/52516160951_2fcbbec56d_k.jpg';
+    const img_ph  = 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_c.jpg';
     const form1 = `$$\\text{class weight}=\\frac{\\text{\\# of samples NOT in class \\it{i}}}{\\text{\\# of samples in class \\it{i}}}, \\alpha=0.05$$`;
     const form2 = `$$\\text{recall-adjusted class weight}=\\frac{\\text{initial class weight for category \\it{i}}}{\\text{recall for category \\it{i}} + C}, C=0.8$$`;
 
     return (
         <div>
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} />
+            {/* <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} /> */}
+            <ProgressiveImage
+                className="topic-cover-img"
+                src={img_src}
+                placeholder={img_ph}
+                
+            />
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">

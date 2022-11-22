@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { Outlet } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ProgressiveImage from 'react-progressive-bg-image';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";

@@ -1,5 +1,8 @@
 import { Outlet } from "react-router-dom";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ProgressiveImage from 'react-progressive-bg-image';
+import ReactLoading from "react-loading";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,11 +11,33 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import Iframe from 'react-iframe';
 
 function ToDone () {
-    let img = "/works/UXUI/2done/cover.png";
+    const [isLoading, setIsLoading] = useState(false);
+
+    const img_src = 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg';
+    const img_ph  = 'https://live.staticflickr.com/65535/52515681442_301610b0ec_c.jpg';
+    
+    const hideSpinner = () => {
+        setIsLoading(false);
+    };
+
+    const figma = (
+        <Iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+        width="800" height="450" 
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbL9iAnQEF29yMpo5mfpUNj%2FGamified-To-Do-Planner%3Fpage-id%3D75%253A18%26node-id%3D79%253A1598%26viewport%3D412%252C256%252C0.15%26scaling%3Dscale-down%26starting-point-node-id%3D79%253A1598" 
+        onLoad={hideSpinner}
+        allowfullscreen />
+    );
+
 
     return (
         <div>
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} />
+            {/* <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} /> */}
+            <ProgressiveImage
+                className="topic-cover-img"
+                src={img_src}
+                placeholder={img_ph}
+                
+            />
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
@@ -59,10 +84,10 @@ function ToDone () {
                     <div className="my-3">
                         <h3 className="heading-1 mb-5">Figma Prototype</h3>
                         <div className="d-flex justify-content-center">
-                        <Iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                        width="800" height="450" 
-                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbL9iAnQEF29yMpo5mfpUNj%2FGamified-To-Do-Planner%3Fpage-id%3D75%253A18%26node-id%3D79%253A1598%26viewport%3D412%252C256%252C0.15%26scaling%3Dscale-down%26starting-point-node-id%3D79%253A1598" 
-                        allowfullscreen />
+                            {isLoading ? (
+                                <ReactLoading type="bubbles" color="#e0e0e0"
+                                height={100} width={50} />
+                            ) : figma}
                         </div>
                     </div>
                 </div>

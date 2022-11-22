@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ProgressiveImage from 'react-progressive-bg-image';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -7,11 +8,18 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 function Bookworm () {
-    let img = "/works/UXUI/bookworm/cover.png";
+    const img_src = 'https://live.staticflickr.com/65535/52516423519_c9e86789fa_k.jpg';
+    const img_ph  = 'https://live.staticflickr.com/65535/52516423519_8b1230a857_c.jpg';
 
     return (
         <div>
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} />
+            {/* <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} /> */}
+            <ProgressiveImage
+                className="topic-cover-img"
+                src={img_src}
+                placeholder={img_ph}
+                
+            />
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
