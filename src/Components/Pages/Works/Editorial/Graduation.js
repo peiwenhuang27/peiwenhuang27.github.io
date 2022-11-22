@@ -23,30 +23,37 @@ function Graduation() {
                             <h3>Tags: Book Layout Design, Graphic Design</h3>
                     </div>
                     <div className="row mb-5">
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Duration </h3>
                             <ul>
                                 <li>1 week</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Role</h3>
                             <ul>
                                 <li>Lead Designer</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
+                            <h3>Team</h3>
+                            <ul>
+                                <li>2 people</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Tool</h3>
                             <ul>
                                 <li>Illustrator</li>
+                                <li>Photoshop</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col">
+                        <div className="topic-desc-container col mb-5">
                             <h3>Responsibilities</h3>
                             <ul className="row">
-                                <li className="col-md-4">Brainstorming design concept with 1 peer</li>
-                                <li className="col-md-4">Designing & editing a total of 16 pages</li>
-                                <li className="col-md-4">Drawing drafts of illustration elements</li>
+                                <li className="col-md-6">Brainstorming design concept</li>
+                                <li className="col-md-6">Designing & editing a total of 16 pages</li>
+                                <li className="col-md-6">Drawing drafts of illustration elements</li>
                             </ul>
                          </div>
                     </div>

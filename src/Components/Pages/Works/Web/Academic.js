@@ -21,31 +21,37 @@ function Academic() {
                             <h3>Tags: Web Visual Design, Graphic Design</h3>
                     </div>
                     <div className="row mb-5">
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Duration </h3>
                             <ul>
                                 <li>2 months</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Role</h3>
                             <ul>
                                 <li>Lead Visual Designer</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
+                            <h3>Team</h3>
+                            <ul>
+                                <li>Independent Contractor</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Tool</h3>
                             <ul>
                                 <li>Illustrator</li>
                             </ul>
                         </div>
                     
-                        <div className="topic-desc-container col">
+                        <div className="topic-desc-container col mb-5">
                             <h3>Responsibilities</h3>
                             <ul className="row">
-                                <li className="col-md-4">Website logo & icons design</li>
-                                <li className="col-md-8">Comunicating with clients to finalize design concepts</li>
-                                <li className="col-md-4">Color scheme design</li>
+                                <li className="col-md-6">Website logo & icons design</li>
+                                <li className="col-md-6">Color scheme design</li>
+                                <li className="col-md-12">Comunicating with clients on design concepts</li>
                             </ul>
                          </div>
                     </div>

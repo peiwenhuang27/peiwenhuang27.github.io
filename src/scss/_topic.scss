@@ -143,6 +143,10 @@ ul {
     font-weight: 300;
 }
 
+.italic {
+    font-style: italic;
+}
+
 p {
     font-size: 16px;
 
@@ -394,6 +398,12 @@ p {
 
 .link {
     @include link-hover;
+}
+
+.bold-link {
+    font-weight: bold;
+    @include link-hover;
+    text-decoration: none;
 }
 
 .link-btn {

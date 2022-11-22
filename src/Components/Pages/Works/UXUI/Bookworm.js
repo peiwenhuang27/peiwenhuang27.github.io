@@ -19,33 +19,39 @@ function Bookworm () {
                             <h3>Tags: Design Thinking, Reading, Social APP, UI Design</h3>
                     </div>
                     <div className="row mb-5">
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Duration </h3>
                             <ul>
                                 <li>4 weeks</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Role</h3>
                             <ul>
                                 <li>Lead Designer</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
+                            <h3>Team</h3>
+                            <ul>
+                                <li>4 people</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Tool</h3>
                             <ul>
                                 <li>Miro</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col">
+                        <div className="topic-desc-container col mb-5">
                             <h3>Responsibilities</h3>
                             <ul className="row">
-                                <li className="col-md-4">Conducting field study</li>
-                                <li className="col-md-4">Designing user interview questions</li>
-                                <li className="col-md-4">Feature Ideation</li>
-                                <li className="col-md-4">Leading group discussion</li>
-                                <li className="col-md-4">UI flow design</li>
-                                <li className="col-md-4">Proposal oral presentation</li>
+                                <li className="col-md-6">Conducting field study</li>
+                                <li className="col-md-6">Designing user interview questions</li>
+                                <li className="col-md-6">Feature Ideation</li>
+                                <li className="col-md-6">Leading group discussion</li>
+                                <li className="col-md-6">UI flow design</li>
+                                <li className="col-md-6">Proposal oral presentation</li>
                             </ul>
                          </div>
                     </div>

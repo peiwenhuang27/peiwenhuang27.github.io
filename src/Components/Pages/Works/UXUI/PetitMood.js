@@ -32,35 +32,41 @@ function PetitMood () {
                             <h3>Tags: HCI, UX, AR, Game Design, Mental Health</h3>
                     </div>
                     <div className="row mb-5">
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Duration </h3>
                             <ul>
                                 <li>3 months</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Role</h3>
                             <ul>
                                 <li>First author</li>
                                 <li>Designer</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
+                            <h3>Team</h3>
+                            <ul>
+                                <li>5 people</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Tool</h3>
                             <ul>
                                 <li>Miro</li>
                                 <li>MAKAR</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col">
+                        <div className="topic-desc-container col mb-5">
                             <h3>Responsibilities</h3>
                             <ul className="row">
-                                <li className="col-md-4">Designing user interview questions</li>
-                                <li className="col-md-4">Conducting literature review</li>
-                                <li className="col-md-4">Leading group discussion</li>
-                                <li className="col-md-4">Designing visuals, e.g. UI flow & icons</li>
-                                <li className="col-md-4">Designing the presentation poster</li>
-                                <li className="col-md-4">Writing the paper manuscript</li>
+                                <li className="col-md-6">Designing user interview questions</li>
+                                <li className="col-md-6">Conducting literature review</li>
+                                <li className="col-md-6">Leading group discussion</li>
+                                <li className="col-md-6">Designing visuals (UI flow & icons)</li>
+                                <li className="col-md-6">Designing the presentation poster</li>
+                                <li className="col-md-6">Writing the paper manuscript</li>
                             </ul>
                          </div>
                     </div>
@@ -69,15 +75,15 @@ function PetitMood () {
                             <li className="mb-3">Pei-Wen Huang, Ching-Shiuan Chen, Yu-Hsuan Chang, Tzu-Pin Lo, Hsuan-Tung Yeh, and Weijane Lin. 2022. 
                             Poster: Petit Mood: AR Pet Game as Negative Emotion Reliever for Depressed Univer- sity Students. 
                             Presented at TAICHI'22: AI for Equity, Wellbeing & Sustainability. </li>
-                            <li className="mb-3">Poster paper accepted in <b>TAICHI 2022</b>, 
+                            <li className="mb-3">Poster paper accepted in <a className="bold-link" href="https://sites.google.com/nycu.edu.tw/taichi2022/home?authuser=0" target="_blank" rel="noreferrer noopener">TAICHI 2022</a>, 
                                 the annual conference held by Taiwanese Association of Computer-Human Interaction.</li>
-                            <li className="mb-3">Poster invited to the poster/demo session in <b>CSCW 2022</b>, 
-                                Computer-Supported Cooperative Work and Social Computing.</li>
+                            <li className="mb-3">Poster invited to the poster/demo session in <a className="bold-link" href="https://cscw.acm.org/2022/" target="_blank" rel="noreferrer noopener">CSCW 2022</a>, 
+                            The 25th ACM Conference On Computer-Supported Cooperative Work And Social Computing.</li>
                         </ul>
                     </div>
 
                     
-
+                    
                     <h3 className="heading-1 my-5">Demo Video</h3>
                     <div className="row ">
                         {/* <div className="col poster">
