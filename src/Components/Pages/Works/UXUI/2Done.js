@@ -20,32 +20,38 @@ function ToDone () {
                             <h3>Tags: UX Design, UI Design, Procrastination, Anxiety</h3>
                     </div>
                     <div className="row mb-5">
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Duration </h3>
                             <ul>
                                 <li>3 weeks</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Role</h3>
                             <ul>
                                 <li>Lead Designer</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
+                            <h3>Team</h3>
+                            <ul>
+                                <li>4 people</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Tool</h3>
                             <ul>
                                 <li>Figma</li>
                                 <li>Miro</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col">
+                        <div className="topic-desc-container col mb-5">
                             <h3>Responsibilities</h3>
                             <ul className="row">
-                                <li className="col-md-4">Conducting 2 user interviews</li>
-                                <li className="col-md-8">Leading group discussion</li>
-                                <li className="col-md-4">Feature Ideation</li>
-                                <li className="col-md-8">Implementing the low-fi & hi-fi prototype</li>
+                                <li className="col-md-6">Conducting 2 user interviews</li>
+                                <li className="col-md-6">Leading group discussion</li>
+                                <li className="col-md-6">Feature Ideation</li>
+                                <li className="col-md-6">Implementing the low-fi & hi-fi prototype</li>
                             </ul>
                          </div>
                     </div>

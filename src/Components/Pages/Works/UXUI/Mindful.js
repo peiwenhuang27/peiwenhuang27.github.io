@@ -20,30 +20,36 @@ function Mindful () {
                             <h3>Tags: UI Design, Diary, Mental Health</h3>
                     </div>
                     <div className="row mb-5">
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Duration </h3>
                             <ul>
                                 <li>2 weeks</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Role</h3>
                             <ul>
-                                <li>Designer (Solo project)</li>
+                                <li>Designer</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col-md-4">
+                        <div className="topic-desc-container col-md-4 mb-5">
+                            <h3>Team</h3>
+                            <ul>
+                                <li>Solo project</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Tool</h3>
                             <ul>
                                 <li>Figma</li>
                             </ul>
                         </div>
-                        <div className="topic-desc-container col">
+                        <div className="topic-desc-container col mb-3 mb-5">
                             <h3>Responsibilities</h3>
-                            <ul className="">
-                                <li className="">Feature Ideation</li>
-                                <li className="">UI flow design</li>
-                                <li className="">Proposal oral presentation</li>
+                            <ul className="row">
+                                <li className="col-md-6">Feature Ideation</li>
+                                <li className="col-md-6">UI flow design</li>
+                                <li className="col-md-6">Proposal oral presentation</li>
                             </ul>
                          </div>
                     </div>

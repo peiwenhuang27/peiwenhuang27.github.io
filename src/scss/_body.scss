@@ -11,6 +11,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        // padding-top: 80px;
     }
 
     h2, h3 {
@@ -27,13 +28,39 @@
     }
 
     h3 {
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 400;
+    }
+
+    .banner-arrow {
+        filter: drop-shadow($text-shadow);
     }
 }
 
-#works {
-    // padding-top: 32px;
+.intro {
+    margin-top: 60px;
+    margin-bottom: 120px;
+    // margin: 100px 0;
+    // width: 80%;
+    h2 {
+        color: $gray-600;
+        // font-size: 24px;
+        // line-height: 2;
+    }
+}
+
+.intro-text {
+    font-size: 20px !important;
+    line-height: 1.8 !important;
+    color: $primary !important;
+    // margin-left: 200px;
+}
+
+.w-75-sizer {
+    width: 75%;
+    @include pad-sm {
+        width: 90%;
+    }
 }
 
 .logo-svg, .arrow-svg {
