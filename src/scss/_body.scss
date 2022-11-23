@@ -34,6 +34,11 @@
     .banner-arrow {
         filter: drop-shadow($text-shadow);
     }
+
+    .banner-arrow-text {
+        color: $white;
+        @include text-shadow-lighter;
+    }
 }
 
 .intro {

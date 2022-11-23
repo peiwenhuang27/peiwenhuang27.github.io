@@ -13,14 +13,16 @@ function Elite() {
 
     return (
         <div>
-            <div className="mt-5 d-flex justify-content-center">
+            {/* <div className="mt-5 d-flex justify-content-center">
                 <img className="w-sizer-sm graphic-cover-img" src={img} alt="cover poster" />
-            </div>
+            </div> */}
+            <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} />
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
+                            <h3 className="mb-4 color-dark text-bold date">August 2019</h3>
                             <h2 className="mb-3">18th NTU x PKU Elite Camp Commemorative Brochure</h2>
-                            <h3>Tags: Design System, Book Cover Design, Book Layout Design, Graphic Design</h3>
+                            <h3 className="mb-3"> Design System, Book Cover Design, Book Layout Design, Graphic Design</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">

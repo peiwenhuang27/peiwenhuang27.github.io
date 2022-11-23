@@ -31,7 +31,7 @@ ul {
 }
 
 .text-bold {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .bg-1 {
@@ -91,20 +91,25 @@ ul {
     }
 }
 
-.topic-card-img-container {
-    // width: 500px;
-    // height: 400px;
+.topic-card-img-container, .topic-card-img-container-lg {
     width: 100%;
-    height: 360px;
-    // padding-bottom: 75%;
-    // background-color: $highlight;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
+}
 
+.topic-card-img-container {
+    height: 360px;
     @include pad-sm {
         height: 300px;
+    }
+}
+
+.topic-card-img-container-lg {
+    height: 540px;
+    @include pad-sm {
+        height: 400px;
     }
 }
 
@@ -118,8 +123,8 @@ ul {
     @include hover-transition;
     @include img-hover;
 
-
     &:hover {
+        // background-size: 150%;
         transform: scale(1.08);
     }
 }
@@ -167,6 +172,10 @@ ul {
 
 .italic {
     font-style: italic;
+}
+
+.date {
+    font-size: 16px !important;
 }
 
 p {

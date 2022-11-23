@@ -1,25 +1,23 @@
 import { Link, Outlet } from "react-router-dom";
 import ProgressiveImage from 'react-progressive-bg-image';
 
-function TopicCard (meta) {
-    const link = meta.link;
-    const data = meta.data; // title, tags, desc, img
+function TopicCard ({ link, data, size }) { // title, tags, desc, img
+    let img_class = "topic-card-img-container";
+    if ( size === 'large' ) {
+        img_class = "topic-card-img-container-lg";
+    }
     
     return (
         <div className="mb-5 px-3">
             <Link to={link} className="topic-card text-decoration-none">
-                <div className="topic-card-img-container" >
+                <div className={img_class} >
                     {/* <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} /> */}
                     <ProgressiveImage
                     className="topic-card-img"
                     src={data.img}
                     placeholder={data.ph}
                     style={{
-                        width: '100%',
-                        height: '100%',
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat'
+                        
                     }}
                     />
                 </div>
