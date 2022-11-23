@@ -19,20 +19,22 @@ function PetitMood () {
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
+                            <h3 className="mb-4 color-dark text-bold date">April 2022-July 2022</h3>
                             <h2 className="mb-3">Petit Mood: AR Pet Game as Negative Emotion Reliever for Depressed University Students</h2>
-                            <h3>Tags: HCI, UX, AR, Game Design, Mental Health</h3>
+                            <h3 className="mb-3">HCI, UX, AR, Game Design, Mental Health</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Duration </h3>
                             <ul>
-                                <li>3 months</li>
+                                <li>4 months</li>
                             </ul>
                         </div>
                         <div className="topic-desc-container col-md-4 mb-5">
                             <h3>Role</h3>
                             <ul>
                                 <li>First author</li>
+                                <li>Project Manager</li>
                                 <li>Designer</li>
                             </ul>
                         </div>

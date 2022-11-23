@@ -19,7 +19,7 @@ function CategoryBox (meta) {
             <ul className="row p-0">
                 {data.items.map(item =>
                     <li className="col-md-6">
-                        <TopicCard link={`${link}/${item.title.replace(/[^\p{L}\d]/gu, "-")}`} data={item} />
+                        <TopicCard link={`${link}/${item.id}`} data={item} />
                     </li>
                 )}
             </ul>

@@ -5,8 +5,9 @@ import Banner from "./Banner";
 import WorkDisplay from "./WorkDisplay";
 import Transitions from "../../Transition";
 
-function Home (meta) {
+function Home ({ data }) {
     const location = useLocation();
+
     useEffect(()=> {
         if (location.hash) {
             let elem = document.getElementById(location.hash.slice(1));
@@ -16,12 +17,7 @@ function Home (meta) {
                 window.setTimeout( ()=>{ window.scrollTo({top: h, left: 0, behavior: "smooth"}) }, 50 );
             }
         } 
-        else {
-            // window.scrollTo({top:0,left:0, behavior: "smooth"})
-        }
     }, [location,]);
-
-    const data = meta.data;
 
     return (
         <Transitions key="home">

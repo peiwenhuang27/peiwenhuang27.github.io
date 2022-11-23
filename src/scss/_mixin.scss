@@ -97,6 +97,10 @@
     text-shadow: $text-shadow;
 }
 
+@mixin text-shadow-lighter {
+    text-align: $text-shadow-lighter;
+}
+
 @mixin box-shadow {
     box-shadow: $box-shadow;
 }

@@ -5,17 +5,17 @@ import About from './Pages/About';
 import Category from './Category';
 import Topic from './Topic';
 
-function Switch (meta) {
-  const data = meta.data;
+
+function Switch ({ data, view, setView }) {
   // const location = useLocation();
+  
 
   return (
     // AnimatePresence: initial={false}
     // Routes: location={location} key={location.pathname}
     <AnimatePresence mode="wait">
-      
       <Routes >
-        <Route exact path="/" element={<Home data={data}/>} />
+        <Route exact path="/" element={<Home data={data} view={view} setView={setView} />} />
         <Route path="/About" element={<About />} />
         <Route path="/Works">
           {data.map((item) =>

@@ -18,7 +18,7 @@ function WorkDisplay ({ data }) {
                         
                         In <Link className="bold-link" to="/Works/UXUI">UX/UI design</Link>, I dive into mental health topics via interviewing users and referencing related studies to propose mobile apps eliminating user pain points.
                         
-                        In <Link className="bold-link" to="">Applied Data Science & System Design</Link>, I collaborate with teammates to devise effective solutions for travel recommendation, user profiling, and fake news, utilizing my capabilities in NLP, ML, System Analysis & Design, and Frontend Development.
+                        In <Link className="bold-link" to="/Works/DataScience-SystemDesign">Data Science & System Design</Link>, I collaborate with teammates to devise effective solutions for travel recommendation, user profiling, and fake news, utilizing my capabilities in NLP, ML, System Analysis & Design, and Frontend Development.
                     
                         In <Link className="bold-link" to="">Case Study</Link>, I critically analyze local and international companies, investigating the success of some and proposing suggestions for others on digital transformation.
                             
