@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useParams, Outlet } from "react-router-dom";
+import Transitions from "./Transition";
 import { LeftLinkNav } from "./Pages/Home/LeftNav";
 import TopicCard from "./Pages/Home/TopicCard";
 
@@ -57,8 +58,8 @@ function LargeList (meta) {
                     <ul className="w-100 d-flex flex-column align-items-center">
                         {
                             category.items.map(item =>
-                                <li className="w-100 m-0 pb-5">
-                                    <TopicCard link={item.id} data={item} />
+                                <li className="w-100 m-0 pb-4">
+                                    <TopicCard link={item.id} data={item} size="large" />
                                 </li>
                             )
                         }
@@ -77,13 +78,16 @@ function Category (meta) {
 
 
     return (
-        <div className="category-page">
-            <div className="container">
-                <LargeList data={data} categoryIndex={categoryIndex} />
-                
-                <Outlet />
+        <Transitions>
+            <div className="category-page">
+                <div className="container">
+                    <LargeList data={data} categoryIndex={categoryIndex} />
+                    
+                    <Outlet />
+                </div>
             </div>
-        </div>
+        </Transitions>
+
         
     );
 };

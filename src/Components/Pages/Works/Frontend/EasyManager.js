@@ -25,8 +25,9 @@ function EasyManager() {
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
+                            <h3 className="mb-4 color-dark text-bold date">April 2021-June 2021</h3>
                             <h2 className="mb-3">EasyManager: NTU IM Badminton Team Management System</h2>
-                            <h3>Tags: System Analysis & Design, Frontend Engineering, UI Design</h3>
+                            <h3 className="mb-3">System Analysis & Design, Frontend Engineering, UI Design</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">

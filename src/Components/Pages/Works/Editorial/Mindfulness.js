@@ -13,14 +13,13 @@ function Mindfulness() {
 
     return (
         <div>
-            <div className="mt-5 d-flex justify-content-center">
-                <img className="w-sizer-sm graphic-cover-img" src={img} alt="cover poster" />
-            </div>
+            <div className="topic-cover-img" style={{ backgroundImage:`url(${img})` }} />
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
+                            <h3 className="mb-4 color-dark text-bold date">March 2022</h3>
                             <h2 className="mb-3">Mindfulness</h2>
-                            <h3>Tags: Book Cover Design, Graphic Design</h3>
+                            <h3 className="mb-3">Book Cover Design, Graphic Design</h3>
                     </div>
                     <div className="row">
                         <div className="topic-desc-container col-md-4">
@@ -52,6 +51,12 @@ function Mindfulness() {
                         <p className="">
                         Mindfulness is an indispensable element to soothe the mental stress in our busy life. This book includes introductory knowledge about mindfulness and presents several mindfulness practices. The irregular objects in the cover symbolize the unsettling, anxious feeling in our mind. The unraveling shapes from spirals to lines implies the process of combing through messy emotions. A lotus as a symbol of Zen is also incorporated. Background color uses pink to convey an atmosphere of warmth and happiness, while golden font brings out elegance.
                         </p>
+                    </div>
+
+                    <div className="row section-wrapper">
+                        <div className="col-md-12 p-1 m-0">
+                            <img className="w-100" src={img} alt="cover mockup" />
+                        </div>
                     </div>
                 </div>
             </div>

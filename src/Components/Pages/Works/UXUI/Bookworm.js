@@ -23,8 +23,9 @@ function Bookworm () {
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
+                            <h3 className="mb-4 color-dark text-bold date">March 2022-April 2022</h3>
                             <h2 className="mb-3">Bookworm Meeter</h2>
-                            <h3>Tags: Design Thinking, Reading, Social APP, UI Design</h3>
+                            <h3 className="mb-3">Design Thinking, Reading, Social APP, UI Design</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">

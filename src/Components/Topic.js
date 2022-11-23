@@ -6,7 +6,9 @@ import ToDone from './Pages/Works/UXUI/2Done';
 import Bookworm from "./Pages/Works/UXUI/Bookworm";
 import Mindful from "./Pages/Works/UXUI/Mindful";
 import TourBot from "./Pages/Works/Frontend/Tourbot";
+import News from "./Pages/Works/Frontend/News";
 import EasyManager from "./Pages/Works/Frontend/EasyManager";
+import Name from "./Pages/Works/Frontend/Name";
 import Academic from "./Pages/Works/Web/Academic";
 import Saisons from "./Pages/Works/Poster/Saisons";
 import Surreal from "./Pages/Works/Poster/Surreal";
@@ -39,8 +41,14 @@ function Topic () {
     if ( workId === 'TourBot') {
         work = <TourBot />;
     }
+    if ( workId === 'Name-Entity-Classification') {
+        work = <Name />;
+    }
     if ( workId === 'EasyManager') {
         work = <EasyManager />;
+    }
+    if ( workId === 'Classifying-True-n-Fake-News') {
+        work = <News />;
     }
     if ( workId === 'NTU-Academic-Counseling') {
         work = <Academic />;

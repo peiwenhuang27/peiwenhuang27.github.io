@@ -41,8 +41,9 @@ function ToDone () {
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
+                            <h3 className="mb-4 color-dark text-bold date">May 2022</h3>
                             <h2 className="mb-3">2Done Gamified To-Do Planner</h2>
-                            <h3>Tags: UX Design, UI Design, Procrastination, Anxiety</h3>
+                            <h3 className="mb-3">UX Design, UI Design, Procrastination, Anxiety</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">

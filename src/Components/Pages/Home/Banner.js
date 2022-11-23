@@ -24,8 +24,9 @@ function Banner () {
                     <li><h2>Hi! It’s Joanne.</h2></li>
                     <li><h3>Advocate for Humanity by Way of<br/>HCI, UX, & Social Computing.</h3></li>
                 </ul>
-                <div className="arrow-down mt-5">
+                <div className="arrow-down mt-5 d-flex flex-column align-items-center justify-content-center">
                     <img className='banner-arrow' src="https://media.giphy.com/media/IxrsXjo6upn8Dg82uU/giphy.gif" alt="arrow-down" width="60px"/>
+                    {/* TODO: use arrow CSS animation */}
                 </div>
             </div>
             </ProgressiveImage>
