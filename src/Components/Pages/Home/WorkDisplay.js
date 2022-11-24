@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
-import Transitions from "../../Transition";
+import { Link } from "react-router-dom";
 import CategoryBox from "./CategoryBox";
 import { LeftLinkNav } from "./LeftNav";
 

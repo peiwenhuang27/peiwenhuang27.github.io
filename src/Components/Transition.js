@@ -9,10 +9,10 @@ const animationConfiguration = {
 	exit: { opacity: 0 },
 };
 
-const Transitions = ({ key, children }) => {
+const Transitions = ({ children }) => {
 	return (
 		<motion.div
-			key={key}
+			// key={key}
 			variants={animationConfiguration}
 			initial="initial"
 			animate="animate"

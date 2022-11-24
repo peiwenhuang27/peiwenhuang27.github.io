@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Logo } from '../../Icons';
 import ProgressiveImage from 'react-progressive-bg-image';
 

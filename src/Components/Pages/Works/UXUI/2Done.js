@@ -1,7 +1,5 @@
-import { Outlet } from "react-router-dom";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProgressiveImage from 'react-progressive-bg-image';
 import ReactLoading from "react-loading";
 // Import Swiper styles
 import "swiper/css";
@@ -14,14 +12,14 @@ function ToDone () {
     const [isLoading, setIsLoading] = useState(false);
 
     const img_src = 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg';
-    const img_ph  = 'https://live.staticflickr.com/65535/52515681442_301610b0ec_c.jpg';
+    // const img_ph  = 'https://live.staticflickr.com/65535/52515681442_301610b0ec_c.jpg';
     
     const hideSpinner = () => {
         setIsLoading(false);
     };
 
     const figma = (
-        <Iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+        <Iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} 
         width="800" height="450" 
         src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbL9iAnQEF29yMpo5mfpUNj%2FGamified-To-Do-Planner%3Fpage-id%3D75%253A18%26node-id%3D79%253A1598%26viewport%3D412%252C256%252C0.15%26scaling%3Dscale-down%26starting-point-node-id%3D79%253A1598" 
         onLoad={hideSpinner}
@@ -198,14 +196,14 @@ However, 3 participants mentioned experiencing significant stress before deadlin
                         <div className="col d-flex flex-column align-items-center">
                             <div className="w-sizer mb-3 d-flex flex-column align-items-center">
                                 <img className="w-75" src="/works/UXUI/2done/girl.svg" alt="girl icon" />
-                                <span className="img-src-cap">girl by ester barbato from <a href="https://thenounproject.com/browse/icons/term/girl/" target="_blank" title="girl Icons">Noun Project</a></span>
+                                <span className="img-src-cap">girl by ester barbato from <a href="https://thenounproject.com/browse/icons/term/girl/" target="_blank" rel="noreferrer noopenner" title="girl Icons">Noun Project</a></span>
                             </div>
                             <h4 className="w-sizer heading-3 mb-2 text-center text-bold">previous tasks took longer than expected and thus delayed later tasks</h4>
                         </div>
                         <div className="col d-flex flex-column align-items-center">
                             <div className="w-sizer mb-3 d-flex flex-column align-items-center">
                                 <img className="w-75" src="/works/UXUI/2done/boy.svg" alt="boy icon" />
-                                <span className="img-src-cap">boy by ester barbato from <a href="https://thenounproject.com/browse/icons/term/boy/" target="_blank" title="boy Icons">Noun Project</a></span>
+                                <span className="img-src-cap">boy by ester barbato from <a href="https://thenounproject.com/browse/icons/term/boy/" target="_blank" rel="noreferrer noopenner" title="boy Icons">Noun Project</a></span>
                             </div>
                             <h4 className="w-sizer heading-3 mb-2 text-center text-bold">they did not start early enough to complete the task</h4>
                         </div>

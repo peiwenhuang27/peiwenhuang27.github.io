@@ -1,20 +1,8 @@
-import { useState, useCallback } from "react";
-import { Outlet } from "react-router-dom";
-import ProgressiveImage from 'react-progressive-bg-image';
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import ReactPlayer from "react-player";
 var Latex = require("react-latex");
 
 function News() {
     const img_src = 'https://unsplash.com/photos/I79wWVFyhEQ/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MTY5ODMx&force=true&w=1920';
-    const img_ph  = 'https://unsplash.com/photos/I79wWVFyhEQ/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MTY5ODMx&force=true&w=640';
-    const form1 = `$$\\text{class weight}=\\frac{\\text{\\# of samples NOT in class \\it{i}}}{\\text{\\# of samples in class \\it{i}}}, \\alpha=0.05$$`;
-    const form2 = `$$\\text{recall-adjusted class weight}=\\frac{\\text{initial class weight for category \\it{i}}}{\\text{recall for category \\it{i}} + C}, C=0.8$$`;
+    // const img_ph  = 'https://unsplash.com/photos/I79wWVFyhEQ/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MTY5ODMx&force=true&w=640';
 
     return (
         <div>

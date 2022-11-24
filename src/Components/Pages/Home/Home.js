@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import { motion  } from "framer-motion";
 import Banner from "./Banner";
 import WorkDisplay from "./WorkDisplay";
 import Transitions from "../../Transition";
