@@ -1,9 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import TopicCard from "./TopicCard";
 
-function CategoryBox (meta) {
-    const prefix = meta.prefix;
-    const data = meta.data; // for one category (suffix, name, items) 
+function CategoryBox ({ prefix, data }) { // for one category (suffix, name, items) 
     let link = `${prefix}/${data.suffix}`;
 
     return (

@@ -19,7 +19,7 @@ function Music() {
                     <div className="topic-title-container mb-5">
                             <h3 className="mb-4 color-dark text-bold date">March 2022</h3>
                             <h2 className="mb-3">Music</h2>
-                            <h3 className="mb-3">Book Cover Design, Graphic Design</h3>
+                            <h3 className="mb-3">Cover Design, Graphic Design</h3>
                     </div>
                     <div className="row">
                         <div className="topic-desc-container col-md-4">

@@ -21,6 +21,7 @@ import Elite from "./Pages/Works/Editorial/Elite";
 import Fireworks from "./Pages/Works/Event/Fireworks";
 import Sswim from "./Pages/Works/Event/Sswim";
 import Unlimited from "./Pages/Works/Event/Unlimited";
+import Tea from "./Pages/Works/Case/Tea";
 
 function Topic () {
     let { workId } = useParams();
@@ -86,6 +87,10 @@ function Topic () {
     if ( workId === 'UnlIMted--NTU-IM-Week') {
         work = <Unlimited />;
     }
+    if ( workId === 'Investigating-Taiwanese-Tea-Industry') {
+        work = <Tea />;
+    }
+    
 
     return (
         <Transitions key="topic">
