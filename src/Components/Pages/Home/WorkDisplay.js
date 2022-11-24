@@ -19,7 +19,7 @@ function WorkDisplay ({ data }) {
                         
                         In <Link className="bold-link" to="/Works/DataScience-SystemDesign">Data Science & System Design</Link>, I collaborate with teammates to devise effective solutions for travel recommendation, user profiling, and fake news, utilizing my capabilities in NLP, ML, System Analysis & Design, and Frontend Development.
                     
-                        In <Link className="bold-link" to="">Case Study</Link>, I critically analyze a local company and propose solutions on digital transformation.
+                        In <Link className="bold-link" to="/Works/Case-Study">Case Study</Link>, I critically analyze a local company and propose solutions on digital transformation.
                             
                         Moreover, my creativity is unleashed to bring abstract concepts into visual forms in <Link className="bold-link" to="/Works/Web-Visuals">Web Visuals</Link>, <Link className="bold-link" to="/Works/Editorial-Print">Editorials & Prints</Link>, <Link className="bold-link" to="/Works/Poster">Poster Design</Link>, and <Link className="bold-link" to="/Works/Event-Visuals">Event Visuals</Link>.
                         </p>
