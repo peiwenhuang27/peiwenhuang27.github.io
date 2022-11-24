@@ -18,12 +18,7 @@ function News() {
 
     return (
         <div>
-            <ProgressiveImage
-                className="topic-cover-img"
-                src={img_src}
-                placeholder={img_ph}
-                
-            />
+            <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
