@@ -74,18 +74,22 @@ ul {
         @include hover-transition;
         @include underline-animation($highlight);
     }
-    p {
+    p, .tag {
         font-size: 18px;
-        color: $gray-600;
+        color: $gray-900;
         @include hover-transition;
-    }    
+    }
+    .tag {
+        font-size: 16px;
+        color: $gray-500;
+    }
 
     &:hover {
         h3 {
             @include underline-hover($highlight);
         }
         p {
-            color: $gray-500;
+            // color: $gray-500;
         }
         // image brightness, saturation, vignette
     }

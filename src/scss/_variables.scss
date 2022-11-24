@@ -30,6 +30,8 @@ $grays: (
 
 // scss-docs-start color-variables
 $blue:    #0d6efd !default;
+$indigo-lt-1:  #9194aa !default;
+$indigo-lt-2:  #b0b4ca !default;
 $indigo:  #28378C !default;
 $indigo-dk: #0E1C6F !default;
 $purple:  #6f42c1 !default;
@@ -97,6 +99,7 @@ $theme-colors: (
 
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
 $box-shadow-darker: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+$box-shadow-darker-center: 0 0 8px 0 rgba(0, 0, 0, 0.25);
 $text-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
 $text-shadow-lighter: 0 0 8px rgba(0, 0, 0, 0.4);
 

@@ -24,7 +24,7 @@ function Home ({ data }) {
             <div className="main">
                 <Banner />
                 <div id="works">
-                    <WorkDisplay id="works" data={data} />
+                    <WorkDisplay data={data} />
                 </div>
 
                 <Outlet />

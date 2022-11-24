@@ -11,8 +11,8 @@ import ReactPlayer from "react-player";
 var Latex = require("react-latex");
 
 function Name() {
-    const img_src = 'https://unsplash.com/photos/8hgmG03spF4/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MTcwMzc5&force=true&w=1920';
-    const img_ph  = 'https://unsplash.com/photos/8hgmG03spF4/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MTcwMzc5&force=true&w=640';
+    const img_src = 'https://unsplash.com/photos/ccpOiDUmeo0/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MjU3MjQ4&force=true&w=1920';
+    const img_ph  = 'https://unsplash.com/photos/ccpOiDUmeo0/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MjU3MjQ4&force=true&w=640';
     const form1 = `$$\\text{class weight}=\\frac{\\text{\\# of samples NOT in class \\it{i}}}{\\text{\\# of samples in class \\it{i}}}, \\alpha=0.05$$`;
     const form2 = `$$\\text{recall-adjusted class weight}=\\frac{\\text{initial class weight for category \\it{i}}}{\\text{recall for category \\it{i}} + C}, C=0.8$$`;
 
