@@ -124,11 +124,9 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     transition: all .5s;
-    @include hover-transition;
     @include img-hover;
 
     &:hover {
-        // background-size: 150%;
         transform: scale(1.08);
     }
 }
