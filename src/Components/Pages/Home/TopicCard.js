@@ -6,6 +6,10 @@ function TopicCard ({ link, data, size }) { // title, tags, desc, img
     if ( size === 'large' ) {
         img_class = "topic-card-img-container-lg";
     }
+    let tag = `#${data.tags[0]}`;
+    for (let i = 1; i < data.tags.length; i++) {
+        tag += " #" + data.tags[i];
+    }
     
     return (
         <div className="mb-5 px-3">
@@ -21,10 +25,12 @@ function TopicCard ({ link, data, size }) { // title, tags, desc, img
                     }}
                     />
                 </div>
-                <div className="topic-text-container my-4">
+                <div className="topic-text-container mt-4 mb-5">
                     <div className="flex-column align-items-start">
                         <h3 className="pb-3">{data.title}</h3>
-                        <p>{data.desc}</p>
+                        <p className="tag mb-1">{tag}</p>
+                        <p className="mb-1">{data.desc}</p>
+                        
                     </div>
                 </div>
                 
@@ -34,18 +40,5 @@ function TopicCard ({ link, data, size }) { // title, tags, desc, img
         </div>
     );
 };
-
-{/* <ProgressiveImage
-                    className="topic-card-img"
-                    src={data.img}
-                    placeholder={data.ph}
-                    style={{
-                        width: '100%',
-                        height: '100%',
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat'
-                    }}
-                    /> */}
 
 export default TopicCard;

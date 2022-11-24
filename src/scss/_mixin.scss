@@ -109,6 +109,10 @@
     box-shadow: $box-shadow-darker;
 }
 
+@mixin box-shadow-darker-center {
+    box-shadow: $box-shadow-darker-center;
+}
+
 @mixin text-image-fill($src) {
     color: transparent;
     -webkit-text-fill-color: transparent;

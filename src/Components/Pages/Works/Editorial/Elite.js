@@ -22,7 +22,7 @@ function Elite() {
                     <div className="topic-title-container mb-5">
                             <h3 className="mb-4 color-dark text-bold date">August 2019</h3>
                             <h2 className="mb-3">18th NTU x PKU Elite Camp Commemorative Brochure</h2>
-                            <h3 className="mb-3"> Design System, Book Cover Design, Book Layout Design, Graphic Design</h3>
+                            <h3 className="mb-3">Cover Design, Layout Design, Graphic Design</h3>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">
