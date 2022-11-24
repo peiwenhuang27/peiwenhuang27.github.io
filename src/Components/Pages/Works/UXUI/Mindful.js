@@ -173,7 +173,7 @@ function Mindful () {
                         <div className="col-md-4 mt-3 topic-desc-container">
                             <h3>Target User</h3>
                             <ul>
-                                <li>adolescents and adults aged between 16~40 who are willing to, or have tried to but failed, start journalings</li>
+                                <li>Adolescents and adults aged between 16~40 who are willing to, or have tried to but failed, start journaling</li>
                             </ul>
                         </div>
                         <div className="col-md-8 mt-3 topic-desc-container">
