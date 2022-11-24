@@ -1,13 +1,3 @@
-import { useState, useCallback } from "react";
-import { Outlet } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import ReactPlayer from "react-player";
-
 function Surreal() {
     let img = "https://live.staticflickr.com/65535/52505805468_8e26ceb65e_k.jpg";
 

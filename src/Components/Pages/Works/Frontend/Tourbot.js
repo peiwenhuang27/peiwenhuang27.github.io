@@ -1,18 +1,9 @@
-import { useState, useCallback } from "react";
-import { Outlet } from "react-router-dom";
-import ProgressiveImage from 'react-progressive-bg-image';
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import ReactPlayer from "react-player";
 var Latex = require("react-latex");
 
 function TourBot() {
     const img_src = 'https://live.staticflickr.com/65535/52516160951_2fcbbec56d_k.jpg';
-    const img_ph  = 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_c.jpg';
+    // const img_ph  = 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_c.jpg';
     const form1 = `$$\\text{class weight}=\\frac{\\text{\\# of samples NOT in class \\it{i}}}{\\text{\\# of samples in class \\it{i}}}, \\alpha=0.05$$`;
     const form2 = `$$\\text{recall-adjusted class weight}=\\frac{\\text{initial class weight for category \\it{i}}}{\\text{recall for category \\it{i}} + C}, C=0.8$$`;
 
@@ -276,7 +267,7 @@ However, most existing chatbots systems are rule-based, providing limited flexib
                         1. Data Preprocessing for CrossWOZ
                         </h3>
                         <p>
-                        Since Transformer-DST was originally trained on MultiWOZ [3], an English cross-domain task-oriented dialogue dataset, we have to first process CrossWOZ data to be compatible to the format of MultiWOZ in order to leverage the <a className="link" href="https://github.com/zengyan-97/Transformer-DST" target="_blank" rel="noreffer noopenner">open-source model</a>.
+                        Since Transformer-DST was originally trained on MultiWOZ [3], an English cross-domain task-oriented dialogue dataset, we have to first process CrossWOZ data to be compatible to the format of MultiWOZ in order to leverage the <a className="link" href="https://github.com/zengyan-97/Transformer-DST" target="_blank" rel="noreferrer noopenner">open-source model</a>.
                         </p>
 
                         <h3 className="heading-3">

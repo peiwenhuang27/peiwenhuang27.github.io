@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams, Outlet } from "react-router-dom";
+import { useParams, Outlet } from "react-router-dom";
 import Transitions from "./Transition";
 import { LeftLinkNav } from "./Pages/Home/LeftNav";
 import TopicCard from "./Pages/Home/TopicCard";
