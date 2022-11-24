@@ -1,6 +1,4 @@
-import { Outlet } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProgressiveImage from 'react-progressive-bg-image';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,7 +7,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 function Bookworm () {
     const img_src = 'https://live.staticflickr.com/65535/52516423519_c9e86789fa_k.jpg';
-    const img_ph  = 'https://live.staticflickr.com/65535/52516423519_8b1230a857_c.jpg';
+    // const img_ph  = 'https://live.staticflickr.com/65535/52516423519_8b1230a857_c.jpg';
 
     return (
         <div>
@@ -515,17 +513,17 @@ Moreover, my teammates and I also found it especially challenging to <b>group ou
                     <div className="topic-container py-3">
                         <h3 className="heading-3 color-gray mt-5">Resources</h3>
                         <p className="references">
-                            Chat Messages by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/chat-messages/" target="_blank" title="Chat Messages Icons">Noun Project</a>
+                            Chat Messages by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/chat-messages/" target="_blank" rel="noreferrer noopenner" title="Chat Messages Icons">Noun Project</a>
                             <br/>
-                            Magnifying Glass by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/magnifying-glass/" target="_blank" title="Magnifying Glass Icons">Noun Project</a>
+                            Magnifying Glass by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/magnifying-glass/" target="_blank" rel="noreferrer noopenner" title="Magnifying Glass Icons">Noun Project</a>
                             <br/>
-                            user account by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/user-account/" target="_blank" title="user account Icons">Noun Project</a>
+                            user account by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/user-account/" target="_blank" rel="noreferrer noopenner" title="user account Icons">Noun Project</a>
                             <br/>
-                            Book by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/book/" target="_blank" title="Book Icons">Noun Project</a>
+                            Book by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/book/" target="_blank" rel="noreferrer noopenner" title="Book Icons">Noun Project</a>
                             <br/>
-                            drawer by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/drawer/" target="_blank" title="drawer Icons">Noun Project</a>
+                            drawer by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/drawer/" target="_blank" rel="noreferrer noopenner" title="drawer Icons">Noun Project</a>
                             <br/>
-                            paperwork by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/paperwork/" target="_blank" title="paperwork Icons">Noun Project</a>
+                            paperwork by Mark Jayvee Pabilonia from <a href="https://thenounproject.com/browse/icons/term/paperwork/" target="_blank" rel="noreferrer noopenner" title="paperwork Icons">Noun Project</a>
                             <br/>
                         </p>
                     </div>

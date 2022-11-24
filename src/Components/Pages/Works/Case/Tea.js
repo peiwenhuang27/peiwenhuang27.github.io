@@ -1,20 +1,18 @@
-import { useState, useCallback } from "react";
-import { Outlet } from "react-router-dom";
-import ProgressiveImage from 'react-progressive-bg-image';
 import Iframe from 'react-iframe';
 
 function Tea() {
     const img_src = 'https://unsplash.com/photos/Qaor6nxikUM/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MjE4MjQy&force=true&w=1920';
-    const img_ph  = 'https://unsplash.com/photos/Qaor6nxikUM/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MjE4MjQy&force=true&w=640';
+    // const img_ph  = 'https://unsplash.com/photos/Qaor6nxikUM/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY5MjE4MjQy&force=true&w=640';
 
     return (
         <div>
-            <ProgressiveImage
+            <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
+            {/* <ProgressiveImage
                 className="topic-cover-img"
                 src={img_src}
                 placeholder={img_ph}
                 
-            />
+            /> */}
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
@@ -125,6 +123,3 @@ function Tea() {
 };
 
 export default Tea;
-
-
-{/*  */}

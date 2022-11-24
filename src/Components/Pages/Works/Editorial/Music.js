@@ -1,13 +1,3 @@
-import { useState, useCallback } from "react";
-import { Outlet } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import ReactPlayer from "react-player";
-
 function Music() {
     let img = "https://live.staticflickr.com/65535/52504768712_45f044d13d_k.jpg";
 

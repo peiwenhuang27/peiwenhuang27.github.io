@@ -1,5 +1,4 @@
 import { Link, Outlet } from "react-router-dom";
-import { useEffect, useState, useLocation } from "react";
 // import { Link as ScrollLink } from 'react-scroll';
 
 

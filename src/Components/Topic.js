@@ -1,4 +1,4 @@
-import { useParams, Outlet } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Transitions from "./Transition";
 
 import PetitMood from './Pages/Works/UXUI/PetitMood';

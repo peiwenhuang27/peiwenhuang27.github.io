@@ -1,11 +1,8 @@
-import { useState, useCallback } from "react";
-import { Link, Outlet } from "react-router-dom";
-import ProgressiveImage from 'react-progressive-bg-image';
 import ReactPlayer from "react-player";
 
 function PetitMood () {
     const img_src = 'https://live.staticflickr.com/65535/52515678782_7a973a13a8_k.jpg';
-    const img_ph  = 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_c.jpg';
+    // const img_ph  = 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_c.jpg';
 
     return (
         <div>

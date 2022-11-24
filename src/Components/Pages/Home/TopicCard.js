@@ -1,5 +1,4 @@
 import { Link, Outlet } from "react-router-dom";
-import ProgressiveImage from 'react-progressive-bg-image';
 
 function TopicCard ({ link, data, size }) { // title, tags, desc, img
     let img_class = "topic-card-img-container";

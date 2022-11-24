@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react-latex": "^2.0.0",
     "@types/react-transition-group": "^4.4.5",
-    "antd": "^4.24.1",
+    "antd": "^4.24.3",
     "bootstrap": "^5.2.2",
     "framer-motion": "^7.6.7",
     "node-sass": "^7.0.3",
