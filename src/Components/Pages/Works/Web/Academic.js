@@ -14,7 +14,7 @@ function Academic() {
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
-                            <h3 className="mb-4 color-dark text-bold date">May 2020-June 2020</h3>
+                            <h3 className="mb-4 color-dark text-bold date">May 2020-July 2020</h3>
                             <h2 className="mb-3">NTU Academic Counseling Services Website</h2>
                             <h3 className="mb-3">Web Visual Design, Graphic Design</h3>
                     </div>
