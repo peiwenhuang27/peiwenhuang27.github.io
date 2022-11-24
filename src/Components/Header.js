@@ -21,11 +21,10 @@ function Header ({ data }) {
                         <h1>Joanne Huang</h1>
                     </Link>
                     <ul className="header-menu">
-                        <li className="header-about">
+                        {/* <li className="header-about">
                             <Link to="/About">About</Link>
-                        </li>
+                        </li> */}
                         <li>
-                            {/* <Link to="/#works">Works</Link> */}
                             <Dropdown
                             show={show}
                             onMouseOver={showDropdown} 
