@@ -1,8 +1,17 @@
+import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-// import { Link as ScrollLink } from 'react-scroll';
+// import 'bootstrap/dist/css/bootstrap.css';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 function Header ({ data }) {
+    const [show, setShow] = useState(false);
+    const showDropdown = (e)=>{
+        setShow(!show);
+    }
+    const hideDropdown = e => {
+        setShow(false);
+    }
 
     return (
         <div id="header" className="header">
@@ -12,16 +21,41 @@ function Header ({ data }) {
                         <h1>Joanne Huang</h1>
                     </Link>
                     <ul className="header-menu">
-                        <li>
+                        <li className="header-about">
                             <Link to="/About">About</Link>
                         </li>
                         <li>
-                            <Link to="/#works">Works</Link>
+                            {/* <Link to="/#works">Works</Link> */}
+                            <Dropdown
+                            show={show}
+                            onMouseOver={showDropdown} 
+                            onMouseLeave={hideDropdown}>
+                                <Dropdown.Toggle className="header-category" variant="light">
+                                Works
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu show={show} className="header-dropdown">
+                                    <Dropdown.Item href="/#works" className="header-item py-2">
+                                        <Link to="/#works">Introduction</Link>
+                                    </Dropdown.Item>
+                                    <Dropdown.Header>Category</Dropdown.Header>
+                                    {
+                                        data.map(item =>
+                                            <Dropdown.Item href={`/Works/${item.suffix}`} className="header-item py-2">
+                                                <Link to={`/Works/${item.suffix}`}>{item.name}</Link>
+                                            </Dropdown.Item>
+                                        )
+                                    }
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
                     </ul>
-                    {/* TODO: Dropdown Menu */}
+
                 </div>
+
             </div>
+
+            
 
             <Outlet />
         </div>

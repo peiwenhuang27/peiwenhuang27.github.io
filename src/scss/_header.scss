@@ -100,20 +100,14 @@ display: block;
     margin: 0;
     padding: 0;
 
-    li {
-        @include hover-transition;
-        margin: 0 16px;
-
+    .header-about {
         a {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 18px;
-            line-height: 30px;
-            font-weight: 500;
-            text-decoration: none;
-            color: $gray-600 !important;
-
+            padding: 0 8px;
+            
+            @include header-text;
             @include underline-animation($highlight);
             
             @include pad-sm {
@@ -121,32 +115,60 @@ display: block;
                 width: 100%;
                 text-align: center;
             }
-        }
-        span {
-            margin-right: 5px;
-        }
-        .link-animation {
-            display: inline-block;
 
-            &::after {
-                content: '';
-                display: block;
-                width: 0;
-                height: 3px;
-                @include hover-transition;
-                // transition: width .3s;
-            }
-            &:hover::after {
-                width: 100%;
-            }
-        }
-
-        &:hover {
-            cursor: pointer;
-            a {
+            &:hover {
                 color: $highlight !important;
             }
         }
+    }
+
+    .header-category {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0 8px;
+        margin: 0;
+
+        @include header-text;
+        @include underline-animation($highlight);
+
+        &:active {
+            background-color: transparent !important;
+        }
+    }
+
+    .header-dropdown {
+        border: 0 0 20px 0 rgba(0, 0, 0, 0.05) !important;
+        outline: none;
+    }
+
+    .header-item {
+        .header-link {
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: $black;
+            @include hover-transition;
+        }
+        &:hover {
+            background-color: $gray-100;
+            transition:         all 0.3s  ease;
+            -moz-transition:    all 0.3s  ease;
+            -webkit-transition: all 0.3s  ease;
+            -o-transition:      all 0.3s  ease;
+            -ms-transition:     all 0.3s  ease;
+        }
+    }
+
+    li {
+        @include hover-transition;
+        margin: 0 16px;
+
+        span {
+            margin-right: 5px;
+        }
+
 
         @include pad-sm {
             display: flex;
@@ -155,11 +177,6 @@ display: block;
             background-color: #707070;
             padding: 16px 0;
             margin-left: 0;
-        }
-    }
-    .material-icons {
-        @include pad-sm {
-            display: none;
         }
     }
 
@@ -179,3 +196,21 @@ display: block;
         z-index: 100;
     }
 }
+
+.dropdown .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition:         all 0.4s  ease;
+    -moz-transition:    all 0.4s  ease;
+    -webkit-transition: all 0.4s  ease;
+    -o-transition:      all 0.4s  ease;
+    -ms-transition:     all 0.4s  ease;
+  }
+  .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  .dropdown {
+    display: inline-block;
+  }
