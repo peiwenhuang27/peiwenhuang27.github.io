@@ -113,7 +113,7 @@ function Tea() {
                         
                         <h3 className="heading-3 color-gray mt-5">Resources</h3>
                         <p className="references">
-                        Photo by <a href="https://unsplash.com/@aniketh_kanukurthi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aniketh Kanukurthi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        Photo by <a href="https://unsplash.com/@thisisengineering?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ThisisEngineering RAEng</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                         </p>
                     </div>
                 </div>
