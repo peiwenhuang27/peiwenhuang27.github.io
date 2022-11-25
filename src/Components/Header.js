@@ -18,12 +18,12 @@ function Header ({ data }) {
             <div className="container">
                 <div className="header-navbar">
                     <Link to="/" className="header-logo">
-                        <h1>Joanne Huang</h1>
+                        <h1>Pei-Wen Huang</h1>
                     </Link>
                     <ul className="header-menu">
-                        {/* <li className="header-about">
+                        <li className="header-about">
                             <Link to="/About">About</Link>
-                        </li> */}
+                        </li>
                         <li>
                             <Dropdown
                             show={show}

@@ -18,7 +18,7 @@ function Footer () {
                         <a href="https://github.com/peiwenhuang27" target="_blank" rel="noreferrer noopener">GitHub</a>
                     </li>
                 </ul>
-                <p>Design and Code with ❤ © 2022 Joanne Huang</p>
+                <p>Design and Code with ❤ © 2022 Pei-Wen Huang</p>
             </div>
 
             <Outlet />
