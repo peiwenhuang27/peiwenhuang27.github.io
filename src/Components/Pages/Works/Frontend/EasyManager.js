@@ -1,4 +1,4 @@
-import ReactPlayer from "react-player";
+import Iframe from "react-iframe";
 
 function EasyManager() {
     const img_src = 'https://live.staticflickr.com/65535/52516708823_aaf0e9bd18_k.jpg';
@@ -62,9 +62,7 @@ function EasyManager() {
                     <h3 className="heading-1 my-5">Demo Video</h3>
                     <div className="row ">
                         <div className="col mb-3 d-flex flex-column align-items-center">
-                            <ReactPlayer
-                                url="https://youtu.be/dAtbkYEGqj0"
-                            />
+                        <Iframe width="560" height="315" src="https://www.youtube.com/embed/dAtbkYEGqj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
                         </div>
                     </div>
                 </div>
