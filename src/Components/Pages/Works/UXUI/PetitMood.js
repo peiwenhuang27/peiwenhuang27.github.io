@@ -1,4 +1,4 @@
-import ReactPlayer from "react-player";
+import Iframe from "react-iframe";
 
 function PetitMood () {
     const img_src = 'https://live.staticflickr.com/65535/52515678782_7a973a13a8_k.jpg';
@@ -76,32 +76,8 @@ function PetitMood () {
                     
                     <h3 className="heading-1 my-5">Demo Video</h3>
                     <div className="row ">
-                        {/* <div className="col poster">
-                            {images.map((src, index) => (
-                                <img
-                                className="poster-img"
-                                src={ src }
-                                onClick={ () => openImageViewer(index) }
-                                width="300px"
-                                key={ index }
-                                alt="Petit Mood poster"
-                                />
-                            ))}
-                            {isViewerOpen && (
-                                <ImageViewer
-                                src={ ["/works/UXUI/petit-mood/poster.png"] }
-                                currentIndex={ 0 }
-                                disableScroll={ false }
-                                closeOnClickOutside={ true }
-                                onClose={ closeImageViewer }
-                                />
-                            )}
-                            <p className="mt-3 table-caption">Click on image to view in full size</p>
-                        </div> */}
                         <div className="col mb-3 d-flex flex-column align-items-center">
-                            <ReactPlayer
-                                url="https://youtu.be/3X919cITq4M"
-                            />
+                            <Iframe width="560" height="315" src="https://www.youtube.com/embed/3X919cITq4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
                         </div>
                     </div>
                     

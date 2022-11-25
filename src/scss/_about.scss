@@ -1,3 +1,67 @@
-.about {
-    // @include pad-hdr;
+.about-svg {
+    width: 150px;
+    height: 150px;
+}
+
+.about-intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.pfp-round {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    border-radius: 4px;
+    background-image: url(../img/pfp.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.skills, .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-heading {
+    color: $black;
+}
+
+.no-bold {
+    font-weight: normal !important;
+}
+
+.photo {
+    height: 260px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-references {
+    color: $gray-600;
+    font-size: 12px !important;
+    a {
+        color: $gray-600;
+    }
+}
+
+.about-work-title {
+    font-weight: normal;
+}
+
+.about-link {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 500;
+    color: $secondary !important;
+
+    @include hover-transition;
+    @include underline-animation($highlight);
+
+    &:hover {
+        color: $highlight !important;
+    }
 }
