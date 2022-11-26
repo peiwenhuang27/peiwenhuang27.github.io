@@ -7,7 +7,9 @@ Hello! You've reached the cradle of my portfolio website. 🎂
 As an engineer/designer, I designed and developed the website by myself 👩🏻‍💻 <br/>
 (with a little help from [React.js](https://reactjs.org) and other frameworks of course)
 
-## About Me
+* It is suggested to use [Chrome browser](https://www.google.com/intl/en_uk/chrome/) to view the website for maximum compatibility!
+
+## About Me 😊
 
 I am a recent graduate with B.B.A. in Information Management from National Taiwan University in pursuit of humanity via HCI, UX/UI, and Social Computing. I am currently pursuing a Master’s degree in the field of HCI to extend my capability and initiate studies/projects with an impactful outreach.
 
