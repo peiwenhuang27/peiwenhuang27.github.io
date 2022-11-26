@@ -120,10 +120,10 @@ function App() {
         'ph': 'https://live.staticflickr.com/65535/52505254991_4ba25b7ba7_m.jpg',
       },
       {
-        'title': 'NTU IM Graduation Book',
-        'id': 'NTU-IM-Graduation-Book',
+        'title': 'NTU IM Yearbook',
+        'id': 'NTU-IM-Yearbook',
         'tags': ['LayoutDesign', 'GraphicDesign'],
-        'desc': 'Graduation book design for NTU IM Class of 2022.',
+        'desc': 'Yearbook design for NTU IM Class of 2022.',
         'img': 'https://live.staticflickr.com/65535/52505254131_410030857d_h.jpg',
         'ph': 'https://live.staticflickr.com/65535/52505254131_83c1f429ea_m.jpg',
       },

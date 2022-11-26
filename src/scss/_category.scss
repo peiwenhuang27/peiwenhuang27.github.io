@@ -32,12 +32,22 @@
     width: 90%;
 }
 
+.large-list-left {
+    position: fixed;
+    width: 30vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .category-page {
     .category-title {
         color: $gray-500;
         text-shadow: none;
         font-size: 48px;
         font-weight: bold;
+        // height: 200px;
     }
 
     .topic-card {
@@ -66,4 +76,10 @@
             @include underline-animation($primary);
         }
     }
+}
+
+#nav-focus {
+    font-weight: bold;
+    background-color: transparent;
+    @include rm-underline-animation($gray-600);
 }

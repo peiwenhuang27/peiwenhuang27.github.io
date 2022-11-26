@@ -72,7 +72,7 @@ function Topic () {
     if ( workId === 'Music') {
         work = <Music />;
     }
-    if ( workId === 'NTU-IM-Graduation-Book') {
+    if ( workId === 'NTU-IM-Yearbook') {
         work = <Graduation />;
     }
     if ( workId === 'Elite-Camp-Brochure') {

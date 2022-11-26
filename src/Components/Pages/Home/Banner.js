@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Logo } from '../../Icons';
 import ProgressiveImage from 'react-progressive-bg-image';
 
@@ -26,7 +27,9 @@ function Banner () {
                 </ul>
                 {/* <Link to="/Works" className='banner-btn my-5'>View Work</Link> */}
                 <div className="arrow-down mt-5 d-flex flex-column align-items-center justify-content-center">
-                    <img className='banner-arrow' src="https://media.giphy.com/media/IxrsXjo6upn8Dg82uU/giphy.gif" alt="arrow-down" width="60px"/>
+                    <Link to="/#works">
+                        <img className='banner-arrow' src="https://media.giphy.com/media/IxrsXjo6upn8Dg82uU/giphy.gif" alt="arrow-down" width="60px"/>
+                    </Link>
                 </div>
             </div>
             </ProgressiveImage>

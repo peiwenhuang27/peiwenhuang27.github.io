@@ -37,24 +37,34 @@ function LeftScrollNav (meta) {
     );
 };
 
-function LeftLinkNav (meta) {
-    const prefix = meta.prefix;
-    const data = meta.data;
+function LeftLinkNav ({ showTitle, focusIdx, prefix, data }) {
 
     var categoryTitle = null;
-    if(meta.showTitle) {
+    if(showTitle) {
         categoryTitle = (<h5 className="mt-2 mb-4">Category</h5>);
     }
-    
 
     return (
         <div className="category-menu border-0 col-2 mb-5">
             {categoryTitle}
             <ul className="list-unstyled d-flex flex-column">
-                {data.map(item =>
-                    <li className="mb-3">
-                        <Link to={`${prefix}/${item.suffix}`}>{item.name}</Link>
-                    </li>
+                {data.map((item, i) => {
+                    if( i === focusIdx ) {
+                        return (
+                            <li className="mb-3">
+                                <Link id="nav-focus" to={`${prefix}/${item.suffix}`}>{item.name}</Link>
+                            </li>
+                        );
+                    }
+                    else {
+                        return (
+                            <li className="mb-3">
+                                <Link to={`${prefix}/${item.suffix}`}>{item.name}</Link>
+                            </li>
+                        );
+                    }
+                }
+                    
                 )}
             </ul>
         </div>

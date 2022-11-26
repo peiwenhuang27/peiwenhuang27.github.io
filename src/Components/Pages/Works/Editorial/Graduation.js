@@ -8,7 +8,7 @@ function Graduation() {
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
                             <h3 className="mb-4 color-dark text-bold date">April 2022</h3>
-                            <h2 className="mb-3">NTU IM Graduation Book</h2>
+                            <h2 className="mb-3">NTU IM Yearbook</h2>
                             <h3 className="mb-3">Layout Design, Graphic Design</h3>
                     </div>
                     <div className="row mb-5">
@@ -56,7 +56,7 @@ function Graduation() {
                     <div className="d-flex flex-column align-items-start mb-5">
                         <h3 className="heading-1 my-4">Introduction</h3>
                         <p className="">
-                        This is a project to produce the graduation book for the class of 2022 in Information Management Department at National Taiwan University. In alignment of symbols of NTU, plants of coconut trees and azaleas , iconic spots of Library, College of Management, and the Main Gate are used as decorative elements. 
+                        This is a project to produce the yearbook for the class of 2022 in Information Management Department at National Taiwan University. In alignment of symbols of NTU, plants of coconut trees and azaleas , iconic spots of Library, College of Management, and the Main Gate are used as decorative elements. 
                         Taking inspiration from <a className="link" href="https://github.com" target="_blank" rel="noreferrer noopener">GitHub</a>, the version control tool used in the information field, our class is symbolized by a GitHub repository. A timeline takes us from the start of our college years all through the end, reviewing all significant events that unfolded in between.
                         </p>
                     </div>

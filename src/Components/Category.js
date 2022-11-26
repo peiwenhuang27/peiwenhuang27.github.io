@@ -44,13 +44,16 @@ function LargeList (meta) {
     const data = meta.data; // all data
     const categoryIndex = meta.categoryIndex; // only for a category, suffix, name, items
     let category = data[categoryIndex];
-    let navData = [...data.slice(0, categoryIndex), ...data.slice(categoryIndex + 1)];
+    // let navData = [...data.slice(0, categoryIndex), ...data.slice(categoryIndex + 1)];
 
     return (
         <div className="large-list-container row d-flex mt-4 pt-4">
             <div className="col-md-3">
-                <h2 className="category-title mb-4">{category.name}</h2>
-                <LeftLinkNav showTitle={false} prefix={"/Works"} data={navData}/>
+                <div className="large-list-left">
+                    <h2 className="category-title mb-4">{category.name}</h2>
+                    <LeftLinkNav showTitle={false} focusIdx={categoryIndex} prefix={"/Works"} data={data}/>
+                </div>
+                
             </div>
             
             <div className="col-md-9">
