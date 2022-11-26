@@ -1,5 +1,7 @@
 # Pei-Wen Huang's Portfolio
 
+### View My Portfolio [Here 🔗](https://peiwenhuang27.github.io/)
+
 Hello! You've reached the cradle of my portfolio website. 🎂
 
 As an engineer/designer, I designed and developed the website by myself 👩🏻‍💻 <br/>
@@ -13,4 +15,4 @@ I am a recent graduate with B.B.A. in Information Management from National Taiwa
 
 With my expertise in data science, deep learning, NLP, UX/UI design, graphic design, and business knowledge, I executed projects to help people suffering from anxiety or depression and provided convenient solutions to user frustrations. I also utilized my social skills to act as the team leader, project manager, and presenter in my teams.
 
-### View My Portfolio [Here 🔗](https://peiwenhuang27.github.io/)
+
