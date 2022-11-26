@@ -22,7 +22,7 @@ function Banner () {
             <div className='container'>
                 <ul className="w-sizer d-flex flex-column justify-content-center align-items-center">
                     <li><Logo /></li>
-                    <li><h2>Hi! It’s Joanne.</h2></li>
+                    <li><h2>Hi! It’s Pei-Wen.</h2></li>
                     <li><h3>Advocate for Humanity by Way of<br/>HCI, UX, & Social Computing.</h3></li>
                 </ul>
                 {/* <Link to="/Works" className='banner-btn my-5'>View Work</Link> */}
