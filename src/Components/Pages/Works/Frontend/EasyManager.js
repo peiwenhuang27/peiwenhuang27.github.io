@@ -19,6 +19,10 @@ function EasyManager() {
                             <h3 className="mb-4 color-dark text-bold date">April 2021-June 2021</h3>
                             <h2 className="mb-3">EasyManager: NTU IM Badminton Team Management System</h2>
                             <h3 className="mb-3">System Analysis & Design, Frontend Engineering, UI Design</h3>
+                            <p className="mb-5">
+                                EasyManager is a management system designed for NTU IM Badminton Team. By automatically managing
+                                team members' points, our system resolves both the captain's workload and members' inconvenience.
+                            </p>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">

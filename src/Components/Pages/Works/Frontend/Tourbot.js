@@ -22,7 +22,10 @@ function TourBot() {
                             <h3 className="mb-4 color-dark text-bold date">April 2021-December 2021</h3>
                             <h2 className="mb-3">TourBot: Task-oriented Chatbot on Travel Recommendation</h2>
                             <h3 className="mb-3">Data Science, Natural Language Processing, Deep Learning, Frontend Engineering, UI Design</h3>
-                            
+                            <p className="mb-5">
+                                TourBot is a NLP chatbot for travel recommendation in Beijing. Utilizing a task-oriented dialogue system framework 
+                                and deployed on a web interface, TourBot makes travel planning easier by recommending restaurants, attractions or hotels and visualizing your itinerary.
+                            </p>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">

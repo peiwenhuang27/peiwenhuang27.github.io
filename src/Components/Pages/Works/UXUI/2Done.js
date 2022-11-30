@@ -42,6 +42,12 @@ function ToDone () {
                             <h3 className="mb-4 color-dark text-bold date">May 2022</h3>
                             <h2 className="mb-3">2Done Gamified To-Do Planner</h2>
                             <h3 className="mb-3">UX Design, UI Design, Procrastination, Anxiety</h3>
+                            <p className="mb-5">
+                            2Done is a gamified to-do planner to help procrastinators get work done.
+                            With an adventure-themed design of task completion interaction scheme 
+                            and a simplified project management system laid on adventure maps, 2Done aims to encourage people
+                            to enjoy the fun of being productive and alleviate anxiety induced by procrastination.
+                        </p>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">
@@ -466,8 +472,13 @@ However, 3 participants mentioned experiencing significant stress before deadlin
                         <h2 className="mb-5">2. Information Simplification</h2>
                         <div className="row mx-5">
                             <div className="col-md-6 row my-3">
-                                <img className="col w-50 box-shadow" src="/works/UXUI/2done/7-2-1.png" alt="low-fi prototype- adding project" />
-                                <img className="col w-50 box-shadow" src="/works/UXUI/2done/7-2-2.png" alt="low-fi prototype- adding activity to to-do" />
+                                <div className="w-sizer-sm">
+                                    <img className="w-100 box-shadow" src="/works/UXUI/2done/7-2-1.png" alt="low-fi prototype- adding project" />
+                                </div>
+                                <div className="w-sizer-sm">
+                                    <img className="w-100 box-shadow" src="/works/UXUI/2done/7-2-2.png" alt="low-fi prototype- adding activity to to-do" />
+                                </div>
+                                
                             </div>
                             <div className="col-md-6 d-flex flex-column align-items-center justify-content-center"> 
                                 <div className="w-sizer">

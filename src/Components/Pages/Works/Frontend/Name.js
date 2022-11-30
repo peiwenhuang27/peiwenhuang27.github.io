@@ -17,6 +17,11 @@ function Name() {
                             <h3 className="mb-4 color-dark text-bold date">March 2021-April 2021</h3>
                             <h2 className="mb-3">Name-Entity Prediction</h2>
                             <h3 className="mb-3">Data Science, Natural Language Processing, Deep Learning, User Profiling</h3>
+                            <p className="mb-5">
+                                In this project, we predict the gender, ethnicity, and nationality of an individual given their name.
+                                Using deep learning techniques, our model achieved 95%/91%/61% accuracy on each task respectively.
+                                This task can be applied to user profiling in websites to optimize recommendation systems and target marketing.
+                            </p>
                             
                     </div>
                     <div className="row mb-5">

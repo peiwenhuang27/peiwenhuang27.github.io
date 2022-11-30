@@ -24,6 +24,11 @@ function Bookworm () {
                             <h3 className="mb-4 color-dark text-bold date">March 2022-April 2022</h3>
                             <h2 className="mb-3">Bookworm Meeter</h2>
                             <h3 className="mb-3">Design Thinking, Reading, Social APP, UI Design</h3>
+                            <p className="mb-5">
+                                Bookworm Meeter is a social networking platform designed for introverted book readers to
+                                enhance the reading experience. Store your favorite book quotes in personal library, 
+                                discuss book topics with fellow bookworms, and make friends with kindred spirits not easily found in real-life.
+                            </p>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">
@@ -451,7 +456,10 @@ function Bookworm () {
                     </div>
                 </div>
                 <div className="w-75 d-flex flex-column justify-content-center align-items-center">
-                    <img className="w-sizer-sm p-5" src="/works/UXUI/bookworm/11-UI-flow.png" alt="UI wireflow"/>
+                    <div className="w-sizer-sm">
+                        <img className="w-100 p-5" src="/works/UXUI/bookworm/11-UI-flow.png" alt="UI wireflow"/>
+                    </div>
+                    
                 </div>
             </div>
             

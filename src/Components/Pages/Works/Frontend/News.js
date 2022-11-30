@@ -13,7 +13,10 @@ function News() {
                             <h3 className="mb-4 color-dark text-bold date">November 2020-January 2021</h3>
                             <h2 className="mb-3">Classifying True & Fake News</h2>
                             <h3 className="mb-3">Data Science, Information Retrieval & Text Mining, Fake News</h3>
-                            
+                            <p className="mb-5">
+                                In this project, we implement IR techniques to predict whether a piece of news is true or fake in hopes
+                                of reducing information distortion among media.
+                            </p>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">

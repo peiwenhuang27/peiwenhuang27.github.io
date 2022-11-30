@@ -18,6 +18,10 @@ function Mindful () {
                             <h3 className="mb-4 color-dark text-bold date">May 2022</h3>
                             <h2 className="mb-3">Mindful Diary</h2>
                             <h3 className="mb-3">UI Design, Diary, Habituation, Mental Health</h3>
+                            <p className='mb-5'>
+                                Mindful Diary is a mobile application for journaling. 
+                                Write guided journal habitually and track your mental health progress easily.
+                            </p>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">

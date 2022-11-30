@@ -19,6 +19,11 @@ function PetitMood () {
                             <h3 className="mb-4 color-dark text-bold date">April 2022-July 2022</h3>
                             <h2 className="mb-3">Petit Mood: AR Pet Game as Negative Emotion Reliever for Depressed University Students</h2>
                             <h3 className="mb-3">HCI, UX, AR, Game Design, Mental Health</h3>
+                            <p className="mb-5">
+                                Petit Mood is a AR pet game to help university students relieve negative emotions.
+                                Incorporating research-proven techniques of stress reduction or therapy in the interaction with the AR companion animal,
+                                Petit Mood makes self-care routines immersive and accessible.
+                            </p>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">

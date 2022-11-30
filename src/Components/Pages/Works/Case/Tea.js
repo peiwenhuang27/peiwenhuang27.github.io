@@ -19,7 +19,11 @@ function Tea() {
                             <h3 className="mb-4 color-dark text-bold date">April 2020-June 2020</h3>
                             <h2 className="mb-3">Investigating Taiwanese Tea Industry</h2>
                             <h3 className="mb-3">Introduction to Information Management, Case Study, Digital Transformation</h3>
-                            
+                            <p className='mb-5'>
+                                In this project, we interview a famous Taiwanese tea brand to understand the development bottlenecks in
+                                Taiwanese tea industry. Digital solutions incorporating IoT, Knowledge Management, and Customer Relationship Management
+                                are then proposed to resolve the pain points.
+                            </p>
                     </div>
                     <div className="row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">
