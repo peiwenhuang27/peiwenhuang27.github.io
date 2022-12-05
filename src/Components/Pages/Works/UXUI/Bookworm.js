@@ -168,7 +168,7 @@ function Bookworm () {
                         </div>
                         <div className="col-md-4">
                             <div className="w-100 mb-3 d-flex flex-column ">
-                                <img className="w-75" src="/works/UXUI/bookworm/magnifying-glass.svg" alt="magnifying glass icon" />
+                                <img className="w-75 dis-pad-sm" src="/works/UXUI/bookworm/magnifying-glass.svg" alt="magnifying glass icon" />
                             </div>
                         </div>
                     </div>

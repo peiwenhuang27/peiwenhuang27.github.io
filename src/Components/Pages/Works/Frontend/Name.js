@@ -186,29 +186,29 @@ In this project, we aim to <b>implement a neural network model to complete to pe
                         <div id="name-table-1" className="my-5 table-container d-flex flex-column align-items-center">
                             <div className="w-100">
                                 <div className="w-100 row table-header">
-                                    <p className="col-md-3 my-2 text-bold"></p>
-                                    <p className="col-md-3 my-2 text-bold">batch size</p>
-                                    <p className="col-md-3 my-2 text-bold">embedding dimension</p>
-                                    <p className="col-md-3 my-2 text-bold">max sequence length</p>
+                                    <p className="col my-2 text-bold"></p>
+                                    <p className="col my-2 text-bold">batch size</p>
+                                    <p className="col my-2 text-bold">embedding dimension</p>
+                                    <p className="col my-2 text-bold">max sequence length</p>
                                 </div>
                                 <div className="table-body">
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">Nationality</p>
-                                        <p className="col-md-3 my-2">64</p>
-                                        <p className="col-md-3 my-2">256</p>
-                                        <p className="col-md-3 my-2">30</p>
+                                        <p className="col my-2">Nationality</p>
+                                        <p className="col my-2">64</p>
+                                        <p className="col my-2">256</p>
+                                        <p className="col my-2">30</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">Ethnicity</p>
-                                        <p className="col-md-3 my-2">128</p>
-                                        <p className="col-md-3 my-2">512</p>
-                                        <p className="col-md-3 my-2">40</p>
+                                        <p className="col my-2">Ethnicity</p>
+                                        <p className="col my-2">128</p>
+                                        <p className="col my-2">512</p>
+                                        <p className="col my-2">40</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">Gender</p>
-                                        <p className="col-md-3 my-2">64</p>
-                                        <p className="col-md-3 my-2">256</p>
-                                        <p className="col-md-3 my-2">30</p>
+                                        <p className="col my-2">Gender</p>
+                                        <p className="col my-2">64</p>
+                                        <p className="col my-2">256</p>
+                                        <p className="col my-2">30</p>
                                     </div>
                                 </div>
                                 <p className="table-caption mt-3 text-center">
@@ -226,40 +226,41 @@ In this project, we aim to <b>implement a neural network model to complete to pe
                         <div id="name-table-2" className="my-5 table-container d-flex flex-column align-items-center">
                             <div className="w-100">
                                 <div className="w-100 row table-header">
-                                    <p className="col-md-3 my-2 text-bold"></p>
-                                    <p className="col-md-3 my-2 text-bold"></p>
-                                    <p className="col-md-3 my-2 text-bold">LSTM Model</p>
-                                    <p className="col-md-3 my-2 text-bold">CNN Model</p>
+                                    <p className="col my-2 text-bold"></p>
+                                    <p className="col my-2 text-bold"></p>
+                                    <p className="col my-2 text-bold">LSTM Model</p>
+                                    <p className="col my-2 text-bold">CNN Model</p>
                                 </div>
                                 <div className="table-body">
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">Precision</p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">Precision</p>
+                                        <p className="col my-2">
                                             macro average<br/>micro average
                                         </p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">
                                             <b>0.54</b><br/>0.56
                                         </p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">
                                             0.52<br/><b>0.58</b>
                                         </p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">Recall</p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">Recall</p>
+                                        <p className="col my-2">
                                             macro average<br/>micro average
                                         </p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">
                                             0.50<br/>0.59
                                         </p>
-                                        <p className="col-md-3 my-2 text-bold">
+                                        <p className="col my-2 text-bold">
                                             0.52<br/>0.61
                                         </p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-6 my-2">Accuracy</p>
-                                        <p className="col-md-3 my-2">0.59</p>
-                                        <p className="col-md-3 my-2 text-bold">0.61</p>
+                                        <p className="col my-2">Accuracy</p>
+                                        <div className="col"></div>
+                                        <p className="col my-2">0.59</p>
+                                        <p className="col my-2 text-bold">0.61</p>
                                     </div>
                                 </div>
                                 <p className="table-caption mt-3 text-center">
@@ -271,40 +272,41 @@ In this project, we aim to <b>implement a neural network model to complete to pe
                         <div id="name-table-3" className="my-5 table-container d-flex flex-column align-items-center">
                             <div className="w-100">
                                 <div className="w-100 row table-header">
-                                    <p className="col-md-3 my-2 text-bold"></p>
-                                    <p className="col-md-3 my-2 text-bold"></p>
-                                    <p className="col-md-3 my-2 text-bold">LSTM Model</p>
-                                    <p className="col-md-3 my-2 text-bold">CNN Model</p>
+                                    <p className="col my-2 text-bold"></p>
+                                    <p className="col my-2 text-bold"></p>
+                                    <p className="col my-2 text-bold">LSTM Model</p>
+                                    <p className="col my-2 text-bold">CNN Model</p>
                                 </div>
                                 <div className="table-body">
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">Precision</p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">Precision</p>
+                                        <p className="col my-2">
                                             macro average<br/>micro average
                                         </p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">
                                             0.87<br/>0.87
                                         </p>
-                                        <p className="col-md-3 my-2 text-bold">
+                                        <p className="col my-2 text-bold">
                                             0.90<br/>0.91
                                         </p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">Recall</p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">Recall</p>
+                                        <p className="col my-2">
                                             macro average<br/>micro average
                                         </p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">
                                             0.82<br/>0.87
                                         </p>
-                                        <p className="col-md-3 my-2 text-bold">
+                                        <p className="col my-2 text-bold">
                                             0.88<br/>0.91
                                         </p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-6 my-2">Accuracy</p>
-                                        <p className="col-md-3 my-2">0.87</p>
-                                        <p className="col-md-3 my-2 text-bold">0.91</p>
+                                        <p className="col my-2">Accuracy</p>
+                                        <div className="col"></div>
+                                        <p className="col my-2">0.87</p>
+                                        <p className="col my-2 text-bold">0.91</p>
                                     </div>
                                 </div>
                                 <p className="table-caption mt-3 text-center">
@@ -316,40 +318,41 @@ In this project, we aim to <b>implement a neural network model to complete to pe
                         <div id="name-table-4" className="my-5 table-container d-flex flex-column align-items-center">
                             <div className="w-100">
                                 <div className="w-100 row table-header">
-                                    <p className="col-md-3 my-2 text-bold"></p>
-                                    <p className="col-md-3 my-2 text-bold"></p>
-                                    <p className="col-md-3 my-2 text-bold">LSTM Model</p>
-                                    <p className="col-md-3 my-2 text-bold">CNN Model</p>
+                                    <p className="col my-2 text-bold"></p>
+                                    <p className="col my-2 text-bold"></p>
+                                    <p className="col my-2 text-bold">LSTM Model</p>
+                                    <p className="col my-2 text-bold">CNN Model</p>
                                 </div>
                                 <div className="table-body">
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">Precision</p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">Precision</p>
+                                        <p className="col my-2">
                                             macro average<br/>micro average
                                         </p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">
                                             0.90<br/>0.93
                                         </p>
-                                        <p className="col-md-3 my-2 text-bold">
+                                        <p className="col my-2 text-bold">
                                             0.95<br/>0.94
                                         </p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">Recall</p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">Recall</p>
+                                        <p className="col my-2">
                                             macro average<br/>micro average
                                         </p>
-                                        <p className="col-md-3 my-2">
+                                        <p className="col my-2">
                                             0.90<br/>0.93
                                         </p>
-                                        <p className="col-md-3 my-2 text-bold">
+                                        <p className="col my-2 text-bold">
                                             0.91<br/>0.95
                                         </p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-6 my-2">Accuracy</p>
-                                        <p className="col-md-3 my-2">0.93</p>
-                                        <p className="col-md-3 my-2 text-bold">0.95</p>
+                                        <p className="col my-2">Accuracy</p>
+                                        <div className="col"></div>
+                                        <p className="col my-2">0.93</p>
+                                        <p className="col my-2 text-bold">0.95</p>
                                     </div>
                                 </div>
                                 <p className="table-caption mt-3 text-center">

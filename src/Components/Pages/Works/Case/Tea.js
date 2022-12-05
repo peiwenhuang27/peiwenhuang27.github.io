@@ -103,7 +103,7 @@ function Tea() {
                 <div className="topic-container section-wrapper">
                     <h3 className="heading-1 mb-5">Report Document</h3>
                     <div className="d-flex flex-column align-items-center">
-                        <Iframe src="https://drive.google.com/file/d/1gGH661HX8hq1SEXt3gh0oIMi9fD_aQQ3/preview" width="640" height="480" allow="autoplay" />
+                        <Iframe src="https://drive.google.com/file/d/1gGH661HX8hq1SEXt3gh0oIMi9fD_aQQ3/preview" className="flexible-iframe-2" allow="autoplay" />
                     </div>
                 
                 </div>

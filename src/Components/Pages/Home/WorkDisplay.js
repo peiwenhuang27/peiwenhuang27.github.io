@@ -11,7 +11,7 @@ function WorkDisplay ({ data }) {
                 <div className="topic-container">
                     <div className="intro">
                         <h2 className="text-bold ">Introduction</h2>
-                        <p className="intro-text pt-3 pb-5">
+                        <p className="intro-text py-3">
                         I am a designer & engineer with 4+ years of experience during which I utilize my expertise to recognize problems, analyze causes, and implement solutions.
                         This portfolio presents my works in the fields of Design, CS and Business.<br/><br/>
                         
@@ -28,7 +28,7 @@ function WorkDisplay ({ data }) {
                 </div>
                 <div className="row">
                     <LeftLinkNav showTitle={true} prefix={prefix} data={data} />
-                    <div className="work-list col-10">
+                    <div className="work-list col-md-10">
                         <ul className="work-cards flex-column">
                             {data.map(item =>
                                 <li className="w-100">

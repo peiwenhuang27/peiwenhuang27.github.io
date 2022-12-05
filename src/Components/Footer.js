@@ -6,7 +6,7 @@ function Footer () {
             <div className="container">
                 <ul className="contact-menu">
                     <li>
-                        <a href="https://drive.google.com/file/d/1bCCSadykBkigqCtAnO2J1gXNz66YAzcT/view?usp=sharing" target="_blank" rel="noreferrer noopener">Résumé</a>
+                        <a href="https://drive.google.com/file/d/18ab0cyflnpOlVHyB0f7X3FSsNvisUC8r/view?usp=sharing" target="_blank" rel="noreferrer noopener">Résumé</a>
                     </li>
                     <li>
                         <a href="mailto:peiwenhuang@ntu.im" target="_blank" rel="noreferrer noopener">Email</a>

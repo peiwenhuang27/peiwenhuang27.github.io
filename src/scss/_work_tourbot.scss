@@ -6,4 +6,9 @@
     h3 {
         color: $white;
     }
+
+    @include pad-sm {
+        width: 90%;
+        margin-bottom: 40px;
+    }
 }

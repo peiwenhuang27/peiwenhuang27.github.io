@@ -253,35 +253,35 @@ Using different numbers of features and three classification models, we will per
                         <div id="news-table-3" className="my-5 table-container d-flex flex-column align-items-center">
                             <div className="w-100">
                                 <div className="w-100 row table-header">
-                                    <p className="col-md-3 my-2 text-bold"></p>
-                                    <p className="col-md-3 my-2 text-bold">Naïve Bayes Multinomial</p>
-                                    <p className="col-md-3 my-2 text-bold">Rocchio</p>
-                                    <p className="col-md-3 my-2 text-bold">k-th Nearest Neighbors</p>
+                                    <p className="col my-2 text-bold"></p>
+                                    <p className="col my-2 text-bold">Naïve Bayes Multinomial</p>
+                                    <p className="col my-2 text-bold">Rocchio</p>
+                                    <p className="col my-2 text-bold">k-th Nearest Neighbors</p>
                                 </div>
                                 <div className="table-body">
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">300 features</p>
-                                        <p className="col-md-3 my-2">0.642</p>
-                                        <p className="col-md-3 my-2">0.306</p>
-                                        <p className="col-md-3 my-2 text-bold">0.860</p>
+                                        <p className="col my-2">300 features</p>
+                                        <p className="col my-2">0.642</p>
+                                        <p className="col my-2">0.306</p>
+                                        <p className="col my-2 text-bold">0.860</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">500 features</p>
-                                        <p className="col-md-3 my-2">0.644</p>
-                                        <p className="col-md-3 my-2">0.528</p>
-                                        <p className="col-md-3 my-2 text-bold">0.858</p>
+                                        <p className="col my-2">500 features</p>
+                                        <p className="col my-2">0.644</p>
+                                        <p className="col my-2">0.528</p>
+                                        <p className="col my-2 text-bold">0.858</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">800 features</p>
-                                        <p className="col-md-3 my-2">0.639</p>
-                                        <p className="col-md-3 my-2">0.591</p>
-                                        <p className="col-md-3 my-2 text-bold">0.862</p>
+                                        <p className="col my-2">800 features</p>
+                                        <p className="col my-2">0.639</p>
+                                        <p className="col my-2">0.591</p>
+                                        <p className="col my-2 text-bold">0.862</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-3 my-2">1000 features</p>
-                                        <p className="col-md-3 my-2">0.641</p>
-                                        <p className="col-md-3 my-2">0.511</p>
-                                        <p className="col-md-3 my-2 text-bold">0.862</p>
+                                        <p className="col my-2">1000 features</p>
+                                        <p className="col my-2">0.641</p>
+                                        <p className="col my-2">0.511</p>
+                                        <p className="col my-2 text-bold">0.862</p>
                                     </div>
                                 </div>
                                 <div className="table-caption mt-3">
@@ -296,21 +296,21 @@ Using different numbers of features and three classification models, we will per
                         <div id="news-table-4" className="my-5 table-container d-flex flex-column align-items-center">
                             <div className="w-sizer-sm">
                                 <div className="w-100 row table-header">
-                                    <p className="col-md-6 my-2 text-bold"></p>
-                                    <p className="col-md-6 my-2 text-bold">Performance</p>
+                                    <p className="col my-2 text-bold"></p>
+                                    <p className="col my-2 text-bold">Performance</p>
                                 </div>
                                 <div className="table-body">
                                     <div className="w-100 row">
-                                        <p className="col-md-6 my-2">Precision</p>
-                                        <p className="col-md-6 my-2">0.397</p>
+                                        <p className="col my-2">Precision</p>
+                                        <p className="col my-2">0.397</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-6 my-2">Recall</p>
-                                        <p className="col-md-6 my-2">0.608</p>
+                                        <p className="col my-2">Recall</p>
+                                        <p className="col my-2">0.608</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-6 my-2">F1 Score</p>
-                                        <p className="col-md-6 my-2">0.480</p>
+                                        <p className="col my-2">F1 Score</p>
+                                        <p className="col my-2">0.480</p>
                                     </div>
                                 </div>
                                 <div className="table-caption mt-3">

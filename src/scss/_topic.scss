@@ -117,7 +117,7 @@ ul {
 .topic-card-img-container-lg {
     height: 540px;
     @include pad-sm {
-        height: 400px;
+        height: 300px;
     }
 }
 
@@ -145,11 +145,22 @@ ul {
 
     @include pad-sm {
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 0;
     }
 
     p {
         font-size: 16px;
         line-height: 1.5;
+    }
+}
+
+.topic-text-container {
+    h3 {
+        @include pad-sm {
+            line-height: 1.2;
+        }
     }
 }
 
@@ -201,6 +212,10 @@ p {
         font-size: 21px;
         font-weight: normal;
         color: $gray-600;
+
+        @include pad-sm {
+            line-height: 1.2;
+        }
     }
 }
 
@@ -371,13 +386,18 @@ p {
         border-radius: 16px;
 
         @include box-shadow-darker;
+
+        @include pad-sm {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
 }
 
 #pain-point-list {
     // width: 75%;
     @include pad-sm {
-        width: 100px;
+        width: 350px;
     }
     li {
         text-align: center;
@@ -385,6 +405,10 @@ p {
         height: 120px;
         border-radius: 32px;
         @include box-shadow-darker;
+
+        @include pad-sm {
+            margin-bottom: 40px;
+        }
     }
 
     .heading-2 {
@@ -396,11 +420,21 @@ p {
 .section-wrapper {
     padding-top: 90px;
     padding-bottom: 90px;
+    
+    @include pad-sm {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .subsection-wrapper {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @include pad-sm {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 .subsubsection-wrapper {
@@ -470,4 +504,17 @@ p {
     border-radius: 20px;
     border: 2px solid $white;
     @include box-shadow-darker;
+}
+
+.pad-sm-icon-container {
+    @include pad-sm {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+.pad-sm-icon {
+    @include pad-sm {
+        width: 40% !important;
+    }
 }

@@ -9,6 +9,12 @@
     justify-content: flex-end;
 }
 
+.pfp-container {
+    @include pad-sm {
+        padding: 0 !important;
+    }
+}
+
 .pfp-round {
     width: 100%;
     height: 0;
@@ -17,6 +23,10 @@
     background-image: url(../img/pfp.jpg);
     background-position: center;
     background-size: cover;
+
+    @include pad-sm {
+        margin-bottom: 20px;
+    }
 }
 
 .skills, .education {
@@ -38,6 +48,9 @@
     width: auto;
     background-size: cover;
     background-position: center;
+    @include pad-sm {
+        height: 100px;
+    }
 }
 
 .about-references {
@@ -63,5 +76,44 @@
 
     &:hover {
         color: $highlight !important;
+    }
+
+    @include pad-sm {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+.about {
+    @include pad-sm {
+        margin-top: 80px;
+    }
+}
+
+.about-iframe-container {
+    @include pad-sm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.flexible-iframe {
+    width: 560px;
+    height: 315px;
+
+    @include pad-sm {
+        width: 280px;
+        height: 158px;
+    }
+}
+
+.flexible-iframe-2 {
+    width: 640px;
+    height: 480px;
+
+    @include pad-sm {
+        width: 320px;
+        height: 480px;
     }
 }

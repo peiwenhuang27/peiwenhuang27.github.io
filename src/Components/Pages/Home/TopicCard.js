@@ -15,14 +15,6 @@ function TopicCard ({ link, data, size }) { // title, tags, desc, img
             <Link to={link} className="topic-card text-decoration-none">
                 <div className={img_class} >
                     <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} />
-                    {/* <ProgressiveImage
-                    className="topic-card-img"
-                    src={data.img}
-                    placeholder={data.ph}
-                    style={{
-                        
-                    }}
-                    /> */}
                 </div>
                 <div className="topic-text-container mt-4 mb-5">
                     <div className="flex-column align-items-start">

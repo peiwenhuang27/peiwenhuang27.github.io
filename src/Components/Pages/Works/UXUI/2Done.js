@@ -199,14 +199,14 @@ function ToDone () {
 However, 3 participants mentioned experiencing significant stress before deadlines either because
                     </p>
                     <div className="row my-5">
-                        <div className="col d-flex flex-column align-items-center">
+                        <div className="col-md-6 d-flex flex-column align-items-center">
                             <div className="w-sizer mb-3 d-flex flex-column align-items-center">
                                 <img className="w-75" src="/works/UXUI/2done/girl.svg" alt="girl icon" />
                                 <span className="img-src-cap">girl by ester barbato from <a href="https://thenounproject.com/browse/icons/term/girl/" target="_blank" rel="noreferrer noopenner" title="girl Icons">Noun Project</a></span>
                             </div>
                             <h4 className="w-sizer heading-3 mb-2 text-center text-bold">previous tasks took longer than expected and thus delayed later tasks</h4>
                         </div>
-                        <div className="col d-flex flex-column align-items-center">
+                        <div className="col-md-6 d-flex flex-column align-items-center">
                             <div className="w-sizer mb-3 d-flex flex-column align-items-center">
                                 <img className="w-75" src="/works/UXUI/2done/boy.svg" alt="boy icon" />
                                 <span className="img-src-cap">boy by ester barbato from <a href="https://thenounproject.com/browse/icons/term/boy/" target="_blank" rel="noreferrer noopenner" title="boy Icons">Noun Project</a></span>

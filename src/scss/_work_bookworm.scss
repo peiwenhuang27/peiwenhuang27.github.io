@@ -19,7 +19,7 @@
 #book-pain-point-list {
     // width: 75%;
     @include pad-sm {
-        width: 100px;
+        width: 320px;
     }
     li {
         text-align: center;
@@ -27,10 +27,20 @@
         height: 200px;
         border-radius: 32px;
         @include box-shadow-darker;
+
+        @include pad-sm {
+            height: 160px;
+        }
     }
 
     .heading-2 {
         line-height: 1.5;
         color: $secondary;
+    }
+}
+
+.dis-pad-sm {
+    @include pad-sm {
+        display: none;
     }
 }

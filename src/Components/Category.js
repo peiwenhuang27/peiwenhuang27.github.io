@@ -51,12 +51,14 @@ function LargeList (meta) {
             <div className="col-md-3">
                 <div className="large-list-left">
                     <h2 className="category-title mb-4">{category.name}</h2>
+                    <div>
                     <LeftLinkNav showTitle={false} focusIdx={categoryIndex} prefix={"/Works"} data={data}/>
+                    </div>
                 </div>
                 
             </div>
             
-            <div className="col-md-9">
+            <div className="col-md-9 large-list-upper">
                 <div className="large-list d-flex flex-column align-items-center mb-3">
                     <ul className="w-100 d-flex flex-column align-items-center">
                         {

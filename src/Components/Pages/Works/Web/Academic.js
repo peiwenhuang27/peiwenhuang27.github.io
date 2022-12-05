@@ -142,7 +142,7 @@ function Academic() {
 
                 <div className="topic-container section-wrapper">
                     <h3 className="heading-1 my-4">Color Palette</h3>
-                    <div className="d-flex justify-content-center align-items-center">
+                    <div className="palette-list d-flex justify-content-center align-items-center">
                         <div id="color-round-1" className="m-4 color-round">#1C3B6A</div>
                         <div id="color-round-2" className="m-4 color-round">#9FCDCC</div>
                         <div id="color-round-3" className="m-4 color-round">#FACF84</div>

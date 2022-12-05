@@ -7,6 +7,12 @@
     }
 }
 
+.palette-list {
+    @include pad-sm {
+        flex-direction: column !important;
+    }
+}
+
 .color-round {
     width: 120px;
     height: 120px;

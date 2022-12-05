@@ -16,7 +16,10 @@ function About () {
         <div className="about">
             <div className="container">
                 <div className="topic-container section-wrapper">
-                    <div className="about-container row mb-5">
+                    <div className="about-container display-row-reverse mb-5">
+                        <div className="px-3 pfp-container col-md-6">
+                            <div className="pfp-round" />
+                        </div>
                         <div className="col-md-6 p-1 about-intro-container">
                             <h1 className="color-dark heading-1 mb-3">Hi! I am Pei-Wen (Joanne), <br/>pleasure to meet you!</h1>
                             <p>
@@ -32,9 +35,7 @@ function About () {
                             With my expertise in data science, deep learning, NLP, UX/UI design, graphic design, and business knowledge, I executed projects to help people suffering from anxiety or depression and provided convenient solutions to user frustrations. I also utilized my social skills to act as the team leader, project manager, and presenter in my teams.
                             </p>
                         </div>
-                        <div className="col-md-6 px-3">
-                            <div className="pfp-round" />
-                        </div>
+
                     </div>
 
                     <div className="education section-wrapper">
@@ -194,10 +195,11 @@ Business Analytics.
 
                         <div className="section-wrapper row display-row align-items-center ">
                             <h2 className="col-md-6 text-center heading-2 mb-3">And post music/covers on <a className="bold-link" href="https://www.youtube.com/@pwh_27/featured" target="_blank" rel="noreferrer noopenner">YouTube</a>!</h2>
-                            <div className="col-md-6">
-                            <Iframe width="560" height="315" src="https://www.youtube.com/embed/6UTG4yMHs8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+                            <div className="col-md-6 about-iframe-container">
+                            <Iframe className="flexible-iframe" src="https://www.youtube.com/embed/6UTG4yMHs8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
                             </div>
-                            
+                            {/* 560 * 315 */}
+                            {/* 280 * 158 */}
                         </div>
 
                         <div className="section-wrapper d-flex flex-column align-items-center">

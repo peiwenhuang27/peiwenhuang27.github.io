@@ -370,8 +370,8 @@ function Mindful () {
                                 For users who do not find journal keeping necessary, Mindful Diary currently has limited capability to appeal to them. That is, the features of this project mainly deals with helping user <b>sustain the habit of keeping journal</b>, not attracting people to start journaling. To temporarily bypass this issue, our target user is defined as those who have intention of keeping a journal. 
                                 </p>
                             </div>
-                            <div className="col-md-3 my-3 d-flex justify-content-end align-items-start">
-                                <img className="w-75" src="/works/UXUI/mindful/coin.svg" alt="coin"/>
+                            <div className="pad-sm-icon-container col-md-3 my-3 d-flex justify-content-end align-items-start">
+                                <img className="w-75 pad-sm-icon" src="/works/UXUI/mindful/coin.svg" alt="coin"/>
                             </div>
                         </div>
                         
@@ -396,8 +396,8 @@ function Mindful () {
                                 Currently Mindful Diary cannot tackle the problem of user not having enough time for journaling. In order to tackle this issue, user needs to <b>ritualize journaling</b> as part of their daily routine so that it will not be delayed or forgotten at the end of the day. 
                                 </p>
                             </div>
-                            <div className="col-md-3 my-3 d-flex justify-content-end align-items-start">
-                                <img className="w-75" src="/works/UXUI/mindful/fire.svg" alt="fire"/>
+                            <div className="pad-sm-icon-container col-md-3 my-3 d-flex justify-content-end align-items-start">
+                                <img className="w-75 pad-sm-icon" src="/works/UXUI/mindful/fire.svg" alt="fire"/>
                             </div>
                         </div>
 
@@ -423,8 +423,8 @@ However, the system must be carefully designed so as not to place further burden
                                 As of now, user has to go through two pages of inputting emotions, choosing journal prompts before actually starting writing. This long procedure could cause user to lose interest in journal.
                                 </p>
                             </div>
-                            <div className="col-md-3 my-3 d-flex justify-content-end align-items-start">
-                                <img className="w-75" src="/works/UXUI/mindful/audio.svg" alt="audio"/>
+                            <div className="pad-sm-icon-container col-md-3 my-3 d-flex justify-content-end align-items-start">
+                                <img className="w-75 pad-sm-icon" src="/works/UXUI/mindful/audio.svg" alt="audio"/>
                             </div>
                         </div>
 

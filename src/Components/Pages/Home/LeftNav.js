@@ -45,9 +45,9 @@ function LeftLinkNav ({ showTitle, focusIdx, prefix, data }) {
     }
 
     return (
-        <div className="category-menu border-0 col-2 mb-5">
+        <div className="category-menu border-0 col-md-2 mb-5">
             {categoryTitle}
-            <ul className="list-unstyled d-flex flex-column">
+            <ul className="leftnav-list list-unstyled d-flex flex-column">
                 {data.map((item, i) => {
                     if( i === focusIdx ) {
                         return (

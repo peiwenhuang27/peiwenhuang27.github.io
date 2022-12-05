@@ -75,7 +75,7 @@ function TourBot() {
                     <h3 className="heading-1 my-5">Demo Video</h3>
                     <div className="row ">
                         <div className="col mb-3 d-flex flex-column align-items-center">
-                        <Iframe width="560" height="315" src="https://www.youtube.com/embed/RcP-jxfHA-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
+                        <Iframe className="flexible-iframe" src="https://www.youtube.com/embed/RcP-jxfHA-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
                         </div>
                     </div>
                 </div>
@@ -194,40 +194,40 @@ However, most existing chatbots systems are rule-based, providing limited flexib
                         <div id="tourbot-table-1" className="table-container d-flex flex-column align-items-center">
                             <div className="w-100">
                                 <div className="w-100 row table-header">
-                                    <p className="col-md-4 my-2 text-bold">User Intent Category</p>
-                                    <p className="col-md-4 my-2 text-bold">F1 for Uniform Class Weights</p>
-                                    <p className="col-md-4 my-2 text-bold">F1 for Adjusted Class Weights</p>
+                                    <p className="col my-2 text-bold">User Intent Category</p>
+                                    <p className="col my-2 text-bold">F1 for Uniform Class Weights</p>
+                                    <p className="col my-2 text-bold">F1 for Adjusted Class Weights</p>
                                 </div>
                                 <div className="table-body">
                                     <div className="w-100 row">
-                                        <p className="col-md-4 my-2">General</p>
-                                        <p className="col-md-4 my-2">96.89</p>
-                                        <p className="col-md-4 my-2">98.68</p>
+                                        <p className="col my-2">General</p>
+                                        <p className="col my-2">96.89</p>
+                                        <p className="col my-2">98.68</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-4 my-2">Inform</p>
-                                        <p className="col-md-4 my-2">92.68</p>
-                                        <p className="col-md-4 my-2">92.97</p>
+                                        <p className="col my-2">Inform</p>
+                                        <p className="col my-2">92.68</p>
+                                        <p className="col my-2">92.97</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-4 my-2">NoOffer</p>
-                                        <p className="col-md-4 my-2">90.83</p>
-                                        <p className="col-md-4 my-2">94.12</p>
+                                        <p className="col my-2">NoOffer</p>
+                                        <p className="col my-2">90.83</p>
+                                        <p className="col my-2">94.12</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-4 my-2">Recommend</p>
-                                        <p className="col-md-4 my-2">98.02</p>
-                                        <p className="col-md-4 my-2">98.26</p>
+                                        <p className="col my-2">Recommend</p>
+                                        <p className="col my-2">98.02</p>
+                                        <p className="col my-2">98.26</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-4 my-2">Request</p>
-                                        <p className="col-md-4 my-2">94.37</p>
-                                        <p className="col-md-4 my-2">95.46</p>
+                                        <p className="col my-2">Request</p>
+                                        <p className="col my-2">94.37</p>
+                                        <p className="col my-2">95.46</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-4 my-2 text-bold">Select</p>
-                                        <p className="col-md-4 my-2 text-bold color-bright">74.63</p>
-                                        <p className="col-md-4 my-2 text-bold color-bright">79.57</p>
+                                        <p className="col my-2 text-bold">Select</p>
+                                        <p className="col my-2 text-bold color-bright">74.63</p>
+                                        <p className="col my-2 text-bold color-bright">79.57</p>
                                     </div>
                                 </div>
                                 <div className="table-caption mt-3">
@@ -287,25 +287,25 @@ However, most existing chatbots systems are rule-based, providing limited flexib
                                 <div id="tourbot-table-2" className="table-container d-flex flex-column align-items-center">
                                     <div className="w-100 p-3">
                                     <div className="w-100 row table-header">
-                                            <p className="col-md-4 my-2 text-bold">Category</p>
-                                            <p className="col-md-4 my-2 text-bold">Hit</p>
-                                            <p className="col-md-4 my-2 text-bold">Total Number</p>
+                                            <p className="col my-2 text-bold">Category</p>
+                                            <p className="col my-2 text-bold">Hit</p>
+                                            <p className="col my-2 text-bold">Total Number</p>
                                         </div>
                                         <div className="table-body">
                                             <div className="w-100 row">
-                                                <p className="col-md-4 my-2">update</p>
-                                                <p className="col-md-4 my-2">0</p>
-                                                <p className="col-md-4 my-2">3746</p>
+                                                <p className="col my-2">update</p>
+                                                <p className="col my-2">0</p>
+                                                <p className="col my-2">3746</p>
                                             </div>
                                             <div className="w-100 row">
-                                                <p className="col-md-4 my-2">carryover</p>
-                                                <p className="col-md-4 my-2 text-bold">105830</p>
-                                                <p className="col-md-4 my-2">105830</p>
+                                                <p className="col my-2">carryover</p>
+                                                <p className="col my-2 text-bold">105830</p>
+                                                <p className="col my-2">105830</p>
                                             </div>
                                             <div className="w-100 row">
-                                                <p className="col-md-4 my-2">delete</p>
-                                                <p className="col-md-4 my-2 ">0</p>
-                                                <p className="col-md-4 my-2">560</p>
+                                                <p className="col my-2">delete</p>
+                                                <p className="col my-2 ">0</p>
+                                                <p className="col my-2">560</p>
                                             </div>
                                         </div>
                                         <div className="table-caption mt-3">
@@ -318,25 +318,25 @@ However, most existing chatbots systems are rule-based, providing limited flexib
                                 <div id="tourbot-table-3" className="table-container d-flex flex-column align-items-center">
                                     <div className="w-100 p-3">
                                         <div className="w-100 row table-header">
-                                            <p className="col-md-4 my-2 text-bold">Category</p>
-                                            <p className="col-md-4 my-2 text-bold">Hit</p>
-                                            <p className="col-md-4 my-2 text-bold">Total Number</p>
+                                            <p className="col my-2 text-bold">Category</p>
+                                            <p className="col my-2 text-bold">Hit</p>
+                                            <p className="col my-2 text-bold">Total Number</p>
                                         </div>
                                         <div className="table-body">
                                             <div className="w-100 row">
-                                                <p className="col-md-4 my-2">update</p>
-                                                <p className="col-md-4 my-2 text-bold color-bright">2950</p>
-                                                <p className="col-md-4 my-2">3746</p>
+                                                <p className="col my-2">update</p>
+                                                <p className="col my-2 text-bold color-bright">2950</p>
+                                                <p className="col my-2">3746</p>
                                             </div>
                                             <div className="w-100 row">
-                                                <p className="col-md-4 my-2">carryover</p>
-                                                <p className="col-md-4 my-2 text-bold color-bright">46371</p>
-                                                <p className="col-md-4 my-2">105830</p>
+                                                <p className="col my-2">carryover</p>
+                                                <p className="col my-2 text-bold color-bright">46371</p>
+                                                <p className="col my-2">105830</p>
                                             </div>
                                             <div className="w-100 row">
-                                                <p className="col-md-4 my-2">delete</p>
-                                                <p className="col-md-4 my-2 text-bold color-bright">351</p>
-                                                <p className="col-md-4 my-2">560</p>
+                                                <p className="col my-2">delete</p>
+                                                <p className="col my-2 text-bold color-bright">351</p>
+                                                <p className="col my-2">560</p>
                                             </div>
                                         </div>
                                         <div className="table-caption mt-3">
@@ -361,21 +361,21 @@ However, most existing chatbots systems are rule-based, providing limited flexib
                                 <div id="tourbot-table-4" className="table-container d-flex flex-column align-items-center">
                                     <div className="w-100 p-3">
                                         <div className="w-100 row table-header">
-                                            <p className="col-md-6 my-2 text-bold">Category</p>
-                                            <p className="col-md-6 my-2 text-bold">Recall</p>
+                                            <p className="col my-2 text-bold">Category</p>
+                                            <p className="col my-2 text-bold">Recall</p>
                                         </div>
                                         <div className="table-body">
                                             <div className="w-100 row">
-                                                <p className="col-md-6 my-2">update</p>
-                                                <p className="col-md-6 my-2">0.7875</p>
+                                                <p className="col my-2">update</p>
+                                                <p className="col my-2">0.7875</p>
                                             </div>
                                             <div className="w-100 row">
-                                                <p className="col-md-6 my-2">carryover</p>
-                                                <p className="col-md-6 my-2">0.4382</p>
+                                                <p className="col my-2">carryover</p>
+                                                <p className="col my-2">0.4382</p>
                                             </div>
                                             <div className="w-100 row">
-                                                <p className="col-md-6 my-2">delete</p>
-                                                <p className="col-md-6 my-2">0.6268</p>
+                                                <p className="col my-2">delete</p>
+                                                <p className="col my-2">0.6268</p>
                                             </div>
                                         </div>
                                         <div className="table-caption mt-3">
@@ -388,25 +388,25 @@ However, most existing chatbots systems are rule-based, providing limited flexib
                                 <div id="tourbot-table-5" className="table-container d-flex flex-column align-items-center">
                                     <div className="w-100 p-3">
                                         <div className="w-100 row table-header">
-                                            <p className="col-md-4 my-2 text-bold">Category</p>
-                                            <p className="col-md-4 my-2 text-bold">Hit</p>
-                                            <p className="col-md-4 my-2 text-bold">Total Number</p>
+                                            <p className="col my-2 text-bold">Category</p>
+                                            <p className="col my-2 text-bold">Hit</p>
+                                            <p className="col my-2 text-bold">Total Number</p>
                                         </div>
                                         <div className="table-body">
                                             <div className="w-100 row">
-                                                <p className="col-md-4 my-2">update</p>
-                                                <p className="col-md-4 my-2 text-bold">2725</p>
-                                                <p className="col-md-4 my-2">3746</p>
+                                                <p className="col my-2">update</p>
+                                                <p className="col my-2 text-bold">2725</p>
+                                                <p className="col my-2">3746</p>
                                             </div>
                                             <div className="w-100 row">
-                                                <p className="col-md-4 my-2">carryover</p>
-                                                <p className="col-md-4 my-2 text-bold">52561</p>
-                                                <p className="col-md-4 my-2">105830</p>
+                                                <p className="col my-2">carryover</p>
+                                                <p className="col my-2 text-bold">52561</p>
+                                                <p className="col my-2">105830</p>
                                             </div>
                                             <div className="w-100 row">
-                                                <p className="col-md-4 my-2">delete</p>
-                                                <p className="col-md-4 my-2 text-bold ">328</p>
-                                                <p className="col-md-4 my-2">560</p>
+                                                <p className="col my-2">delete</p>
+                                                <p className="col my-2 text-bold ">328</p>
+                                                <p className="col my-2">560</p>
                                             </div>
                                         </div>
                                         <div className="table-caption mt-3">
@@ -424,20 +424,20 @@ However, most existing chatbots systems are rule-based, providing limited flexib
                         <div id="tourbot-table-6" className="table-container d-flex flex-column align-items-center">
                             <div className="w-100 p-3">
                                 <div className="w-100 row table-header">
-                                    <p className="col-md-4 my-2 text-bold">Metrics</p>
-                                    <p className="col-md-4 my-2 text-bold">Initial Class Weights</p>
-                                    <p className="col-md-4 my-2 text-bold">Recall-adjusted Class Weights</p>
+                                    <p className="col my-2 text-bold">Metrics</p>
+                                    <p className="col my-2 text-bold">Initial Class Weights</p>
+                                    <p className="col my-2 text-bold">Recall-adjusted Class Weights</p>
                                 </div>
                                 <div className="table-body">
                                     <div className="w-100 row">
-                                        <p className="col-md-4 my-2">Joint Accuracy</p>
-                                        <p className="col-md-4 my-2">0.3798</p>
-                                        <p className="col-md-4 my-2 text-bold color-bright">0.4131</p>
+                                        <p className="col my-2">Joint Accuracy</p>
+                                        <p className="col my-2">0.3798</p>
+                                        <p className="col my-2 text-bold color-bright">0.4131</p>
                                     </div>
                                     <div className="w-100 row">
-                                        <p className="col-md-4 my-2">Slot Turn Accuracy</p>
-                                        <p className="col-md-4 my-2">0.5862</p>
-                                        <p className="col-md-4 my-2 text-bold color-bright">0.6229</p>
+                                        <p className="col my-2">Slot Turn Accuracy</p>
+                                        <p className="col my-2">0.5862</p>
+                                        <p className="col my-2 text-bold color-bright">0.6229</p>
                                     </div>
                                 </div>
                                 <div className="table-caption mt-3">

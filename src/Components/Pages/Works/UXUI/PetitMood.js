@@ -82,7 +82,7 @@ function PetitMood () {
                     <h3 className="heading-1 my-5">Demo Video</h3>
                     <div className="row ">
                         <div className="col mb-3 d-flex flex-column align-items-center">
-                            <Iframe width="560" height="315" src="https://www.youtube.com/embed/3X919cITq4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
+                            <Iframe className="flexible-iframe" src="https://www.youtube.com/embed/3X919cITq4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
                         </div>
                     </div>
                     
@@ -398,6 +398,19 @@ The stimuli are translated to healthy diet and junk food in the feeding scenario
             <div className="bg-1 pb-5">
                 <div className="container">
                     <div className="topic-container py-3">
+                        <h3 className="heading-1 mt-5 my-3">Takeaways</h3>
+                        <ul className="list-disc">
+                            <li className="mb-5">
+                            <b>User interview</b>: It is important to <b>prioritize users’ comfort</b> when conducting user interviews. By starting the interview with a bit chit-chat, users are more likely to relax and feel more welcome as a person instead of just a “user.” Additionally, after asking a question, we as interviewers should not simply follow the interview outline but adjust ourselves response to users’ answers. We may ask how exactly an event made users feel, or what was the consequences of an event. Most valuable information comes from this part of extra questions, and it also makes interviewees feel heard.
+                            </li>
+                            <li className="mb-5">
+                            <b>Literature review</b>: In the process of performing a literature review, I realized the importance of structure. When an idea comes to mind, it is usually more abstract and unstructured. However, <b>we need to seek theoretical basis for our claim, and it needs to be proceeded with a strong structure</b>. For example, when we want to argue the advantage of an AR pet game, we should first address how real-life pets are conducive to human health, then how AR technology can simulate environments to create an immersive experience, finally hypothesize that AR pet game can achieve similar effects with real-life pets.
+                            </li>
+                            <li className="mb-5">
+                            <b>Integrity about limitations</b>: As the first author of writing this paper, I found it critical to be honest about our research limitations. If there was any concern that might have compromised the quality of research, it must be stated clearly in the paper, such as the number of participants in the usability test. Such honesty can also welcome future endeavors to overcome the limitation and produce more studies contributing to society. 
+                            </li>
+                        </ul>
+
                         <h3 className="heading-3 color-gray mt-5">References</h3>
                         <p className="references">
                         [1] Fraser Anderson, Michelle Annett, Walter F. Bischof, and Pierre Boulanger. 2010. Virtual equine assisted therapy. In 2010 IEEE Virtual Reality Conference (VR). 255–256. https://doi.org/10.1109/VR.2010.5444776 

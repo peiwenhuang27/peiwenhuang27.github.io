@@ -66,7 +66,7 @@ function EasyManager() {
                     <h3 className="heading-1 my-5">Demo Video</h3>
                     <div className="row ">
                         <div className="col mb-3 d-flex flex-column align-items-center">
-                        <Iframe width="560" height="315" src="https://www.youtube.com/embed/dAtbkYEGqj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
+                        <Iframe className="flexible-iframe" src="https://www.youtube.com/embed/dAtbkYEGqj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
                         </div>
                     </div>
                 </div>
