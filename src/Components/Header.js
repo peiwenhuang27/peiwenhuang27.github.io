@@ -40,9 +40,9 @@ function Header ({ data }) {
                                     <Dropdown.Header>Category</Dropdown.Header>
                                     {
                                         data.map(item =>
-                                            <Dropdown.Item href={`/Works/${item.suffix}`} className="header-item py-2">
-                                                <Link to={`/Works/${item.suffix}`}>{item.name}</Link>
-                                            </Dropdown.Item>
+                                            // <Dropdown.Item href={`/Works/${item.suffix}`} className="header-item py-2">
+                                                <Link to={`Works/${item.suffix}`} className="dropdown-item header-item py-2">{item.name}</Link>
+                                            // </Dropdown.Item>
                                         )
                                     }
                                 </Dropdown.Menu>
