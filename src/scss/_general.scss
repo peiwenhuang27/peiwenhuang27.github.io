@@ -9,10 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h4, h5, .h-1, .h-2, .h-4, .h-5 {
+h1, h2, h3, h4, h5, .h-1, .h-2, .h-3, .h-4, .h-5 {
   line-height: 1.5;
 }
-h3, h6, .h-3, .h-6 {
+h6, .h-6 {
   line-height: 1.2;
 }
 h1, h4, .h-1, .h-4, .quote {
@@ -27,12 +27,12 @@ h1, .h-1 {
   font-weight: 700; 
 }
 h2, .h-2 {
-  font-size: 48px;
+  font-size: 36px;
   font-style: italic; 
   font-weight: 300;
 }
 h3, .h-3 { 
-  font-size: 24px; 
+  font-size: 28px; 
   font-style: normal;
   font-weight: 300; 
 }
@@ -116,4 +116,28 @@ p {
 }
 .purple {
   color: $purple;
+}
+.highlight {
+  color: $highlight;
+}
+
+.w-sizer {
+  width: 60%;
+  @include pad-sm {
+      width: 90%;
+  }
+}
+
+.w-sizer-sm {
+  width: 50%;
+  @include pad-sm {
+      width: 90%;
+  }
+}
+
+.w-sizer-lg {
+  width: 80%;
+  @include pad-sm {
+      width: 90%;
+  }
 }

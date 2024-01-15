@@ -1,92 +1,82 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useParams, Outlet } from "react-router-dom";
 import Transitions from "./Transition";
-import { LeftLinkNav } from "./Pages/Home/LeftNav";
+import BottomNav from "./BottomNav";
 import TopicCard from "./Pages/Home/TopicCard";
 
-function MediumList (meta) {
-    const data = meta.data; // only for a category, suffix, name, items
+function LargeList ({ workData, lifeData, categoryIndex }) { // only for a category, suffix, name, items
+    let category = workData[categoryIndex];
+    let leftTxt, leftSuffix, rightTxt, rightSuffix = null;
+    if ( categoryIndex > 0 ) { // has left
+        leftTxt = workData[categoryIndex - 1].name;
+        leftSuffix = workData[categoryIndex - 1].suffix;
+    }
+    if ( categoryIndex < workData.length - 1) { // has right
+        rightTxt = workData[categoryIndex + 1].name;
+        rightSuffix = workData[categoryIndex + 1].suffix;
+    }
+
+    // let navworkData = [...workData.slice(0, categoryIndex), ...workData.slice(categoryIndex + 1)];
 
     return (
-        <div className="medium-list w-100 mb-5 pt-3">
-            <ul className="row">
-                {
-                    data.items.map(item =>
-                        <li className="col-md-6 mb-3">
-                            <TopicCard link={item.id} data={item} />
-                        </li>
-                    )
-                }
-            </ul>
-        </div>
-    );
-};
-
-function SmallList (meta) {
-    const data = meta.data; // only for a category, suffix, name, items
-
-    return (
-        <div className="small-list w-100 mb-5">
-            <ul className="row">
-                {
-                    data.items.map(item =>
-                        <li className="col-md-4 mb-3">
-                            <TopicCard link={item.id} data={item} />
-                        </li>
-                    )
-                }
-            </ul>
-        </div>
-    );
-};
-
-function LargeList (meta) {
-    const data = meta.data; // all data
-    const categoryIndex = meta.categoryIndex; // only for a category, suffix, name, items
-    let category = data[categoryIndex];
-    // let navData = [...data.slice(0, categoryIndex), ...data.slice(categoryIndex + 1)];
-
-    return (
-        <div className="large-list-container row d-flex mt-4 pt-4">
-            <div className="col-md-3">
-                <div className="large-list-left">
-                    <h2 className="category-title mb-4">{category.name}</h2>
-                    <div>
-                    <LeftLinkNav showTitle={false} focusIdx={categoryIndex} prefix={"/Works"} data={data}/>
-                    </div>
-                </div>
-                
+        <div className="section-wrapper">
+            <div className="title">
+                <h6>{category.name}</h6>
+                <h4>{category.headline}</h4>
             </div>
+
+            {/* <LeftLinkNav showTitle={false} focusIdx={categoryIndex} prefix={"/Works"} workData={workData}/> */}
             
-            <div className="col-md-9 large-list-upper">
-                <div className="large-list d-flex flex-column align-items-center mb-3">
-                    <ul className="w-100 d-flex flex-column align-items-center">
+            <div className="section-wrapper">
+                <div className="d-flex flex-column align-items-center">
+                    <ul className="w-100 row">
                         {
                             category.items.map(item =>
-                                <li className="w-100 m-0 pb-4">
-                                    <TopicCard link={item.id} data={item} size="large" />
+                                <li className="col-md-4 m-0 pb-4">
+                                    <TopicCard link={item.id} data={item} size="medium" />
                                 </li>
                             )
                         }
                     </ul>
-                </div>`
+                </div>
+                <BottomNav
+                leftTxt={leftTxt} leftSuffix={leftSuffix}
+                rightTxt={rightTxt} rightSuffix={rightSuffix} />
+                <div className="explore-beyond d-flex justify-content-center mt-5">
+                    <div className="w-sizer d-flex flex-column align-items-center">
+                        <h4 className="mb-4">Explore beyond work</h4>
+                        <ul className="w-100 d-flex justify-content-between">
+                            {
+                                lifeData.map(item =>
+                                    <Link to={item.suffix} className="topic-card-img-container-sm mx-3">
+                                        <h6>{item.name}</h6>
+                                        <div id={`${item.name}`} className="topic-card-img" style={{ backgroundImage: `url(${item.img})`, backgroundBlendMode: "multiply" }} />
+
+                                        {/* <div className="topic-card-img" style={{ backgroundImage: `url(${item.img}),  linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)`, backgroundBlendMode: "multiply" }} /> */}
+                                    </Link>
+                                )
+                            }
+                        </ul>
+                    </div>
+                    
+                </div>
             </div>
         </div>
         
     );
 };
 
-function Category (meta) {
+function Category ({ workData, lifeData }) {
     let { categoryId } = useParams();
-    const data = meta.data;
-    let categoryIndex = data.findIndex(data => data.suffix === categoryId);
+    let categoryIndex = workData.findIndex(workData => workData.suffix === categoryId);
 
 
     return (
         <Transitions>
             <div className="category-page">
                 <div className="container">
-                    <LargeList data={data} categoryIndex={categoryIndex} />
+                    <LargeList workData={workData} lifeData={lifeData} categoryIndex={categoryIndex} />
                     
                     <Outlet />
                 </div>

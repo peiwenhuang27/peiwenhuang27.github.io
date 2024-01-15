@@ -10,58 +10,9 @@ ul {
     }
 }
 
-.color-bright {
-    color: $highlight !important;
-}
-
-.color-dark {
-    color: $secondary !important;
-}
-
-.color-black {
-    color: $primary !important;
-}
-
-.color-gray {
-    color: $gray-600 !important;
-}
-
-.color-gray-400 {
-    color: $gray-400 !important;
-}
-
-.color-gray-800 {
-    color: $gray-800 !important;
-}
-
-.text-bold {
-    font-weight: bold !important;
-}
-
 .bg-1 {
     width: 100%;
     background-color: $gray-100;
-}
-
-.w-sizer {
-    width: 60%;
-    @include pad-sm {
-        width: 90%;
-    }
-}
-
-.w-sizer-sm {
-    width: 50%;
-    @include pad-sm {
-        width: 90%;
-    }
-}
-
-.w-sizer-lg {
-    width: 70%;
-    @include pad-sm {
-        width: 90%;
-    }
 }
 
 .img-src-cap {
@@ -73,33 +24,40 @@ ul {
 }
 
 .topic-card {
-    h3 {
-        font-size: 24px;
+    h1, h4 {
         @include hover-transition;
         @include underline-animation($highlight);
     }
-    p, .tag {
-        font-size: 18px;
-        color: $gray-900;
+    h1 {
+        color: $secondary;
+    }
+    p {
+        color: $gray-600;
         @include hover-transition;
     }
-    .tag {
-        font-size: 16px;
-        color: $gray-500;
+    .p-bold {
+        color: $secondary;
+    }
+
+    .text-reverse {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        h1, p {
+            text-align: right;
+        }
     }
 
     &:hover {
-        h3 {
+        h1, h4 {
             @include underline-hover($highlight);
         }
-        p {
-            // color: $gray-500;
-        }
-        // image brightness, saturation, vignette
     }
 }
 
-.topic-card-img-container, .topic-card-img-container-lg {
+.topic-card-img-container, .topic-card-img-container-md, .topic-card-img-container-sm {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -114,10 +72,17 @@ ul {
     }
 }
 
-.topic-card-img-container-lg {
-    height: 540px;
+.topic-card-img-container-md {
+    height: 300px;
     @include pad-sm {
-        height: 300px;
+        height: 240px;
+    }
+}
+
+.topic-card-img-container-sm {
+    height: 200px;
+    @include pad-sm {
+        height: 160px;
     }
 }
 
@@ -133,6 +98,77 @@ ul {
 
     &:hover {
         transform: scale(1.08);
+    }
+}
+
+.topic-card-title-container {
+    padding: 0 36px;
+}
+.topic-card-title-container-md {
+    padding: 8px 0;
+    h4 {
+        color: $secondary;
+        line-height: 1.2;
+    }
+    p, .p-bold {
+        color: gray;
+    }
+}
+
+.explore-beyond {
+    .topic-card-img {
+        background-blend-mode: "multiply";
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     background-image: linear-gradient(to bottom right,$gray-300,$gray-600);
+        //     background-blend-mode: "multiply";
+	    //     opacity: .6; 
+        // }
+    }
+
+    #Art {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right, $indigo-400, $indigo-800);
+            opacity: .6; 
+        }
+    }
+    #Writing {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right, $beige-600, $beige-900);
+            opacity: .6; 
+        }
+    }
+
+    h6 {
+        font-size: 24px;
+        @include text-shadow;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        background: transparent;
+    }
+    a {
+        text-decoration: none;
+        color: white;
     }
 }
 
@@ -156,51 +192,11 @@ ul {
     }
 }
 
-.topic-text-container {
-    h3 {
-        @include pad-sm {
-            line-height: 1.2;
-        }
-    }
-}
-
-.heading-1 {
-    font-size: 24px; 
-    line-height: 1.5;
-}
-
-.heading-2 {
-    font-size: 21px;
-    line-height: 1.5;
-}
-
-.heading-3 {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-.heading-4 {
-    font-size: 16px;
-}
-
-.heading-5 {
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.italic {
-    font-style: italic;
-}
-
 .date {
     font-size: 16px !important;
 }
 
-p {
-    font-size: 16px;
 
-    line-height: 1.5;
-}
 
 .topic-title-container {
     h2 {

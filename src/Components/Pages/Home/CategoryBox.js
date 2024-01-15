@@ -6,17 +6,23 @@ function CategoryBox ({ prefix, data }) { // for one category (suffix, name, ite
 
     return (
         <div id={data.suffix} className="category-box mb-5">
-            <div className="mb-4">
+            <div className="mb-5">
                 <Link to={link} className="text-decoration-none">
                     <h4>{data.name}</h4>
                 </Link>
             </div>
-            <ul className="row">
-                {data.items.map(item =>
-                    <li className="row">
-                        {/* TODO: topic card layout */}
-                        <TopicCard link={`${link}/${item.id}`} data={item} />
-                    </li>
+            <ul>
+                {data.items.map((item, key) => {
+                    let reverse = false;
+                    if (key % 2 === 1) {
+                        reverse = true;
+                    }
+                    return (
+                        <li>
+                            <TopicCard link={`${link}/${item.id}`} data={item} reverse={reverse} size="large" />
+                        </li>
+                    );
+                } 
                 )}
             </ul>
 

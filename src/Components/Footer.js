@@ -14,7 +14,7 @@ function Footer () {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/joanne-huang-756649205/" target="_blank" rel="noreferrer noopener">
+                            <a href="https://www.linkedin.com/in/peiwen-h" target="_blank" rel="noreferrer noopener">
                                 <LinkedInIcon />
                             </a>
                         </li>

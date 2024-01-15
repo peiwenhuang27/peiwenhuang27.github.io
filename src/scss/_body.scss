@@ -32,6 +32,7 @@
                 padding: 16px 16px;
 
                 a {
+                    color: $secondary;
                     text-decoration: none;
                 }
                 &:hover {
@@ -119,28 +120,51 @@
     margin-top: 60px;
     margin-bottom: 120px;
 
-    h2 {
-        color: $gray-600;
+    h4 {
         @include pad-sm {
             text-align: center;
         }
     }
 }
 
-.intro-body {
-    .quote-wrapper {
-        width: 100vw;
-        padding: 80px 0;
+.quote-wrapper {
+    width: 100vw;
+    padding: 80px 0;
+    background-color: $indigo-100;
+    .quote, .quotation-mark {
+        color: $secondary;
+        text-align: center;
+    }
+    .quotation-mark {
+        font-size: 48px;
+    }
+    .quote-author {
+        font-weight: 700;
+        font-style: italic; 
+    }
+}
+
+.work-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        border: none;
+        border-radius: 100px;
+        padding: 12px 16px;
         background-color: $indigo-100;
-        .quote, .quotation-mark {
-            text-align: center;
+        transition: .3s;
+
+        a {
+            text-decoration: none;
+            color: $secondary;
         }
-        .quotation-mark {
-            font-size: 48px;
-        }
-        .quote-author {
-            font-weight: 700;
-            font-style: italic; 
+
+        &:hover {
+            background-color: $secondary;
+            a {
+                color: white;
+            }
         }
     }
 }

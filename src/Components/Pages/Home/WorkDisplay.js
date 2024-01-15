@@ -27,15 +27,16 @@ function WorkDisplay ({ data }) {
 
                 </div>
             </div>
-            <div className="container pt-5">
+            <div className="container section-wrapper">
                 <div className="work-list">
-                    <ul className="work-cards flex-column">
+                    <ul className="w-100 work-cards flex-column">
                         {data.map(item =>
-                            <li className="w-100 row">
+                            <li className="w-100">
                                 <CategoryBox prefix={prefix} data={item} />
                             </li>
                         )}
                     </ul>
+                    <button className="h-6"><Link to="/Works/design">View All Projects</Link></button>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 
-function TopicCard ({ link, data, size }) { // title, tags, desc, img
+function TopicCard ({ link, data, size, reverse = false }) { // title, tags, desc, img
     let img_class = "topic-card-img-container";
     if ( size === 'large' ) {
         img_class = "topic-card-img-container-lg";
@@ -9,27 +9,57 @@ function TopicCard ({ link, data, size }) { // title, tags, desc, img
     for (let i = 1; i < data.tags.length; i++) {
         tag += " #" + data.tags[i];
     }
+    const flexDirection = reverse ? "flex-row-reverse" : "";
+    const textDirection = reverse ? "text-reverse" : "";
     
-    return (
-        <div className="mb-5 px-3">
-            <Link to={link} className="topic-card text-decoration-none">
-                <div className={img_class} >
-                    <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} />
-                </div>
-                <div className="topic-text-container mt-4 mb-5">
-                    <div className="flex-column align-items-start">
-                        <h3 className="pb-3">{data.title}</h3>
-                        <p className="tag mb-1">{tag}</p>
-                        <p className="mb-1">{data.desc}</p>
-                        
+    if ( size === 'large' ) {
+        return (
+            <div className="mb-3">
+                <Link to={link} className={`topic-card text-decoration-none row d-flex ${flexDirection}`}>
+                    <div className="col-md-6">
+                        <div className="topic-card-img-container" >
+                            <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} />
+                        </div>
                     </div>
-                </div>
-                
-            </Link>
+                    <div className={`topic-card-title-container col-md-6 d-flex flex-column justify-content-center ${textDirection}`}>
+                        {/* an extra container so underline length = heading */}
+                        <div >
+                            <h1>{data.title}</h1>
+                            <p className="p-bold mb-1">{data.desc}</p>
+                            <p>{tag}</p>
+                        </div>
+                    </div>
+                    
+                </Link>
 
-            <Outlet />
-        </div>
-    );
+                <Outlet />
+            </div>
+        );
+    }
+    if ( size === 'medium' ) {
+        return (
+            <div className=" mb-3">
+                <Link to={link} className={`topic-card text-decoration-none`}>
+                    <div>
+                        <div className="topic-card-img-container-md" >
+                            <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} />
+                        </div>
+                    </div>
+                    <div className={`topic-card-title-container-md d-flex flex-column justify-content-center ${textDirection}`}>
+                        {/* an extra container so underline length = heading */}
+                        <div >
+                            <h4>{data.title}</h4>
+                            <p className="p-bold mb-1">{data.desc}</p>
+                            <p>{tag}</p>
+                        </div>
+                    </div>
+                    
+                </Link>
+
+                <Outlet />
+            </div>
+        );
+    }
 };
 
 export default TopicCard;

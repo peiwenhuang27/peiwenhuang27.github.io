@@ -1,12 +1,11 @@
-.about-svg {
-    width: 150px;
-    height: 150px;
-}
-
 .about-intro-container {
+    padding-right: 36px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+
+    h4 {
+        color: $indigo-700;
+    }
 }
 
 .pfp-container {
@@ -29,14 +28,45 @@
     }
 }
 
-.skills, .education {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about-svg {
+    width: 100px;
+    height: 100px;
+    path {
+        fill: $indigo-200;
+    }
 }
 
-.skill-heading {
-    color: $black;
+.about-icon {
+    h4 {
+        color: $indigo-200;
+        padding-top: 8px;
+    }
+}
+
+.education {
+    h5 {
+        color: $secondary;
+    }
+    .caption {
+        color: gray;
+    }
+}
+
+.skills, .interests {
+    h6 {
+        color: $secondary;
+    }
+    li {
+        @include p-text;
+        text-align: center;
+    }
+}
+
+.languages {
+    li {
+        @include p-text;
+        color: gray;
+    }
 }
 
 .no-bold {
@@ -67,15 +97,24 @@
 
 .about-link {
     text-decoration: none;
-    font-size: 32px;
-    font-weight: 500;
-    color: $secondary !important;
+    color: $secondary;
 
     @include hover-transition;
     @include underline-animation($highlight);
 
+    .arrow-svg {
+        margin: 0 16px;
+        width: 32px;
+        height: 32px;
+        transform: rotate(-90deg);
+        transition: .3s;
+    }
+
     &:hover {
-        color: $highlight !important;
+        color: $highlight;
+        .arrow-svg path {
+            fill: $highlight;
+        }
     }
 
     @include pad-sm {
@@ -85,6 +124,9 @@
 }
 
 .about {
+    h5 {
+        color: gray;
+    }
     @include pad-sm {
         margin-top: 80px;
     }

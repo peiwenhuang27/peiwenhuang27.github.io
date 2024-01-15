@@ -52,20 +52,20 @@ const ArrowIcon = () => (
 );
 
 const EmailIcon = () => (
-    <div>
-        <EmailSvg className="email-svg" />
+    <div className="email-svg">
+        <EmailSvg />
     </div>
 );
 
 const LinkedInIcon = () => (
-    <div>
-        <LinkedInSvg className="linkedin-svg" />
+    <div className="linkedin-svg">
+        <LinkedInSvg />
     </div>
 );
 
 const GithubIcon = () => (
-    <div>
-        <GithubSvg className="github-svg" />
+    <div className="github-svg">
+        <GithubSvg />
     </div>
 );
 

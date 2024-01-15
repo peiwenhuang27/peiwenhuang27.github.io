@@ -1,140 +1,54 @@
-.category-menu {
-    border-right: 1px solid $gray-100;
-
-    h5 {
-        color: $gray-600;
-        font-weight: bold;
-
-        @include pad-sm {
-            text-align: center
-        }
-    }
-
-    li {
-        @include hover-transition;
-
-        &:hover {
-            cursor: pointer;
-            color: $primary;
-        }
-    }
-
-    a {
-        color: $gray-600;
-        text-decoration: none;
-        @include underline-animation($primary);        
-    }
-}
-
-.leftnav-list {
-    @include pad-sm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.large-list-container {
-    .category-menu {
-        width: 100%;
-    }
-}
-
-.large-list-upper {
-    @include pad-sm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.large-list {
-    width: 90%;
-}
-
-.large-list-left {
-    position: fixed;
-    width: 30vh;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    div {
-        @include pad-sm {
-            display: none;
-        }
-    }
-
-    @include pad-sm {
-        position: relative;
-        width: auto;
-        height: auto;
-    }
-}
-
 .category-page {
-    .category-title {
-        color: $gray-500;
-        text-shadow: none;
-        font-size: 48px;
-        font-weight: bold;
-        
-        @include pad-sm {
-            text-align: center;
-            margin-bottom: 40px !important;
+    .title {
+        h6 {
+            color: gray;
+        }
+        h4 {
+            color: $indigo-700;
         }
     }
-
-    .topic-card {
-        h3 {
-            font-size: 32px;
-        }
-    }
-
     @include pad-sm {
         padding-top: 80px;
     }
 }
 
 .category-box {
-    .title {
-        h2 {
-            color: $gray-600;
-            font-weight: bold;
-            @include hover-transition;
-
-            &:hover {
-                color: $primary;
-                
-            }
-
-            @include pad-sm {
-                text-align: center;
-            }
-        }
-        span {
-            font-size: 18px;
-            color: $gray-600;
-            
-            @include underline-animation($primary);
-
-            @include pad-sm {
-                opacity: 0;
-                width: 0;
-                height: 0;
-            }
-        }
-
-        @include pad-sm {
-            margin-bottom: 0 !important;
-        }
-    }
-
     @include pad-sm {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+.bottom-nav {
+    a {
+        color: gray;
+        text-decoration: none;
+        @include hover-transition;
+        @include underline-animation($highlight);
+        &:hover {
+            transition: .6s;
+            .arrow-svg path {
+                fill: $highlight;
+            }
+        }
+    }
+    h6 {
+        margin: 0;  
+    }
+    .arrow-svg {
+        margin: 0 8px;
+        width: 16px;
+        height: 16px;
+        path {
+            fill: gray;
+        }
+    }
+    .left .arrow-svg {
+        transform: rotate(90deg);
+    }
+    .right .arrow-svg {
+        transform: rotate(-90deg);
     }
 }
 

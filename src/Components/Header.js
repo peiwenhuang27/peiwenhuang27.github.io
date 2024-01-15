@@ -62,7 +62,7 @@ function Header ({ workData, lifeData = null }) {
                                 <Dropdown.Menu show={show} className="header-dropdown">
                                     {
                                         lifeData.map(item =>
-                                            <Link to={`Works/${item.suffix}`} className="dropdown-item header-item py-2">{item.name}</Link>
+                                            <Link to={`${item.suffix}`} className="dropdown-item header-item py-2">{item.name}</Link>
                                         )
                                     }
                                 </Dropdown.Menu>
