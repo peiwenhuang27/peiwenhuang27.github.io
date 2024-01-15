@@ -6,17 +6,15 @@ function CategoryBox ({ prefix, data }) { // for one category (suffix, name, ite
 
     return (
         <div id={data.suffix} className="category-box mb-5">
-            <div className="title w-100 row align-items-center mb-4">
-                <Link to={link} className="text-decoration-none col-md-8">
-                    <h2>{data.name}</h2>
-                </Link>
-                <Link to={link} className="col-md-4 text-end text-decoration-none">
-                    <span>View</span>
+            <div className="mb-4">
+                <Link to={link} className="text-decoration-none">
+                    <h4>{data.name}</h4>
                 </Link>
             </div>
-            <ul className="row p-0">
+            <ul className="row">
                 {data.items.map(item =>
-                    <li className="col-md-6">
+                    <li className="row">
+                        {/* TODO: topic card layout */}
                         <TopicCard link={`${link}/${item.id}`} data={item} />
                     </li>
                 )}

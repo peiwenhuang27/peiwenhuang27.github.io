@@ -1,19 +1,22 @@
 .footer {
-
     width: 100%;
-    background-color: $highlight;
+    background-color: $pink-100;
     padding: 20px;
 
     .container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         color: $white;
 
         @include pad-sm {
             flex-direction: column;
             align-items: center;
         }
+    }
+
+    h6, p {
+        color: $secondary;
     }
 }
 
@@ -23,7 +26,7 @@
     margin: 20px 0;
 
     li {
-        padding: 0 20px;
+        padding-right: 24px;
 
         @include pad-sm {
             padding: 0 10px;

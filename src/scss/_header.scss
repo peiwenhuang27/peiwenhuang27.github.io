@@ -1,11 +1,10 @@
 .header {
-    position: sticky; // fixed ?
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: #fff;
+    background-color: white;
     padding: 16px 0;
-    // height: 7vh;
     box-shadow: $box-shadow;
     .container {
         @include pad-sm {
@@ -44,8 +43,8 @@
             em {
                 font-size: 14px;
                 padding: 0 3px;
-                color: #fff;
-                background-color: $brown;
+                color: white;
+                background-color: $beige-600;
                 border-radius: 15px;
                 position: absolute;
                 right: 0;
@@ -56,11 +55,14 @@
 }
 .header-logo {
     text-decoration: none;
-    color: $primary;
+    color: $secondary;
     display: flex;
-    height: 100%;
 
     h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
         margin: 0;
     }
 
@@ -99,16 +101,15 @@ display: block;
 .header-menu {
     display: flex;
     align-items: center;
-    // flex-wrap: wrap;
     margin: 0;
     padding: 0;
 
-    .header-about {
+    .navbar-item {
         a {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0 8px;
+            padding: 6px 12px 2px 12px;
             
             @include header-text;
             @include underline-animation($highlight);
@@ -120,7 +121,7 @@ display: block;
             }
 
             &:hover {
-                color: $highlight !important;
+                color: $highlight;
             }
         }
     }
@@ -129,26 +130,46 @@ display: block;
         background-color: transparent;
         border: none;
         border-radius: 0;
-        padding: 0 8px;
         margin: 0;
+        
+        span {
+            display: flex;
+            align-items: center;
+        }
 
         @include header-text;
         @include underline-animation($highlight);
 
         &:active {
-            background-color: transparent !important;
+            background-color: transparent;
+        }
+        &:hover {
+            .arrow-svg path {
+                fill: $pink-700;
+            }
+        }
+
+        .arrow-svg {
+            width: 16px;
+            height: 16px;
+            margin-left: 4px;
+            margin-bottom: 0;
+
+            path {
+                fill: $gray-500;
+            }
         }
     }
 
 
     .header-item {
-        color: $black !important;
+        color: black;
         .header-link {
             width: 100%;
         }
         a {
             text-decoration: none;
-            color: $black;
+            color: black;
             @include hover-transition;
         }
         &:hover {
@@ -175,16 +196,6 @@ display: block;
             display: flex;
         }
     }
-
-    // @include pad-sm {
-    //     display: none;
-    //     flex-direction: column;
-    //     position: absolute;
-    //     top: 58px;
-    //     left: 0;
-    //     width: 100%;
-    //     z-index: 100;
-    // }
 }
 
 .dropdown .dropdown-menu {
@@ -196,11 +207,12 @@ display: block;
     -webkit-transition: all 0.4s  ease;
     -o-transition:      all 0.4s  ease;
     -ms-transition:     all 0.4s  ease;
-  }
-  .dropdown:hover .dropdown-menu {
+}
+.dropdown:hover .dropdown-menu {
     visibility: visible;
     opacity: 1;
-  }
-  .dropdown {
-    display: inline-block;
-  }
+}
+.dropdown-toggle::after {
+    display: none;
+}
+

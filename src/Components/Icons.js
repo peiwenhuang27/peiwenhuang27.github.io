@@ -4,6 +4,10 @@ import { ReactComponent as SkillSvg } from "../img/skillset.svg"
 import { ReactComponent as LanguageSvg } from "../img/language.svg"
 import { ReactComponent as InterestSvg } from "../img/interests.svg"
 import { ReactComponent as LinkSvg } from "../img/link.svg"
+import { ReactComponent as ArrowSvg } from "../img/arrowDown.svg"
+import { ReactComponent as EmailSvg } from "../img/Email.svg"
+import { ReactComponent as LinkedInSvg } from "../img/LinkedIn.svg"
+import { ReactComponent as GithubSvg } from "../img/Github.svg"
 
 const Logo = () => (
     <div className="logo-svg">
@@ -41,4 +45,28 @@ const LinkIcon = () => (
     </div>
 );
 
-export { Logo, EduIcon, SkillIcon, InterestIcon, LangIcon, LinkIcon };
+const ArrowIcon = () => (
+    <div>
+        <ArrowSvg className="arrow-svg" />
+    </div>
+);
+
+const EmailIcon = () => (
+    <div>
+        <EmailSvg className="email-svg" />
+    </div>
+);
+
+const LinkedInIcon = () => (
+    <div>
+        <LinkedInSvg className="linkedin-svg" />
+    </div>
+);
+
+const GithubIcon = () => (
+    <div>
+        <GithubSvg className="github-svg" />
+    </div>
+);
+
+export { Logo, EduIcon, SkillIcon, InterestIcon, LangIcon, LinkIcon, ArrowIcon, EmailIcon, LinkedInIcon, GithubIcon };

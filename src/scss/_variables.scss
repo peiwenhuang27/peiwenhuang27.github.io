@@ -1,15 +1,15 @@
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #F3F3F5 !default;
-$gray-200: #e0e0e0 !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #a5a5a5 !default;
-$gray-600: #888A99 !default;
-$gray-700: #818a91 !default;
-$gray-800: #848484 !default;
-$gray-900: #707070 !default;
-$black:    #080b19 !default;
+$gray-100: #E6E6E6 !default;
+$gray-200: #CCCCCC !default;
+$gray-300: #B3B3B3 !default;
+$gray-400: #999999 !default;
+$gray-500: #808080 !default;
+$gray-600: #666666 !default;
+$gray-700: #4D4D4D !default;
+$gray-800: #333333 !default;
+$gray-900: #191919 !default;
+$black:    #000 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -29,55 +29,97 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
-$indigo-lt-1:  #9194aa !default;
-$indigo-lt-2:  #b0b4ca !default;
-$indigo:  #28378C !default;
-$indigo-dk: #0E1C6F !default;
-$purple:  #6f42c1 !default;
-$pink:    #F4C1B3 !default;
-$red:     #dc3545 !default;
-$orange:  #E36666 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
-$teal:    #20c997 !default;
-$cyan:    #6ec8df !default;
-$tan:       #ac8a46 !default;
-$brown:     #916000 !default;
-$brown-dk:  #916019 !default;
-$brown-xdk:  #744e04 !default;
+
+// indigo
+$indigo-100: #E5EDF3 !default;
+$indigo-200: #CADBE7 !default;
+$indigo-300: #B0C9DC !default;
+$indigo-400: #95B7D0 !default;
+$indigo-500: #7BA5C4 !default;
+$indigo-600: #527C9A !default;
+$indigo-700: #284B65 !default;
+$indigo-800: #103754 !default;
+$indigo-900: #00213A !default;
+
+// pink
+$pink-100: #FDF0F3 !default;
+$pink-200: #FBE1E7 !default;
+$pink-300: #FAD2DB !default;
+$pink-400: #F8C3CF !default;
+$pink-500: #F4A4B8 !default;
+$pink-600: #F186A0 !default;
+$pink-700: #ED6888 !default;
+$pink-800: #DB496C !default;
+$pink-900: #632332 !default;
+
+// beige
+$beige-100: #FCFAF7 !default;
+$beige-200: #F9EEDA !default;
+$beige-300: #F6E6C7 !default;
+$beige-400: #F3DDB4 !default;
+$beige-500: #ECCD8F !default;
+$beige-600: #E6BC69 !default;
+$beige-700: #E0AB44 !default;
+$beige-800: #B38936 !default;
+$beige-900: #5A441B !default;
+
+// accents
+$red:#FEA38E !default;
+$yellow:#FCC465 !default;
+$green:#82BF80 !default;
+$blue:#97D3CB !default;
+$purple:#DFBEEF !default;
+
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
+  "indigo-100": $indigo-100,
+  "indigo-200": $indigo-200,
+  "indigo-300": $indigo-300,
+  "indigo-400": $indigo-400,
+  "indigo-500": $indigo-500,
+  "indigo-600": $indigo-600,
+  "indigo-700": $indigo-700,
+  "indigo-800": $indigo-800,
+  "indigo-900": $indigo-900,
+  "pink-100": $pink-100,
+  "pink-200": $pink-200,
+  "pink-300": $pink-300,
+  "pink-400": $pink-400,
+  "pink-500": $pink-500,
+  "pink-600": $pink-600,
+  "pink-700": $pink-700,
+  "pink-800": $pink-800,
+  "pink-900": $pink-900,
+  "beige-100": $beige-100,
+  "beige-200": $beige-200,
+  "beige-300": $beige-300,
+  "beige-400": $beige-400,
+  "beige-500": $beige-500,
+  "beige-600": $beige-600,
+  "beige-700": $beige-700,
+  "beige-800": $beige-800,
+  "beige-900": $beige-900,
+  "red": $red,
+  "yellow": $yellow,
+  "green": $green,
   "blue":           $blue,
-  "indigo":         $indigo,
-  "indigo-darker":  $indigo-dk,
   "purple":         $purple,
-  "pink":           $pink,
-  "red":            $red,
-  "orange":         $orange,
-  "yellow":         $yellow,
-  "green":          $green,
-  "teal":           $teal,
-  "cyan":           $cyan,
-  "tan":            $tan,
-  "brown":          $brown,
-  "brown-dark":     $brown-dk,
   "white":          $white,
   "gray-extralight":$gray-200,
-  "gray-light":     $gray-400,
+  "gray-light":     $gray-500,
   "gray":           $gray-600,
   "gray-dark":      $gray-800
 ) !default;
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $black !default; //$indigo-dk !default;
-$secondary:     $indigo !default;
-$highlight:     $orange !default;
+$primary:       $black !default;
+$secondary:     $indigo-800 !default;
+$highlight:     $pink-700 !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          $blue !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;

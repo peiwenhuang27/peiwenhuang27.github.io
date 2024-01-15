@@ -8,35 +8,34 @@ function WorkDisplay ({ data }) {
     return (
         <div className="main-body intro-body">
             <div className="container pt-5">
-                <div className="topic-container">
                     <div className="intro">
-                        <h2 className="text-bold ">Introduction</h2>
-                        <p className="intro-text py-3">
-                        I am a designer & engineer with 4+ years of experience during which I utilize my expertise to recognize problems, analyze causes, and implement solutions.
-                        This portfolio presents my works in the fields of Design, CS and Business.<br/><br/>
-                        
-                        In <Link className="bold-link" to="/Works/UXUI">UX/UI design</Link>, I dive into mental health topics via interviewing users and referencing related studies to propose mobile apps eliminating user pain points.
-                        
-                        In <Link className="bold-link" to="/Works/DataScience-SystemDesign">Data Science & System Design</Link>, I collaborate with teammates to devise effective solutions for travel recommendation, user profiling, and fake news, utilizing my capabilities in NLP, ML, System Analysis & Design, and Frontend Development.
-                    
-                        In <Link className="bold-link" to="/Works/Case-Study">Case Study</Link>, I critically analyze a local company and propose solutions on digital transformation.
-                            
-                        Moreover, my creativity is unleashed to bring abstract concepts into visual forms in <Link className="bold-link" to="/Works/Web-Visuals">Web Visuals</Link>, <Link className="bold-link" to="/Works/Editorial-Print">Editorials & Prints</Link>, <Link className="bold-link" to="/Works/Poster">Poster Design</Link>, and <Link className="bold-link" to="/Works/Event-Visuals">Event Visuals</Link>.
+                        <h4>A bit about me...</h4>
+                        <p className="px-5 py-3">
+                        I am a UX designer, researcher, and engineer with 3 years of experience during which I utilize my expertise to identify problems, analyze causes, and implement solutions.
+                        <br/><br/>Driven by a desire to enhance the quality of life, I’m always looking for areas of opportunity to use my skills and catalyze change.
                         </p>
                     </div>
-                    
-                </div>
-                <div className="row">
-                    <LeftLinkNav showTitle={true} prefix={prefix} data={data} />
-                    <div className="work-list col-md-10">
-                        <ul className="work-cards flex-column">
-                            {data.map(item =>
-                                <li className="w-100">
-                                    <CategoryBox prefix={prefix} data={item} />
-                                </li>
-                            )}
-                        </ul>
+            </div>
+            <div className="quote-wrapper">
+                <div className="container">
+                    <div className="quote quotation-mark">〝</div>
+                    <div className="quote">
+                    Do your little bit of good where you are; it’s those little bits of good put together that overwhelm the world.
+                    <br/>_<br/>
+                    <div className="quote-author">Desmond Tutu</div>
                     </div>
+
+                </div>
+            </div>
+            <div className="container pt-5">
+                <div className="work-list">
+                    <ul className="work-cards flex-column">
+                        {data.map(item =>
+                            <li className="w-100 row">
+                                <CategoryBox prefix={prefix} data={item} />
+                            </li>
+                        )}
+                    </ul>
                 </div>
             </div>
         </div>

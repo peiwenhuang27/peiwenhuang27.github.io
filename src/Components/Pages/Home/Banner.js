@@ -1,39 +1,60 @@
 import { Link } from 'react-router-dom';
-import { Logo } from '../../Icons';
-import ProgressiveImage from 'react-progressive-bg-image';
+import { ArrowIcon } from '../../Icons';
 
 function Banner () {
-    const img_src = "https://live.staticflickr.com/65535/52516580065_a71e3f7f51_k.jpg";
-    const img_ph = "https://live.staticflickr.com/65535/52516580065_e5de0629f5_o.jpg";
 
     return (
-        <div className="banner">
-            <ProgressiveImage
-                src={img_src}
-                placeholder={img_ph}
-                style={{
-                    height: '100vh',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundAttachment: 'fixed',
-                }}
-            >
+        <section className="banner">
             <div className='container'>
-                <ul className="w-sizer d-flex flex-column justify-content-center align-items-center">
-                    <li><Logo /></li>
-                    <li><h2>Hi! It’s Pei-Wen.</h2></li>
-                    <li><h3>Advocate for Humanity by Way of<br/>HCI, UX, & Social Computing.</h3></li>
-                </ul>
-                {/* <Link to="/Works" className='banner-btn my-5'>View Work</Link> */}
-                <div className="arrow-down mt-5 d-flex flex-column align-items-center justify-content-center">
-                    <Link to="/#works">
-                        <img className='banner-arrow' src="https://media.giphy.com/media/IxrsXjo6upn8Dg82uU/giphy.gif" alt="arrow-down" width="60px"/>
+                <div className="title-wrapper">
+                    <h1>Hey! Peiwen Huang here,</h1>
+                    <h2>revolutionizing the human experience, the</h2>
+                </div>
+                
+                <div className="list-wrapper">
+                    <div>
+                        <ul>
+                            <li className="h-3" id="role-1">
+                                <Link to="/" className="d-flex align-items-center">
+                                    <div className="circle" id="circle-1"></div>
+                                    designer's
+                                </Link>
+                            </li>
+                            <li className="h-3" id="role-2">
+                                <Link to="/" className="d-flex align-items-center">
+                                    <div className="circle" id="circle-2"></div>
+                                    researcher's
+                                </Link>
+                            </li>
+                            <li className="h-3" id="role-3">
+                                <Link to="/" className="d-flex align-items-center">
+                                    <div className="circle" id="circle-3"></div>
+                                    engineer's
+                                </Link>
+                            </li>
+                            <li className="h-3" id="role-4">
+                                <Link to="/" className="d-flex align-items-center">
+                                    <div className="circle" id="circle-4"></div>
+                                    artist's
+                                </Link>
+                            </li>
+                            <li className="h-3" id="role-5">
+                                <Link to="/" className="d-flex align-items-center">
+                                    <div className="circle" id="circle-5"></div>
+                                    writer's
+                                </Link>
+                            </li>
+                        </ul>
+                        <h3>way.</h3>
+                    </div>
+                    <div className="divider"></div>
+                    <Link to="/#works" className="svg-wrapper">
+                        <ArrowIcon />
                     </Link>
                 </div>
+                
             </div>
-            </ProgressiveImage>
-        </div>
+        </section>
     );
 };
 

@@ -147,13 +147,10 @@
 }
 
 @mixin header-text {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 500;
     text-decoration: none;
-    color: $gray-600 !important;
+    color: $gray-500;
 
     &:hover {
-        color: $highlight !important;
+        color: $highlight;
     }
 }
