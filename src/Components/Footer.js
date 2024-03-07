@@ -9,7 +9,7 @@ function Footer () {
                     <h6>Let's connect.</h6>
                     <ul className="contact-menu">
                         <li>
-                            <a href="mailto:peiwenhuang@ntu.im" target="_blank" rel="noreferrer noopener">
+                            <a href="mailto:pwh27design@gmail.com" target="_blank" rel="noreferrer noopener">
                                 <EmailIcon />
                             </a>
                         </li>
