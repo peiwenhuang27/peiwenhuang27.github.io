@@ -1,3 +1,10 @@
+.about-intro {
+    padding-bottom: 150px;
+    @include pad-sm {
+        padding-bottom: 90px;
+    }
+}
+
 .about-intro-container {
     padding-right: 36px;
     display: flex;
@@ -53,20 +60,13 @@
     }
 }
 
-.skills, .interests {
+.skills, .interests, .languages {
     h6 {
         color: $secondary;
     }
     li {
         @include p-text;
         text-align: center;
-    }
-}
-
-.languages {
-    li {
-        @include p-text;
-        color: gray;
     }
 }
 

@@ -16,11 +16,12 @@ function Home ({ data }) {
                 window.setTimeout( ()=>{ window.scrollTo({top: h, left: 0, behavior: "smooth"}) }, 50 );
             }
         } 
-    }, [location,]);
+    }, [location]);
 
     return (
         <Transitions key="home">
             <Banner />
+            
             <div id="works">
                 <WorkDisplay data={data} />
             </div>

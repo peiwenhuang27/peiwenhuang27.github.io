@@ -1,16 +1,27 @@
 import { Link, Outlet } from "react-router-dom";
 import TopicCard from "./TopicCard";
 
+import { ScrollReveal } from "../../Helpers/SmoothScroll";
+
+function Title ({ link, title }) {
+    return (
+        <div className="mb-5">
+            <Link to={link} className="text-decoration-none">
+                <h4>{title}</h4>
+            </Link>
+        </div>
+    );
+}
+
 function CategoryBox ({ prefix, data }) { // for one category (suffix, name, items) 
     let link = `${prefix}/${data.suffix}`;
-
+    
     return (
         <div id={data.suffix} className="category-box mb-5">
-            <div className="mb-5">
-                <Link to={link} className="text-decoration-none">
-                    <h4>{data.name}</h4>
-                </Link>
-            </div>
+            <ScrollReveal>
+                <Title link={link} title={data.name} />
+            </ScrollReveal>
+            
             <ul>
                 {data.items.map((item, key) => {
                     let reverse = false;
@@ -19,7 +30,9 @@ function CategoryBox ({ prefix, data }) { // for one category (suffix, name, ite
                     }
                     return (
                         <li className="mb-5">
-                            <TopicCard link={`${link}/${item.id}`} data={item} reverse={reverse} size="large" />
+                            <ScrollReveal>
+                                <TopicCard link={`${link}/${item.id}`} data={item} reverse={reverse} size="large" />
+                            </ScrollReveal>
                         </li>
                     );
                 } 

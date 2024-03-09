@@ -1,6 +1,12 @@
 import { Link, Outlet } from "react-router-dom";
+import { useEffect } from "react";
 
-function TopicCard ({ link, data, size, reverse = false }) { // title, tags, desc, img
+// framer
+import { motion, useAnimation } from "framer-motion";
+// react-intersection
+import { useInView } from "react-intersection-observer";
+
+function TopicCard ({ link, data, size, variants, reverse = false }) { // title, tags, desc, img
     let img_class = "topic-card-img-container";
     if ( size === 'large' ) {
         img_class = "topic-card-img-container-lg";
@@ -11,10 +17,28 @@ function TopicCard ({ link, data, size, reverse = false }) { // title, tags, des
     }
     const flexDirection = reverse ? "flex-row-reverse" : "";
     const textDirection = reverse ? "text-reverse" : "";
+
+    // animation on scroll
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        } 
+        else {
+            control.start("hidden");
+        }
+    }, [control, inView]);
     
     if ( size === 'large' ) {
         return (
-            <div className="mb-3">
+            <motion.div className="mb-3"
+            ref={ref}
+            variants={variants}
+            initial="hidden"
+            animate={control}
+            >
                 <Link to={link} className={`topic-card text-decoration-none row d-flex ${flexDirection}`}>
                     <div className="col-md-6 mb-3 p-0">
                         <div className="topic-card-img-container-lg" >
@@ -33,12 +57,17 @@ function TopicCard ({ link, data, size, reverse = false }) { // title, tags, des
                 </Link>
 
                 <Outlet />
-            </div>
+            </motion.div>
         );
     }
     if ( size === 'medium' ) {
         return (
-            <div className=" mb-3">
+            <motion.div className=" mb-3"
+            ref={ref}
+            variants={variants}
+            initial="hidden"
+            animate={control}
+            >
                 <Link to={link} className={`topic-card text-decoration-none`}>
                     <div>
                         <div className="topic-card-img-container-md" >
@@ -57,7 +86,7 @@ function TopicCard ({ link, data, size, reverse = false }) { // title, tags, des
                 </Link>
 
                 <Outlet />
-            </div>
+            </motion.div>
         );
     }
 };

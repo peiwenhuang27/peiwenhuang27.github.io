@@ -433,22 +433,22 @@ ul {
 }
 
 .section-wrapper {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     
     @include pad-sm {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
 }
 
 .subsection-wrapper {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 
     @include pad-sm {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
