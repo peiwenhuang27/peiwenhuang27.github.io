@@ -1,60 +1,55 @@
 import Iframe from "react-iframe";
 
+import { ScrollReveal } from "../../../Helpers/SmoothScroll";
+
 function PetitMood () {
     const img_src = 'https://live.staticflickr.com/65535/52515678782_7a973a13a8_k.jpg';
-    // const img_ph  = 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_c.jpg';
-
     return (
-        <div>
+        <div id="Petit-Mood">
             <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
-            {/* <ProgressiveImage
-                className="topic-cover-img"
-                src={img_src}
-                placeholder={img_ph}
-                
-            /> */}
+
             <div className="container">
                 <div className="topic-container py-5">
                     <div className="topic-title-container mb-5">
-                            <h3 className="mb-4 color-dark text-bold date">April 2022-July 2022</h3>
-                            <h2 className="mb-3">Petit Mood: AR Pet Game as Negative Emotion Reliever for Depressed University Students</h2>
-                            <h3 className="mb-3">HCI, UX, AR, Game Design, Mental Health</h3>
+                            <h3 className="mb-1 color-dark text-bold date">April 2022-July 2022</h3>
+                            <h2 className="mb-1">Petit Mood: AR Pet Game as Negative Emotion Reliever for Depressed University Students</h2>
+                            <h3 className="theme mb-5">HCI, UX, AR, Game Design, Mental Health</h3>
                             <p className="mb-5">
                                 Petit Mood is a AR pet game to help university students relieve negative emotions.
                                 Incorporating research-proven techniques of stress reduction or therapy in the interaction with the AR companion animal,
                                 Petit Mood makes self-care routines immersive and accessible.
                             </p>
                     </div>
-                    <div className="row mb-5">
+                    <div className="section-wrapper row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">
-                            <h3>Duration </h3>
+                            <h6 className="theme mb-3">Duration </h6>
                             <ul>
                                 <li>4 months</li>
                             </ul>
                         </div>
                         <div className="topic-desc-container col-md-4 mb-5">
-                            <h3>Role</h3>
+                            <h6 className="theme mb-3">Role</h6>
                             <ul>
-                                <li>First author</li>
-                                <li>Project Manager</li>
-                                <li>Designer</li>
+                                <li>Poster Paper First author</li>
+                                <li>Lead Researcher</li>
+                                <li>Illustrator</li>
                             </ul>
                         </div>
                         <div className="topic-desc-container col-md-4 mb-5">
-                            <h3>Team</h3>
+                            <h6 className="theme mb-3">Team</h6>
                             <ul>
                                 <li>5 people</li>
                             </ul>
                         </div>
                         <div className="topic-desc-container col-md-4 mb-5">
-                            <h3>Tool</h3>
+                            <h6 className="theme mb-3">Tool</h6>
                             <ul>
                                 <li>Miro</li>
                                 <li>MAKAR</li>
                             </ul>
                         </div>
                         <div className="topic-desc-container col mb-5">
-                            <h3>Responsibilities</h3>
+                            <h6 className="theme mb-3">Responsibilities</h6>
                             <ul className="row">
                                 <li className="col-md-6">Designing user interview questions</li>
                                 <li className="col-md-6">Conducting literature review</li>
@@ -76,87 +71,84 @@ function PetitMood () {
                             The 25th ACM Conference On Computer-Supported Cooperative Work And Social Computing.</li>
                         </ul>
                     </div>
+                    
+                </div>
+            </div>
 
-                    
-                    
-                    <h3 className="heading-1 my-5">Demo Video</h3>
-                    <div className="row ">
-                        <div className="col mb-3 d-flex flex-column align-items-center">
-                            <Iframe className="flexible-iframe" src="https://www.youtube.com/embed/3X919cITq4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                </div>
-            </div>
-            <div className="bg-1">
+            <div className="theme-bg">
                 <div className="container">
-                    <div className="topic-container py-3">
-                        <div className="row">
-                            <div className="col-md-8">
-                                <h3 className="heading-1 my-5">Introduction </h3>
-                                <p className="col-md-11">University students are the high-risk population to experience mental disturbance, such as depression disorder and anxiety disorder. Although most universities provide counseling services, along with other treatments available outside of school, the majority of them remain inaccessible due to unawareness of services or insurance coverage or skepticism about treatment effectiveness. To approach the conundrum, previous studies adopted clinic interventions of animal-assisted intervention (AAI) to reduce students’ measured health negative outcomes. However, not all schools have established AAIs; furthermore, some are simply not able to interact with animals because of allergy or other reasons.
-<br/><br/>Motivated by such issues, this study intended to design and develop <b>a digital solution using mobile AR to help relieve negative emotions for university students self-use</b> to provide university students with an accessible means to understand and treat their mental health with care.
-                                </p>
-                            </div>
-                            <div className="col-md-4">
-                                <img className="w-100 my-5" src="/works/UXUI/petit-mood/design-flow.png" alt="design flow"/>
+                    <div className="topic-container subsection-wrapper">
+                        <h3 className="mb-5">💻 Demo</h3>
+                        <div className="d-flex flex-column align-items-center">
+                            <div className="w-sizer">
+                                <div className="responsive-iframe mb-3 d-flex flex-column align-items-center">
+                                    <Iframe  src="https://www.youtube.com/embed/3X919cITq4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Iframe>
+                                </div>
                             </div>
                         </div>
-                        
                         
                     </div>
                 </div>
             </div>
+
+            
             <div className="container">
-                <div className="topic-container py-3">
-                    <h3 className="heading-3 color-dark mt-5">Methods</h3>
-                    <h3 className="heading-1 my-3">Needs inquiry</h3>
-                    <div className="mb-0">
-                        <ul className="pt-3 mb-5 list-disc">
+                <div className="topic-container subsection-wrapper">
+                    <h3 className="my-5">📚 Background</h3>
+                    <div className="row align-items-start">
+                        <p className="col-md-8 mb-3">
+                            University students are the high-risk population to experience mental disturbance, such as depression disorder and anxiety disorder. Although most universities provide counseling services, along with other treatments available outside of school, the majority of them remain inaccessible due to unawareness of services or insurance coverage or skepticism about treatment effectiveness. To approach the conundrum, previous studies adopted clinic interventions of animal-assisted intervention (AAI) to reduce students’ measured health negative outcomes. However, not all schools have established AAIs; furthermore, some are simply not able to interact with animals because of allergy or other reasons.
+<br/><br/>Motivated by such issues, this study intended to design and develop <b className="theme">a digital solution using mobile AR to help relieve negative emotions for university students self-use</b> to provide university students with an accessible means to understand and treat their mental health with care.
+                        </p>
+                        <img className="col-md-4 px-5" src="/works/UXUI/petit-mood/design-flow.png" alt="design flow"/>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div className="container">
+                <div className="topic-container subsection-wrapper">
+                    <h3 className="my-5">💼 Methods</h3>
+                    <h6 className="mb-3">Needs inquiry</h6>
+                    <p>
+                        <ul className="my-3">
                             <li>Online small-scale survey: 55 valid responses from university students (45 females, 10 males)</li>
                             <li>User interview: 3 survey respondents (2 females, 1 male, 1 out of 3 keep pets)</li>
                         </ul>
                         <div className="row statistics-container my-5">
                             <div className="col-md-6 d-flex flex-column align-items-center">
-                                <h2>85.7%</h2>
+                                <h3 className="theme p-bold">85.7%</h3>
                                 <p>of the respondents have felt depressed in the past three months</p>
                             </div>
                             <div className="col-md-6 d-flex flex-column align-items-center">
-                                <h2>8.9%</h2>
+                                <h3 className="theme p-bold">8.9%</h3>
                                 <p>diagnosed with depression or anxiety disorder</p>
                             </div>
                         </div>
-                        <div className="d-flex flex-column align-items-center">
-                            <div className="m-4">
-                                <div className="interview-box-container d-flex justify-content-start mb-5">
-                                    <div className="w-80 d-flex align-items-center interview-box px-3">
-                                        <img className="p-4" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon-sad.png" alt="sad puppy icon"/>
-                                        <h2 className="heading-2 m-4">“When I perform poorly in exams, I get so depressed that I find it hard to function through the day.”</h2>
-                                    </div>
-                                </div>
-                                <div className="interview-box-container d-flex justify-content-end mb-5">
-                                    <div className="w-80 d-flex align-items-center interview-box px-3 flex-row-reverse">
-                                        <img className="p-4" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon-med.png" alt="meditating puppy icon"/>
-                                        <h2 className="heading-2 m-5">“I think in talking to friends, it is the act of describing my emotions that really washes away my frustrations.”</h2>
-                                    </div>
-                                </div>
-                                <div className="interview-box-container d-flex justify-content-start mb-5">
-                                    <div className="w-80 d-flex align-items-center interview-box px-3">
-                                        <img className="p-4" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon-happy.png" alt="happy puppy icon"/>
-                                        <h2 className="heading-2 m-4">“I enjoy playing with my pets after studying for a long time to kind of help me relax a bit.”</h2>
-                                    </div>
-                                </div>
+                        <div className="row flex-column align-items-center">
+                            <div className="col-lg-12 col-md-6 interview-box-container row justify-content-center align-items-center mb-5">
+                                <img className="col-lg-3 p-4" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon-sad.png" alt="sad puppy icon"/>
+                                <h5 className="col-lg-9 theme p-4">“When I perform poorly in exams, I get so depressed that I find it hard to function through the day.”</h5>
+                            </div>
+                            <div className="col-lg-12 col-md-6 interview-box-container row justify-content-center align-items-center mb-5">
+                                <img className="col-lg-3 p-4" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon-med.png" alt="meditating puppy icon"/>
+                                <h5 className="col-lg-9 theme p-4">“I think in talking to friends, it is the act of describing my emotions that really washes away my frustrations.”</h5>
+                            </div>
+                            <div className="col-lg-12 col-md-6 interview-box-container row justify-content-center align-items-center mb-5">
+                                <img className="col-lg-3 p-4" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon-happy.png" alt="happy puppy icon"/>
+                                <h5 className="col-lg-9 theme p-4">“I enjoy playing with my pets after studying for a long time to kind of help me relax a bit.”</h5>
                             </div>
                         </div>
-                    </div>
+                    
+                    </p>
                 </div>
             </div>
             <div style={{backgroundColor: "#FEEEE3", width: "100%"}}>
                 <div className="container">
-                    <div className="topic-container py-3">
-                        <h3 className="heading-1 my-5">Primary Persona</h3>
+                    <div className="topic-container subsection-wrapper">
+                        <h3 className="my-5">🧑‍🎓 Primary Persona</h3>
                         <div className="row">
                             <div className="col-md-3 d-flex flex-column align-items-center">
                                 <img className="w-75" src="/works/UXUI/petit-mood/persona-pic.png" alt="persona profile: Tzu-Ting Chang" />
@@ -175,10 +167,13 @@ function PetitMood () {
                             <div className="row pl-4 py-4">
                                 <div className="col-md-8 mb-4">
                                     <h4 className="mb-3">Goals</h4>
-                                    <ul className="list-disc">
-                                        <li>to release the  stress accumulated from academic pressure</li>
-                                        <li>to fall asleep at night with reduced severity of anxiety</li>
-                                    </ul>
+                                    <p>
+                                        <ul className="list-disc">
+                                            <li>to release the  stress accumulated from academic pressure</li>
+                                            <li>to fall asleep at night with reduced severity of anxiety</li>
+                                        </ul>
+                                    </p>
+                                   
                                 </div>
                                 <div className="col-md-4 mb-4">
                                     <h4 className="mb-3">Motivations</h4>
@@ -205,12 +200,14 @@ function PetitMood () {
                                 </div>
                                 <div className="col mb-4">
                                     <h4 className="mb-3">Pain Points</h4>
-                                    <ul className="list-disc">
-                                        <li>gets depressed frequently and wants to understand the reason behind it</li>
-                                        <li>unable to find an ideal listener who gives appropriate feedback</li>
-                                        <li>experiences <b>insomnia</b> at night due to anxiety</li>
-                                        <li><b>cannot keep a companion animal</b> due to allergy</li>
-                                    </ul>
+                                    <p>
+                                        <ul className="list-disc">
+                                            <li>gets depressed frequently and wants to understand the reason behind it</li>
+                                            <li>unable to find an ideal listener who gives appropriate feedback</li>
+                                            <li>experiences <b>insomnia</b> at night due to anxiety</li>
+                                            <li><b>cannot keep a companion animal</b> due to allergy</li>
+                                        </ul>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -229,15 +226,10 @@ function PetitMood () {
                 </div>
             </div>
             <div className="container">
-                <div className="topic-container py-3">
-                    <h3 className="heading-3 color-dark mt-5">Prototype Design</h3>
-                    <h3 className="heading-1 my-3">Feature Proposal</h3>
-                    <div className="mt-5 topic-desc-container color-gray">
-                        <h3>Implementation Tool</h3>
-                        <ul>
-                            <li>MAKAR</li>
-                        </ul>
-                    </div>
+                <div className="topic-container subsection-wrapper">
+                    <h3 className="my-5">🛠️ Prototyping</h3>
+                    <h6 className="mb-3">Feature Proposal</h6>
+        
                     <p>
                     Based on the literature reviews and needs inquiry, 
                     several design features including the appearance and behaviors of the AR pet, 
@@ -246,174 +238,200 @@ function PetitMood () {
                     <div id="petit-table-1" className="table-container d-flex flex-column align-items-center">
                         <div className="w-sizer">
                             <div className="w-100 row table-header">
-                                <p className="col-md-4 my-2">Category</p>
-                                <p className="col-md-8 my-2">Features</p>
+                                <p className="col-md-4 my-2 p-bold">Category</p>
+                                <p className="col-md-8 my-2 p-bold">Features</p>
                             </div>
                             <div className="table-body">
                                 <div className="w-100 row">
-                                    <p className="col-md-4 my-2">Basic</p>
-                                    <p className="col-md-8 my-2"><b>Status scores of fullness/cleanness/happiness</b></p>
+                                    <p className="col-md-4 my-2 p-bold italic">Basic</p>
+                                    <p className="col-md-8 my-2"><b className="theme">Status scores of fullness/cleanness/happiness</b></p>
                                 </div>
                                 <div className="w-100 row">
-                                    <p className="col-md-4 my-2">Performance</p>
-                                    <p className="col-md-8 my-2">Pet growth development, <b>Pet interaction upon tapping</b></p>
+                                    <p className="col-md-4 my-2 p-bold italic">Performance</p>
+                                    <p className="col-md-8 my-2">Pet growth development, <b className="theme">Pet interaction upon tapping</b></p>
                                 </div>
                                 <div className="w-100 row">
-                                    <p className="col-md-4 my-2">Excitement</p>
-                                    <p className="col-md-8 my-2"><b>Pet digesting the dairy</b>, Producing treasures after digesting negativity,
-                                    <b>Incorporation of approach-avoidance bias modification training (AAMT), Meditation practice, 
+                                    <p className="col-md-4 my-2 p-bold italic">Excitement</p>
+                                    <p className="col-md-8 my-2"><b className="theme">Pet digesting the dairy</b>, Producing treasures after digesting negativity,
+                                    <b className="theme">Incorporation of approach-avoidance bias modification training (AAMT), Meditation practice, 
                                         Popping bubble while cleaning the pet</b>, Personalization of the pet, Outdoor games for dog-walking,
                                         Face recognition game to encourage smiling</p>
                                 </div>
                                 <div className="w-100 row">
-                                    <p className="col-md-4 my-2">Indifferent</p>
+                                    <p className="col-md-4 my-2 p-bold italic">Indifferent</p>
                                     <p className="col-md-8 my-2">
                                         Environment recognition, Choosing word of encouragement, Finding hidden snacks for pet
                                     </p>
                                 </div>
                             </div>
                             <div className="table-caption mt-3">
-                            ▲ Features rated based on Kano's quality control model. Features in bold were selected for implementation.
+                            Features rated based on Kano's quality control model. Features in bold were selected for implementation.
                             </div>
                         </div>
                     </div>
-                    <h3 className="heading-1 mt-5 mb-3">Implementation</h3>
-                    Petit Mood as a game had inherent status scores regarding each category, 
-                    therefore the player needs to play the mini game in all categories to boost the pet’s status scores.
+                </div>
+
+                <div className="topic-container subsection-wrapper">
+                    <div className="my-5">
+                        <h6 className="mb-3">Implementation</h6>
+                        <p>
+                            Petit Mood as a game had inherent status scores regarding each category, 
+                        therefore the player needs to play the mini game in all categories to boost the pet’s status scores.
+                        </p>
+                    </div>
+                    
                     <div className="my-5 row">
                         <div className="col-md-4">
-                            <h3 className="heading-3">Feeding</h3>
+                            <h6 className="theme">Feeding</h6>
                             <ul>
                                 <li>AAMT pet food choosing</li>
                             </ul>
                         </div>
                         <div className="col-md-4">
-                            <h3 className="heading-3">Cleaning</h3>
+                            <h6 className="theme">Cleaning</h6>
                             <ul>
                                 <li>Bubble bath</li>
                             </ul>
                         </div>
                         <div className="col-md-4">
-                            <h3 className="heading-3">Mood</h3>
+                            <h6 className="theme">Mood</h6>
                             <ul>
                                 <li>Diary catharsis</li>
                                 <li>Meditation practice</li>
                             </ul>
                         </div>
                     </div>
-                    <div className="w-100 mb-5 d-flex flex-column align-items-center">
-                        <img className="w-75" src="/works/UXUI/petit-mood/fig2.png" alt="working prototype" />
+                    <div className="w-100 mt-5 d-flex flex-column align-items-center">
+                        <img className="w-sizer-75" src="/works/UXUI/petit-mood/fig2.png" alt="working prototype" />
                     </div>
-
-
-                    <h3 className="mt-5 mb-3 heading-3">Feeding</h3>
-                    <p>
-                    Inspired by the gamified AAMT mobile application for cognitive bias modification [21, 23, 33, 39], this mini game requires user to <b>recognize the positive stimuli to approach it while avoiding the negative one</b>.
-The stimuli are translated to healthy diet and junk food in the feeding scenario, each paired with a positive or negative statement made by the personified pet about itself. By identifying the positive stimulus for the pet, the player can <b>learn to apply the similar mindset to themselves</b>. 
-                    </p>
-
-                    <h3 className="mt-5 mb-3 heading-3">Cleaning</h3>
-                    <p>
-                    For this mini-game, the player needs to clean up the pet with a bubble bath. After choosing their preferred essential oil to add in the AR pet’s bathtub, the pet will enjoy the bubble bath while the player can <b>pop the bubbles</b> arising from the bath. The act of popping bubbles is translated from the popular activity of popping Bubble Wrap to simulate a <b>repetitive, nervous motion that helps release tension and reduce stress</b> [11, 12].
-                    </p>
-
-                    <h3 className="mt-5 mb-3 heading-3">Mood</h3>
-                    <p className="mb-4">
-                    This category focuses on daily activities that are effective in helping the player to make peace with their emotions. Two mini games constitute this category: Diary Catharsis and Meditation. 
-                    </p>
-                    <h3 className="heading-4">Mini Game 1- Diary Catharsis</h3>
-                    <p className="mb-4">
-                    The player is encouraged to write a diary to express their feelings and frustrations. The diary itself is an incarnation of the player’s stress and anxiety [32, 36, 41], which the pet will gobble up, symbolizing that the pet helps its owner digest and release the negative emotions. 
-                    </p>
-                    <h3 className="heading-4">Mini Game 2- Meditation Practice</h3>
-                    <p className="mb-4">
-                    The pet will guide the player through a deep breathing meditation [28, 30], accompanied by background music to create a relaxing environment. 
-                    </p>
                 </div>
-            </div>
 
-            <div className="bg-1 pb-5">
-                <div className="container">
-                    <div className="topic-container py-3">
-                        <h3 className="heading-3 color-dark mt-5">Preliminary Findings</h3>
-                        <h3 className="heading-1 my-3">Comparative Analysis </h3>
-                        <div className="w-100 my-5 d-flex flex-column align-items-center">
-                            <img className="w-75" src="/works/UXUI/petit-mood/comp-anal.png" alt="comparative analysis with 24 existing mobile pet games" />
-                        </div>
-                        <p>
-                        A survey comparing 24 mobile pet games with Petit Mood was conducted to understand the advantages of this game. 
-                        Similar to the 24 games, Petit Mood has features regarding pet’s basic needs such as feeding, cleaning, 
-                        and a feedback feature of pet interaction. The wanting features compared with other games include status bars, 
-                        illustrated pet encyclopedia, and coins and shops. The overlapping features are mostly pet-centric, while the lacking ones are concerned with game design.
-                        </p>
+                <div className="topic-container subsection-wrapper">
+                    
 
-                        <h3 className="heading-1 mt-5 mb-3">SWOT Analysis </h3>
-                        <div className="row w-100">
-                            <p className="col-md-6">
-                            Results of the SWOT analysis suggested apparent strengths of Petit Mood in <b>a clear goal to help users relieve negative emotions, the use of AR technology to simulate an immersive environment, dialogues relevant to the subject of mood, and a novel yet light gaming experience aimed at reducing stress</b>. These strengths validate the major objective of Petit Mood to facilitate users’ awareness and relief of their mental states. In addition, Petit Mood not only has similar basic functionalities to most existing pet games, but also provides users with more immersive and interactive spatial experiences through the application of AR, which breaks through the mostly flat and narrative interfaces and interaction. 
+                    <div className="row">
+                        <div className="col-md-6 my-5">
+                            <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_feeding.png" alt="feeding icon" />
+                            <h6 className="theme my-3">Feeding</h6>
+                            <p>
+                            Inspired by the gamified AAMT mobile application for cognitive bias modification [21, 23, 33, 39], this mini game requires user to <b className="theme">recognize the positive stimuli to approach it while avoiding the negative one</b>.
+        The stimuli are translated to healthy diet and junk food in the feeding scenario, each paired with a positive or negative statement made by the personified pet about itself. By identifying the positive stimulus for the pet, the player can <b className="theme">learn to apply the similar mindset to themselves</b>. 
                             </p>
-                            <div className="col-md-6 d-flex flex-column align-items-center">
-                                <img className="w-100" src="/works/UXUI/petit-mood/table3.png" alt="SWOT analysis of Petit Mood" />
-                            </div>
+                        </div>
+                        <div className="col-md-6 my-5">
+                            <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_cleaning.png" alt="cleaning icon" />
+                            <h6 className="theme my-3">Cleaning</h6>
+                            <p>
+                            For this mini-game, the player needs to clean up the pet with a bubble bath. After choosing their preferred essential oil to add in the AR pet’s bathtub, the pet will enjoy the bubble bath while the player can <b className="theme">pop the bubbles</b> arising from the bath. The act of popping bubbles is translated from the popular activity of popping Bubble Wrap to simulate a <b className="theme">repetitive, nervous motion that helps release tension and reduce stress</b> [11, 12].
+                            </p>
+                        </div>
+                        <div className="col-md-6 my-5">
+                            <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_mood.png" alt="mood icon" />
+                            <h6 className="theme my-3">Mood</h6>
+                            <p>
+                            This category focuses on daily activities that are effective in helping the player to make peace with their emotions. Two mini games constitute this category: Diary Catharsis and Meditation. 
+                            </p>
+                        </div>
+                        <div className="col-md-6 my-5">
+                            <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_diary.png" alt="diary icon" />
+                            <h6 className="theme my-3">Diary Catharsis</h6>
+                            <p>
+                            The player is encouraged to write a diary to express their feelings and frustrations. The diary itself is an incarnation of the player’s stress and anxiety [32, 36, 41], which the pet will gobble up, symbolizing that the pet helps its owner digest and release the negative emotions. 
+                            </p>
+                        </div>
+                        <div className="col-md-6 my-5">
+                            <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_meditation.png" alt="meditation icon" />
+                            <h6 className="theme my-3">Meditation Practice</h6>
+                            <p>
+                            The pet will guide the player through a deep breathing meditation [28, 30], accompanied by background music to create a relaxing environment. 
+                            </p>
                         </div>
                     </div>
+                    
+
+                    
+                    
+                    
                 </div>
             </div>
+
 
             <div className="container">
-                <div className="topic-container py-3">
-                    <h3 className="heading-1 mt-5 my-3">Usability Evaluation</h3>
-                    <div className="mt-5 topic-desc-container color-gray">
-                        <h3>Participants</h3>
-                        <ul>
-                            <li>12 current university students</li>
-                        </ul>
+                <div className="topic-container subsection-wrapper">
+                    <h3 className="my-5">📊 Preliminary Findings</h3>
+                    <h6 className="mb-3">Comparative Analysis </h6>
+                    <div className="w-100 my-5 d-flex flex-column align-items-center">
+                        <img className="w-sizer-75" src="/works/UXUI/petit-mood/comp-anal.png" alt="comparative analysis with 24 existing mobile pet games" />
                     </div>
-                    <p>
-                    A usability test with assigned tasks and questionnaires was conducted as the evaluation of Petit Mood and its effect on relieving negative emotions. 
-                    It should be noted that the questionnaires are intended to elicit emotional responses in the respondants, 
-                    thus the objectiveness of the results may be tainted to an extent.
+                    <p className="mb-5">
+                    A survey comparing 24 mobile pet games with Petit Mood was conducted to understand the advantages of this game. 
+                    Similar to the 24 games, Petit Mood has features regarding pet’s basic needs such as feeding, cleaning, 
+                    and a feedback feature of pet interaction. The wanting features compared with other games include status bars, 
+                    illustrated pet encyclopedia, and coins and shops. The overlapping features are mostly pet-centric, while the lacking ones are concerned with game design.
                     </p>
-                    <h3 className="heading-2 mt-5 mb-3">Results</h3>
-                    <div className="row d-flex align-items-center">
-                        <div className="col-md-6 d-flex flex-column align-items-center">
-                            <img className="w-100" src="/works/UXUI/petit-mood/table4.png" alt="Usability test results" />
+                </div>
+
+                <div className="topic-container subsection-wrapper">
+                    <h6 className="mb-3">SWOT Analysis </h6>
+                    <div className="row w-100 flex-row-reverse">
+                        <div className="col-md-6 mb-5 d-flex flex-column align-items-center">
+                            <img className="w-100" src="/works/UXUI/petit-mood/table3.png" alt="SWOT analysis of Petit Mood" />
                         </div>
-                        <div className="col-md-6">
-                            <div className="py-5 result-statement d-flex flex-column align-items-center">
-                                <div className="d-flex flex-column align-items-center">
-                                    <h2>✼</h2>
-                                </div>
-                                <div>
-                                    <h3>
-                                    It was found that <b>relieving tension and anxiety and relieving depression or slump</b> received highest scores with lowest standard deviations, providing supporting evidence that Petit Mood could relieve users’ negative emotions.
-                                    </h3>
-                                </div>
-                            </div>
+                        <p className="col-md-6">
+                        Results of the SWOT analysis suggested apparent strengths of Petit Mood in <b className="theme">a clear goal to help users relieve negative emotions, the use of AR technology to simulate an immersive environment, dialogues relevant to the subject of mood, and a novel yet light gaming experience aimed at reducing stress</b>. These strengths validate the major objective of Petit Mood to facilitate users’ awareness and relief of their mental states. In addition, Petit Mood not only has similar basic functionalities to most existing pet games, but also provides users with more immersive and interactive spatial experiences through the application of AR, which breaks through the mostly flat and narrative interfaces and interaction. 
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <div className="topic-container subsection-wrapper">
+                    <h3 className="my-5">🧪 Usability Evaluation</h3>
+                    <div className="row">
+                        <div className="col-md-6 mb-5">
+                            <h6 className="mb-3">Participants</h6>
+                            <p>12 current university students</p>
+                        </div>
+                        <div className="col-md-6 mb-5">
+                            <h6 className="mb-3">Results</h6>
+                            <p>
+                                <b className="theme">Relieving tension and anxiety and relieving depression or slump</b> received highest scores with lowest standard deviations, providing supporting evidence that Petit Mood could relieve users’ negative emotions.
+                            </p>
+                            <img className="w-100 my-5" src="/works/UXUI/petit-mood/table4.png" alt="Usability test results" />
                         </div>
                     </div>
+                </div>
+            
+                <div className="topic-container subsection-wrapper">
+                    <h3 className="my-5">💭 Takeaways</h3>
+                    <div className="mb-5">
+                        <h6 className="mb-3">User interview</h6>
+                        <p>
+                        It is important to <b className="theme">prioritize users’ comfort</b> when conducting user interviews. By starting the interview with a bit chit-chat, users are more likely to relax and feel more welcome. Additionally, after asking a question, we as interviewers should not simply follow the interview outline but adjust our responses according to users’ answers. We may ask how exactly an event made users feel, or what was the consequences of an event. Much valuable information comes from extra questions, and it also makes interviewees feel heard.
+                        </p>
+                    </div>
+
+                    <div className="mb-5">
+                        <h6 className="mb-3">Literature review</h6>
+                        <p>
+                        In the process of performing a literature review, I realized the importance of structure. When an idea comes to mind, it is usually more abstract and unstructured. However, <b className="theme">we need to seek theoretical basis for our claim, and it needs to be proceeded with a strong structure</b>. For example, when we want to argue the advantage of an AR pet game, we should first address how real-life pets are conducive to human health, then how AR technology can simulate environments to create an immersive experience, finally hypothesize that AR pet game can achieve similar effects to real-life pets.
+                        </p>
+                    </div>
+
+                    <div className="mb-5">
+                        <h6 className="mb-3">Honesty about limitations</h6>
+                        <p>
+                        As the first author of writing this paper, I found it critical to be honest about our research limitations. If there was any concern that might have compromised the quality of research, it must be stated clearly in the paper, such as the number of participants in the usability test. Such honesty can also welcome future endeavors to overcome the limitation and produce more studies contributing to society. 
+                        </p>
+                    </div>
+
                 </div>
             </div>
             
-            <div className="bg-1 pb-5">
-                <div className="container">
-                    <div className="topic-container py-3">
-                        <h3 className="heading-1 mt-5 my-3">Takeaways</h3>
-                        <ul className="list-disc">
-                            <li className="mb-5">
-                            <b>User interview</b>: It is important to <b>prioritize users’ comfort</b> when conducting user interviews. By starting the interview with a bit chit-chat, users are more likely to relax and feel more welcome. Additionally, after asking a question, we as interviewers should not simply follow the interview outline but adjust our responses according to users’ answers. We may ask how exactly an event made users feel, or what was the consequences of an event. Much valuable information comes from extra questions, and it also makes interviewees feel heard.
-                            </li>
-                            <li className="mb-5">
-                            <b>Literature review</b>: In the process of performing a literature review, I realized the importance of structure. When an idea comes to mind, it is usually more abstract and unstructured. However, <b>we need to seek theoretical basis for our claim, and it needs to be proceeded with a strong structure</b>. For example, when we want to argue the advantage of an AR pet game, we should first address how real-life pets are conducive to human health, then how AR technology can simulate environments to create an immersive experience, finally hypothesize that AR pet game can achieve similar effects to real-life pets.
-                            </li>
-                            <li className="mb-5">
-                            <b>Integrity about limitations</b>: As the first author of writing this paper, I found it critical to be honest about our research limitations. If there was any concern that might have compromised the quality of research, it must be stated clearly in the paper, such as the number of participants in the usability test. Such honesty can also welcome future endeavors to overcome the limitation and produce more studies contributing to society. 
-                            </li>
-                        </ul>
-
-                        <h3 className="heading-3 color-gray mt-5">References</h3>
-                        <p className="references">
-                        [1] Fraser Anderson, Michelle Annett, Walter F. Bischof, and Pierre Boulanger. 2010. Virtual equine assisted therapy. In 2010 IEEE Virtual Reality Conference (VR). 255–256. https://doi.org/10.1109/VR.2010.5444776 
+            <div className="bg-1">
+                <div className="container topic-container subsection-wrapper">
+                    <h3 className="my-5">📑 References</h3>
+                    <p className="references">
+                    [1] Fraser Anderson, Michelle Annett, Walter F. Bischof, and Pierre Boulanger. 2010. Virtual equine assisted therapy. In 2010 IEEE Virtual Reality Conference (VR). 255–256. https://doi.org/10.1109/VR.2010.5444776 
 [2] Sandra Barker, Randolph Barker, Nancy McCain, and Christine Schubert. 2016. A Randomized Cross-over Exploratory Study of the Effect of Visiting Therapy Dogs on College Student Stress Before Final Exams. Anthrozoös 29 (01 2016), 35–46. https://doi.org/10.1080/08927936.2015.1069988 
 [3] Sahara Byrne, Geri Gay, J. Pollack, Amy Gonzales, Daniela Retelny, Theodore Lee, and Brian Wansink. 2012. Caring for Mobile Phone-Based Virtual Pets can Influence Youth Eating Behaviors. Journal of Children and Media 6 (02 2012), 83–99. https://doi.org/10.1080/17482798.2011.633410 
 [4] Pressley Chakales, Jacklyn Locklear, and Tracy Wharton. 2020. Medicine and Horsemanship: The Effects of Equine-assisted Activities and Therapies on Stress and Depression in Medical Students. Cureus 12 (02 2020). https://doi.org/10.7759/cureus.6896 
@@ -450,8 +468,7 @@ The stimuli are translated to healthy diet and junk food in the feeding scenario
 [38] SESAR 3 Joint Undertaking. 2012. Questionnaire for User Interface Satisfaction (QUIS). Retrieved Jul 4, 2022 from https://ext.eurocontrol.int/ehp/?q=node/1611 
 [39] Janna N. Vrijsen, Verena S. Fischer, Bernhard W. Müller, Norbert Scherbaum, Eni S. Becker, Mike Rinck, and Indira Tendolkar. 2018. Cognitive bias modification as an add-on treatment in clinical depression: Results from a placebo-controlled, single-blinded randomized control trial. Journal of Affective Disorders 238 (2018), 342–350. https://doi.org/10.1016/j.jad.2018.06.025 [40] Xiaomei Wang, Sudeep Hegde, Changwon Son, Bruce Keller, Alec Smith, and Farzan Sasangohar. 2020. Investigating Mental Health of US College Students During the COVID-19 Pandemic: Cross-Sectional Survey Study. J Med Internet Res 22, 9 (17 Sep 2020), e22817. https://doi.org/10.2196/22817 
 [41] Daniel Wessel, Helke Kohlbrandt, and Tilo Mentler. 2019. Human-Centered Development of an Activity Diary App for People with Depression. In Proceedings of Mensch und Computer 2019. 427–431. https://doi.org/10.1145/3340764.3344434
-                        </p>
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>

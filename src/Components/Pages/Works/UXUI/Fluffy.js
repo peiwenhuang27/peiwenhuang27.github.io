@@ -207,7 +207,7 @@ function Fluffy () {
                 <div className="topic-container section-wrapper">
                     <h3 className="my-5">🧠 Ideation</h3>
                     <div className="my-3 d-flex flex-column align-items-center">
-                        <img className="w-sizer-100" src="/works/UXUI/fluffy/ideation/affinity.png" alt="voting of ideas" />
+                        <img className="w-sizer-75" src="/works/UXUI/fluffy/ideation/affinity.png" alt="voting of ideas" />
                         <p className="table-caption mt-3">Affinity diagram of intervention ideas with votes</p>
                     </div>
                     <h6 className="mt-5">Framework</h6>
