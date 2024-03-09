@@ -17,4 +17,23 @@
             // height: auto;
         }
     }
+    .responsive-center-list {
+        @include pad {
+            li {
+                flex-direction: column;
+                align-items: center;
+
+                h6, p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .icon-title {
+        @include pad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

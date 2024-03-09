@@ -10,14 +10,12 @@ import Iframe from 'react-iframe';
 
 // TODO
 // sidebar navigation
-// header/footer no container
 // demo section of screenshots (mockup of laptop)
 
 function Fluffy () {
     const [isLoading, setIsLoading] = useState(false);
 
     const img_src = 'https://live.staticflickr.com/65535/53567884525_c62af19309_h.jpg';
-    // const img_ph  = 'https://live.staticflickr.com/65535/53567884525_c62af19309_c.jpg';
     
     const hideSpinner = () => {
         setIsLoading(false);
@@ -49,7 +47,7 @@ function Fluffy () {
                     </div>
                     <div className="section-wrapper row mb-5">
                         <div className="topic-desc-container col-md-4 mb-5">
-                            <h6 className="theme mb-3">Duration </h6>
+                            <h6 className="theme mb-3">Duration</h6>
                             <ul>
                                 <li>3 months</li>
                             </ul>
@@ -136,7 +134,7 @@ function Fluffy () {
                                 <img className="w-sizer mb-2" src="/works/UXUI/fluffy/yarn.svg" alt="yarn icon" />
                             </div>
                             <div className="mx-4 d-flex flex-column align-items-center">
-                                <h6 className="mb-3">Nonlinear Nature of Task Management</h6>
+                                <h6 className="text-center mb-3">Nonlinear Nature of Task Management</h6>
                                 <p className="center">
                                 No one out of the 10 participants associated Cat Untangling Yarn with task and time management. To them, time management and organization are more similar to a modular process that must unravel and connect at various stages.                                    </p>
                             </div>
@@ -146,7 +144,7 @@ function Fluffy () {
                                 <img className="w-50 mb-2" src="/works/UXUI/fluffy/boiling.svg" alt="boiling pot icon" />
                             </div>
                             <div className="mx-4 d-flex flex-column align-items-center">
-                                <h6 className="mb-3">Lack of Perceived Control</h6>
+                                <h6 className="text-center mb-3">Lack of Perceived Control</h6>
                                 <p className="center">
                                 In the context of High-density Workload, Overboiling Pot symbolizes an unchangeable pattern beyond their control. <b>When facing stressful and overwhelming situations, perceived control could help participants effectively confront the challenges ahead.</b>
                                 </p>
@@ -160,9 +158,9 @@ function Fluffy () {
                     <p>
                     Based on user research, we seek to design an intervention that facilitates both behavioral and attitudinal changes especially in the following aspects:
                     </p>
-                    <ul className="my-5">
+                    <ul className="responsive-center-list my-5">
                         <li className="row my-5 d-flex align-items-center">
-                            <div className="col-md-3 mx-3 d-flex flex-column align-items-center">
+                            <div className="col-md-3 px-3 d-flex flex-column align-items-center">
                                 <img className="w-50 mb-2" src="/works/UXUI/fluffy/Planning.svg" alt="planning icon" />
                             </div>
                             <div className="col-md-8">
@@ -177,7 +175,7 @@ function Fluffy () {
                             </div>
                         </li>
                         <li className="row my-5 d-flex align-items-center">
-                            <div className="col-md-3 mx-3 d-flex flex-column align-items-center">
+                            <div className="col-md-3 px-3 d-flex flex-column align-items-center">
                                 <img className="w-50 mb-2" src="/works/UXUI/fluffy/Thinking.svg" alt="thinking icon" />
                             </div>
                             <div className="col-md-8">
@@ -394,7 +392,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2dmZ3J3ZHo3cWZ5MzkyOHI2Y3F1dDBydGYwMDVlNDhnajc2NjJyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XZmPrQa21ClUdRY6Tr/giphy.gif" alt="Customization of Avatar"></img>
                             </div>
                             <div className="col-md-6">
-                                <h6 className="theme mb-3">Customization of Avatar</h6>
+                                <h6 className="theme mb-3">#1: Customization of Avatar</h6>
                                 <p>At the beginning of the game, players can pick an animal avatar as their “buddy” which serves as their own real-life reflection as well as an individual that would support and work with you. This setup introduces both a <b>distancing effect and body-doubling techniques</b>, offering social support through the avatar's interactions.</p>
                             </div>
                         </li>
@@ -403,7 +401,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHdhYjF2eTIxeXhpZGx4bGo1a2JlczFpMzVrMnhrYTg4bjhtc3R1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xlXDa18T6yEtGA9f0W/giphy.gif" alt="Empowering Self-Affirmation through Avatar Dialogues"></img>
                             </div>
                             <div className="col-md-6">
-                                <h6 className="theme mb-3">Self-Affirmation Avatar Dialogues</h6>
+                                <h6 className="theme mb-3">#2: Self-Affirmation Avatar Dialogues</h6>
                                 <p>The avatar delivers self-affirmation dialogues, which occur upon task completion, leveling up, and idling state, to fuel their enthusiasm for work and acknowledge their inherent value. Such mechanism nurtures a positive feedback loop; users are <b>continually empowered, fostering a resilient and confident mindset</b> crucial for success.</p>
                             </div>
                         </li>
@@ -412,7 +410,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXNjNWp4ZjJmeGNobnh4aGk2NThoa3VuNDg1cXN3ZmMyY2ZzbWQ5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KU3ec5QdIIZanQJnSp/giphy.gif" alt="Task & Productivity Enhancement"></img>
                             </div>
                             <div className="col-md-6">
-                                <h6 className="theme mb-3">Task & Productivity Enhancement</h6>
+                                <h6 className="theme mb-3">#3: Task & Productivity Enhancement</h6>
                                 <p>Players can input tasks by specifying start time, duration, task description, and reminders. The “due date” is intentionally removed from task information to mitigate anxiety linked to approaching deadlines.</p>
                             </div>
                         </li>
@@ -421,7 +419,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3pxaWl2NnExcmVpNDI3NnJpa3U3ZmxjaDg2cjI2ZG96bTBoYXN5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OCKgvJ5jJZCFybWiv5/giphy.gif" alt="Pomodoro Technique & Immersive Environments"></img>
                             </div>
                             <div className="col-md-6">
-                                <h6 className="theme mb-3">Pomodoro & Immersive Environments</h6>
+                                <h6 className="theme mb-3">#4: Pomodoro & Immersive Environments</h6>
                                 <p>The Pomodoro technique, employing a focus timer that alternates short breaks with dedicated work sessions, is incorporated in the focus session to instill efficient task organization as users input task specifics, facilitating an <b>improvement in their proficiency within the Elaboration Likelihood Model (ELM)</b>.</p>
                             </div>
                         </li>
@@ -430,7 +428,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajk0YnZtNm03bzQ0ZGlrdHMybzU2bnpyOWc5ZWx4amZ6d3lrYmc0MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cv1s6W7xhMCFYsO6R5/giphy.gif" alt="Rewards & Environment Unlock"></img>
                             </div>
                             <div className="col-md-6">
-                                <h6 className="theme mb-3">Rewards & Environment Unlock</h6>
+                                <h6 className="theme mb-3">#5: Rewards & Environment Unlock</h6>
                                 <p>Congratulatory self-affirmations and a choice of reward items to embellish their virtual environment follow the focus session. By intermixing gaming elements like rewards and progression, the intervention retains a lighter tone, while the warm color palette and font choice subtly influence users' emotions, enhancing the overall experience.</p>
                             </div>
                         </li>
@@ -439,7 +437,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHJ6Z3phbzFvaWtyenRvMGxyMWE2ODV3N3g2NDE1NHU5cjVvOXoxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oxChvgPxbR0tQ42p3I/giphy.gif" alt="Progress Tracking & Visual Achievement"></img>
                             </div>
                             <div className="col-md-6">
-                                <h6 className="theme mb-3">Progress Tracking & Visual Achievement</h6>
+                                <h6 className="theme mb-3">#6: Progress Tracking & Visual Achievement</h6>
                                 <p>User progress is visually represented by earning rewards upon task completion, leveling up to access new environments, and data visualizations showcasing task completion and focused time. This feature empowers users to review their achievements, <b>fostering sustained productivity by promoting consistency and commitment to their goals</b>.</p>
                             </div>
                         </li>
@@ -490,9 +488,9 @@ leveling up and unlocking new environments, and data visualizations of task comp
 
                 <div className="topic-container section-wrapper">
                     <h3 className="my-5">💭 Takeaways</h3>
-                    <ul className="my-5">
+                    <ul className="responsive-center-list my-5">
                         <li className="row my-5">
-                            <div className="col-md-4 mb-3">
+                            <div className="col-md-4 mb-3 icon-title">
                                 <div className="w-50 mb-3 d-flex flex-column align-items-center">
                                     <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Persuasion.svg" alt="persuasion icon" />
                                 </div>
@@ -503,7 +501,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                             </p>
                         </li>
                         <li className="row my-5">
-                            <div className="col-md-4 mb-3">
+                            <div className="col-md-4 mb-3 icon-title">
                                 <div className="w-50 mb-3 d-flex flex-column align-items-center">
                                     <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Documentation.svg" alt="Documentation icon" />
                                 </div>
@@ -514,7 +512,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                             </p>
                         </li>
                         <li className="row my-5">
-                            <div className="col-md-4 mb-3">
+                            <div className="col-md-4 mb-3 icon-title">
                                 <div className="w-50 mb-3 d-flex flex-column align-items-center">
                                     <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Rapport.svg" alt="Rapport icon" />
                                 </div>

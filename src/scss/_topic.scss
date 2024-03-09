@@ -256,6 +256,9 @@ ul {
     background-size: cover;
     background-position: center;
     
+    @include mobile {
+        height: 300px;
+    }
 }
 
 .recog-list {
@@ -419,9 +422,13 @@ ul {
     padding-top: 150px;
     padding-bottom: 150px;
     
-    @include pad-sm {
-        padding-top: 90px;
-        padding-bottom: 90px;
+    @include max {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    @include pad {
+        padding-top: 36px;
+        padding-bottom: 36px;
     }
 }
 
@@ -429,9 +436,13 @@ ul {
     padding-top: 90px;
     padding-bottom: 90px;
 
-    @include pad-sm {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    @include max {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    @include pad {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 }
 

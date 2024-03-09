@@ -260,7 +260,7 @@ function Vision () {
                             #1: Warning with Suggestion to Resolve Issue
                         </h6>
                         <div className="row align-items-center">
-                            <div className="col-md-6 p-5 d-flex flex-column align-items-center">
+                            <div className="col-md-6 p-3 d-flex flex-column align-items-center">
                                 <img className="w-100" src="/works/UXUI/vision/phase-3/c-1.png" alt="challenge 1" />
                                 <p className="table-caption mt-1 mb-3">Low battery warning popup</p>
                             </div>
@@ -277,7 +277,7 @@ function Vision () {
                         </div>
 
                         <div className="row align-items-center">
-                            <div className="col-md-6 p-5 d-flex flex-column align-items-center">
+                            <div className="col-md-6 p-3 d-flex flex-column align-items-center">
                                 <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-1-i-1.png" alt="challenge 1" />
                                 <p className="table-caption mt-1 mb-3">Low battery warning on the side</p>
                                 <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-1-i-2.png" alt="challenge 2" />
@@ -299,7 +299,7 @@ function Vision () {
                             #2: Follow the Law of Proximity to eliminate confusion
                         </h6>
                         <div className="row align-items-center">
-                            <div className="col-md-6 p-5 d-flex flex-column align-items-center">
+                            <div className="col-md-6 p-3 d-flex flex-column align-items-center">
                                 <img className="w-100" src="/works/UXUI/vision/phase-3/c-2.png" alt="challenge 1" />
                                 <p className="table-caption mt-1 mb-3">ECO MODE on the side</p>
                             </div>
@@ -317,7 +317,7 @@ function Vision () {
                         </div>
 
                         <div className="row align-items-center">
-                            <div className="col-md-6 p-5 d-flex flex-column align-items-center">
+                            <div className="col-md-6 p-3 d-flex flex-column align-items-center">
                                 <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-2-i-1.png" alt="challenge 1" />
                                 <p className="table-caption mt-1 mb-3">Power Saving toggle on upper right</p>
                                 <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-2-i-2.png" alt="challenge 2" />
@@ -339,7 +339,7 @@ function Vision () {
                         <h6 className="mb-3 theme">
                             #3: Back & forth between dashboard and mobile app
                         </h6>
-                        <div className="p-5 d-flex flex-column align-items-center">
+                        <div className="p-3 d-flex flex-column align-items-center">
                             <img className="w-100" src="/works/UXUI/vision/phase-3/c-3-1.png" alt="challenge 1" />
                             <p className="table-caption mt-1 mb-3">Mobile flow of unlocking/turning on moped & setting up GPS</p>
                         </div>
@@ -361,7 +361,7 @@ function Vision () {
                         </div>
 
                         <div className="row align-items-center">
-                            <div className="col-md-6 p-5 d-flex flex-column align-items-center">
+                            <div className="col-md-6 p-3 d-flex flex-column align-items-center">
                                 <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-3-i-2.png" alt="challenge 1" />
                                 <p className="table-caption mt-1 mb-3">Setting up GPS directly on moped</p>
                             </div>
@@ -376,7 +376,7 @@ function Vision () {
                             </div>
                         </div>
 
-                        <div className="p-5 d-flex flex-column align-items-center">
+                        <div className="p-3 d-flex flex-column align-items-center">
                             <img className="w-100" src="/works/UXUI/vision/phase-3/c-3-i-1.png" alt="challenge 1" />
                             <p className="table-caption mt-1 mb-3">Moped flow of unlocking/turning on moped & setting up GPS</p>
                         </div>
@@ -389,7 +389,7 @@ function Vision () {
                         </h6>
                         
                         <div className="row align-items-center">
-                            <div className="col-md-6 p-5 d-flex flex-column align-items-center">
+                            <div className="col-md-6 p-3 d-flex flex-column align-items-center">
                                 <img className="w-100" src="/works/UXUI/vision/phase-3/c-4-1.png" alt="challenge 1" />
                                 <p className="table-caption mt-1 mb-3">Auto Mode shown under speedometer of dashboard</p>
                             </div>
@@ -406,7 +406,7 @@ function Vision () {
                         </div>
 
                         <div className="row align-items-center">
-                            <div className="col-md-6 p-5 d-flex flex-column align-items-center">
+                            <div className="col-md-6 p-3 d-flex flex-column align-items-center">
                                 <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-4-i-1.png" alt="challenge 4" />
                                 <p className="table-caption mt-1 mb-3">Manual Mode shown under speedometer of dashboard</p>
                             </div>
@@ -590,7 +590,7 @@ function Vision () {
             <div className="bg-1 pb-5">
                 <div className="container">
                     <div className="topic-container py-3">
-                        <h3 className=" mt-5">📑 References</h3>
+                        <h3 className="my-5">📑 References</h3>
                         <p className="references mb-3">
                         Nielsen, J. (1994, April 24). <span className="italic">10 usability heuristics for user interface design.</span> Nielsen Norman Group. <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noreferrer noopener">https://www.nngroup.com/articles/ten-usability-heuristics/</a><br/>
                         Scooter by Prashanth Rapolu from <a href="https://thenounproject.com/browse/icons/term/scooter/" target="_blank" title="Scooter Icons">Noun Project</a> (CC BY 3.0)

@@ -1,10 +1,24 @@
-.tourbot-value-box {
-    background-color: $secondary;
-    @include box-shadow-darker;
-    border-radius: 20px;
+#TourBot {
+    .theme  {
+        color: #913732 !important;
+    }
+    .theme-bg {
+        width: 100%;
+        background-color: rgba(145, 55, 50, 0.1);
+    }
 
-    h3 {
-        color: $white;
+    h4 {
+        color: $gray-500;
+    }
+}
+
+.tourbot-value-box {
+    background-color: rgba(145, 55, 50, 0.1);
+    @include box-shadow;
+    border-radius: 36px;
+
+    h5 {
+        color: $gray-800;
     }
 
     @include pad-sm {

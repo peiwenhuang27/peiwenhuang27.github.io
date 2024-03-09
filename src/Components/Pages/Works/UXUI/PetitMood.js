@@ -96,11 +96,11 @@ function PetitMood () {
                 <div className="topic-container subsection-wrapper">
                     <h3 className="my-5">📚 Background</h3>
                     <div className="row align-items-start">
-                        <p className="col-md-8 mb-3">
+                        <p className="col-lg-8 mb-3">
                             University students are the high-risk population to experience mental disturbance, such as depression disorder and anxiety disorder. Although most universities provide counseling services, along with other treatments available outside of school, the majority of them remain inaccessible due to unawareness of services or insurance coverage or skepticism about treatment effectiveness. To approach the conundrum, previous studies adopted clinic interventions of animal-assisted intervention (AAI) to reduce students’ measured health negative outcomes. However, not all schools have established AAIs; furthermore, some are simply not able to interact with animals because of allergy or other reasons.
 <br/><br/>Motivated by such issues, this study intended to design and develop <b className="theme">a digital solution using mobile AR to help relieve negative emotions for university students self-use</b> to provide university students with an accessible means to understand and treat their mental health with care.
                         </p>
-                        <img className="col-md-4 px-5" src="/works/UXUI/petit-mood/design-flow.png" alt="design flow"/>
+                        <img className="col-lg-4 px-5" src="/works/UXUI/petit-mood/design-flow.png" alt="design flow"/>
                         
                     </div>
                     
@@ -165,7 +165,7 @@ function PetitMood () {
                             </div>
                         
                             <div className="row pl-4 py-4">
-                                <div className="col-md-8 mb-4">
+                                <div className="col-lg-8 mb-4">
                                     <h4 className="mb-3">Goals</h4>
                                     <p>
                                         <ul className="list-disc">
@@ -175,7 +175,7 @@ function PetitMood () {
                                     </p>
                                    
                                 </div>
-                                <div className="col-md-4 mb-4">
+                                <div className="col-lg-4 mb-4">
                                     <h4 className="mb-3">Motivations</h4>
                                     <ul className="list-disc">
                                         <li >
@@ -198,7 +198,7 @@ function PetitMood () {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col mb-4">
+                                <div className="col-lg-4">
                                     <h4 className="mb-3">Pain Points</h4>
                                     <p>
                                         <ul className="list-disc">
@@ -309,40 +309,40 @@ function PetitMood () {
                 <div className="topic-container subsection-wrapper">
                     
 
-                    <div className="row">
-                        <div className="col-md-6 my-5">
+                    <div className="row justify-content-center">
+                        <div className="col-md-6 my-5 d-flex flex-column align-items-center">
                             <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_feeding.png" alt="feeding icon" />
                             <h6 className="theme my-3">Feeding</h6>
-                            <p>
+                            <p className="text-center">
                             Inspired by the gamified AAMT mobile application for cognitive bias modification [21, 23, 33, 39], this mini game requires user to <b className="theme">recognize the positive stimuli to approach it while avoiding the negative one</b>.
         The stimuli are translated to healthy diet and junk food in the feeding scenario, each paired with a positive or negative statement made by the personified pet about itself. By identifying the positive stimulus for the pet, the player can <b className="theme">learn to apply the similar mindset to themselves</b>. 
                             </p>
                         </div>
-                        <div className="col-md-6 my-5">
+                        <div className="col-md-6 my-5 d-flex flex-column align-items-center">
                             <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_cleaning.png" alt="cleaning icon" />
                             <h6 className="theme my-3">Cleaning</h6>
-                            <p>
+                            <p className="text-center">
                             For this mini-game, the player needs to clean up the pet with a bubble bath. After choosing their preferred essential oil to add in the AR pet’s bathtub, the pet will enjoy the bubble bath while the player can <b className="theme">pop the bubbles</b> arising from the bath. The act of popping bubbles is translated from the popular activity of popping Bubble Wrap to simulate a <b className="theme">repetitive, nervous motion that helps release tension and reduce stress</b> [11, 12].
                             </p>
                         </div>
-                        <div className="col-md-6 my-5">
+                        <div className="col-md-6 my-5 d-flex flex-column align-items-center">
                             <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_mood.png" alt="mood icon" />
                             <h6 className="theme my-3">Mood</h6>
-                            <p>
+                            <p className="text-center">
                             This category focuses on daily activities that are effective in helping the player to make peace with their emotions. Two mini games constitute this category: Diary Catharsis and Meditation. 
                             </p>
                         </div>
-                        <div className="col-md-6 my-5">
+                        <div className="col-md-6 my-5 d-flex flex-column align-items-center">
                             <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_diary.png" alt="diary icon" />
                             <h6 className="theme my-3">Diary Catharsis</h6>
-                            <p>
+                            <p className="text-center">
                             The player is encouraged to write a diary to express their feelings and frustrations. The diary itself is an incarnation of the player’s stress and anxiety [32, 36, 41], which the pet will gobble up, symbolizing that the pet helps its owner digest and release the negative emotions. 
                             </p>
                         </div>
-                        <div className="col-md-6 my-5">
+                        <div className="col-md-6 my-5 d-flex flex-column align-items-center">
                             <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_meditation.png" alt="meditation icon" />
                             <h6 className="theme my-3">Meditation Practice</h6>
-                            <p>
+                            <p className="text-center">
                             The pet will guide the player through a deep breathing meditation [28, 30], accompanied by background music to create a relaxing environment. 
                             </p>
                         </div>
@@ -374,10 +374,10 @@ function PetitMood () {
                 <div className="topic-container subsection-wrapper">
                     <h6 className="mb-3">SWOT Analysis </h6>
                     <div className="row w-100 flex-row-reverse">
-                        <div className="col-md-6 mb-5 d-flex flex-column align-items-center">
+                        <div className="col-lg-6 mb-5 d-flex flex-column align-items-center">
                             <img className="w-100" src="/works/UXUI/petit-mood/table3.png" alt="SWOT analysis of Petit Mood" />
                         </div>
-                        <p className="col-md-6">
+                        <p className="col-lg-6">
                         Results of the SWOT analysis suggested apparent strengths of Petit Mood in <b className="theme">a clear goal to help users relieve negative emotions, the use of AR technology to simulate an immersive environment, dialogues relevant to the subject of mood, and a novel yet light gaming experience aimed at reducing stress</b>. These strengths validate the major objective of Petit Mood to facilitate users’ awareness and relief of their mental states. In addition, Petit Mood not only has similar basic functionalities to most existing pet games, but also provides users with more immersive and interactive spatial experiences through the application of AR, which breaks through the mostly flat and narrative interfaces and interaction. 
                         </p>
                         
@@ -387,11 +387,11 @@ function PetitMood () {
                 <div className="topic-container subsection-wrapper">
                     <h3 className="my-5">🧪 Usability Evaluation</h3>
                     <div className="row">
-                        <div className="col-md-6 mb-5">
+                        <div className="col-lg-6 mb-5">
                             <h6 className="mb-3">Participants</h6>
                             <p>12 current university students</p>
                         </div>
-                        <div className="col-md-6 mb-5">
+                        <div className="col-lg-6 mb-5">
                             <h6 className="mb-3">Results</h6>
                             <p>
                                 <b className="theme">Relieving tension and anxiety and relieving depression or slump</b> received highest scores with lowest standard deviations, providing supporting evidence that Petit Mood could relieve users’ negative emotions.
