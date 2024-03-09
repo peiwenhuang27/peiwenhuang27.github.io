@@ -14,27 +14,29 @@ function About () {
     return (
         <Transitions>
         <div className="about">
-            <div className="container">
+            <div className="topic-container">
                 <div className="section-wrapper">
-                    <div className="about-container display-row-reverse mb-5">
-                        <div className="px-3 pfp-container col-md-6">
-                            <div className="pfp-round" />
+                    <div className="about-container mb-5 row">
+                        <h4 className="mb-5 ">Hi! I am Peiwen, pleasure to meet you...</h4>
+                        <div className="row flex-row-reverse justify-content-center">
+                            <div className="mb-5 pfp-container col-md-4">
+                                <div className="pfp-round" />
+                            </div>
+                            <div className="px-5 col-md-8 about-intro-container">
+                                
+                                <p>
+                                I'm in constant pursuit of <b className="p-bold">enriching people's lives through empathy and creativity</b>. Further fueled by curiosity, I aspire to help build a world of justness and abundance by challenging the status quo.
+                                </p>
+                                <p>
+                                With my expertise in UX design, research, and engineering, I designed apps to combat anxiety, envisioned semi-autonomous vehicle to redefine transportation paradigm, and built game to cultivate mindfulness. I also utilized my communication skills as the team leader, project manager, and presenter.
+                                </p>
+                                <p>
+                                You may find me channeling my creativity through drawing, singing, and writing in my free time as emotional outlets. Let’s talk art if you are a kindred spirit!
+                                </p>
+                            </div>
+                            
                         </div>
-                        <div className="col-md-6 about-intro-container">
-                            <h4 className="mb-3">Hi! I am Peiwen, <br/>pleasure to meet you...</h4>
-                            <p>
-                            I am a current student in <b className="p-bold">Master of Human-Computer Interaction at Carnegie-Mellon University.</b>
-                            </p>
-                            <p>
-                            I'm in constant pursuit of <b className="p-bold">enriching people's lives through empathy and creativity</b>. Further fueled by curiosity, I aspire to help build a world of justness and abundance by challenging the status quo.
-                            </p>
-                            <p>
-                            With my expertise in UX design, research, and engineering, I designed apps to combat anxiety, envisioned semi-autonomous vehicle to redefine transportation paradigm, and built game to cultivate mindfulness. I also utilized my communication skills as the team leader, project manager, and presenter.
-                            </p>
-                            <p>
-                            You may find me channeling my creativity through drawing, singing, and writing in my free time as emotional outlets. Let’s talk art if you are a kindred spirit!
-                            </p>
-                        </div>
+                        
 
                     </div>
 

@@ -5,7 +5,7 @@ function Banner () {
 
     return (
         <section className="banner">
-            <div className='container'>
+            <div className='topic-container'>
                 <div className="title-wrapper">
                     <h1>Hey! Peiwen Huang here,</h1>
                     <h2>revolutionizing the human experience, the</h2>

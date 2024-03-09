@@ -7,7 +7,7 @@ import PetitMood from './Pages/Works/UXUI/PetitMood';
 import ToDone from './Pages/Works/UXUI/2Done';
 import Mindful from "./Pages/Works/UXUI/Mindful";
 import TourBot from "./Pages/Works/Frontend/Tourbot";
-
+import Bookworm from "./Pages/Works/UXUI/Bookworm";
 
 function Topic () {
     let { workId } = useParams();
@@ -21,6 +21,9 @@ function Topic () {
     }
     if(workId === 'Petit-Mood') {
         work = <PetitMood />;
+    }
+    if(workId === 'Bookworm-Meeter') {
+        work = <Bookworm />;
     }
     if(workId === '2Done') {
         work = <ToDone />;

@@ -7,7 +7,7 @@ function WorkDisplay ({ data }) {
 
     return (
         <div className="main-body intro-body">
-            <div className="container pt-5">
+            <div className="topic-container pt-5">
                     <div className="intro">
                         <h4>A bit about me...</h4>
                         <p className="px-5 py-3">
@@ -17,7 +17,7 @@ function WorkDisplay ({ data }) {
                     </div>
             </div>
             <div className="quote-wrapper">
-                <div className="container">
+                <div className="topic-container">
                     <div className="quote quotation-mark">〝</div>
                     <div className="quote">
                     Do your little bit of good where you are; it’s those little bits of good put together that overwhelm the world.
@@ -27,7 +27,7 @@ function WorkDisplay ({ data }) {
 
                 </div>
             </div>
-            <div className="container section-wrapper">
+            <div className="topic-container section-wrapper">
                 <div className="work-list">
                     <ul className="w-100 work-cards flex-column">
                         {data.map(item =>

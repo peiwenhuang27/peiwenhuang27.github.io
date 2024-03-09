@@ -16,16 +16,16 @@ function TopicCard ({ link, data, size, reverse = false }) { // title, tags, des
         return (
             <div className="mb-3">
                 <Link to={link} className={`topic-card text-decoration-none row d-flex ${flexDirection}`}>
-                    <div className="col-md-6">
-                        <div className="topic-card-img-container" >
+                    <div className="col-md-6 mb-3 p-0">
+                        <div className="topic-card-img-container-lg" >
                             <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} />
                         </div>
                     </div>
                     <div className={`topic-card-title-container col-md-6 d-flex flex-column justify-content-center ${textDirection}`}>
                         {/* an extra container so underline length = heading */}
-                        <div >
-                            <h1>{data.title}</h1>
-                            <p className="p-bold mb-1">{data.desc}</p>
+                        <div>
+                            <h4 className="mb-0">{data.title}</h4>
+                            <p className="p-bold mb-0">{data.desc}</p>
                             <p>{tag}</p>
                         </div>
                     </div>
@@ -48,8 +48,8 @@ function TopicCard ({ link, data, size, reverse = false }) { // title, tags, des
                     <div className={`topic-card-title-container-md d-flex flex-column justify-content-center ${textDirection}`}>
                         {/* an extra container so underline length = heading */}
                         <div >
-                            <h4>{data.title}</h4>
-                            <p className="p-bold mb-1">{data.desc}</p>
+                            <h4 className="mb-0">{data.title}</h4>
+                            <p className="p-bold mb-0">{data.desc}</p>
                             <p>{tag}</p>
                         </div>
                     </div>

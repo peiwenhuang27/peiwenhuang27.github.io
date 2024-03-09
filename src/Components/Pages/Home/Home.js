@@ -20,14 +20,12 @@ function Home ({ data }) {
 
     return (
         <Transitions key="home">
-            <div className="main">
-                <Banner />
-                <div id="works">
-                    <WorkDisplay data={data} />
-                </div>
-
-                <Outlet />
+            <Banner />
+            <div id="works">
+                <WorkDisplay data={data} />
             </div>
+
+            <Outlet />
         </Transitions>
     );
 };

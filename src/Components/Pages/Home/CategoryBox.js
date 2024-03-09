@@ -18,7 +18,7 @@ function CategoryBox ({ prefix, data }) { // for one category (suffix, name, ite
                         reverse = true;
                     }
                     return (
-                        <li>
+                        <li className="mb-5">
                             <TopicCard link={`${link}/${item.id}`} data={item} reverse={reverse} size="large" />
                         </li>
                     );

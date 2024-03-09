@@ -14,7 +14,7 @@ function Art () {
     return (
         <Transitions>
         <div className="art">
-            <div className="container section-wrapper">
+            <div className="topic-container section-wrapper">
                 <div className="title">
                     <h6>Art</h6>
                     <h4>Let’s sit back and appreciate beauty in everything.</h4>

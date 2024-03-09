@@ -20,4 +20,13 @@ const ScrollToTop = (props) => {
   return <>{props.children}</>
 };
 
+const ScrollToTopBtn = ({ scrollFunc }) => {
+  return (
+    <button onClick={scrollFunc} className="back-to-top">
+    &#9650;<br/>Top
+    </button>
+  );
+}
+
 export default ScrollToTop;
+export { ScrollToTopBtn };
