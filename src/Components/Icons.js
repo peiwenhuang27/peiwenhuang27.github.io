@@ -9,7 +9,7 @@ import { ReactComponent as EmailSvg } from "../img/Email.svg"
 import { ReactComponent as LinkedInSvg } from "../img/LinkedIn.svg"
 import { ReactComponent as GithubSvg } from "../img/Github.svg"
 
-const Logo = () => (
+const LogoIcon = () => (
     <div className="logo-svg">
         <LogoSvg />
     </div>
@@ -69,4 +69,4 @@ const GithubIcon = () => (
     </div>
 );
 
-export { Logo, EduIcon, SkillIcon, InterestIcon, LangIcon, LinkIcon, ArrowIcon, EmailIcon, LinkedInIcon, GithubIcon };
+export { LogoIcon, EduIcon, SkillIcon, InterestIcon, LangIcon, LinkIcon, ArrowIcon, EmailIcon, LinkedInIcon, GithubIcon };

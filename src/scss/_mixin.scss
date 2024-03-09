@@ -1,5 +1,5 @@
 @mixin max {
-    @media(max-width: 1200px){
+    @media(max-width: 1280px){
         @content;
     }
 }
@@ -36,7 +36,7 @@
 
 @mixin underline-animation($color) {
     display: inline-block;
-    padding-bottom:2px;
+    padding-bottom: 4px;
     background-image: linear-gradient($color, $color);
     background-position: 0 100%; /*OR bottom left*/
     background-size: 0% 2px;

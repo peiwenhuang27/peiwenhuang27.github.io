@@ -1,3 +1,11 @@
+main {
+
+    margin-top: 62px;
+    @include pad {
+
+    };
+}
+
 @keyframes arrowMovement {
     from {
       transform: translateY(0);
@@ -8,7 +16,7 @@
   }
 
 .banner {
-    margin-top: 64px;
+    padding-top: 64px;
     color: $secondary;
 
     .title-wrapper {

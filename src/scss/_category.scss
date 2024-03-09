@@ -1,15 +1,10 @@
 .category-page {
     .title {
-        h6 {
-            color: gray;
-        }
         h4 {
             color: $indigo-700;
         }
     }
-    @include pad-sm {
-        padding-top: 80px;
-    }
+
 }
 
 .category-box {
@@ -17,6 +12,41 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+.category-nav {
+    display: flex;
+    justify-content: start;
+
+    @include mobile {
+        justify-content: space-between;
+    }
+
+    h6 {
+        color: $gray-300;
+        @include hover-transition;
+        @include underline-animation($highlight);
+    }
+
+    // BOOTSTRAP
+    .nav-link {
+        padding-left: 0;
+        padding-right: 36px;
+        border: none;
+
+        @include mobile {
+            padding-right: 0;
+        }
+    }
+
+    .active {
+        h6 {
+            color: $highlight;
+            background-position: 100% 100%;
+            background-size: 100% 2px;
+        }
+        
     }
 }
 

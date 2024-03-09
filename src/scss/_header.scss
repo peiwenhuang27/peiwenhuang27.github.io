@@ -1,218 +1,120 @@
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    // width: 100%;
     z-index: 1;
     background-color: white;
-    padding: 16px 0;
-    box-shadow: $box-shadow;
-    .container {
-        @include pad-sm {
-            // max-width: 100%;
-            // width: 100%;
-        }
-    }
-    @include pad-sm {
-        position: absolute;
-    }
-}
-.header-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include pad-sm {
-        width: 100%;
-        padding: 3% 0;
-    }
-    @include mobile-sm {
-        width: 98%;
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-}
-.header-panel {
-    display: none;
-
-    @include mobile {
-        display: flex;
-        a {
-            position: relative;
-            padding: 4px;
-
-            em {
-                font-size: 14px;
-                padding: 0 3px;
-                color: white;
-                background-color: $beige-600;
-                border-radius: 15px;
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-        }
-    }
-}
-.header-logo {
-    text-decoration: none;
-    color: $secondary;
-    display: flex;
-
-    h1 {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 700;
-        margin: 0;
-    }
-
-    &:hover {
-        color: $highlight;
-        @include hover-transition;
-    }
-
-    @include pad-sm {
-        margin-left: 10px;
-    }
-}
-.text-hide {
-    text-indent: 101%;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.d-block {
-display: block;
-}
-.shopping-cart, .dropdown-btn {
-    margin-left: 20px;
-    color: $gray-600;
-    display: none;
-
-    @include pad-sm {
-        display: block;
-        margin-right: 10px;
-
-        &:hover, &:focus {
-            color: $gray-800;
-        }
-    }
-}
-.header-menu {
-    display: flex;
-    align-items: center;
-    margin: 0;
     padding: 0;
+    box-shadow: $box-shadow;
+}
 
-    .navbar-item {
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 6px 12px 2px 12px;
-            
-            @include header-text;
-            @include underline-animation($highlight);
-            
-            @include pad-sm {
-                max-width: 100%;
-                width: 100%;
-                text-align: center;
-            }
-
-            &:hover {
-                color: $highlight;
-            }
-        }
+.logo-svg {
+    padding: 0 2px;
+    width: 36px;
+    height: 36px;
+    transition: .3s;
+    path {
+        fill: $secondary;
+        transition: .3s;
     }
-
-    .header-category {
-        background-color: transparent;
-        border: none;
-        border-radius: 0;
-        margin: 0;
-        
-        span {
-            display: flex;
-            align-items: center;
-        }
-
-        @include header-text;
-        @include underline-animation($highlight);
-
-        &:active {
-            background-color: transparent;
-        }
-        &:hover {
-            .arrow-svg path {
-                fill: $pink-700;
-            }
-        }
-
-        .arrow-svg {
-            width: 16px;
-            height: 16px;
-            margin-left: 4px;
-            margin-bottom: 0;
-
-            path {
-                fill: $gray-500;
-            }
-        }
-    }
-
-
-    .header-item {
-        color: black;
-        .header-link {
-            width: 100%;
-        }
-        a {
-            text-decoration: none;
-            color: black;
-            @include hover-transition;
-        }
-        &:hover {
-            background-color: $gray-100;
-            transition:         all 0.3s  ease;
-            -moz-transition:    all 0.3s  ease;
-            -webkit-transition: all 0.3s  ease;
-            -o-transition:      all 0.3s  ease;
-            -ms-transition:     all 0.3s  ease;
-        }
-    }
-
-    li {
-        @include hover-transition;
-        margin: 0 16px;
-
-        span {
-            margin-right: 5px;
-        }
-    }
-
-    &.active {
-        @include pad-sm {
-            display: flex;
+    &:hover {
+        path {
+            fill: $highlight;
         }
     }
 }
 
-.dropdown .dropdown-menu {
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    transition:         all 0.4s  ease;
-    -moz-transition:    all 0.4s  ease;
-    -webkit-transition: all 0.4s  ease;
-    -o-transition:      all 0.4s  ease;
-    -ms-transition:     all 0.4s  ease;
+.arrow-svg {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    margin-bottom: 0;
+
+    path {
+        fill: $gray-500;
+    }
 }
-.dropdown:hover .dropdown-menu {
-    visibility: visible;
-    opacity: 1;
-}
+
+/* BOOTSTRAP */
+
 .dropdown-toggle::after {
     display: none;
 }
+
+.navbar-toggler {
+    background-color: none;
+    border: none;
+
+    &:focus:not(:focus-visible) {
+        box-shadow: none;
+    }
+}
+
+.navbar-collapse {
+    .me-auto {
+        margin-left: auto !important;
+        margin-right: 0 !important;
+    }
+    @include pad-sm {
+        margin: 8px 0;
+    }
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include pad-sm {
+        padding: 16px 0;
+        border-top: 1px solid $gray-100;
+    }
+}
+
+.dropdown-menu {
+    border: 1px solid $gray-100;
+    border-radius: 4px;
+
+    @include pad-sm {
+        border: none;
+    }
+}
+
+.dropdown-item {
+    transition: .3s;
+    &:hover {
+        background-color: $gray-100;
+    }
+    &:focus {
+        background-color: $highlight;
+        color: white;
+    }
+
+    @include pad-sm {
+        text-align: center;
+    }
+}
+
+.header-item {
+    margin: 0 0 0 16px;
+    color: $gray-500;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include underline-animation($highlight);
+
+    &:hover {
+        color: $highlight;
+        .arrow-svg {
+            path {
+                fill: $highlight;
+            }
+        }   
+    }
+
+}
+
+
 

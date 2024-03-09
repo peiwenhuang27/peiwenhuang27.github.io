@@ -1,0 +1,56 @@
+#Ford-Vision {
+    .theme  {
+        color: #2A6BAC !important;
+    }
+    .theme-bg {
+        width: 100%;
+        background-color: #ecf4fc;
+    }
+    .artwork {
+        height: 300px;
+        width: auto;
+        background-size: cover;
+        background-position: center;
+
+        @include pad-sm {
+            height: 180px;
+        }
+    }
+}
+
+#ford-vision-prototype {
+    img {
+        width: 100%;
+        height: calc(100% * 9/16);
+        object-fit: contain;
+    }
+}
+
+.vision-link {
+    text-decoration: none;
+
+    .arrow-svg {
+        margin: 0 16px;
+        width: 32px;
+        height: 32px;
+        transform: rotate(-90deg);
+        transition: .3s;
+    }
+
+    @include hover-transition;
+    @include underline-animation(#2A6BAC);
+
+    &:hover {
+        color: #2A6BAC;
+        cursor: pointer;
+
+        .arrow-svg path {
+            fill: #2A6BAC;
+        }
+    }
+
+    @include pad-sm {
+        font-size: 24px;
+        text-align: center;
+    }
+}

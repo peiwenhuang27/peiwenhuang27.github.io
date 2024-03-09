@@ -1,46 +1,45 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Switch from './Components/Switch';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
 // PROBLEM
-// subtitle too big??
+// scroll animation
 // inspect the whole design system
-// sidebar navigation
-// header/footer no container
+// art side scrollbar
+// project nav (left? center?)
+// redesign cover
+// fluffy demo
+// pui engineering
+// petit mood
+// ucre??
+// capstone
+
 
 function App() {
+  // The back-to-top button is hidden at the beginning
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  // This function will scroll the window to the top 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // for smoothly scrolling
+    });
+  };
+
   const [view, setView] = useState(false);
-  const homeData = [
-    {'suffix': 'design', 'name': 'Design Projects',
-      'items': [
-      {
-          'title': 'Fluffy Focus', 
-          'id': 'Fluffy-Focus',
-          'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
-          'desc': 'Transformational Mobile RPG Against Work-Induced Anxiety',
-          'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-          'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-      },
-      {
-        'title': 'Ford Vision', 
-        'id': 'Ford-Vision',
-        'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-        'desc': 'Defining Semi-Autonomous Electric Vehicle Paradigm',
-        'img': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
-      },
-      {
-        'title': '2Done', 
-        'id': '2Done',
-        'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
-        'desc': 'A gamified to-do list tackling procrastination.',
-        'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
-        'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
-      },
-      ]
-    },
-  ];
   const workData = [
     {'suffix': 'design', 'name': 'Design',
       'headline': 'Life is good; design makes it even better.',
@@ -54,29 +53,22 @@ function App() {
         'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
       },
       {
+        'title': 'Ford Vision', 
+        'id': 'Ford-Vision',
+        'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
+        'desc': 'Defining Semi-Autonomous Electric Vehicle Paradigm',
+        'img': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
+        'ph': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
+      },
+      {
         'title': '2Done', 
         'id': '2Done',
         'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
-        'desc': 'A gamified to-do list tackling procrastination.',
+        'desc': 'A gamified to-do list mobile app tackling procrastination',
         'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
         'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
       },
-      {
-        'title': 'Bookworm Meeter', 
-        'id': 'Bookworm-Meeter',
-        'tags': ['DesignThinking', 'UI', 'SocialAPP', 'Reading'],
-        'desc': 'The social networking platform for introverted bookworms.',
-        'img': 'https://live.staticflickr.com/65535/52516423519_c9e86789fa_k.jpg',
-        'ph': 'https://live.staticflickr.com/65535/52516423519_8b1230a857_m.jpg',
-      },
-      {
-        'title': 'Mindful Diary',
-        'id': 'Mindful-Diary',
-        'tags': ['UI', 'Diary', 'Habituation', 'MentalHealth'], 
-        'desc': 'Guided journal application to understand your mind.',
-        'img': 'https://live.staticflickr.com/65535/52516425824_fe9e2f38eb_k.jpg',
-        'ph': 'https://live.staticflickr.com/65535/52516425824_12072e6f9b_m.jpg',
-      },]
+    ]
     },
     {'suffix': 'research', 'name': 'Research',
     'headline': 'To research is to make known the unknown, and inform our response.',
@@ -103,6 +95,12 @@ function App() {
       },]
     },
   ];
+  const homeData = [
+    {'suffix': 'design', 'name': 'Design Projects',
+      'items': workData[0]['items']
+    },
+  ];
+
   const lifeData = [
     {'suffix': '/Art', 'name': 'Art', 
     'img': 'https://64.media.tumblr.com/d67f70e908c081ebf6869ac1dd0a4653/2bc0cb1353ea6c46-8e/s2048x3072/e8cee6bed8bc71cc5ee750349d003bb807b61292.jpg'},
@@ -113,8 +111,12 @@ function App() {
   return (
     <div>
       <Header workData={workData} lifeData={lifeData} view={view} setView={setView} />
-      <Switch homeData={homeData} workData={workData} lifeData={lifeData} view={view} setView={setView} />
-      <Footer />
+      <main>
+        <Switch homeData={homeData} workData={workData} lifeData={lifeData} view={view} setView={setView} />
+        {showButton && <ScrollToTopBtn scrollFunc={scrollToTop} />}
+        <Footer />
+      </main>
+      
     </div>
   );
 }
