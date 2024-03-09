@@ -33,7 +33,7 @@ function Fluffy () {
 
 
     return (
-        <div>
+        <div id="Fluffy-Focus">
             <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
             <div className="container">
                 <div className="topic-container py-5">
@@ -58,6 +58,7 @@ function Fluffy () {
                             <h6 className="theme mb-3">Role</h6>
                             <ul>
                                 <li>Lead Designer</li>
+                                <li>Illustrator</li>
                                 <li>Researcher</li>
                             </ul>
                         </div>
@@ -162,7 +163,7 @@ function Fluffy () {
                     <ul className="my-5">
                         <li className="row my-5 d-flex align-items-center">
                             <div className="col-md-3 mx-3 d-flex flex-column align-items-center">
-                                <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Planning.svg" alt="planning icon" />
+                                <img className="w-50 mb-2" src="/works/UXUI/fluffy/Planning.svg" alt="planning icon" />
                             </div>
                             <div className="col-md-8">
                                 <h6 className="mb-3">Behavioral</h6>
@@ -177,7 +178,7 @@ function Fluffy () {
                         </li>
                         <li className="row my-5 d-flex align-items-center">
                             <div className="col-md-3 mx-3 d-flex flex-column align-items-center">
-                                <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Thinking.svg" alt="thinking icon" />
+                                <img className="w-50 mb-2" src="/works/UXUI/fluffy/Thinking.svg" alt="thinking icon" />
                             </div>
                             <div className="col-md-8">
                                 <h6 className="mb-3">Attitudinal</h6>
@@ -192,13 +193,13 @@ function Fluffy () {
                         </li>
                     </ul>
                     <div className="row">
-                        <div className="col-md-6 px-5">
-                            <h6>Audience</h6>
-                            <p>Graduate students aged 21-25 who would like more control over their schedule and time through a customizable system based on user's preferences</p>
-                        </div>
-                        <div className="col-md-6 px-5">
+                        <div className="col-md-6">
                             <h6>Environment</h6>
                             <p>Home, library, other work environments</p>
+                        </div>
+                        <div className="col-md-6">
+                        <h6>Audience</h6>
+                            <p>Graduate students aged 21-25 who would like more control over their schedule and time through a customizable system based on user's preferences</p>
                         </div>
                     </div>
                 </div>
@@ -206,7 +207,7 @@ function Fluffy () {
                 <div className="topic-container section-wrapper">
                     <h3 className="my-5">🧠 Ideation</h3>
                     <div className="my-3 d-flex flex-column align-items-center">
-                        <img className="w-sizer" src="/works/UXUI/fluffy/ideation/affinity.png" alt="voting of ideas" />
+                        <img className="w-sizer-100" src="/works/UXUI/fluffy/ideation/affinity.png" alt="voting of ideas" />
                         <p className="table-caption mt-3">Affinity diagram of intervention ideas with votes</p>
                     </div>
                     <h6 className="mt-5">Framework</h6>
@@ -214,7 +215,7 @@ function Fluffy () {
                     <ul className="my-5">
                         <li className="my-5 row d-flex align-items-center">
                             <div className="col-md-3 px-3 d-flex flex-column align-items-center">
-                                <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Avatar.svg" alt="avatar icon" />
+                                <img className="w-50 mb-2" src="/works/UXUI/fluffy/Avatar.svg" alt="avatar icon" />
                             </div>
                             <div className="col-md-9">
                                 <h6 className="my-3">Personalized Animal Avatar</h6>
@@ -225,7 +226,7 @@ function Fluffy () {
                         </li>
                         <li className="my-5 row d-flex align-items-center flex-row-reverse">
                             <div className="col-md-3 px-3 d-flex flex-column align-items-center">
-                                <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Communication.svg" alt="communication icon" />
+                                <img className="w-50 mb-2" src="/works/UXUI/fluffy/Communication.svg" alt="communication icon" />
                             </div>
                             <div className="col-md-9">
                                 <h6 className="my-3">Periodic Self-affirmation Dialogues</h6>
@@ -236,7 +237,7 @@ function Fluffy () {
                         </li>
                         <li className="my-5 row d-flex align-items-center">
                             <div className="col-md-3 px-3 d-flex flex-column align-items-center">
-                                <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Pomodoro.svg" alt="pomodoro icon" />
+                                <img className="w-50 mb-2" src="/works/UXUI/fluffy/Pomodoro.svg" alt="pomodoro icon" />
                             </div>
                             <div className="col-md-9">
                                 <h6 className="my-3">Focus Pomodoro Sessions with Avatar</h6>
@@ -247,7 +248,7 @@ function Fluffy () {
                         </li>
                         <li className="my-5 row d-flex align-items-center flex-row-reverse">
                             <div className="col-md-3 px-3 d-flex flex-column align-items-center">
-                                <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Badge.svg" alt="badge icon" />
+                                <img className="w-50 mb-2" src="/works/UXUI/fluffy/Badge.svg" alt="badge icon" />
                             </div>
                             <div className="col-md-9">
                                 <h6 className="my-3">Visualization of Progress & Achievement</h6>
@@ -259,7 +260,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                         </li>
                         <li className="my-5 row d-flex align-items-center">
                             <div className="col-md-3 px-3 d-flex flex-column align-items-center">
-                                <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Reward.svg" alt="reward icon" />
+                                <img className="w-50 mb-2" src="/works/UXUI/fluffy/Reward.svg" alt="reward icon" />
                             </div>
                             <div className="col-md-9">
                                 <h6 className="my-3">Gaining Rewards upon Task Completion</h6>
@@ -290,12 +291,12 @@ leveling up and unlocking new environments, and data visualizations of task comp
                     </div>
 
                     <div className="my-5 d-flex justify-content-center flex-wrap">
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-0-env.jpg" alt="environments" />
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/2-visual/1-1-avatar.jpg" alt="animal avatars" />   
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/1-platform.png" alt="voting of modality" />                     
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-1-room.png" alt="room environment" />
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-2-attic.png" alt="attic environment" />
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-3-garden.png" alt="garden environment" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-0-env.jpg" alt="environments" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/1-1-avatar.jpg" alt="animal avatars" />   
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/1-platform.png" alt="voting of modality" />                     
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-1-room.png" alt="room environment" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-2-attic.png" alt="attic environment" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-3-garden.png" alt="garden environment" />
                     </div>
                     
                     <div className="subsection-wrapper row">
@@ -310,18 +311,18 @@ leveling up and unlocking new environments, and data visualizations of task comp
                     </div>
                     
                     <div className="my-1 d-flex justify-content-center flex-wrap">
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/3-branding/1-palette.jpg" alt="palette" />
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/3-branding/2-typography.jpg" alt="typography" />   
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/3-branding/3-icon.jpg" alt="icons" />  
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/3-branding/1-palette.jpg" alt="palette" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/3-branding/2-typography.jpg" alt="typography" />   
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/3-branding/3-icon.jpg" alt="icons" />  
                     </div>
                 </div>
 
                 <div className="topic-container subsection-wrapper">
                     <h3 className="my-5">🌒 Lo-fi Prototype</h3>
                     <div className="my-1 d-flex justify-content-center flex-wrap">
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/0.jpg" alt="brainstorming intervention" />
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/1.jpg" alt="user interface design session" />   
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/2.png" alt="low-fi prototype Figma" />  
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/0.jpg" alt="brainstorming intervention" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/1.jpg" alt="user interface design session" />   
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/2.png" alt="low-fi prototype Figma" />  
                     </div>
 
                     <div className="subsection-wrapper">
@@ -348,9 +349,9 @@ leveling up and unlocking new environments, and data visualizations of task comp
                     <h3 className="my-5">🌓 Mid-fi Prototype</h3>
                     <h6 className="mb-3">Iteration</h6>
                     <div className="my-1 d-flex justify-content-center flex-wrap">
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/1.jpg" alt="midfi sketch- task page" />
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/2.jpg" alt="midfi sketch- task creation" />   
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/3.jpg" alt="midfi sketch- task kanban" />  
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/1.jpg" alt="midfi sketch- task page" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/2.jpg" alt="midfi sketch- task creation" />   
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/3.jpg" alt="midfi sketch- task kanban" />  
                     </div>
 
                     <p>
@@ -364,7 +365,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                     </p>
 
                     <div className="my-5 d-flex justify-content-center flex-wrap">
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/5.png" alt="midfi figma prototype" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/5.png" alt="midfi figma prototype" />
                     </div>
 
                     <h6 className="mb-3">User Test Results</h6>
@@ -389,7 +390,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                     </p>
                     <ul className="subsection-wrapper">
                         <li className="row align-items-start subsection-wrapper">
-                            <div className="col-md-6">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2dmZ3J3ZHo3cWZ5MzkyOHI2Y3F1dDBydGYwMDVlNDhnajc2NjJyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XZmPrQa21ClUdRY6Tr/giphy.gif" alt="Customization of Avatar"></img>
                             </div>
                             <div className="col-md-6">
@@ -398,7 +399,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                             </div>
                         </li>
                         <li className="flex-row-reverse row align-items-start subsection-wrapper">
-                            <div className="col-md-6">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHdhYjF2eTIxeXhpZGx4bGo1a2JlczFpMzVrMnhrYTg4bjhtc3R1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xlXDa18T6yEtGA9f0W/giphy.gif" alt="Empowering Self-Affirmation through Avatar Dialogues"></img>
                             </div>
                             <div className="col-md-6">
@@ -407,7 +408,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                             </div>
                         </li>
                         <li className="row align-items-start subsection-wrapper">
-                            <div className="col-md-6">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXNjNWp4ZjJmeGNobnh4aGk2NThoa3VuNDg1cXN3ZmMyY2ZzbWQ5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KU3ec5QdIIZanQJnSp/giphy.gif" alt="Task & Productivity Enhancement"></img>
                             </div>
                             <div className="col-md-6">
@@ -416,7 +417,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                             </div>
                         </li>
                         <li className="flex-row-reverse row align-items-start subsection-wrapper">
-                            <div className="col-md-6">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3pxaWl2NnExcmVpNDI3NnJpa3U3ZmxjaDg2cjI2ZG96bTBoYXN5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OCKgvJ5jJZCFybWiv5/giphy.gif" alt="Pomodoro Technique & Immersive Environments"></img>
                             </div>
                             <div className="col-md-6">
@@ -425,7 +426,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                             </div>
                         </li>
                         <li className="row align-items-start subsection-wrapper">
-                            <div className="col-md-6">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajk0YnZtNm03bzQ0ZGlrdHMybzU2bnpyOWc5ZWx4amZ6d3lrYmc0MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cv1s6W7xhMCFYsO6R5/giphy.gif" alt="Rewards & Environment Unlock"></img>
                             </div>
                             <div className="col-md-6">
@@ -434,7 +435,7 @@ leveling up and unlocking new environments, and data visualizations of task comp
                             </div>
                         </li>
                         <li className="flex-row-reverse row align-items-start subsection-wrapper">
-                            <div className="col-md-6">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHJ6Z3phbzFvaWtyenRvMGxyMWE2ODV3N3g2NDE1NHU5cjVvOXoxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oxChvgPxbR0tQ42p3I/giphy.gif" alt="Progress Tracking & Visual Achievement"></img>
                             </div>
                             <div className="col-md-6">
@@ -453,10 +454,10 @@ leveling up and unlocking new environments, and data visualizations of task comp
                         <img className="w-75 p-1" src="/works/UXUI/fluffy/result/1.jpg" alt="science fair" />
                     </div>
                     <div className="mb-5 d-flex justify-content-center flex-wrap">
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/result/2.jpg" alt="science fair" />
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/result/3.jpg" alt="science fair" />
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/result/4.jpg" alt="science fair" />
-                        <img className="fluffy-artwork p-1" src="/works/UXUI/fluffy/result/5.jpg" alt="science fair" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/result/2.jpg" alt="science fair" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/result/3.jpg" alt="science fair" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/result/4.jpg" alt="science fair" />
+                        <img className="artwork p-1" src="/works/UXUI/fluffy/result/5.jpg" alt="science fair" />
                     </div>
 
                     <h6 className="my-3">Future State</h6>
@@ -572,7 +573,7 @@ Browne, R., Raeside, L., & Gray, G. (2018, October). Gamification in Education: 
 
                         <h6>Expert Consult</h6>
                         <p className="references mb-5">
-                            <ul className="list-disc">
+                            <ul>
                                 <li>Dan Saffer</li>
                                 <li>Elaine Fath</li>
                                 <li>Ted Talk- Tim Urban: [Inside the mind of a master procrastinator](https://www.youtube.com/watch?v=arj7oStGLkU)
