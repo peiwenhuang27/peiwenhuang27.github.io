@@ -378,46 +378,6 @@ ul {
     margin: 0 5px;
 }
 
-#problem-list {
-    li {
-        text-align: center;
-        background-color: $secondary;
-        color: $white;
-        height: 70px;
-        border-radius: 16px;
-
-        @include box-shadow-darker;
-
-        @include pad-sm {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-    }
-}
-
-#pain-point-list {
-    // width: 75%;
-    @include pad-sm {
-        width: 350px;
-    }
-    li {
-        text-align: center;
-        background-color: #efcd51;
-        height: 120px;
-        border-radius: 32px;
-        @include box-shadow-darker;
-
-        @include pad-sm {
-            margin-bottom: 40px;
-        }
-    }
-
-    .heading-2 {
-        line-height: 1.5;
-        color: $black;
-    }
-}
-
 .section-wrapper {
     padding-top: 150px;
     padding-bottom: 150px;

@@ -5,8 +5,7 @@ import { ArrowIcon } from "../../../Icons";
 
 // TODO
 // sidebar navigation
-// header/footer no container
-// demo section of screenshots (mockup of laptop)
+
 
 function Vision () {
     const demoVid = useRef(null);
@@ -344,7 +343,7 @@ function Vision () {
                             <p className="table-caption mt-1 mb-3">Mobile flow of unlocking/turning on moped & setting up GPS</p>
                         </div>
                         <div className="row align-items-center">
-                            <div className="col-md-6 p-5 d-flex flex-column align-items-center">
+                            <div className="col-md-6 p-3 d-flex flex-column align-items-center">
                                 <img className="w-100" src="/works/UXUI/vision/phase-3/c-3-2.png" alt="challenge 1" />
                                 <p className="table-caption mt-1 mb-3">Moped in GPS navigation mode</p>
                             </div>
@@ -593,6 +592,9 @@ function Vision () {
                         <h3 className="my-5">📑 References</h3>
                         <p className="references mb-3">
                         Nielsen, J. (1994, April 24). <span className="italic">10 usability heuristics for user interface design.</span> Nielsen Norman Group. <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noreferrer noopener">https://www.nngroup.com/articles/ten-usability-heuristics/</a><br/>
+                        </p>
+                        <h6>Icons</h6>
+                        <p className="references mb-3">
                         Scooter by Prashanth Rapolu from <a href="https://thenounproject.com/browse/icons/term/scooter/" target="_blank" title="Scooter Icons">Noun Project</a> (CC BY 3.0)
 <br/>
 dashboard by Sofiana from <a href="https://thenounproject.com/browse/icons/term/dashboard/" target="_blank" title="dashboard Icons">Noun Project</a> (CC BY 3.0)

@@ -1,23 +1,25 @@
-#todone-problem-statement {
-    padding: 20px 0;
+#todone {
+    .theme  {
+        color: #8F7000 !important;
+    }
+    .theme-bg {
+        width: 100%;
+        background-color: rgba(143, 112, 0, 0.2);
+    }
 }
 
-#todone-hmw {
-    line-height: 1.5;
-}
+#problem-list {
+    li {
+        text-align: center;
+        background-color: rgba(143, 112, 0, 0.2);
+        min-height: 80px;
+        border-radius: 16px;
 
-#todone-hmw-container {
-    margin: 120px 0;
-}
+        @include box-shadow;
 
-#todone-stats {
-    .statistics-container {
-        h2 {
-            color: $secondary;
-        }
-        p {
-            font-size: 18px;
-            color: $primary;
+        @include pad-sm {
+            // font-size: 16px;
+            // margin-bottom: 20px;
         }
     }
 }
@@ -30,24 +32,16 @@
     }
 }
 
-#todone-map-title {
-    padding-top: 80px;
-}
 .journey-map-img {
     padding: 6%;
 }
 
-.feat-box {
-    background-color: $secondary;
-    padding: 8px 16px;
-    border-radius: 20px;
-    color: $white;
-    margin: 0;
-    font-weight: bold;
-    width: max-content;
-
-    @include pad-sm {
-        width: 90%;
+.todone-finding {
+    img {
+        width: 75%;
+        @include pad {
+            width: 50%;
+        }
     }
 }
 
