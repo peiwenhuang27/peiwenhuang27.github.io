@@ -7,25 +7,24 @@ import Category from './Category';
 import Topic from './Topic';
 
 
-function Switch ({ homeData, workData, lifeData, view, setView, ref, variants }) {
+function Switch ({ homeData, workData, lifeData, view, setView }) {
   // const location = useLocation();
   
-
   return (
     // AnimatePresence: initial={false}
     // Routes: location={location} key={location.pathname}
     <AnimatePresence mode="wait">
       <Routes >
-        <Route exact path="/" element={<Home data={homeData} view={view} setView={setView} ref={ref} variants={variants} />} />
-        <Route path="/About" element={<About ref={ref} variants={variants} />} />
+        <Route exact path="/" element={<Home data={homeData} view={view} setView={setView} />} />
+        <Route path="/About" element={<About />} />
         <Route path="/Works">
           {workData.map((item) =>
-            <Route path={`${item.suffix}/:workId`} element={<Topic name={item.name} ref={ref} variants={variants} />} />
+            <Route path={`${item.suffix}/:workId`} element={<Topic name={item.name} />} />
           )}
 
-          <Route path=":categoryId" element={<Category prefix="/Works" workData={workData} lifeData={lifeData} ref={ref} variants={variants} />} />
+          <Route path=":categoryId" element={<Category prefix="/Works" workData={workData} lifeData={lifeData} />} />
         </Route>
-        <Route path="/Art" element={<Art ref={ref} variants={variants} />} />
+        <Route path="/Art" element={<Art />} />
       </Routes>
     </AnimatePresence>
     

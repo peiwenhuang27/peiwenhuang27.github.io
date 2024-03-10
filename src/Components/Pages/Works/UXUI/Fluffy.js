@@ -1,12 +1,9 @@
 import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import ReactLoading from "react-loading";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import Iframe from 'react-iframe';
+
+import HorizontalScrollCarousel from "../../../HorizontalScrollCarousel";
+import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 
 // TODO
 // sidebar navigation
@@ -89,17 +86,21 @@ function Fluffy () {
             </div>
 
             <div className="theme-bg">
+                <HorizontalScrollCarousel
+                cards={cards}
+                bgc="#CDD5C5"
+                responsiveVertical={true}
+                title={<h3>💻 Demo</h3>}/>
+
                 <div className="container">
-                    <div className="topic-container section-wrapper">
-                        <h3 className="mb-5">💻 Demo</h3>
+                    <div className="topic-container section-wrapper-bottom">
+                    <h6 className="text-center mb-5">Figma Prototype</h6>
                         <div className="d-flex justify-content-center">
                             {isLoading ? (
                                 <ReactLoading type="bubbles" color="#e0e0e0"
                                 height={100} width={50} />
                             ) : figma}
                         </div>
-
-                        {/* TODO: demo section of screenshots */}
                     </div>
                 </div>
             </div>
@@ -619,3 +620,35 @@ bonding by WBcreative from <a href="https://thenounproject.com/browse/icons/term
 
 export default Fluffy;
 
+const cards = [
+    {
+        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/1.png",
+        title: "Title 1",
+        id: 1,
+    },
+    {
+        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/2.png",
+        title: "Title 2",
+        id: 2,
+    },
+    {
+        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/3.png",
+        title: "Title 3",
+        id: 3,
+    },
+    {
+        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/4.png",
+        title: "Title 4",
+        id: 4,
+    },
+    {
+        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/5.png",
+        title: "Title 5",
+        id: 5,
+    },
+    {
+        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/6.png",
+        title: "Title 1",
+        id: 6,
+    },
+  ];

@@ -7,34 +7,18 @@ import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 // PROBLEM:
 // scroll animation
 // project nav (left? center?)
-// art side scrollbar
 
 // UI:
 // redesign cover
-// inspect the whole design system
 
 // CONTENT:
-// fluffy demo
 // pui engineering
 // ucre??
 // capstone
 
-const variants = {
-  visible: { opacity: 1, translateY: 0, 
-      transition: {
-          type: "spring",
-          duration: 0.2,
-          delay: 0.5,
-          stiffness: 50,
-      }},
-  hidden: { opacity: 0,  translateY: 80},
-};
-
 function App() {
   // The back-to-top button is hidden at the beginning
   const [showButton, setShowButton] = useState(false);
-
-  const ref = useRef(null);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -128,8 +112,7 @@ function App() {
       <Header workData={workData} lifeData={lifeData} view={view} setView={setView} />
       <main>
         <Switch homeData={homeData} workData={workData} lifeData={lifeData}
-        view={view} setView={setView}
-        ref={ref} variants={variants}/>
+        view={view} setView={setView} />
         {showButton && <ScrollToTopBtn scrollFunc={scrollToTop} />}
         <Footer />
       </main>

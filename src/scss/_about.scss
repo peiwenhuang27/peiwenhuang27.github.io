@@ -96,31 +96,29 @@
     font-weight: normal;
 }
 
+.readmoreBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include mobile {
+        
+    }
+}
+
 .about-link {
     text-decoration: none;
     color: $secondary;
+    text-align: center;
 
     @include hover-transition;
     @include underline-animation($highlight);
-
-    .arrow-svg {
-        margin: 0 16px;
-        width: 32px;
-        height: 32px;
-        transform: rotate(-90deg);
-        transition: .3s;
-    }
 
     &:hover {
         color: $highlight;
         .arrow-svg path {
             fill: $highlight;
         }
-    }
-
-    @include pad-sm {
-        font-size: 24px;
-        text-align: center;
     }
 }
 

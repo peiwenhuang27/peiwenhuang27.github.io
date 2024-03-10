@@ -1,7 +1,8 @@
 import { useState,useRef } from "react";
 import Iframe from 'react-iframe';
 
-import { ArrowIcon } from "../../../Icons";
+import HorizontalScrollCarousel from "../../../HorizontalScrollCarousel";
+import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 
 // TODO
 // sidebar navigation
@@ -423,18 +424,11 @@ function Vision () {
                 </div>       
             </div>
 
-            <div className="container topic-container">
-            <h6 className="mb-3">Usability Testing & Guerrilla Research</h6>
-            </div>
             
-            <div className="my-5 d-flex illustration-feed">
-                <img className="artwork p-1" src="/works/UXUI/vision/phase-5/IMG_7774.jpg" alt="prototype" />
-                <img className="artwork p-1" src="/works/UXUI/vision/phase-4/IMG_7723.jpg" alt="prototype" />
-                <img className="artwork p-1" src="/works/UXUI/vision/phase-5/IMG_7752.jpg" alt="prototype" />
-                <img className="artwork p-1" src="/works/UXUI/vision/phase-5/IMG_7763.jpg" alt="prototype" />
-                <img className="artwork p-1" src="/works/UXUI/vision/phase-4/IMG_7728.png" alt="prototype" />
-                <img className="artwork p-1" src="/works/UXUI/vision/phase-4/IMG_7727.png" alt="prototype" />
-            </div>
+            <HorizontalScrollCarousel cards={cards} 
+            bgc="#ecf4fc"
+            title={<h6 className="mb-3">Usability Testing & Guerrilla Research</h6>}/>
+
 
             <div className="container">
                 <div className="topic-container section-wrapper">
@@ -612,3 +606,35 @@ down by unlimicon from <a href="https://thenounproject.com/browse/icons/term/dow
 
 export default Vision;
 
+const cards = [
+    {
+      url: "/works/UXUI/vision/phase-5/IMG_7774.jpg",
+      title: "Title 1",
+      id: 1,
+    },
+    {
+      url: "/works/UXUI/vision/phase-4/IMG_7723.jpg",
+      title: "Title 2",
+      id: 2,
+    },
+    {
+      url: "/works/UXUI/vision/phase-5/IMG_7752.jpg",
+      title: "Title 3",
+      id: 3,
+    },
+    {
+      url: "/works/UXUI/vision/phase-5/IMG_7763.jpg",
+      title: "Title 4",
+      id: 4,
+    },
+    {
+      url: "/works/UXUI/vision/phase-4/IMG_7728.png",
+      title: "Title 5",
+      id: 5,
+    },
+    {
+      url: "/works/UXUI/vision/phase-4/IMG_7727.png",
+      title: "Title 1",
+      id: 6,
+    },
+  ];

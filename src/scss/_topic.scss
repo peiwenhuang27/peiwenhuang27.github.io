@@ -392,6 +392,17 @@ ul {
     }
 }
 
+.section-wrapper-bottom {
+    padding-bottom: 150px;
+    
+    @include max {
+        padding-bottom: 64px;
+    }
+    @include pad {
+        padding-bottom: 36px;
+    }
+}
+
 .subsection-wrapper {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -402,6 +413,17 @@ ul {
     }
     @include pad {
         padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.subsection-wrapper-bottom {
+    padding-bottom: 90px;
+
+    @include max {
+        padding-bottom: 36px;
+    }
+    @include pad {
         padding-bottom: 24px;
     }
 }

@@ -38,23 +38,27 @@ function Education () {
                 <h4>Education</h4>
             </div>
             
-            <div className="w-100 d-flex flex-column align-items-center mb-5">
-                <h5 className="text-center mb-2">Carnegie-Mellon University, <br/> Master of Human-Computer Interaction</h5>
-                <p className="caption mb-4">August 2023 - August 2024 (expected) | Pittsburgh, Pennsylvania</p>
-                <p className="text-center w-sizer-lg mb-2">Overall GPA: <b className="highlight">4.19/4.30</b> (Cumulative QPA: 4.20/4.30)</p>
-                <p className="text-center w-sizer-lg">
-                Courses: Interaction Design Fundamentals, Persuasive Design, User-centered Research & Evaluation
-                </p>
-            </div>
+            <ScrollReveal>
+                <div className="subsection-wrapper w-100 d-flex flex-column align-items-center">
+                    <h5 className="text-center secondary mb-1">Carnegie-Mellon University, <br/> Master of Human-Computer Interaction</h5>
+                    <p className="text-center caption mb-5">August 2023 - August 2024 (expected) | Pittsburgh, Pennsylvania</p>
+                    <p className="text-center w-sizer-lg mb-0"><b>Overall GPA:</b> <b className="highlight">4.19/4.30</b> (Cumulative QPA: 4.20/4.30)</p>
+                    <p className="text-center w-sizer-lg">
+                    <b>Courses:</b> Interaction Design Fundamentals, Persuasive Design, User-centered Research & Evaluation
+                    </p>
+                </div>
+            </ScrollReveal>
             
-            <div className="w-100 d-flex flex-column align-items-center">
-                <h5 className="text-center mb-2">National Taiwan University, <br/> Bachelor of Business Administration in Information Management</h5>
-                <p className="caption mb-4">September 2018-June 2022 | Taipei, Taiwan</p>
-                <p className="text-center w-sizer-lg mb-2">Major GPA: 4.19/4.30 | Overall GPA: 4.16/4.30 (received 2 NTU Presidential Awards)</p>
-                <p className="text-center w-sizer-lg">
-                Graduate level courses: Human-Computer Interaction, Social Media Analytics, Machine Learning, Information Retrieval and Text Mining, Big Data and Business Analytics.
-                </p>
-            </div>
+            <ScrollReveal>
+                <div className="subsection-wrapper w-100 d-flex flex-column align-items-center">
+                    <h5 className="text-center secondary mb-1">National Taiwan University, <br/> Bachelor of Business Administration in Information Management</h5>
+                    <p className="text-center caption mb-5">September 2018-June 2022 | Taipei, Taiwan</p>
+                    <p className="text-center w-sizer-lg mb-0"><b>Major GPA:</b> 4.19/4.30 | Overall GPA: 4.16/4.30<br/>(received 2 NTU Presidential Awards)</p>
+                    <p className="text-center w-sizer-lg">
+                    <b>Graduate level courses:</b> Human-Computer Interaction, Social Media Analytics, Machine Learning, Information Retrieval and Text Mining, Big Data and Business Analytics.
+                    </p>
+                </div>
+            </ScrollReveal>
         </div>
     );
 }
@@ -67,8 +71,8 @@ function Skills () {
                 <h4>Skills</h4>
             </div>
         
-            <div className="w-100 row mt-3">
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+            <div className="row mt-3">
+                <div className="col-lg-3 col-sm-6 d-flex flex-column align-items-center mb-5">
                     <h6>Design</h6>
                     <ul>
                         <li>Figma</li>
@@ -78,7 +82,7 @@ function Skills () {
                         <li>Premiere Pro</li>
                     </ul>
                 </div>
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+                <div className="col-lg-3 col-sm-6 d-flex flex-column align-items-center mb-5">
                     <h6>Programming</h6>
                     <ul>
                         <li>C++</li>
@@ -88,7 +92,7 @@ function Skills () {
                         <li>Javascript</li>
                     </ul>
                 </div>
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+                <div className="col-lg-3 col-sm-6 d-flex flex-column align-items-center mb-5">
                     <h6>Tool/Environment</h6>
                     <ul>
                         <li>Docker</li>
@@ -98,7 +102,7 @@ function Skills () {
                         <li>Google Cloud Platform</li>
                     </ul>
                 </div>
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+                <div className="col-lg-3 col-sm-6 d-flex flex-column align-items-center mb-5">
                     <h6>Framework</h6>
                     <ul>
                         <li>Tensorflow</li>
@@ -120,8 +124,8 @@ function Languages () {
                 <LangIcon />
                 <h4>Languages</h4>
             </div>
-            <div className="w-100 row mt-3 justify-content-center">
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+            <div className="w-sizer row mt-3 justify-content-center">
+                <div className="col-md-6 d-flex flex-column align-items-center mb-5">
                     <h6>English</h6>
                     <ul>
                         <li>Superior</li>
@@ -129,7 +133,7 @@ function Languages () {
                         <li>GRE 339/340</li>
                     </ul>
                 </div>
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+                <div className="col-md-6 d-flex flex-column align-items-center mb-5">
                     <h6>Mandarin</h6>
                     <ul>
                         <li>Native</li>
@@ -148,8 +152,8 @@ function Interests () {
                 <h4>Interests</h4>
             </div>
 
-            <div className="w-100 row mt-3">
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+            <div className="row mt-3">
+                <div className="col-lg-3 col-sm-6 d-flex flex-column align-items-center mb-5">
                     <h6>Art</h6>
                     <ul>
                         <li>Illustration</li>
@@ -158,7 +162,7 @@ function Interests () {
                         <li>Photagraphy</li>
                     </ul>
                 </div>
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+                <div className="col-lg-3 col-sm-6 d-flex flex-column align-items-center mb-5">
                     <h6>Music</h6>
                     <ul>
                         <li>Singing</li>
@@ -167,7 +171,7 @@ function Interests () {
                         <li>Song Writing</li>
                     </ul>
                 </div>
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+                <div className="col-lg-3 col-sm-6 d-flex flex-column align-items-center mb-5">
                     <h6>Literature</h6>
                     <ul>
                         <li>Reading</li>
@@ -175,7 +179,7 @@ function Interests () {
                         <li>Prose</li>
                     </ul>
                 </div>
-                <div className="col-md-3 d-flex flex-column align-items-center mb-5">
+                <div className="col-lg-3 col-sm-6 d-flex flex-column align-items-center mb-5">
                     <h6>Mindfulness</h6>
                     <ul>
                         <li>Yoga</li>
@@ -189,9 +193,12 @@ function Interests () {
 
 function ReadMoreBtn () {
     return (
-        <div className="section-wrapper d-flex flex-column align-items-center">
+        <div className="readmoreBtn section-wrapper">
             <h5 className="my-4">Let's get serious.</h5>
-            <Link className="about-link h-4 d-flex" to="/Works/design">View My Works in Design, Research, and Engineering<span><ArrowIcon /></span></Link>
+            <Link className="about-link h-4 d-flex flex-column align-items-center justify-content-center" to="/Works/design">
+            View My Works in Design, Research, and Engineering »
+                
+            </Link>
         </div>
     );
 }
