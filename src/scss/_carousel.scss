@@ -47,7 +47,7 @@
     position: relative;
     height: 400vh;
 
-    @include mobile {
+    @include pad {
         height: auto;
     }
 
@@ -57,10 +57,10 @@
         height: 100vh;
         overflow: hidden;
 
-        @include mobile {
+        @include pad {
             position: relative;
+            top: 0;
             height: auto;
-            overflow: auto;
         }
     }
 
@@ -68,20 +68,20 @@
         display: flex;
         gap: 60px;
 
-        @include mobile {
+        @include pad {
             gap: 16px;
             flex-direction: column;
         }
     }
 
     .responsive-vertical {
-        @include mobile {
+        @include pad {
             flex-direction: column;
         }
     }
 
     .card-content {
-        @include mobile {
+        @include pad {
             width: 100%;
             height: auto;
         }

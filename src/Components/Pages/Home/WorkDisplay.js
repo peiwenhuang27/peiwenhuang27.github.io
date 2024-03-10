@@ -35,7 +35,7 @@ function Quote () {
 
 function ViewMoreBtn ({ link }) {
     return (
-        <button className="h-6">
+        <button className="view-more-btn h-6">
             <Link to={link}>View All Projects</Link>
         </button>
     );
@@ -48,7 +48,7 @@ function WorkList ({ data, prefix }) {
                 <ul className="w-100 work-cards flex-column">
                     {data.map(item =>
                         <li className="w-100">
-                                <CategoryBox prefix={prefix} data={item} />
+                            <CategoryBox prefix={prefix} data={item} />
                         </li>
                     )}
                 </ul>
@@ -79,3 +79,4 @@ function WorkDisplay ({ data }) {
 };
 
 export default WorkDisplay;
+export { ViewMoreBtn };

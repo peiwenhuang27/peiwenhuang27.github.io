@@ -149,10 +149,13 @@ ul {
     }
     p {
         line-height: 1.5;
-        color: $indigo-700;
+        color: $gray-600;
+    }
+    .caption {
+        color: $gray-400;
     }
     .p-bold {
-        color: $gray-400;
+        color: $secondary;
     }
 }
 

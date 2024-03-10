@@ -1,5 +1,5 @@
 import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const HorizontalScrollCarousel = ({ cards, bgc, responsiveVertical = false, title = null }) => {
   const targetRef = useRef(null);
@@ -8,70 +8,43 @@ const HorizontalScrollCarousel = ({ cards, bgc, responsiveVertical = false, titl
   });
   // responsiveVerticle flex direction to column when mobile
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  let x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 768; // tablet size
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
   
-  if(!responsiveVertical) {
-    return (
-      <section ref={targetRef} className="horizontal-carousel"
-      style={{ backgroundColor: bgc}}>
-        <div className="carousel-wrapper">
-          <div className="container topic-container subsection-wrapper">
-            {title}
-          </div>
-          <div className="topic-container d-flex align-items-center">
-            <motion.div style={{ x, backgroundColor: bgc }} className="card-wrapper section-wrapper">
-              {cards.map((card) => {
-                  return <Card card={card} key={card.id} />;
-              })}
-            </motion.div>
-          </div>
+  return (
+    <section ref={targetRef} className={`${responsiveVertical ? "responsive-": ""}horizontal-carousel`}
+    style={{ backgroundColor: bgc}}>
+      <div className="carousel-wrapper">
+        <div className="container topic-container subsection-wrapper">
+          {title}
         </div>
-      </section>
-    );
-  }
-  else {
-    return (
-      <section ref={targetRef} className="responsive-horizontal-carousel"
-      style={{ backgroundColor: bgc}}>
-        <div className="carousel-wrapper">
-          <div className="container topic-container subsection-wrapper">
-            {title}
-          </div>
-          <div className="topic-container d-flex align-items-center">
-            <motion.div style={{ backgroundColor: bgc }} className="responsive-vertical card-wrapper section-wrapper">
-              {cards.map((card) => {
-                  return <Card card={card} key={card.id} />;
-              })}
-            </motion.div>
-          </div>
+        <div className="topic-container d-flex align-items-center">
+          <motion.div
+          style={
+            width <= breakpoint ? { backgroundColor: bgc } : { x, backgroundColor: bgc }}
+          className={`${responsiveVertical ? "responsive-vertical ": ""}card-wrapper section-wrapper`}>
+            {cards.map((card) => {
+                return <Card card={card} key={card.id} />;
+            })}
+          </motion.div>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
 };
 
 const Card = ({ card }) => {
   return (
     <img src={card.url} className="card-content" key={card.id}/>
-    // <div
-    //   key={card.id}
-    //   className="card-content"
-    // >
-    //   <div
-    //     style={{
-    //       backgroundImage: `url(${card.url})`,
-    //       backgroundSize: "cover",
-    //       backgroundPosition: "center",
-    //     }}
-    //     className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-    //   ></div>
-      
-    //   <div className="absolute inset-0 z-10 grid place-content-center">
-    //     <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-    //       {card.title}
-    //     </p>
-    //   </div>
-    // </div>
   );
 };
 

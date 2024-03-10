@@ -12,6 +12,7 @@ import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 // redesign cover
 
 // CONTENT:
+// fluffy mockup- demo section of screenshots (mockup of laptop)
 // pui engineering
 // ucre??
 // capstone
@@ -47,7 +48,7 @@ function App() {
         'title': 'Fluffy Focus', 
         'id': 'Fluffy-Focus',
         'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
-        'desc': 'Transformational Mobile RPG Against Work-Induced Anxiety',
+        'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
         'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
         'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
       },
@@ -55,7 +56,7 @@ function App() {
         'title': 'Ford Vision', 
         'id': 'Ford-Vision',
         'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-        'desc': 'Defining Semi-Autonomous Electric Vehicle Paradigm',
+        'desc': 'Redefining Semi-Autonomous Electric Vehicle Paradigm',
         'img': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
         'ph': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
       },
@@ -63,7 +64,7 @@ function App() {
         'title': '2Done', 
         'id': '2Done',
         'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
-        'desc': 'A gamified to-do list mobile app tackling procrastination',
+        'desc': 'Gamified to-do list mobile app for procrastination',
         'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
         'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
       },
@@ -76,7 +77,7 @@ function App() {
         'title': 'Petit Mood', 
         'id': 'Petit-Mood',
         'tags': ['HCI', 'UX', 'AR', 'GameDesign', 'MentalHealth'],
-        'desc': 'An AR Pet game to relieve university students\' emotions.',
+        'desc': 'An AR Pet game to relieve university students\' emotions',
         'img': 'https://live.staticflickr.com/65535/52515678782_7a973a13a8_k.jpg',
         'ph': 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_m.jpg',
       },]
@@ -88,7 +89,7 @@ function App() {
         'title': 'TourBot', 
         'id': 'TourBot', 
         'tags': ['DataScience', 'NLP', 'DeepLearning', 'Frontend', 'UI'],
-        'desc': 'Task-oriented chatbot for travel recommendation.', 
+        'desc': 'Task-oriented chatbot for travel recommendation', 
         'img': 'https://live.staticflickr.com/65535/52516160951_2fcbbec56d_k.jpg',
         'ph': 'https://live.staticflickr.com/65535/52516160951_1c09f8b8f1_m.jpg',
       },]
@@ -96,7 +97,7 @@ function App() {
   ];
   const homeData = [
     {'suffix': 'design', 'name': 'Design Projects',
-      'items': workData[0]['items']
+      'items': workData[0]['items'].slice(0, 2)
     },
   ];
 

@@ -1,44 +1,22 @@
 import { Link, Outlet } from "react-router-dom";
 import { useEffect } from "react";
 
-// framer
-import { motion, useAnimation } from "framer-motion";
-// react-intersection
-import { useInView } from "react-intersection-observer";
-
-function TopicCard ({ link, data, size, variants, reverse = false }) { // title, tags, desc, img
+function TopicCard ({ link, data, size, reverse = false }) { // title, tags, desc, img
     let img_class = "topic-card-img-container";
     if ( size === 'large' ) {
         img_class = "topic-card-img-container-lg";
     }
-    let tag = `#${data.tags[0]}`;
+    let tag = `${data.tags[0]}`;
     for (let i = 1; i < data.tags.length; i++) {
-        tag += " #" + data.tags[i];
+        tag += ", " + data.tags[i];
     }
     const flexDirection = reverse ? "flex-row-reverse" : "";
     const textDirection = reverse ? "text-reverse" : "";
 
-    // animation on scroll
-    const control = useAnimation();
-    const [ref, inView] = useInView();
-
-    useEffect(() => {
-        if (inView) {
-            control.start("visible");
-        } 
-        else {
-            control.start("hidden");
-        }
-    }, [control, inView]);
     
     if ( size === 'large' ) {
         return (
-            <motion.div className="mb-3"
-            ref={ref}
-            variants={variants}
-            initial="hidden"
-            animate={control}
-            >
+            <div className="mb-3">
                 <Link to={link} className={`topic-card text-decoration-none row d-flex ${flexDirection}`}>
                     <div className="col-md-6 mb-3 p-0">
                         <div className="topic-card-img-container-lg" >
@@ -57,17 +35,12 @@ function TopicCard ({ link, data, size, variants, reverse = false }) { // title,
                 </Link>
 
                 <Outlet />
-            </motion.div>
+            </div>
         );
     }
     if ( size === 'medium' ) {
         return (
-            <motion.div className=" mb-3"
-            ref={ref}
-            variants={variants}
-            initial="hidden"
-            animate={control}
-            >
+            <div className="mb-3">
                 <Link to={link} className={`topic-card text-decoration-none`}>
                     <div>
                         <div className="topic-card-img-container-md" >
@@ -77,8 +50,8 @@ function TopicCard ({ link, data, size, variants, reverse = false }) { // title,
                     <div className={`topic-card-title-container-md d-flex flex-column justify-content-center ${textDirection}`}>
                         {/* an extra container so underline length = heading */}
                         <div >
-                            <h4 className="mb-0">{data.title}</h4>
-                            <p className="p-bold mb-0">{data.desc}</p>
+                            <h4 className="mb-3">{data.title}</h4>
+                            <p className="p-bold mb-1">{data.desc}</p>
                             <p>{tag}</p>
                         </div>
                     </div>
@@ -86,7 +59,7 @@ function TopicCard ({ link, data, size, variants, reverse = false }) { // title,
                 </Link>
 
                 <Outlet />
-            </motion.div>
+            </div>
         );
     }
 };

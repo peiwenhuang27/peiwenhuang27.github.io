@@ -7,12 +7,8 @@ import Category from './Category';
 import Topic from './Topic';
 
 
-function Switch ({ homeData, workData, lifeData, view, setView }) {
-  // const location = useLocation();
-  
+function Switch ({ homeData, workData, lifeData, view, setView }) { 
   return (
-    // AnimatePresence: initial={false}
-    // Routes: location={location} key={location.pathname}
     <AnimatePresence mode="wait">
       <Routes >
         <Route exact path="/" element={<Home data={homeData} view={view} setView={setView} />} />

@@ -11,11 +11,11 @@ const variants = {
     visible: { opacity: 1, translateY: 0, 
         transition: {
             type: "spring",
-            duration: 0.2,
-            delay: 0.3,
+            duration: 0.3,
+            delay: 0.2,
             stiffness: 50,
         }},
-    hidden: { opacity: 0,  translateY: 80},
+    hidden: { opacity: 0,  translateY: 100},
 };
 
 function SmoothScroll ({ children }) {
@@ -62,7 +62,7 @@ function SmoothScroll ({ children }) {
 function ScrollReveal ({ children }) {
     // scroll animation
     const control = useAnimation();
-    const [ref, inView] = useInView();
+    const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
 
     useEffect(() => {
         if (inView) {

@@ -3,10 +3,9 @@ import Transitions from "../Transition";
 import { InstaPost, InstaFeed } from "../Helpers/Insta";
 import Iframe from "react-iframe";
 
+import { ReadMoreBtn } from "./About";
 import HorizontalScrollCarousel from "../HorizontalScrollCarousel";
 import { ScrollReveal } from "../Helpers/SmoothScroll";
-
-{/* TODO: make photos enlarge */}
 
 function Art () {
     useEffect(() => {
@@ -85,6 +84,10 @@ function Art () {
                             </div>
                         </div>
                     </div>
+                </ScrollReveal>
+
+                <ScrollReveal>
+                    <ReadMoreBtn />
                 </ScrollReveal>
                         
             </div>

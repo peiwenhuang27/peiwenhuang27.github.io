@@ -203,7 +203,7 @@ function ReadMoreBtn () {
     );
 }
 
-function About ({ variants }) {
+function About () {
     useEffect(() => {
         if (window.instgrm)
             window.instgrm.Embeds.process();
@@ -252,3 +252,4 @@ function About ({ variants }) {
 };
 
 export default About;
+export { ReadMoreBtn };
