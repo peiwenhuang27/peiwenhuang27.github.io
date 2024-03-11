@@ -135,12 +135,7 @@ ul {
     }
 }
 
-.topic-card-title-container {
-    padding: 0 36px;
-    @include pad-sm {
-        padding: 0;
-    }
-}
+
 .topic-card-title-container-md {
     padding: 16px 0;
     h4 {

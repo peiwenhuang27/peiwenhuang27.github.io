@@ -118,9 +118,12 @@ b, .p-bold {
 }
 
 .container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 24px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  @include mobile {
+    padding: 0 32px;
+  }
 }
 
 .fade-enter {
@@ -204,5 +207,5 @@ b, .p-bold {
 img {
   object-fit: contain;
   border-radius: 8px;
-  filter: drop-shadow(0 2px 4px #e7e7e7);
+  @include filter-shadow;
 }

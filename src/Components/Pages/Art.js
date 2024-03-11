@@ -46,11 +46,7 @@ function Art () {
                     </ScrollReveal>
                 </div>
 
-                <ScrollReveal>
-                    <div className="mb-3">
-                        <HorizontalScrollCarousel cards={cards} title={<h5 className="text-center mb-5">Unleash my imagination...</h5>} />
-                    </div>
-                </ScrollReveal>
+                <HorizontalScrollCarousel cards={cards} title={<h5 className="text-center mb-5">Unleash my imagination...</h5>} />
 
                 <div className="container section-wrapper">
                     <ScrollReveal>

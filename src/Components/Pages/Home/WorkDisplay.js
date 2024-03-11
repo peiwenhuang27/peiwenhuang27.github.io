@@ -7,7 +7,7 @@ import CategoryBox from "./CategoryBox";
 function Intro () {
     return (
         <div className="section-wrapper topic-container pt-5">
-            <div className="intro">
+            <div id="intro" className="intro">
                 <h4>A bit about me...</h4>
                 <p className="px-5 py-3">
                 I am a UX designer, researcher, and engineer with 3 years of experience during which I utilize my expertise to identify problems, analyze causes, and implement solutions.

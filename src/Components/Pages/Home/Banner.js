@@ -1,58 +1,62 @@
 import { Link } from 'react-router-dom';
-import { ArrowIcon } from '../../Icons';
+import { LogoIcon, ArrowIcon } from '../../Icons';
+import ProgressiveImage from 'react-progressive-bg-image';
+
 
 function Banner () {
+    const img_src = "https://live.staticflickr.com/65535/52516580065_a71e3f7f51_k.jpg";
+    const img_ph = "https://live.staticflickr.com/65535/52516580065_e5de0629f5_o.jpg";
+
 
     return (
         <section className="banner">
-            <div className='topic-container'>
-                <div className="title-wrapper">
-                    <h1>Hey! Peiwen Huang here,</h1>
-                    <h2>revolutionizing the human experience, the</h2>
-                </div>
-                
-                <div className="list-wrapper">
-                    <div>
-                        <ul>
-                            <li className="h-3" id="role-1">
-                                <Link to="/" className="d-flex align-items-center">
-                                    <div className="circle" id="circle-1"></div>
-                                    designer's
-                                </Link>
-                            </li>
-                            <li className="h-3" id="role-2">
-                                <Link to="/" className="d-flex align-items-center">
-                                    <div className="circle" id="circle-2"></div>
-                                    researcher's
-                                </Link>
-                            </li>
-                            <li className="h-3" id="role-3">
-                                <Link to="/" className="d-flex align-items-center">
-                                    <div className="circle" id="circle-3"></div>
-                                    engineer's
-                                </Link>
-                            </li>
-                            <li className="h-3" id="role-4">
-                                <Link to="/" className="d-flex align-items-center">
-                                    <div className="circle" id="circle-4"></div>
-                                    artist's
-                                </Link>
-                            </li>
-                            <li className="h-3" id="role-5">
-                                <Link to="/" className="d-flex align-items-center">
-                                    <div className="circle" id="circle-5"></div>
-                                    writer's
-                                </Link>
-                            </li>
-                        </ul>
-                        <h3>way.</h3>
+            <div className='img-container' style={{ backgroundImage: `url(${img_src})` }}>
+                <div className='container section-wrapper d-flex flex-column justify-content-around'>
+                    <div className='mb-3 d-flex flex-column align-items-center'>
+                        <LogoIcon />
+                        <h1 className='text-center'>Peiwen Huang</h1>
+                        <h2 className='text-center'>revolutionizing the human experience, the</h2>
                     </div>
-                    <div className="divider"></div>
+                    
+                    <div className='d-flex flex-column align-items-center'>                
+                    <ul className='list-wrapper row justify-content-center'>
+                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-1">
+                            <Link to="/Works/design" className="d-flex align-items-center">
+                                <div className="circle" id="circle-1"></div>
+                                designer
+                            </Link>
+                        </li>
+                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-2">
+                            <Link to="/Works/research" className="d-flex align-items-center">
+                                <div className="circle" id="circle-2"></div>
+                                researcher
+                            </Link>
+                        </li>
+                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-3">
+                            <Link to="/Works/engineering" className="d-flex align-items-center">
+                                <div className="circle" id="circle-3"></div>
+                                engineer
+                            </Link>
+                        </li>
+                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-4">
+                            <Link to="/Art" className="d-flex align-items-center">
+                                <div className="circle" id="circle-4"></div>
+                                artist
+                            </Link>
+                        </li>
+                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-5">
+                            <Link to="/" className="d-flex align-items-center">
+                                <div className="circle" id="circle-5"></div>
+                                writer
+                            </Link>
+                        </li>
+                    </ul>
+                    <h2>way.</h2>
+                    </div>
                     <Link to="/#works" className="svg-wrapper">
                         <ArrowIcon />
                     </Link>
                 </div>
-                
             </div>
         </section>
     );

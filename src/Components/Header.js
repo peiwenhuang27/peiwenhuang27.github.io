@@ -38,7 +38,6 @@ function Header ({ workData, lifeData = null }) {
         <div className="header d-flex align-items-center">
             <div className="container">
             <Navbar expand="lg" className="bg-body-tertiary">
-                
                     <Navbar.Brand href="/">
                         <LogoIcon />
                     </Navbar.Brand>
@@ -66,7 +65,7 @@ function Header ({ workData, lifeData = null }) {
                         <NavDropdown title={<span className="header-item  d-flex">Life <ArrowIcon /></span>} id="basic-nav-dropdown" align="end">
                             {
                                 lifeData.map(item =>
-                                    <NavDropdown.Item href={`${item.suffix}`} className="py-2">
+                                    <NavDropdown.Item href={item.suffix} target={item.target} className="py-2">
                                         {item.name}
                                     </NavDropdown.Item>
                                 )
@@ -76,68 +75,7 @@ function Header ({ workData, lifeData = null }) {
                     </Navbar.Collapse>
                 
             </Navbar>
-                {/* <div className="header-navbar">
-                    <Link to="/">
-                        <LogoIcon />
-                    </Link>
-                    <ul className="header-menu">
-                        <li className="d-flex justify-content-center">
-                            <span className="navbar-item h-6">
-                                <Link to="/">Home</Link>
-                            </span>
-                            
-                        </li>
 
-                        <li className="d-flex justify-content-center">
-                            <span className="navbar-item h-6">
-                                <Link to="/About">About</Link>
-                            </span>
-                            
-                        </li>
-
-                        <li className="d-flex justify-content-center">
-                            <Dropdown
-                            show={show}
-                            onMouseOver={showDropdown} 
-                            onMouseLeave={hideDropdown}>
-                                <Dropdown.Toggle className="header-category h-6">
-                                    <span>
-                                        Work<ArrowIcon />
-                                    </span>
-                                </Dropdown.Toggle>
-
-                                <Dropdown.Menu show={show} className="header-dropdown">
-                                    {
-                                        workData.map(item =>
-                                            <Link to={`Works/${item.suffix}`} className="dropdown-item header-item py-2">{item.name}</Link>
-                                        )
-                                    }
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        </li>
-                        <li className="d-flex justify-content-center">
-                            <Dropdown
-                            show={show}
-                            onMouseOver={showDropdown} 
-                            onMouseLeave={hideDropdown}>
-                                <Dropdown.Toggle className="header-category h-6">
-                                    <span>
-                                        Life<ArrowIcon />
-                                    </span>
-                                </Dropdown.Toggle>
-
-                                <Dropdown.Menu show={show} className="header-dropdown">
-                                    {
-                                        lifeData.map(item =>
-                                            <Link to={`${item.suffix}`} className="dropdown-item header-item py-2">{item.name}</Link>
-                                        )
-                                    }
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        </li>
-                    </ul>
-
-                </div> */}
             <Outlet />
             </div>
         </div>

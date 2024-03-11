@@ -8,6 +8,17 @@
     background-color: white;
     padding: 0;
     box-shadow: $box-shadow;
+
+    .arrow-svg {
+        width: 12px;
+        height: 12px;
+        margin-left: 4px;
+        margin-bottom: 0;
+    
+        path {
+            fill: $gray-500;
+        }
+    }
 }
 
 .logo-svg {
@@ -26,16 +37,7 @@
     }
 }
 
-.arrow-svg {
-    width: 12px;
-    height: 12px;
-    margin-left: 4px;
-    margin-bottom: 0;
 
-    path {
-        fill: $gray-500;
-    }
-}
 
 /* BOOTSTRAP */
 

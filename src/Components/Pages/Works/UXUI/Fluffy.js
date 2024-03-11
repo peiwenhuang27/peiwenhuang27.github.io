@@ -617,7 +617,7 @@ function Fluffy () {
                 <ProjectRec projects={projects} moreLink={"/Works/design"} />
             </ScrollReveal>
 
-            <div className="bg-1 pb-5">
+            <div className="bg-1">
                 <div className="container">
                     <div className="topic-container subsection-wrapper">
                         <h3 className="mb-5">📑 References</h3>
@@ -747,7 +747,7 @@ const projects = [
         }
     },
     {
-        'link': '/Works/design/Ford-Vision',
+        'link': '/Works/design/2Done',
         'data': {
             'title': '2Done', 
             'id': '2Done',
@@ -757,4 +757,4 @@ const projects = [
             'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
         }
     },
-]
+];

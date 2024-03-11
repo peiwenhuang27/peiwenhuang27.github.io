@@ -4,18 +4,15 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
-// PROBLEM:
-// scroll animation
-// project nav (left? center?)
-
-// UI:
-// redesign cover
-
-// CONTENT:
+// MUST-HAVE
 // fluffy mockup- demo section of screenshots (mockup of laptop)
+
+// NICE-TO-HAVE
+// project nav (left? center?)
 // pui engineering
 // ucre??
 // capstone
+// fix art carousel
 
 function App() {
   // The back-to-top button is hidden at the beginning
@@ -102,9 +99,9 @@ function App() {
   ];
 
   const lifeData = [
-    {'suffix': '/Art', 'name': 'Art', 
+    {'suffix': '/Art', 'name': 'Art', 'target': '_self',
     'img': 'https://64.media.tumblr.com/d67f70e908c081ebf6869ac1dd0a4653/2bc0cb1353ea6c46-8e/s2048x3072/e8cee6bed8bc71cc5ee750349d003bb807b61292.jpg'},
-    {'suffix': 'writingMediumURL', 'name': 'Writing', 
+    {'suffix': 'https://medium.com/@pwh27design', 'name': 'Writing', 'target': '_blank',
     'img': 'https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
   ];
 

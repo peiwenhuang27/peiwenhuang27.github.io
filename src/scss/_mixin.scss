@@ -132,6 +132,11 @@
     box-shadow: $box-shadow-darker-center;
 }
 
+@mixin filter-shadow {
+    filter: drop-shadow(0 2px 4px #e7e7e7);
+    -webkit-filter: drop-shadow(0 2px 4px #e7e7e7);
+}
+
 @mixin text-image-fill($src) {
     color: transparent;
     -webkit-text-fill-color: transparent;

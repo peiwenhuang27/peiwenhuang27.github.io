@@ -17,8 +17,8 @@ function TopicCard ({ link, data, size, reverse = false }) { // title, tags, des
     if ( size === 'large' ) {
         return (
             <div className="mb-3">
-                <Link to={link} className={`topic-card text-decoration-none row d-flex ${flexDirection}`}>
-                    <div className="col-md-6 mb-3 p-0">
+                <Link to={link} className={`topic-card text-decoration-none row ${flexDirection}`}>
+                    <div className="col-md-6 mb-3">
                         <div className="topic-card-img-container-lg" >
                             <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} />
                         </div>
