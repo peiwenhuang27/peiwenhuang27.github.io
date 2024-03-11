@@ -7,7 +7,7 @@ import TopicCard from "./Pages/Home/TopicCard";
 
 import { ScrollReveal } from "./Helpers/SmoothScroll";
 
-function LargeList ({ workData, lifeData, categoryIndex, variants }) { // only for a category, suffix, name, items
+function LargeList ({ workData, lifeData, categoryIndex }) { // only for a category, suffix, name, items
     let category = workData[categoryIndex];
     let leftTxt, leftSuffix, rightTxt, rightSuffix = null;
     if ( categoryIndex > 0 ) { // has left
@@ -44,14 +44,22 @@ function LargeList ({ workData, lifeData, categoryIndex, variants }) { // only f
                             <h5 className="mb-3">Explore beyond work</h5>
                             <ul className="w-100 d-flex justify-content-between">
                                 {
-                                    lifeData.map(item =>
-                                        <Link to={item.suffix} className="topic-card-img-container-sm">
-                                            <h6>{item.name}</h6>
-                                            <div id={`${item.name}`} className="topic-card-img" style={{ backgroundImage: `url(${item.img})`, backgroundBlendMode: "multiply" }} />
-
-                                            {/* <div className="topic-card-img" style={{ backgroundImage: `url(${item.img}),  linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)`, backgroundBlendMode: "multiply" }} /> */}
-                                        </Link>
-                                    )
+                                    lifeData.map(item => {
+                                        if(item.target === "_blank") {
+                                            return (
+                                                <a className="topic-card-img-container-sm" target={item.target} rel='noopener noreferrer' href={item.suffix}>
+                                                    <h6>{item.name}</h6>
+                                                    <div id={`${item.name}`} className="topic-card-img" style={{ backgroundImage: `url(${item.img})`, backgroundBlendMode: "multiply" }} />
+                                                </a>
+                                            );
+                                        }
+                                        return (
+                                            <Link to={item.suffix} target={item.target} className="topic-card-img-container-sm">
+                                                <h6>{item.name}</h6>
+                                                <div id={`${item.name}`} className="topic-card-img" style={{ backgroundImage: `url(${item.img})`, backgroundBlendMode: "multiply" }} />
+                                            </Link>
+                                        );
+                                    })
                                 }
                             </ul>
                         </div>
@@ -71,7 +79,7 @@ function Category ({ workData, lifeData, variants }) {
         <Transitions>
             <div className="category-page">
                 <div className="container">
-                    <LargeList workData={workData} lifeData={lifeData} categoryIndex={categoryIndex} variants={variants} />
+                    <LargeList workData={workData} lifeData={lifeData} categoryIndex={categoryIndex} />
                     
                     <Outlet />
                 </div>

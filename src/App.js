@@ -5,14 +5,16 @@ import Footer from './Components/Footer';
 import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
 // MUST-HAVE
-// fluffy mockup- demo section of screenshots (mockup of laptop)
+
 
 // NICE-TO-HAVE
-// project nav (left? center?)
 // pui engineering
-// ucre??
+// fluffy mockup- demo section of screenshots (mockup of laptop)
+// project nav (left? center?) or just progress bar
+
+// PARKING-LOT
+// ucre
 // capstone
-// fix art carousel
 
 function App() {
   // The back-to-top button is hidden at the beginning

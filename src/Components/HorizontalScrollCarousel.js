@@ -24,14 +24,14 @@ const HorizontalScrollCarousel = ({ cards, bgc, responsiveVertical = false, titl
     <section ref={targetRef} className={`${responsiveVertical ? "responsive-": ""}horizontal-carousel`}
     style={{ backgroundColor: bgc}}>
       <div className="carousel-wrapper">
-        <div className="container topic-container subsection-wrapper">
+        <div className="container topic-container pt-5 pb-0 mb-0">
           {title}
         </div>
         <div className="topic-container d-flex align-items-center">
           <motion.div
           style={
             width <= breakpoint ? { backgroundColor: bgc } : { x, backgroundColor: bgc }}
-          className={`${responsiveVertical ? "responsive-vertical ": ""}card-wrapper section-wrapper`}>
+          className={`${responsiveVertical ? "responsive-vertical ": ""}card-wrapper`}>
             {cards.map((card) => {
                 return <Card card={card} key={card.id} />;
             })}
