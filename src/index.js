@@ -2,17 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router} from "react-router-dom";
+import {
+  createHashRouter,
+  RouterProvider
+} from 'react-router-dom';
 import ScrollToTop from './Components/Helpers/ScrollToTop';
 import './scss/main.scss';
 
+const router = createHashRouter([
+  {
+    path: "/*",
+    element: <App />,
+  }
+]);
+
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <RouterProvider router={router}>
       <ScrollToTop>
         <App />
       </ScrollToTop>
-    </Router>
+    </RouterProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

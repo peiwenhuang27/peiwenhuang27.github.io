@@ -5,16 +5,19 @@ import Footer from './Components/Footer';
 import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
 // MUST-HAVE
+// some icons, pictures missing from project
+// carousel not working in Fluffy Focus
+// linking issues for React Router
 
 
 // NICE-TO-HAVE
 // pui engineering
-// fluffy mockup- demo section of screenshots (mockup of laptop)
 // project nav (left? center?) or just progress bar
 
 // PARKING-LOT
 // ucre
 // capstone
+// fluffy mockup- demo section of screenshots (mockup of laptop)
 
 function App() {
   // The back-to-top button is hidden at the beginning
