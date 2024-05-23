@@ -98,8 +98,8 @@ function App() {
         'id': 'SLZ',
         'tags': ['User Research', 'City Planing'],
         'desc': 'Pittsburgh Smart Loading Zone Google Map Integration',
-        'img': 'https://live.staticflickr.com/65535/53739367867_72e4d2f7c2_b.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53740501173_84bea51c61.jpg',
+        'img': 'https://live.staticflickr.com/65535/53740742939_7933acb0e1_b.jpg',
+        'ph': 'https://live.staticflickr.com/65535/53740742939_7933acb0e1_b.jpg',
       },]
     },
     {'suffix': 'engineering', 'name': 'Engineering',
