@@ -426,6 +426,17 @@ ul {
     }
 }
 
+.subsection-wrapper-top {
+    padding-top: 90px;
+
+    @include max {
+        padding-top: 36px;
+    }
+    @include pad {
+        padding-top: 24px;
+    }
+}
+
 .subsubsection-wrapper {
     padding-top: 40px;
     padding-bottom: 0px;

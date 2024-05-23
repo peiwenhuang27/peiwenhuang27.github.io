@@ -1,0 +1,24 @@
+#SLZ {
+    .theme  {
+        color: #700F88 !important;
+    }
+    .theme-bg {
+        width: 100%;
+        background-color: #F3ECF5;
+    }
+    .view-more-btn {
+        background-color: #F3ECF5;
+
+        a {
+            text-decoration: none;
+            color: #700F88;
+        }
+    
+        &:hover {
+            background-color: #700F88;
+            a {
+                color: white;
+            }
+        }
+    }
+}

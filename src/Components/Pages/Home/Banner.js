@@ -23,32 +23,32 @@ function Banner () {
                         <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-1">
                             <Link to="/Works/design" className="d-flex align-items-center">
                                 <div className="circle" id="circle-1"></div>
-                                designer
+                                <div className='h-6'>designer <span>»</span></div>
                             </Link>
                         </li>
                         <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-2">
                             <Link to="/Works/research" className="d-flex align-items-center">
                                 <div className="circle" id="circle-2"></div>
-                                researcher
+                                <div className='h-6'>researcher <span>»</span></div>
                             </Link>
                         </li>
                         <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-3">
                             <Link to="/Works/engineering" className="d-flex align-items-center">
                                 <div className="circle" id="circle-3"></div>
-                                engineer
+                                <div className='h-6'>engineer <span>»</span></div>
                             </Link>
                         </li>
                         <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-4">
                             <Link to="/Art" className="d-flex align-items-center">
                                 <div className="circle" id="circle-4"></div>
-                                artist
+                                <div className='h-6'>artist <span>»</span></div>
                             </Link>
                         </li>
                         <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-5">
-                            <Link to="/" className="d-flex align-items-center">
+                            <a href="https://medium.com/@pwh27design" target="_blank" className="d-flex align-items-center" rel="noreferrer noopener">
                                 <div className="circle" id="circle-5"></div>
-                                writer
-                            </Link>
+                                <div className='h-6'>writer <span>»</span></div>
+                            </a>
                         </li>
                     </ul>
                     <h2>way.</h2>

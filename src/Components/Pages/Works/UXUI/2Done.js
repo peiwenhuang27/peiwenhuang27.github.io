@@ -10,6 +10,8 @@ import Iframe from 'react-iframe';
 
 import ProjectRec from "../../../ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
+import ProgressBar from "../../../ScrollBar";
+
 
 function ToDone () {
     const [isLoading, setIsLoading] = useState(false);
@@ -31,6 +33,7 @@ function ToDone () {
 
     return (
         <div id="todone">
+            <ProgressBar color="#8F7000" />
             <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
             <div className="container">
                 <div className="topic-container py-5">

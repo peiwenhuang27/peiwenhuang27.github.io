@@ -1,14 +1,21 @@
+import { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 
 function CategoryNav ({ defaultActiveKey, workData }) {
-    console.log("workData", workData);
+    const [defaultKey, setDefaultKey] = useState(defaultActiveKey);
+
+    useEffect(() => {
+        console.log("in useEffect, default key = ", defaultActiveKey);
+    }, []);
+
     return (
         
-        <Nav className="category-nav" variant="underline" defaultActiveKey={defaultActiveKey}>
+        <Nav className="category-nav" variant="underline" defaultActiveKey={defaultKey}>
             {
                 workData.map(category => 
                     <Nav.Item>
-                        <Nav.Link eventKey={category.suffix} href={`/Works/${category.suffix}`}>
+                        {/* href + setCategoryIndex??? or something detecting router address */}
+                        <Nav.Link eventKey={category.suffix} href={`/#/Works/${category.suffix}`}>
                             <h6>{category.name}</h6>
                         </Nav.Link>
                     </Nav.Item>

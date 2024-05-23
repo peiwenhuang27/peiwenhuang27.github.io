@@ -87,3 +87,41 @@
         }
     }
 }
+
+.artwork-feed {
+    position: relative;
+    width: 100%;
+    overflow: scroll;
+
+    // /* Hide scrollbar for IE, Edge and Firefox */
+    // -ms-overflow-style: none;  /* IE and Edge */
+    // scrollbar-width: none;  /* Firefox */
+
+    // /* Hide scrollbar for Chrome, Safari and Opera */
+    // &::-webkit-scrollbar {
+    // display: none;
+    // }
+}
+
+.arrow-btn {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    z-index: 3;
+    background-color: $gray-500;
+    padding: 8px;
+    border-radius: 100px;
+    
+    @include mobile {
+        right: 24px;
+    }
+
+    svg {
+        width: 36px;
+        height: 36px;
+        transform: rotate(-90deg);
+        path {
+            fill: white;
+        }
+    }
+}

@@ -1,9 +1,10 @@
-import { useState,useRef } from "react";
+import { useEffect,useRef } from "react";
 import Iframe from 'react-iframe';
 
 import ProjectRec from "../../../ProjectRec";
-import HorizontalScrollCarousel from "../../../HorizontalScrollCarousel";
+import HorizontalScrollCarousel, { HorizontalCarousel } from "../../../HorizontalScrollCarousel";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
+import ProgressBar from "../../../ScrollBar";
 
 // TODO
 // sidebar navigation
@@ -13,11 +14,11 @@ function Vision () {
     const demoVid = useRef(null);
     const img_src = "https://live.staticflickr.com/65535/53573556154_493507ae43_h.jpg";
 
-    const executeScroll = () => demoVid.current.scrollIntoView(false);
-    // (alignToTop) false: the bottom of the element will be aligned to the bottom of the visible area of the scrollable ancestor
+    
 
     return (
         <div id="Ford-Vision">
+            <ProgressBar color="#2A6BAC" />
             <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
             <div className="container">
                 <div className="topic-container py-5">
@@ -33,7 +34,7 @@ function Vision () {
                         </div>
                     </ScrollReveal>
                     <ScrollReveal>
-                        <div className="section-wrapper row mb-5">
+                        <div className="subsection-wrapper row mb-5">
                             <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
                                 <h6 className="theme mb-3">Duration </h6>
                                 <ul>
@@ -78,14 +79,26 @@ function Vision () {
             <ScrollReveal>
                 <div className="theme-bg">
                     <div className="container">
-                        <div className="topic-container section-wrapper">
+                        <div className="topic-container subsection-wrapper">
                             <h3 className="mb-5">💻 Demo</h3>
-                            <h5 className="highlight vision-link" onClick={executeScroll}>Watch Video »</h5>
-
-                            <div className="my-3 d-flex flex-column align-items-center">
-                                <img className="w-100" src="/works/UXUI/vision/Moodboard.png" alt="moodboard of science fair" />
-                                <p className="table-caption mt-3">In-class Science Fair Demo Session</p>
+                            <div ref={demoVid} className="subsection-wrapper" >
+                                <div className="responsive-iframe">
+                                    <Iframe src="https://www.youtube.com/embed/9lJoc7X66kQ?si=0P3ZUJl_7qwqCqAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+                                </div>
                             </div>
+                            <div className="subsection-wrapper">
+                            <div className="my-3 row align-items-start">
+                                <div className="col-md-3">
+                                    <h6 className="theme">Innovative Semi-Autonomy</h6>
+                                    <p className="text-bold mb-0">Smart Rearview Mirrors</p>
+                                    <p className="caption">Our new semi-autonomous interface for e-mopeds, featuring a smart rear mirror overlay, is a breakthrough in enhancing rider safety and awareness.</p>
+                                </div>
+                                
+                                <div className="col-md-9 mb-3 d-flex justify-content-center">
+                                    <img className="w-100" src="/works/UXUI/vision/prototype/10-mirrors.png" alt="smart mirrors" />
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -276,41 +289,49 @@ function Vision () {
 
                     <div className="subsection-wrapper">
                         <ScrollReveal>
-                            <h6 className="mb-3 theme">
-                                #1: Warning with Suggestion to Resolve Issue
-                            </h6>
                             <div className="row align-items-center">
-                                <div className="col-md-6 p-3 d-flex flex-column align-items-center">
+                                <h6 className="mb-3 theme">
+                                    #1: Warning with Suggestion to Resolve Issue
+                                </h6>
+
+                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
                                     <img className="w-100" src="/works/UXUI/vision/phase-3/c-1.png" alt="challenge 1" />
                                     <p className="table-caption mt-1 mb-3">Low battery warning popup</p>
                                 </div>
-                                <div className="col-md-6 my-3">
-                                    
-                                    <p className="mb-3">
-                                    Originally, a low battery warning popup would show to prompt turning on Eco (Power Saving) Mode while the user is driving. But the feedback received from usability testing suggested that a popup during driving with no means of closing it could be problematic, as it violated one of <b className="theme">Nielsen's usability heuristics- “User Control and Freedom.”</b> 
-                                    </p>
+
+                                <div className="col-md-2 d-flex flex-column align-items-center my-3">
+                                    <img className="arrow-right" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
                                 </div>
-                            </div>
-                        </ScrollReveal>
 
-                        <ScrollReveal>
-                            <div className="d-flex flex-column align-items-center my-3">
-                                <img className="" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
-                            </div>
-
-                            <div className="row align-items-center">
-                                <div className="col-md-6 p-3 d-flex flex-column align-items-center">
+                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
                                     <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-1-i-1.png" alt="challenge 1" />
                                     <p className="table-caption mt-1 mb-3">Low battery warning on the side</p>
                                     <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-1-i-2.png" alt="challenge 2" />
                                     <p className="table-caption mt-1 mb-3">Popup shows only when vehicle stops</p>
                                 </div>
-                                <div className="col-md-6 my-3">
+                            </div>
+                            <div className="row">
+                                <div className="col-md-5">
+                                    <h6 className="mb-3">
+                                        Before
+                                    </h6>
+                                    <p className="mb-3">
+                                        <ul className="list-disc">
+                                            <li>Low battery warning pop-up during driving</li>
+                                            <li>Violating <b>Nielsen’s usability heuristics– “User Control and Freedom”</b></li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div className="col-md-2"></div>
+                                <div className="col-md-5 my-3">
                                     <h6 className="mb-3">
                                         Iteration
                                     </h6>
                                     <p className="mb-3">
-                                    The popup became a notification which does not block user’s view of the overall dashboard when driving. After the user parks, the low battery warning will then pop up prompting to connect the moped to a charger.
+                                        <ul className="list-disc">
+                                            <li>Notification not blocking user’s view of dashboard</li>
+                                            <li>After parking, battery warning then pops up</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
@@ -319,149 +340,167 @@ function Vision () {
                     
                     <div className="subsection-wrapper">
                         <ScrollReveal>
-                            <h6 className="mb-3 theme">
-                                #2: Follow the Law of Proximity to eliminate confusion
-                            </h6>
                             <div className="row align-items-center">
-                                <div className="col-md-6 p-3 d-flex flex-column align-items-center">
+                                <h6 className="mb-3 theme">
+                                    #2: Follow the Law of Proximity to eliminate confusion
+                                </h6>
+
+                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
                                     <img className="w-100" src="/works/UXUI/vision/phase-3/c-2.png" alt="challenge 1" />
                                     <p className="table-caption mt-1 mb-3">ECO MODE on the side</p>
                                 </div>
-                                <div className="col-md-6 my-3">
-                                    
-                                    <p className="mb-3">
-                                    The dashboard initially displayed information in a relatively flat visual hierarchy; as the battery gets lower, users have the option to switch to a more energy-efficient mode— Eco Mode whose indicator is prominently displayed on the dashboard. Such indicator originally took up considerable space and used a distinct blue color that drew significant visual attention on the screen. 
-                                    <br/><br/>After usability tests, a question frequently asked by users was “what does ECO MODE mean?” This implied that not only the <b className="theme">naming of the mode was vague but also its being placed separately from battery status did not help suggest its function</b>.
-                                    </p>
+
+                                <div className="col-md-2 d-flex flex-column align-items-center my-3">
+                                    <img className="arrow-right" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
                                 </div>
-                            </div>
-                        </ScrollReveal>
 
-                        <ScrollReveal>
-                            <div className="d-flex flex-column align-items-center my-3">
-                                <img className="" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
-                            </div>
-
-                            <div className="row align-items-center">
-                                <div className="col-md-6 p-3 d-flex flex-column align-items-center">
+                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
                                     <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-2-i-1.png" alt="challenge 1" />
                                     <p className="table-caption mt-1 mb-3">Power Saving toggle on upper right</p>
-                                    <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-2-i-2.png" alt="challenge 2" />
                                 </div>
-                                <div className="col-md-6 my-3">
-                                    
+                            </div>
+                            <div className="row">
+                                <div className="col-md-5">
+                                    <h6 className="mb-3">
+                                        Before
+                                    </h6>
+                                    <p className="mb-3">
+                                    <ul className="list-disc">
+                                            <li>Displaying information in relatively flat visual hierarchy</li>
+                                            <li>Eco (energy saving) Mode prominently showing on the dashboard, drawing excessive visual attention</li>
+                                            <li>Confusion about “Eco Mode” due to vague naming and far-away location from battery</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div className="col-md-2"></div>
+                                <div className="col-md-5 my-3">
                                     <h6 className="mb-3">
                                         Iteration
                                     </h6>
                                     <p className="mb-3">
-                                    The visual weight of the Eco Mode indicator got scaled down, and the indicator became a toggle to indicate controllability. We renamed it as <b className="theme">Power Saving</b> and placed it closer to the battery according to the <b className="theme">Law of Proximity</b>.
+                                        <ul className="list-disc">
+                                            <li>Renaming Eco Mode to <b>Power Saving</b></li>
+                                            <li>Changing to <b>toggle to indicate controllability</b></li>
+                                            <li>Placing toggle closer to battery, following the <b>Law of Proximity</b></li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
                         </ScrollReveal>
+
                         
                     </div>
 
                     <div className="subsection-wrapper">
                         <ScrollReveal>
-                            <h6 className="mb-3 theme">
-                                #3: Back & forth between dashboard and mobile app
-                            </h6>
-                            <div className="p-3 d-flex flex-column align-items-center">
-                                <img className="w-100" src="/works/UXUI/vision/phase-3/c-3-1.png" alt="challenge 1" />
-                                <p className="table-caption mt-1 mb-3">Mobile flow of unlocking/turning on moped & setting up GPS</p>
-                            </div>
                             <div className="row align-items-center">
-                                <div className="col-md-6 p-3 d-flex flex-column align-items-center">
+                                <h6 className="mb-3 theme">
+                                    #3: Back & forth between dashboard and mobile app
+                                </h6>
+                                
+                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
                                     <img className="w-100" src="/works/UXUI/vision/phase-3/c-3-2.png" alt="challenge 1" />
                                     <p className="table-caption mt-1 mb-3">Moped in GPS navigation mode</p>
                                 </div>
-                                <div className="col-md-6 my-3">
-                                    <p className="mb-3">
-                                    Our initial design for the e-moped navigation system focused on integrating a mobile app with the e-moped dashboard, allowing users to set their destination on the app and synchronize it to the dashboard with one click. However, user testing revealed a crucial need: <b className="theme">the ability to set navigation directly on the dashboard without relying on a smartphone.
-                                    </b> 
-                                    </p>
+                                
+                                <div className="col-md-2 d-flex flex-column align-items-center my-3">
+                                    <img className="arrow-right" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
                                 </div>
-                            </div>
-                        </ScrollReveal>
 
-                        <ScrollReveal>
-                            <div className="d-flex flex-column align-items-center my-3">
-                                <img className="" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
-                            </div>
-
-                            <div className="row align-items-center">
-                                <div className="col-md-6 p-3 d-flex flex-column align-items-center">
+                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
                                     <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-3-i-2.png" alt="challenge 1" />
                                     <p className="table-caption mt-1 mb-3">Setting up GPS directly on moped</p>
                                 </div>
-                                <div className="col-md-6 my-3">
-                                    
+                            </div>
+                            <div className="row">
+                                <div className="col-md-5">
+                                    <h6 className="mb-3">
+                                        Before
+                                    </h6>
+                                    <p className="mb-3">
+                                        <ul className="list-disc">
+                                            <li>Users set GPS destination via mobile app, then synchronize it to moped dashboard</li>
+                                            <li>Lack of ability to set navigation directly on the dashboard <b>without relying on a smartphone</b></li>
+                                        </ul> 
+                                    </p>
+                                </div>
+                                <div className="col-md-2"></div>
+                                <div className="col-md-5 my-3">
                                     <h6 className="mb-3">
                                         Iteration
                                     </h6>
                                     <p className="mb-3">
-                                    A direct destination entry feature on the dashboard itself was added. This ensures that the e-moped navigation system is versatile and user-friendly. Riders now have the flexibility to use either the mobile app or the dashboard to set their route, accommodating different preferences and situations.
+                                        <ul className="list-disc">
+                                            <li>Direct GPS feature on moped dashboard</li>
+                                            <li>Users can set up GPS on both mobile and dashboard</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
-
-                            <div className="p-3 d-flex flex-column align-items-center">
-                                <img className="w-100" src="/works/UXUI/vision/phase-3/c-3-i-1.png" alt="challenge 1" />
-                                <p className="table-caption mt-1 mb-3">Moped flow of unlocking/turning on moped & setting up GPS</p>
-                            </div>
                         </ScrollReveal>
+
                     </div>
 
                     <div className="subsection-wrapper">
                         <ScrollReveal>
-                            <h6 className="mb-3 theme">
-                                #4: Default state- manual mode (autonomy off)
-                            </h6>
-                            
                             <div className="row align-items-center">
-                                <div className="col-md-6 p-3 d-flex flex-column align-items-center">
+                                <h6 className="mb-3 theme">
+                                    #4: Default state- manual mode (autonomy off)
+                                </h6>
+                                
+                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
                                     <img className="w-100" src="/works/UXUI/vision/phase-3/c-4-1.png" alt="challenge 1" />
                                     <p className="table-caption mt-1 mb-3">Auto Mode shown under speedometer of dashboard</p>
                                 </div>
-                                <div className="col-md-6 my-3">
-                                    <p className="mb-3">
-                                    When we were envisioning our moped, we deemed our unique feature to be default autonomy mode. But guerrilla research revealed that it is confusing that users do not manually drive the moped from the start. 
-                                    </p>
+
+                                <div className="col-md-2 d-flex flex-column align-items-center my-3">
+                                    <img className="arrow-right" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
                                 </div>
-                            </div>
-                        </ScrollReveal>
 
-                        <ScrollReveal>
-                            <div className="d-flex flex-column align-items-center my-3">
-                                <img className="" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
-                                
-                            </div>
-
-                            <div className="row align-items-center">
-                                <div className="col-md-6 p-3 d-flex flex-column align-items-center">
+                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
                                     <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-4-i-1.png" alt="challenge 4" />
                                     <p className="table-caption mt-1 mb-3">Manual Mode shown under speedometer of dashboard</p>
                                 </div>
-                                <div className="col-md-6 my-3">
-                                    
+                            </div>
+                            <div className="row">
+                                <div className="col-md-5">
+                                    <h6 className="mb-3">
+                                        Before
+                                    </h6>
+                                    <p className="mb-3">
+                                        <ul className="list-disc">
+                                            <li>Default driving in autonomy mode (self-driving)</li>
+                                            <li>Guerrilla research revealed users’ confusion of being unable to manually start driving</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div className="col-md-2"></div>
+                                <div className="col-md-5 my-3">
                                     <h6 className="mb-3">
                                         Iteration
                                     </h6>
                                     <p className="mb-3">
-                                    It does require a learning curve to get used to the default auto mode, for which some considerations would be to supplement the physical prototype with an on-boarding tutorial so it situates the user correctly. So before we could make the guide, we decided to switch back into default as manual mode to <b className="theme">give user control on autonomy</b>.
+                                        <ul className="list-disc">
+                                            <li>Setting default state as manual driving mode to give users control on autonomy</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
                         </ScrollReveal>
+
                     </div>
-                </div>       
+
+                    
+                </div>     
             </div>
 
+            <div className="theme-bg container subsection-wrapper">
+                <div className="topic-container">
+                    <h6 className="mb-5">Usability Testing & Guerrilla Research</h6>
+                </div>
+                <HorizontalCarousel cards={cards} />
+            </div>
             
-            <HorizontalScrollCarousel cards={cards} 
-            bgc="#ecf4fc"
-            title={<h6 className="mb-3">Usability Testing & Guerrilla Research</h6>}/>
 
 
             <div className="container">
@@ -476,8 +515,17 @@ function Vision () {
                     </ScrollReveal>
 
                     <ScrollReveal>
+                    <div className="subsection-wrapper d-flex flex-column align-items-center">
+                        <img className="w-100" src="/works/UXUI/vision/Moodboard.png" alt="moodboard of science fair" />
+                        <p className="table-caption mt-3">In-class Science Fair Demo Session</p>
+                    </div>
+                    </ScrollReveal>
+
+                    <ScrollReveal>
                         <div className="subsection-wrapper d-flex flex-column align-items-center">
                             <img className="w-100" src="/works/UXUI/vision/prototype/1-physical.png" alt="physical prototype" />
+                            <p className="w-sizer center table-caption mt-3">Overview of Physical Moped Prototype. A button to switch between Auto mode and Manual mode is placed on the right handle to allow easy access while driving.
+                            </p>
                         </div>
                     </ScrollReveal>
                     
@@ -603,23 +651,7 @@ function Vision () {
                         </div>
                     </ScrollReveal>
 
-                    <ScrollReveal>
-                        <div ref={demoVid} className="subsection-wrapper" >
-                            <div className="row">
-                                <div className="col-md-4 mb-3">
-                                    <h6 className="theme">Video Demo</h6>
-                                    <p className="mb-1 text-bold">User Journey Walkthrough</p>
-                                </div>
-                                
-                                <div className="col-md-8 mb-3">
-                                    <div className="responsive-iframe">
-                                        <Iframe src="https://www.youtube.com/embed/9lJoc7X66kQ?si=0P3ZUJl_7qwqCqAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </ScrollReveal>
+
                 </div>
 
                 <ScrollReveal>

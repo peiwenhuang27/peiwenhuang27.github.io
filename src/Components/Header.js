@@ -1,14 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
-import Dropdown from 'react-bootstrap/Dropdown';
-// import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { LogoIcon, ArrowIcon } from './Icons';
-// TODO
-// hamburger menu
+
 function Header ({ workData, lifeData = null }) {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -26,14 +23,6 @@ function Header ({ workData, lifeData = null }) {
         window.addEventListener("resize", handleResize); 
     });
 
-    const [show, setShow] = useState(false);
-    const showDropdown = (e)=>{
-        setShow(!show);
-    }
-    const hideDropdown = e => {
-        setShow(false);
-    }
-
     return (
         <div className="header d-flex align-items-center">
             <div className="container">
@@ -44,18 +33,18 @@ function Header ({ workData, lifeData = null }) {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/">
+                        <Nav.Link href="/#">
                             <span className="header-item ">Home</span>
                         </Nav.Link>
 
-                        <Nav.Link href="/About" className="">
+                        <Nav.Link href="/#/About" className="">
                             <span className="header-item ">About</span>
                         </Nav.Link>
 
                         <NavDropdown title={<span className="header-item  d-flex">Work <ArrowIcon /></span>} id="basic-nav-dropdown" align="end">
                             {
                                 workData.map(item =>
-                                    <NavDropdown.Item href={`/Works/${item.suffix}`} className="py-2">
+                                    <NavDropdown.Item href={`/#/Works/${item.suffix}`} className="py-2">
                                         {item.name}
                                     </NavDropdown.Item>
                                 )
@@ -64,11 +53,23 @@ function Header ({ workData, lifeData = null }) {
 
                         <NavDropdown title={<span className="header-item  d-flex">Life <ArrowIcon /></span>} id="basic-nav-dropdown" align="end">
                             {
-                                lifeData.map(item =>
-                                    <NavDropdown.Item href={item.suffix} target={item.target} className="py-2">
-                                        {item.name}
-                                    </NavDropdown.Item>
-                                )
+                                lifeData.map(item => {
+                                    if(item.target === "_blank") {
+                                        return(
+                                            <NavDropdown.Item href={item.suffix} target={item.target} className="py-2">
+                                                {item.name}
+                                            </NavDropdown.Item>
+                                        );
+                                    }
+                                    else {
+                                        return (
+                                            // add # because using HashRouter
+                                            <NavDropdown.Item href={`/#${item.suffix}`} target={item.target} className="py-2">
+                                                {item.name}
+                                            </NavDropdown.Item>
+                                        );
+                                    }
+                                })
                             }
                         </NavDropdown>
                     </Nav>

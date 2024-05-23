@@ -1,10 +1,10 @@
 #Fluffy-Focus {
     .theme  {
-        color: #81956C !important;
+        color: #417807 !important;
     }
     .theme-bg {
         width: 100%;
-        background-color: #CDD5C5;
+        background-color: rgba(69, 122, 14, 0.05);
     }
     .artwork {
         height: 240px;
@@ -15,6 +15,12 @@
         @include max2 {
             max-width: 100%;
             // height: auto;
+        }
+    }
+    .hyperlink {
+        &:hover {
+            transition: .3s;
+            color: #81956C;
         }
     }
     .responsive-center-list {

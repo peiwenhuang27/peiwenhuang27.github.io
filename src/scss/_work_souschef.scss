@@ -1,0 +1,24 @@
+#Sous-Chef {
+    .theme  {
+        color: #c8333b !important;
+    }
+    .theme-bg {
+        width: 100%;
+        background-color: #ffefef;
+    }
+    .view-more-btn {
+        background-color: #ffefef;
+
+        a {
+            text-decoration: none;
+            color: #c8333b;
+        }
+    
+        &:hover {
+            background-color: #c8333b;
+            a {
+                color: white;
+            }
+        }
+    }
+}

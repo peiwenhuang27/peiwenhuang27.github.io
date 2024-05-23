@@ -5,6 +5,7 @@ import Iframe from 'react-iframe';
 import ProjectRec from "../../../ProjectRec";
 import HorizontalScrollCarousel from "../../../HorizontalScrollCarousel";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
+import ProgressBar from "../../../ScrollBar";
 
 // TODO
 // sidebar navigation
@@ -30,23 +31,24 @@ function Fluffy () {
 
     return (
         <div id="Fluffy-Focus">
+            <ProgressBar color="#417807" />
             <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
             <div className="container">
                 <div className="topic-container py-5">
                     <ScrollReveal>
                         <div className="topic-title-container mb-5">
                                 <h3 className="mb-1 color-dark text-bold date">October 2023 - December 2023</h3>
-                                <h2 className="mb-1">Fluffy Focus: Transformational Mobile RPG Against Work-Induced Anxiety</h2>
+                                <h2 className="mb-1">Fluffy Focus: Transformational Desktop RPG Against Work-Induced Anxiety</h2>
                                 <h3 className="theme mb-5">Persuasive Design, Behavior Change, Game Design, UX, Psychology</h3>
                                 <p className="mb-5">
                                 Graduate students, under significant academic pressure, often struggle with time management and suffer from anxiety and/or procrastination when facing immense workload. 
                                 To reduce the level of anxiety ad increase motivation to finish upcoming tasks on time, 
-                                we designed Fluffy Focus: <b>a transformational mobile role-playing game to facilitate behavior and attitudinal change in grad students' task management.</b>
+                                we designed Fluffy Focus: <b>a transformational desktop role-playing game to facilitate behavior and attitudinal change in grad students' task management.</b>
                                 </p>
                         </div>
                     </ScrollReveal>
                     <ScrollReveal>
-                        <div className="section-wrapper row mb-5">
+                        <div className="subsection-wrapper row mb-5">
                             <div className="topic-desc-container col-md-4 mb-5">
                                 <h6 className="theme mb-3">Duration</h6>
                                 <ul>
@@ -89,30 +91,93 @@ function Fluffy () {
                     </ScrollReveal>
                 </div>
             </div>
-            
-                <div className="theme-bg">
-                    
-                        <HorizontalScrollCarousel
-                        cards={cards}
-                        bgc="#CDD5C5"
-                        responsiveVertical={true}
-                        title={<h3>💻 Demo</h3>}/>
-                    
 
-                    <ScrollReveal>
-                        <div className="container">
-                            <div className="topic-container section-wrapper">
-                            <h6 className="text-center mb-5">Figma Prototype</h6>
-                                <div className="d-flex justify-content-center">
-                                    {isLoading ? (
-                                        <ReactLoading type="bubbles" color="#e0e0e0"
-                                        height={100} width={50} />
-                                    ) : figma}
+            <div className="theme-bg container">
+                <div className="topic-container subsection-wrapper">
+                    <h3 className="mb-5">💻 Demo</h3>
+                    
+                    <ul className="">
+                        <ScrollReveal>
+                            <li className="row align-items-start subsection-wrapper">
+                                <div className="col-md-6 mb-4">
+                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2dmZ3J3ZHo3cWZ5MzkyOHI2Y3F1dDBydGYwMDVlNDhnajc2NjJyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XZmPrQa21ClUdRY6Tr/giphy.gif" alt="Customization of Avatar"></img>
                                 </div>
-                            </div>
-                        </div>
-                    </ScrollReveal>
+                                <div className="col-md-6">
+                                    <h6 className="theme mb-3">#1: Customization of Avatar</h6>
+                                    <p className="">
+                                    Employing <b>distancing effect</b> and body-doubling technique to offer <b>social support</b> through user-avatar interaction
+                                    </p>
+                                </div>
+                            </li>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <li className="flex-row-reverse row align-items-start subsection-wrapper">
+                                <div className="col-md-6 mb-4">
+                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHdhYjF2eTIxeXhpZGx4bGo1a2JlczFpMzVrMnhrYTg4bjhtc3R1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xlXDa18T6yEtGA9f0W/giphy.gif" alt="Empowering Self-Affirmation through Avatar Dialogues"></img>
+                                </div>
+                                <div className="col-md-6">
+                                    <h6 className="theme mb-3">#2: Self-Affirmation Dialogues</h6>
+                                    <p className="">
+                                    Self-affirmation avatar dialogues to <b>continually empower users</b> and foster a resilient & confident mindset
+                                    </p>
+                                </div>
+                            </li>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <li className="row align-items-start subsection-wrapper">
+                                <div className="col-md-6 mb-4">
+                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXNjNWp4ZjJmeGNobnh4aGk2NThoa3VuNDg1cXN3ZmMyY2ZzbWQ5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KU3ec5QdIIZanQJnSp/giphy.gif" alt="Task & Productivity Enhancement"></img>
+                                </div>
+                                <div className="col-md-6">
+                                    <h6 className="theme mb-3">#3: Productivity Enhancement</h6>
+                                    <p className="">
+                                    Motivating think-through of task duration, start time, and workload to <b>mitigate deadline-induced anxiety</b>
+                                    </p>
+                                </div>
+                            </li>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <li className="flex-row-reverse row align-items-start subsection-wrapper">
+                                <div className="col-md-6 mb-4">
+                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3pxaWl2NnExcmVpNDI3NnJpa3U3ZmxjaDg2cjI2ZG96bTBoYXN5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OCKgvJ5jJZCFybWiv5/giphy.gif" alt="Pomodoro Technique & Immersive Environments"></img>
+                                </div>
+                                <div className="col-md-6">
+                                    <h6 className="theme mb-3">#4: Pomodoro & Immersive Environments</h6>
+                                    <p>
+                                    Improving user proficiency within <b>Elaboration Likelihood Model (ELM)</b> through Pomodoro focus timers
+                                    </p>
+                                </div>
+                            </li>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <li className="row align-items-start subsection-wrapper">
+                                <div className="col-md-6 mb-4">
+                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajk0YnZtNm03bzQ0ZGlrdHMybzU2bnpyOWc5ZWx4amZ6d3lrYmc0MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cv1s6W7xhMCFYsO6R5/giphy.gif" alt="Rewards & Environment Unlock"></img>
+                                </div>
+                                <div className="col-md-6">
+                                    <h6 className="theme mb-3">#5: Rewards & Environment Unlock</h6>
+                                    <p>
+                                    <b>Intermixing</b> gaming elements and <b>priming emotions</b> through warm color palette to reduce seriousness of productivity app
+                                    </p>
+                                </div>
+                            </li>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <li className="flex-row-reverse row align-items-start subsection-wrapper">
+                                <div className="col-md-6 mb-4">
+                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHJ6Z3phbzFvaWtyenRvMGxyMWE2ODV3N3g2NDE1NHU5cjVvOXoxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oxChvgPxbR0tQ42p3I/giphy.gif" alt="Progress Tracking & Visual Achievement"></img>
+                                </div>
+                                <div className="col-md-6">
+                                    <h6 className="theme mb-3">#6: Progress Tracking & Visual Achievement</h6>
+                                    <p>
+                                    Giving rewards and visualizing progress based on <b>principles of persuasion to promote consistency and commitment</b> to goal achievement
+                                    </p>
+                                </div>
+                            </li>
+                        </ScrollReveal>
+                    </ul>
                 </div>
+            </div> 
             
 
             <div className="container">
@@ -141,7 +206,7 @@ function Fluffy () {
                             </div>
                         </div>
                         <p>
-                        Utilizing New Metaphors [1], participants were given several metaphors and asked to pick from them one that they associated with a specific concept. For example, one may choose the image of “the cat untangling yarn” as a metaphor of “time/task management.”  
+                        Utilizing <a className="hyperlink" rel="noopenner noreferrer" target="_blank" href="https://imaginari.es/new-metaphors/">New Metaphors</a>, participants were given several metaphors and asked to pick from them one that they associated with a specific concept. For example, one may choose the image of “the cat untangling yarn” as a metaphor of “time/task management.”  
                         </p>
                     </ScrollReveal>
 
@@ -149,22 +214,23 @@ function Fluffy () {
                         <ul className="my-5 row">
                             <li className="col-md-6 my-5 d-flex flex-column align-items-center">
                                 <div className="w-50 mb-5 d-flex flex-column align-items-center">
-                                    <img className="w-sizer mb-2" src="/works/UXUI/fluffy/yarn.svg" alt="yarn icon" />
+                                    <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Yarn.svg" alt="yarn icon" />
                                 </div>
                                 <div className="mx-4 d-flex flex-column align-items-center">
                                     <h6 className="text-center mb-3">Nonlinear Nature of Task Management</h6>
                                     <p className="center">
-                                    No one out of the 10 participants associated Cat Untangling Yarn with task and time management. To them, time management and organization are more similar to a modular process that must unravel and connect at various stages.                                    </p>
+                                    Time management and organization feel like modular processes that must be <b>unravelled and connected at various stages</b>.
+                                    </p>
                                 </div>
                             </li>
                             <li className="col-md-6 my-5 d-flex flex-column align-items-center">
                                 <div className="w-sizer mb-5 d-flex flex-column align-items-center">
-                                    <img className="w-50 mb-2" src="/works/UXUI/fluffy/boiling.svg" alt="boiling pot icon" />
+                                    <img className="w-50 mb-2" src="/works/UXUI/fluffy/Boiling.svg" alt="boiling pot icon" />
                                 </div>
                                 <div className="mx-4 d-flex flex-column align-items-center">
                                     <h6 className="text-center mb-3">Lack of Perceived Control</h6>
                                     <p className="center">
-                                    In the context of High-density Workload, Overboiling Pot symbolizes an unchangeable pattern beyond their control. <b>When facing stressful and overwhelming situations, perceived control could help participants effectively confront the challenges ahead.</b>
+                                    When facing stressful and overwhelming situations, <b>perceived control</b> could help participants effectively confront the challenges ahead.
                                     </p>
                                 </div>
                             </li>
@@ -175,18 +241,28 @@ function Fluffy () {
                 <div className="topic-container section-wrapper">
                     <ScrollReveal>
                         <h3 className="my-5">🎯 Objective</h3>
-                        <p>
+                        <div className="row mb-5">
+                            <div className="col-md-6">
+                                <h6>Environment</h6>
+                                <p>Home, library, other work environments</p>
+                            </div>
+                            <div className="col-md-6">
+                            <h6>Audience</h6>
+                                <p>Graduate students aged 21-25 who would like more control over their schedule and time through a customizable system based on user's preferences</p>
+                            </div>
+                        </div>
+                        <p className="w-sizer-75 mt-5">
                         Based on user research, we seek to design an intervention that facilitates both behavioral and attitudinal changes especially in the following aspects:
                         </p>
                     </ScrollReveal>
-                    <ul className="responsive-center-list my-5">
+                    <ul className="responsive-center-list mb-5">
                         <ScrollReveal>
                             <li className="row my-5 d-flex align-items-center">
                                 <div className="col-md-3 px-3 d-flex flex-column align-items-center">
                                     <img className="w-50 mb-2" src="/works/UXUI/fluffy/Planning.svg" alt="planning icon" />
                                 </div>
                                 <div className="col-md-8">
-                                    <h6 className="mb-3">Behavioral</h6>
+                                    <h6 className="theme mb-3">Behavioral</h6>
                                     <p>
                                     Procrastinating on deliverables
                                     <br/>→ <b>Staying self-monitoring/regulated with increased levels of efficiency</b>
@@ -204,7 +280,7 @@ function Fluffy () {
                                     <img className="w-50 mb-2" src="/works/UXUI/fluffy/Thinking.svg" alt="thinking icon" />
                                 </div>
                                 <div className="col-md-8">
-                                    <h6 className="mb-3">Attitudinal</h6>
+                                    <h6 className="theme mb-3">Attitudinal</h6>
                                     <p>
                                     Being unmotivated
                                     <br/>→ <b>Feeling motivated to begin focusing on tasks</b>
@@ -216,29 +292,14 @@ function Fluffy () {
                             </li>
                         </ScrollReveal>
                     </ul>
-                    <ScrollReveal>
-                        <div className="row">
-                            <div className="col-md-6">
-                                <h6>Environment</h6>
-                                <p>Home, library, other work environments</p>
-                            </div>
-                            <div className="col-md-6">
-                            <h6>Audience</h6>
-                                <p>Graduate students aged 21-25 who would like more control over their schedule and time through a customizable system based on user's preferences</p>
-                            </div>
-                        </div>
-                    </ScrollReveal>
+                    
                 </div>
 
                 <div className="topic-container section-wrapper">
                     <ScrollReveal>
                         <h3 className="my-5">🧠 Ideation</h3>
-                        <div className="my-3 d-flex flex-column align-items-center">
-                            <img className="w-sizer-75" src="/works/UXUI/fluffy/ideation/affinity.png" alt="voting of ideas" />
-                            <p className="table-caption mt-3">Affinity diagram of intervention ideas with votes</p>
-                        </div>
                     <h6 className="mt-5">Framework</h6>
-                    <p>After several rounds of voting, we agreed to design a <b>transformational mobile RPG for grad students with work-induced anxiety towards incoming tasks</b>. </p>
+                    <p><b>Transformational desktop RPG for grad students with work-induced anxiety towards incoming tasks</b> </p>
                     </ScrollReveal>
                     <ul className="my-5">
                         <ScrollReveal>
@@ -334,10 +395,12 @@ function Fluffy () {
                     </ScrollReveal>
                     
                     <ScrollReveal>
-                        <div className="my-5 d-flex justify-content-center flex-wrap">
+                        <div className="mt-5 mb-3 d-flex justify-content-center flex-wrap">
                             <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-0-env.jpg" alt="environments" />
                             <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/1-1-avatar.jpg" alt="animal avatars" />   
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/design/1-platform.png" alt="voting of modality" />                     
+                            <img className="artwork p-1" src="/works/UXUI/fluffy/design/1-platform.png" alt="voting of modality" />    
+                        </div>
+                        <div className="mt-0 mb-5 d-flex justify-content-center flex-wrap">                 
                             <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-1-room.png" alt="room environment" />
                             <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-2-attic.png" alt="attic environment" />
                             <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-3-garden.png" alt="garden environment" />
@@ -376,20 +439,25 @@ function Fluffy () {
 
                     <ScrollReveal>
                         <div className="subsection-wrapper">
-                            <h6 className="mb-3">User Test Results</h6>
-                            <p className="mb-5">The feedback received was generally positive regarding the effectiveness of our intervention's mechanism. Participants expressed that the <b>integration of body-doubling and gaming elements into the productivity tool indeed served as a motivating factor, facilitating task completion with reduced stress</b>. However, certain areas for improvement were identified:</p>
-                            <ul>
+                            <h6 className="mb-5">User Test Results</h6>
+                            <ul className="list-disc">
                                 <li className="mb-5">
-                                    <h6 className="theme">Ambiguity in the interface</h6>
-                                    <p>No clear instructions on how to proceed to the next step, icons with vague semantic meaning</p>
+                                    <p>
+                                        <b className="theme">Ambiguity in the interface</b><br/>
+                                        No clear instructions on how to proceed to the next step, icons with vague semantic meaning
+                                    </p>
                                 </li>
                                 <li className="mb-5">
-                                    <h6 className="theme">Insufficient customizability</h6>
-                                    <p>Users wish to be able to set due dates/task start time/reminders for better task management, use the Pomodoro technique for longer tasks, and reschedule unfinished tasks</p>
+                                    <p>
+                                        <b className="theme">Insufficient customizability</b><br/>
+                                        Users wish to be able to set due dates/task start time/reminders for better task management, use the Pomodoro technique for longer tasks, and reschedule unfinished tasks
+                                        </p>
                                 </li>
                                 <li className="mb-5">
-                                    <h6 className="theme">Desire for additional motivation beyond receiving rewards upon task completion</h6>
-                                    <p>Sneak peek of locked rewards or environments and overview of current progress and XP level to enhance goal-setting capabilities</p>
+                                    <p>
+                                        <b className="theme">Desire for additional motivation beyond receiving rewards upon task completion</b><br/>
+                                        Sneak peek of locked rewards or environments and overview of current progress and XP level to enhance goal-setting capabilities
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -442,76 +510,63 @@ function Fluffy () {
                         <h6 className="mb-3">Iteration</h6>
                         <p className="my-5">
                         Based on feedback, we enhanced our persuasive approach to <b>deepen user engagement and subtly influence user behavior</b>. <br/><br/>
-                        The avatar was reframed to serve as both a mirror of the player and a supportive study partner— using “we” as the personal pronoun— to implement <b>distancing, body doubling, and social support</b>. Moreover, In response to Professor Kaufman's advice, we aimed to amplify the significance of experience points in the game, making participation more meaningful for users.
                         </p>
                     </ScrollReveal>
-                    <ul className="subsection-wrapper">
-                        <ScrollReveal>
-                            <li className="row align-items-start subsection-wrapper">
-                                <div className="col-md-6 mb-4">
-                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2dmZ3J3ZHo3cWZ5MzkyOHI2Y3F1dDBydGYwMDVlNDhnajc2NjJyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XZmPrQa21ClUdRY6Tr/giphy.gif" alt="Customization of Avatar"></img>
-                                </div>
-                                <div className="col-md-6">
-                                    <h6 className="theme mb-3">#1: Customization of Avatar</h6>
-                                    <p>At the beginning of the game, players can pick an animal avatar as their “buddy” which serves as their own real-life reflection as well as an individual that would support and work with you. This setup introduces both a <b>distancing effect and body-doubling techniques</b>, offering social support through the avatar's interactions.</p>
-                                </div>
-                            </li>
-                        </ScrollReveal>
-                        <ScrollReveal>
-                            <li className="flex-row-reverse row align-items-start subsection-wrapper">
-                                <div className="col-md-6 mb-4">
-                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHdhYjF2eTIxeXhpZGx4bGo1a2JlczFpMzVrMnhrYTg4bjhtc3R1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xlXDa18T6yEtGA9f0W/giphy.gif" alt="Empowering Self-Affirmation through Avatar Dialogues"></img>
-                                </div>
-                                <div className="col-md-6">
-                                    <h6 className="theme mb-3">#2: Self-Affirmation Avatar Dialogues</h6>
-                                    <p>The avatar delivers self-affirmation dialogues, which occur upon task completion, leveling up, and idling state, to fuel their enthusiasm for work and acknowledge their inherent value. Such mechanism nurtures a positive feedback loop; users are <b>continually empowered, fostering a resilient and confident mindset</b> crucial for success.</p>
-                                </div>
-                            </li>
-                        </ScrollReveal>
-                        <ScrollReveal>
-                            <li className="row align-items-start subsection-wrapper">
-                                <div className="col-md-6 mb-4">
-                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXNjNWp4ZjJmeGNobnh4aGk2NThoa3VuNDg1cXN3ZmMyY2ZzbWQ5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KU3ec5QdIIZanQJnSp/giphy.gif" alt="Task & Productivity Enhancement"></img>
-                                </div>
-                                <div className="col-md-6">
-                                    <h6 className="theme mb-3">#3: Task & Productivity Enhancement</h6>
-                                    <p>Players can input tasks by specifying start time, duration, task description, and reminders. The “due date” is intentionally removed from task information to mitigate anxiety linked to approaching deadlines.</p>
-                                </div>
-                            </li>
-                        </ScrollReveal>
-                        <ScrollReveal>
-                            <li className="flex-row-reverse row align-items-start subsection-wrapper">
-                                <div className="col-md-6 mb-4">
-                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3pxaWl2NnExcmVpNDI3NnJpa3U3ZmxjaDg2cjI2ZG96bTBoYXN5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OCKgvJ5jJZCFybWiv5/giphy.gif" alt="Pomodoro Technique & Immersive Environments"></img>
-                                </div>
-                                <div className="col-md-6">
-                                    <h6 className="theme mb-3">#4: Pomodoro & Immersive Environments</h6>
-                                    <p>The Pomodoro technique, employing a focus timer that alternates short breaks with dedicated work sessions, is incorporated in the focus session to instill efficient task organization as users input task specifics, facilitating an <b>improvement in their proficiency within the Elaboration Likelihood Model (ELM)</b>.</p>
-                                </div>
-                            </li>
-                        </ScrollReveal>
-                        <ScrollReveal>
-                            <li className="row align-items-start subsection-wrapper">
-                                <div className="col-md-6 mb-4">
-                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajk0YnZtNm03bzQ0ZGlrdHMybzU2bnpyOWc5ZWx4amZ6d3lrYmc0MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cv1s6W7xhMCFYsO6R5/giphy.gif" alt="Rewards & Environment Unlock"></img>
-                                </div>
-                                <div className="col-md-6">
-                                    <h6 className="theme mb-3">#5: Rewards & Environment Unlock</h6>
-                                    <p>Congratulatory self-affirmations and a choice of reward items to embellish their virtual environment follow the focus session. By intermixing gaming elements like rewards and progression, the intervention retains a lighter tone, while the warm color palette and font choice subtly influence users' emotions, enhancing the overall experience.</p>
-                                </div>
-                            </li>
-                        </ScrollReveal>
-                        <ScrollReveal>
-                            <li className="flex-row-reverse row align-items-start subsection-wrapper">
-                                <div className="col-md-6 mb-4">
-                                    <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHJ6Z3phbzFvaWtyenRvMGxyMWE2ODV3N3g2NDE1NHU5cjVvOXoxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oxChvgPxbR0tQ42p3I/giphy.gif" alt="Progress Tracking & Visual Achievement"></img>
-                                </div>
-                                <div className="col-md-6">
-                                    <h6 className="theme mb-3">#6: Progress Tracking & Visual Achievement</h6>
-                                    <p>User progress is visually represented by earning rewards upon task completion, leveling up to access new environments, and data visualizations showcasing task completion and focused time. This feature empowers users to review their achievements, <b>fostering sustained productivity by promoting consistency and commitment to their goals</b>.</p>
-                                </div>
-                            </li>
-                        </ScrollReveal>
+                    <ul className="row mb-5">
+                        <li className="col-md-6 mb-5">
+                            <div className=" mb-4">
+                                <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2dmZ3J3ZHo3cWZ5MzkyOHI2Y3F1dDBydGYwMDVlNDhnajc2NjJyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XZmPrQa21ClUdRY6Tr/giphy.gif" alt="Customization of Avatar"></img>
+                            </div>
+                            <div className="mb-5">
+                                <h6 className="theme mb-3">#1: Customization of Avatar</h6>
+                                <p>At the beginning of the game, players can pick an animal avatar as their “buddy” which serves as their own real-life reflection as well as an individual that would support and work with you. This setup introduces both a <b>distancing effect and body-doubling techniques</b>, offering social support through the avatar's interactions.</p>
+                            </div>
+                        </li>
+                        <li className="col-md-6 mb-5">
+                            <div className=" mb-4">
+                                <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHdhYjF2eTIxeXhpZGx4bGo1a2JlczFpMzVrMnhrYTg4bjhtc3R1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xlXDa18T6yEtGA9f0W/giphy.gif" alt="Empowering Self-Affirmation through Avatar Dialogues"></img>
+                            </div>
+                            <div className="mb-5">
+                                <h6 className="theme mb-3">#2: Self-Affirmation Avatar Dialogues</h6>
+                                <p>The avatar delivers self-affirmation dialogues, which occur upon task completion, leveling up, and idling state, to fuel their enthusiasm for work and acknowledge their inherent value. Such mechanism nurtures a positive feedback loop; users are <b>continually empowered, fostering a resilient and confident mindset</b> crucial for success.</p>
+                            </div>
+                        </li>
+                        <li className="col-md-6 mb-5">
+                            <div className=" mb-4">
+                                <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXNjNWp4ZjJmeGNobnh4aGk2NThoa3VuNDg1cXN3ZmMyY2ZzbWQ5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KU3ec5QdIIZanQJnSp/giphy.gif" alt="Task & Productivity Enhancement"></img>
+                            </div>
+                            <div className="mb-5">
+                                <h6 className="theme mb-3">#3: Task & Productivity Enhancement</h6>
+                                <p>Players can input tasks by specifying start time, duration, task description, and reminders. The “due date” is intentionally removed from task information to mitigate anxiety linked to approaching deadlines.</p>
+                            </div>
+                        </li>
+                        <li className="col-md-6 mb-5">
+                            <div className=" mb-4">
+                                <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3pxaWl2NnExcmVpNDI3NnJpa3U3ZmxjaDg2cjI2ZG96bTBoYXN5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OCKgvJ5jJZCFybWiv5/giphy.gif" alt="Pomodoro Technique & Immersive Environments"></img>
+                            </div>
+                            <div className="mb-5">
+                                <h6 className="theme mb-3">#4: Pomodoro & Immersive Environments</h6>
+                                <p>The Pomodoro technique, employing a focus timer that alternates short breaks with dedicated work sessions, is incorporated in the focus session to instill efficient task organization as users input task specifics, facilitating an <b>improvement in their proficiency within the Elaboration Likelihood Model (ELM)</b>.</p>
+                            </div>
+                        </li>
+                        <li className="col-md-6 mb-5">
+                            <div className=" mb-4">
+                                <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajk0YnZtNm03bzQ0ZGlrdHMybzU2bnpyOWc5ZWx4amZ6d3lrYmc0MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cv1s6W7xhMCFYsO6R5/giphy.gif" alt="Rewards & Environment Unlock"></img>
+                            </div>
+                            <div className="mb-5">
+                                <h6 className="theme mb-3">#5: Rewards & Environment Unlock</h6>
+                                <p>Congratulatory self-affirmations and a choice of reward items to embellish their virtual environment follow the focus session. By intermixing gaming elements like rewards and progression, the intervention retains a lighter tone, while the warm color palette and font choice subtly influence users' emotions, enhancing the overall experience.</p>
+                            </div>
+                        </li>
+                        <li className="col-md-6 mb-5">
+                            <div className=" mb-4">
+                                <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHJ6Z3phbzFvaWtyenRvMGxyMWE2ODV3N3g2NDE1NHU5cjVvOXoxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oxChvgPxbR0tQ42p3I/giphy.gif" alt="Progress Tracking & Visual Achievement"></img>
+                            </div>
+                            <div className="mb-5">
+                                <h6 className="theme mb-3">#6: Progress Tracking & Visual Achievement</h6>
+                                <p>User progress is visually represented by earning rewards upon task completion, leveling up to access new environments, and data visualizations showcasing task completion and focused time. This feature empowers users to review their achievements, <b>fostering sustained productivity by promoting consistency and commitment to their goals</b>.</p>
+                            </div>
+                        </li>
                     </ul>
                     
                 </div>
@@ -530,29 +585,9 @@ function Fluffy () {
                             <img className="artwork p-1" src="/works/UXUI/fluffy/result/5.jpg" alt="science fair" />
                         </div>
                     </ScrollReveal>
-                    
-                    <ScrollReveal>
-                        <div className="subsection-wrapper">
-                            <h6 className="mb-3">Future State</h6>
-                            <p>
-                            We envision Fluffy Focus actually taking shape and becoming a downloadable game that helps graduate students fight against procrastination and anxiety. With more time, we would improve upon the final iteration using the feedback that we received from the Science Fair presentation, which includes but not limited to:
-                                <ul className="list-disc my-5">
-                                    <li className="mb-3">Adding a task script to starting the task</li>
-                                    <li className="mb-3">Adding focus session controls to destress users with anxiety</li>
-                                    <li className="mb-3">More interactivity between the user and avatar</li>
-                                    <li className="mb-3">Bringing a community together with friends and/or family</li>
-                                </ul>
-                                Fluffy Focus would also expand to connect with the whole Apple ecosystem to further serve its purpose of motivating students to reduce anxiety and develop long-term habits.
-                                <ul className="list-disc my-5">
-                                    <li className="mb-3">LiveStatus on iPhone lock screen</li>
-                                    <li className="mb-3">Widget on iPad home screen</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </ScrollReveal>
                 </div>
 
-                <div className="topic-container section-wrapper">
+                <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
                         <h3 className="my-5">📍 Conclusion</h3>
                         <h4 className="my-5">
@@ -752,7 +787,7 @@ const projects = [
             'title': '2Done', 
             'id': '2Done',
             'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
-            'desc': 'Gamified to-do list mobile app for procrastination',
+            'desc': 'Gamified to-do list desktop app for procrastination',
             'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
             'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
         }

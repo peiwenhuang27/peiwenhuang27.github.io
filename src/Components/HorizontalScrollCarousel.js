@@ -1,6 +1,28 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
+import { ArrowIcon } from "./Icons";
+
+// TODO: arrow icon
+
+const HorizontalCarousel = ({ cards }) => {
+  console.log("cards, ", cards);
+
+  return (
+    <div className="artwork-feed mt-5 mb-3 d-flex justify-content-start">
+      {/* <span className="arrow-btn">
+        <ArrowIcon />
+      </span> */}
+      
+      {
+        cards.map(card => {
+          return <img key={card.id} className="artwork p-1" src={card.url} alt={card.title} />
+        })
+      }
+    </div>
+  );
+};
+
 const HorizontalScrollCarousel = ({ cards, bgc, responsiveVertical = false, title = null }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -49,4 +71,5 @@ const Card = ({ card }) => {
 };
 
 export default HorizontalScrollCarousel;
+export { HorizontalCarousel };
 

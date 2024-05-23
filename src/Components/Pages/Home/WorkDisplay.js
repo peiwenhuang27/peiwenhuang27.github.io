@@ -9,10 +9,16 @@ function Intro () {
         <div className="section-wrapper topic-container pt-5">
             <div id="intro" className="intro">
                 <h4>A bit about me...</h4>
-                <p className="px-5 py-3">
-                I am a UX designer, researcher, and engineer with 3 years of experience during which I utilize my expertise to identify problems, analyze causes, and implement solutions.
-                <br/><br/>Driven by a desire to enhance the quality of life, I’m always looking for areas of opportunity to use my skills and catalyze change.
-                </p>
+                <div className="row">
+                    <p className="col-md-8 px-5 py-3">
+                    I am a UX designer, researcher, and engineer with 3 years of experience during which I utilize my expertise to identify problems, analyze causes, and implement solutions.
+                    <br/><br/>Driven by a desire to enhance the quality of life, I’m always looking for areas of opportunity to use my skills and catalyze change.
+                    </p>
+                    <div className="col-md-4 mb-5 pfp-container col-md-4">
+                        <div className="pfp-round" />
+                    </div>
+                </div>
+                
             </div>
         </div>
     );
@@ -43,7 +49,7 @@ function ViewMoreBtn ({ link }) {
 
 function WorkList ({ data, prefix }) {
     return (
-        <div className="topic-container section-wrapper">
+        <div className="topic-container subsection-wrapper-bottom">
             <div className="work-list">
                 <ul className="w-100 work-cards flex-column">
                     {data.map(item =>
@@ -69,11 +75,11 @@ function WorkDisplay ({ data }) {
                 <Intro />
             </ScrollReveal>
             
+            <WorkList data={data} prefix={prefix} />
+
             <ScrollReveal>
                 <Quote />
             </ScrollReveal>
-            
-            <WorkList data={data} prefix={prefix} />
         </div>
     );
 };

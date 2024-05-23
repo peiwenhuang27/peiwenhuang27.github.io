@@ -5,19 +5,13 @@ import Footer from './Components/Footer';
 import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
 // MUST-HAVE
-// some icons, pictures missing from project
-// carousel not working in Fluffy Focus
-// linking issues for React Router
-
-
-// NICE-TO-HAVE
+// active key not correct with navbar <-> category tabs
 // pui engineering
-// project nav (left? center?) or just progress bar
+// subsection for all project role section
 
 // PARKING-LOT
 // ucre
 // capstone
-// fluffy mockup- demo section of screenshots (mockup of laptop)
 
 function App() {
   // The back-to-top button is hidden at the beginning
@@ -55,6 +49,22 @@ function App() {
         'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
       },
       {
+        'title': '2Done', 
+        'id': '2Done',
+        'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
+        'desc': 'Gamified to-do list mobile app for procrastination',
+        'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
+        'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
+      },
+      {
+        'title': 'Mindfulness Alchemy', 
+        'id': 'Mindfulness-Alchemy',
+        'tags': ['Game Design', 'Web Developing', 'Social Computing', 'Mental Health', 'Self-Care'],
+        'desc': 'Staying Centered in a Restless World',
+        'img': 'https://live.staticflickr.com/65535/53740714969_2ddc44849e_b.jpg',
+        'ph': 'https://live.staticflickr.com/65535/53740714969_2ddc44849e_b.jpg',
+      },
+      {
         'title': 'Ford Vision', 
         'id': 'Ford-Vision',
         'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
@@ -63,12 +73,12 @@ function App() {
         'ph': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
       },
       {
-        'title': '2Done', 
-        'id': '2Done',
-        'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
-        'desc': 'Gamified to-do list mobile app for procrastination',
-        'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
-        'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
+        'title': 'Giant Eagle Sous Chef', 
+        'id': 'Sous-Chef',
+        'tags': ['Service Design', 'User Research', 'Giant Eagle', 'Meal Planning'],
+        'desc': 'Post-work Meals & Home-cook Starters',
+        'img': 'https://live.staticflickr.com/65535/53739446457_a00580cdc8_h.jpg',
+        'ph': 'https://live.staticflickr.com/65535/53739446457_bdd4cbf39e_c.jpg',
       },
     ]
     },
@@ -82,11 +92,27 @@ function App() {
         'desc': 'An AR Pet game to relieve university students\' emotions',
         'img': 'https://live.staticflickr.com/65535/52515678782_7a973a13a8_k.jpg',
         'ph': 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_m.jpg',
+      },
+      {
+        'title': 'Park Smart, Deliver Fast', 
+        'id': 'SLZ',
+        'tags': ['User Research', 'City Planing'],
+        'desc': 'Pittsburgh Smart Loading Zone Google Map Integration',
+        'img': 'https://live.staticflickr.com/65535/53739367867_72e4d2f7c2_b.jpg',
+        'ph': 'https://live.staticflickr.com/65535/53740501173_84bea51c61.jpg',
       },]
     },
     {'suffix': 'engineering', 'name': 'Engineering',
     'headline': 'Achieving the impossible; that is engineering.',
       'items': [
+      {
+        'title': 'Mindfulness Alchemy', 
+        'id': 'Mindfulness-Alchemy',
+        'tags': ['Game Design', 'Web Developing', 'Social Computing', 'Mental Health', 'Self-Care'],
+        'desc': 'Staying Centered in a Restless World',
+        'img': 'https://live.staticflickr.com/65535/53740714969_2ddc44849e_b.jpg',
+        'ph': 'https://live.staticflickr.com/65535/53740714969_2ddc44849e_b.jpg',
+      },
       {
         'title': 'TourBot', 
         'id': 'TourBot', 
@@ -99,7 +125,7 @@ function App() {
   ];
   const homeData = [
     {'suffix': 'design', 'name': 'Design Projects',
-      'items': workData[0]['items'].slice(0, 2)
+      'items': workData[0]['items'].slice(0, 3)
     },
   ];
 

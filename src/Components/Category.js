@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams, Outlet } from "react-router-dom";
 import Transitions from "./Transition";
@@ -8,16 +8,10 @@ import TopicCard from "./Pages/Home/TopicCard";
 import { ScrollReveal } from "./Helpers/SmoothScroll";
 
 function LargeList ({ workData, lifeData, categoryIndex }) { // only for a category, suffix, name, items
-    let category = workData[categoryIndex];
-    let leftTxt, leftSuffix, rightTxt, rightSuffix = null;
-    if ( categoryIndex > 0 ) { // has left
-        leftTxt = workData[categoryIndex - 1].name;
-        leftSuffix = workData[categoryIndex - 1].suffix;
-    }
-    if ( categoryIndex < workData.length - 1) { // has right
-        rightTxt = workData[categoryIndex + 1].name;
-        rightSuffix = workData[categoryIndex + 1].suffix;
-    }
+    useEffect(() => {
+        // console.log("in useEffect, categoryIndex = ", categoryIndex);
+    }, []);
+    let category = workData[categoryIndex]; /////////
 
     return (
         <ScrollReveal>
@@ -71,7 +65,7 @@ function LargeList ({ workData, lifeData, categoryIndex }) { // only for a categ
     );
 };
 
-function Category ({ workData, lifeData, variants }) {
+function Category ({ workData, lifeData }) {
     let { categoryId } = useParams();
     let categoryIndex = workData.findIndex(workData => workData.suffix === categoryId);
 
