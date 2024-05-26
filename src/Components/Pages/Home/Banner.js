@@ -15,7 +15,7 @@ function Banner () {
                     <div className='mb-3 d-flex flex-column align-items-center'>
                         <LogoIcon />
                         <h1 className='text-center'>Peiwen Huang</h1>
-                        <h2 className='text-center'>revolutionizing the human experience, the</h2>
+                        <h2 className='text-center'>I catalyze self-growth in my users (you!), as a </h2>
                     </div>
                     
                     <div className='d-flex flex-column align-items-center'>                
@@ -51,7 +51,6 @@ function Banner () {
                             </a>
                         </li>
                     </ul>
-                    <h2>way.</h2>
                     </div>
                     <Link to="/#works" className="svg-wrapper">
                         <ArrowIcon />

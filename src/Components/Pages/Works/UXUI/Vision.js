@@ -105,25 +105,33 @@ function Vision () {
             </ScrollReveal>
 
             <div className="container">
-                <div className="topic-container subsection-wrapper">
-                    <ScrollReveal>
-                        <div className="row align-items-center my-5">
-                            <h3 className="col-md-6 my-5">📚 Background</h3>
-                            <div className="col-md-6 my-3 d-flex flex-column align-items-center">
-                                <img className="w-100" src="/works/UXUI/vision/phase-1/IMG_7341.jpg" alt="affinity mapping" />
+            <ScrollReveal>
+                    <div className="topic-container subsection-wrapper">
+                        <div className="row align-items-start">
+                            <h3 className="col-md-6 mb-5">🎯 Objective</h3>
+                            <div className="col-md-6">
+                                <div className="mb-5">
+                                    <h6>Audience</h6>
+                                    <p>
+                                    First-time users of moped
+                                    </p>
+                                </div>
+                                <div className="mb-5">
+                                    <h6>Goal</h6>
+                                    <p>Design a semi-autonomous electric moped that is intuitive to use with appropriate instructions to provide a <b>smooth, safe, and calm riding experience</b>.</p>
+                                </div>
                             </div>
                         </div>
-                    </ScrollReveal>
-                        
+                    </div>
+                </ScrollReveal>
+                <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
-                        <h6 className="my-5">Guerrilla Research</h6>
-                        <div className="row my-5 align-items-center">
-                            <div className="col-md-4 p-5 d-flex flex-column align-items-center">
-                                <img className="w-100" src="/works/UXUI/vision/phase-1/PXL_20231026_130335227.jpg" alt="guerrilla research" />
-                            </div>
-                            <p className="col-md-8">
-                            Due to their scarcity, mopeds were tricky to gather insights for. So we supplemented the few people we were able to find through guerilla research and in-person user interviews with substantial secondary research by collecting opinions from social media like reddit and doing a competitive analysis of other e-moped solutions on the market.
-                            </p>
+                        <h3 className="my-5">📚 Background</h3>
+                        <h6 className="my-5">Guerrilla Research & Sensemaking</h6>
+                        <div className="artwork-feed d-flex justify-content-center">
+                            <img className="artwork p-1" src="/works/UXUI/vision/phase-1/PXL_20231026_130335227.jpg" alt="guerrilla research" />
+                            <img className="artwork p-1" src="/works/UXUI/vision/phase-1/IMG_7341.jpg" alt="affinity mapping" />
+                            <img className="artwork p-1" src="/works/UXUI/vision/phase-1/IMG_7342.jpg" alt="affinity map of research findings" />
                         </div>
                     </ScrollReveal>
 
@@ -163,41 +171,16 @@ function Vision () {
                             </div>
                         </div>
                     </ScrollReveal>
-
-                    <ScrollReveal>
-                        <div className="my-3 d-flex flex-column align-items-center">
-                            <img className="w-sizer-75" src="/works/UXUI/vision/phase-1/IMG_7342.jpg" alt="affinity map of research findings" />
-                            <p className="table-caption mt-3">Affinity map of research findings</p>
-                        </div>
-                    </ScrollReveal>
                 </div>
 
-                <ScrollReveal>
-                    <div className="topic-container subsection-wrapper">
-                        <div className="row align-items-start">
-                            <h3 className="col-md-6 mb-5">🎯 Objective</h3>
-                            <div className="col-md-6">
-                                <div className="mb-5">
-                                    <h6>Audience</h6>
-                                    <p>
-                                    First-time users of moped
-                                    </p>
-                                </div>
-                                <div className="mb-5">
-                                    <h6>Goal</h6>
-                                    <p>Design a semi-autonomous electric moped that is intuitive to use with appropriate instructions to provide a smooth, safe, and calm experience of getting around.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ScrollReveal>
+
 
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
                         <div className="row align-items-center my-5">
                             <div className="col-md-6 my-5">
                                 <h3 className="col-md-6 mb-5">🪄 Design Process</h3>
-                                <h4 className="mb-3 theme">How might we transfer the complexity of operating to the vehicle?</h4>
+                                <h4 className="mb-3 theme">How might we transfer the complexity of operating to the vehicle to ensure a safe & easy riding process?</h4>
                             </div>
                             
 
@@ -395,57 +378,7 @@ function Vision () {
                         <ScrollReveal>
                             <div className="row align-items-center">
                                 <h6 className="mb-3 theme">
-                                    #3: Back & forth between dashboard and mobile app
-                                </h6>
-                                
-                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
-                                    <img className="w-100" src="/works/UXUI/vision/phase-3/c-3-2.png" alt="challenge 1" />
-                                    <p className="table-caption mt-1 mb-3">Moped in GPS navigation mode</p>
-                                </div>
-                                
-                                <div className="col-md-2 d-flex flex-column align-items-center my-3">
-                                    <img className="arrow-right" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
-                                </div>
-
-                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
-                                    <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-3-i-2.png" alt="challenge 1" />
-                                    <p className="table-caption mt-1 mb-3">Setting up GPS directly on moped</p>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-5">
-                                    <h6 className="mb-3">
-                                        Before
-                                    </h6>
-                                    <p className="mb-3">
-                                        <ul className="list-disc">
-                                            <li>Users set GPS destination via mobile app, then synchronize it to moped dashboard</li>
-                                            <li>Lack of ability to set navigation directly on the dashboard <b>without relying on a smartphone</b></li>
-                                        </ul> 
-                                    </p>
-                                </div>
-                                <div className="col-md-2"></div>
-                                <div className="col-md-5 my-3">
-                                    <h6 className="mb-3">
-                                        Iteration
-                                    </h6>
-                                    <p className="mb-3">
-                                        <ul className="list-disc">
-                                            <li>Direct GPS feature on moped dashboard</li>
-                                            <li>Users can set up GPS on both mobile and dashboard</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </ScrollReveal>
-
-                    </div>
-
-                    <div className="subsection-wrapper">
-                        <ScrollReveal>
-                            <div className="row align-items-center">
-                                <h6 className="mb-3 theme">
-                                    #4: Default state- manual mode (autonomy off)
+                                    #3: Default state- manual mode (autonomy off)
                                 </h6>
                                 
                                 <div className="col-md-5 p-3 d-flex flex-column align-items-center">

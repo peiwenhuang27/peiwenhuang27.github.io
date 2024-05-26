@@ -2,11 +2,21 @@ ul {
     padding-left: 0;
 }
 
-.list-disc {
+.list-disc, .list-circle {
     padding-left: 1rem;
 
     li {
         list-style: disc;
+    }
+}
+.list-disc {
+    li {
+        list-style: disc;
+    }
+}
+.list-circle {
+    li {
+        list-style: circle;
     }
 }
 
