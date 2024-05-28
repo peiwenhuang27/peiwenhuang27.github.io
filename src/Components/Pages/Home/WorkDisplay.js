@@ -29,7 +29,7 @@ function Intro () {
                         </button>
                     </p>
                     <div className="col-md-4 mb-5 pfp-container col-md-4">
-                        <div className="pfp-round" />
+                        <div className="pfp-illustration" />
                     </div>
                     
                 </div>
