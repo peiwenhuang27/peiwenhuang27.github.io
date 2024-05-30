@@ -56,7 +56,7 @@ ul {
 
 #topic-navigation {
     position: fixed;
-    z-index: 100;
+    z-index: 50;
     width: 100%;
     background-color: white;
  
@@ -288,6 +288,10 @@ ul {
     }
 }
 
+.topic-main-wrapper {
+    position: relative;
+    top: 70px; // height of topic-navigation
+}
 .topic-cover-img {
     width: 100%;
     height: 500px;

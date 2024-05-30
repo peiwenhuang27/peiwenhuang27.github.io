@@ -32,31 +32,31 @@ function Topic ({ pageHeight }) {
         work = <Fluffy pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if(workId === 'Ford-Vision') {
-        work = <Vision />;
+        work = <Vision pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if(workId === 'Sous-Chef') {
-        work = <SousChef />;
+        work = <SousChef pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if(workId === 'Petit-Mood') {
-        work = <PetitMood />;
+        work = <PetitMood pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if(workId === 'SLZ') {
-        work = <SLZ />;
+        work = <SLZ pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if(workId === 'Bookworm-Meeter') {
-        work = <Bookworm />;
+        work = <Bookworm pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if(workId === '2Done') {
-        work = <ToDone />;
+        work = <ToDone pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if (workId === 'Mindful-Diary') {
-        work = <Mindful />;
+        work = <Mindful pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if ( workId === 'TourBot') {
-        work = <TourBot />;
+        work = <TourBot pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if ( workId === 'Mindfulness-Alchemy') {
-        work = <Alchemy />;
+        work = <Alchemy pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
 
     return (

@@ -671,99 +671,100 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
     return (
         <div id="Fluffy-Focus">
             <ProgressBar color="#417807" items={items} activeItem={activeItem} handleClick={handleSubsectionClick} />
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
-            {items.map((item) => {
-                return (
-                    <Subsection
-                    id={item.id}
-                    subsectionRef={item.ref}
-                    activeItem={activeItem}
-                    setActiveItem={setActiveItem}
-                    pageHeight={pageHeight}
-                    content={item.content} />
-                );
-            })}
+            <div className="topic-main-wrapper">
+                <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
+                {items.map((item) => {
+                    return (
+                        <Subsection
+                        id={item.id}
+                        subsectionRef={item.ref}
+                        activeItem={activeItem}
+                        setActiveItem={setActiveItem}
+                        pageHeight={pageHeight}
+                        content={item.content} />
+                    );
+                })}
 
-            <ScrollReveal>
-                <ProjectRec projects={projects} moreLink={"/Works/design"} />
-            </ScrollReveal>
+                <ScrollReveal>
+                    <ProjectRec projects={projects} moreLink={"/Works/design"} />
+                </ScrollReveal>
 
-            <div className="bg-1">
-                <div className="container">
-                    <div className="topic-container subsection-wrapper">
-                        <h3 className="mb-5">📑 References</h3>
-                        <p className="references mb-3">
-                        [1] Hooda, M., & Saini, A. (2017). Academic anxiety: An overview. Educational Quest, 8(3), 807-810.
-                        </p>
+                <div className="bg-1">
+                    <div className="container">
+                        <div className="topic-container subsection-wrapper">
+                            <h3 className="mb-5">📑 References</h3>
+                            <p className="references mb-3">
+                            [1] Hooda, M., & Saini, A. (2017). Academic anxiety: An overview. Educational Quest, 8(3), 807-810.
+                            </p>
 
-                        <h6>Literature Review</h6>
-                        <p className="references mb-5">
-                        Lukas, C. A., & Berking, M. (2018). Reducing procrastination using a smartphone-based treatment program: A randomized controlled pilot study. Internet interventions, 12, 83-90.
-<br/>
-Sun, T. (2023). Modeling Students’ Procrastination in Higher Education: Causes, Outcomes, and Prediction (Order No. 30524944). Available from ProQuest Dissertations & Theses Global. (2836863155). https://www.proquest.com/dissertations-theses/modeling-students-procrastination-higher/docview/2836863155/se-2
-<br/>
-Kachgal, M. M., Hansen, L. S., & Nutter, K. J. (2001). Academic procrastination prevention/intervention: Strategies and recommendations. Journal of Developmental Education, 25(1), 14.
-<br/>
-Brownlow, S., & Reasinger, R. D. (2000). Putting off Until Tomorrow What is Better Done Today: Academic Procrastination as a Function of Motivation Toward College Work. Journal of Social Behavior and Personality, 15(5), 15. https://www.proquest.com/scholarly-journals/putting-off-until-tomorrow-what-is-better-done/docview/1292269566/se-2
-<br/>
-Salguero-Pazos, M. R., & Reyes-de-Cózar, S. (2023). Interventions to reduce Academic procrastination: A systematic review. International Journal of Educational Research, 121, 102228.
-<br/>
-Serdar, E., Harmandar Demirel, D., & Demirel, M. (2021). The Relationship between Academic Procrastination, Academic Motivation and Perfectionism: A Study on Teacher Candidates. Turkish Online Journal of Educational Technology-TOJET, 20(4), 140-149.
-<br/>
-Alhasani, M., Alkhawaji, A., & Orji, R. (2022). Mental health and time management behavior among students during COVID-19 pandemic: towards persuasive technology design. Human Behavior and Emerging Technologies, 2022, 1-13.
-<br/>
-Smith, T. F., & Capuzzi, G. (2019). Using a mindset intervention to reduce anxiety in the statistics classroom. Psychology Learning & Teaching, 18(3), 326-336.
-<br/>
-Kamsin, A., Blandford, A., & Cox, A. L. (2012, May 5). Personal Task Management: My Tools Fall Apart When I'm Very Busy! ResearchGate. Retrieved October 20, 2023, from https://www.researchgate.net/publication/254005370_Personal_task_management_My_tools_fall_apart_when_I'm_very_busy
-<br/>
-Browne, R., Raeside, L., & Gray, G. (2018, October). Gamification in Education: Productivity and Motivation Through Gamified Time Management Software. ProQuest. Retrieved October 20, 2023, from https://www.proquest.com/docview/2131787593?pq-origsite=gscholar&fromopenview=true  
-                        </p>
+                            <h6>Literature Review</h6>
+                            <p className="references mb-5">
+                            Lukas, C. A., & Berking, M. (2018). Reducing procrastination using a smartphone-based treatment program: A randomized controlled pilot study. Internet interventions, 12, 83-90.
+    <br/>
+    Sun, T. (2023). Modeling Students’ Procrastination in Higher Education: Causes, Outcomes, and Prediction (Order No. 30524944). Available from ProQuest Dissertations & Theses Global. (2836863155). https://www.proquest.com/dissertations-theses/modeling-students-procrastination-higher/docview/2836863155/se-2
+    <br/>
+    Kachgal, M. M., Hansen, L. S., & Nutter, K. J. (2001). Academic procrastination prevention/intervention: Strategies and recommendations. Journal of Developmental Education, 25(1), 14.
+    <br/>
+    Brownlow, S., & Reasinger, R. D. (2000). Putting off Until Tomorrow What is Better Done Today: Academic Procrastination as a Function of Motivation Toward College Work. Journal of Social Behavior and Personality, 15(5), 15. https://www.proquest.com/scholarly-journals/putting-off-until-tomorrow-what-is-better-done/docview/1292269566/se-2
+    <br/>
+    Salguero-Pazos, M. R., & Reyes-de-Cózar, S. (2023). Interventions to reduce Academic procrastination: A systematic review. International Journal of Educational Research, 121, 102228.
+    <br/>
+    Serdar, E., Harmandar Demirel, D., & Demirel, M. (2021). The Relationship between Academic Procrastination, Academic Motivation and Perfectionism: A Study on Teacher Candidates. Turkish Online Journal of Educational Technology-TOJET, 20(4), 140-149.
+    <br/>
+    Alhasani, M., Alkhawaji, A., & Orji, R. (2022). Mental health and time management behavior among students during COVID-19 pandemic: towards persuasive technology design. Human Behavior and Emerging Technologies, 2022, 1-13.
+    <br/>
+    Smith, T. F., & Capuzzi, G. (2019). Using a mindset intervention to reduce anxiety in the statistics classroom. Psychology Learning & Teaching, 18(3), 326-336.
+    <br/>
+    Kamsin, A., Blandford, A., & Cox, A. L. (2012, May 5). Personal Task Management: My Tools Fall Apart When I'm Very Busy! ResearchGate. Retrieved October 20, 2023, from https://www.researchgate.net/publication/254005370_Personal_task_management_My_tools_fall_apart_when_I'm_very_busy
+    <br/>
+    Browne, R., Raeside, L., & Gray, G. (2018, October). Gamification in Education: Productivity and Motivation Through Gamified Time Management Software. ProQuest. Retrieved October 20, 2023, from https://www.proquest.com/docview/2131787593?pq-origsite=gscholar&fromopenview=true  
+                            </p>
 
-                        <h6>Expert Consult</h6>
-                        <p className="references mb-5">
-                            <ul>
-                                <li>Dan Saffer</li>
-                                <li>Elaine Fath</li>
-                                <li>Ted Talk- Tim Urban: [Inside the mind of a master procrastinator](https://www.youtube.com/watch?v=arj7oStGLkU)
-                                </li>
-                            </ul>
-                        </p>
+                            <h6>Expert Consult</h6>
+                            <p className="references mb-5">
+                                <ul>
+                                    <li>Dan Saffer</li>
+                                    <li>Elaine Fath</li>
+                                    <li>Ted Talk- Tim Urban: [Inside the mind of a master procrastinator](https://www.youtube.com/watch?v=arj7oStGLkU)
+                                    </li>
+                                </ul>
+                            </p>
 
-                        <h6>Figma</h6>
-                        <p className="references mb-5">
-                        Figma Iconography Library (https://www.figma.com/file/Qk6czD5U8NHotDzpXFvZAz/Icons-(Community)?type=design&node-id=0%3A1&mode=design&t=8gPpIoAAc1UAKfrt-1)
-                        </p>
+                            <h6>Figma</h6>
+                            <p className="references mb-5">
+                            Figma Iconography Library (https://www.figma.com/file/Qk6czD5U8NHotDzpXFvZAz/Icons-(Community)?type=design&node-id=0%3A1&mode=design&t=8gPpIoAAc1UAKfrt-1)
+                            </p>
 
-                        <h6>Icons</h6>
-                        <p className="references mb-5">
-                        boiling pot by cre.ativo mustard from <a href="https://thenounproject.com/browse/icons/term/boiling-pot/" target="_blank" title="boiling pot Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-Yarn Ball by Eucalyp from <a href="https://thenounproject.com/browse/icons/term/yarn-ball/" target="_blank" title="Yarn Ball Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-cat costume avatar by Konkapp from <a href="https://thenounproject.com/browse/icons/term/cat-costume-avatar/" target="_blank" title="cat costume avatar Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-dialogue by Tatyana Kyul from <a href="https://thenounproject.com/browse/icons/term/dialogue/" target="_blank" title="dialogue Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-pomodoro time by Andi Nur Abdillah from <a href="https://thenounproject.com/browse/icons/term/pomodoro-time/" target="_blank" title="pomodoro time Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-achievement by joe pictos from <a href="https://thenounproject.com/browse/icons/term/achievement/" target="_blank" title="achievement Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-Gift by Aulia Nurfadilah from <a href="https://thenounproject.com/browse/icons/term/gift/" target="_blank" title="Gift Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-think by iconixar from <a href="https://thenounproject.com/browse/icons/term/think/" target="_blank" title="think Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-Planning by Maria Kislitsina from <a href="https://thenounproject.com/browse/icons/term/planning/" target="_blank" title="Planning Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-positive by nareerat jaikaew from <a href="https://thenounproject.com/browse/icons/term/positive/" target="_blank" title="positive Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-database by Nizar AnT from <a href="https://thenounproject.com/browse/icons/term/database/" target="_blank" title="database Icons">Noun Project</a> (CC BY 3.0)
-<br/>
-bonding by WBcreative from <a href="https://thenounproject.com/browse/icons/term/bonding/" target="_blank" title="bonding Icons">Noun Project</a> (CC BY 3.0)
-                        </p>
+                            <h6>Icons</h6>
+                            <p className="references mb-5">
+                            boiling pot by cre.ativo mustard from <a href="https://thenounproject.com/browse/icons/term/boiling-pot/" target="_blank" title="boiling pot Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    Yarn Ball by Eucalyp from <a href="https://thenounproject.com/browse/icons/term/yarn-ball/" target="_blank" title="Yarn Ball Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    cat costume avatar by Konkapp from <a href="https://thenounproject.com/browse/icons/term/cat-costume-avatar/" target="_blank" title="cat costume avatar Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    dialogue by Tatyana Kyul from <a href="https://thenounproject.com/browse/icons/term/dialogue/" target="_blank" title="dialogue Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    pomodoro time by Andi Nur Abdillah from <a href="https://thenounproject.com/browse/icons/term/pomodoro-time/" target="_blank" title="pomodoro time Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    achievement by joe pictos from <a href="https://thenounproject.com/browse/icons/term/achievement/" target="_blank" title="achievement Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    Gift by Aulia Nurfadilah from <a href="https://thenounproject.com/browse/icons/term/gift/" target="_blank" title="Gift Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    think by iconixar from <a href="https://thenounproject.com/browse/icons/term/think/" target="_blank" title="think Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    Planning by Maria Kislitsina from <a href="https://thenounproject.com/browse/icons/term/planning/" target="_blank" title="Planning Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    positive by nareerat jaikaew from <a href="https://thenounproject.com/browse/icons/term/positive/" target="_blank" title="positive Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    database by Nizar AnT from <a href="https://thenounproject.com/browse/icons/term/database/" target="_blank" title="database Icons">Noun Project</a> (CC BY 3.0)
+    <br/>
+    bonding by WBcreative from <a href="https://thenounproject.com/browse/icons/term/bonding/" target="_blank" title="bonding Icons">Noun Project</a> (CC BY 3.0)
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

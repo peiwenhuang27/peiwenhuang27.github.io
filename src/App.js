@@ -6,15 +6,16 @@ import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
 // MUST-HAVE
 // active key not correct with navbar <-> category tabs
-// subsection for all project role section
+// subsection for Sous Chef / Petit Mood / Vision / TourBot
 
 function App() {
   // The back-to-top button is hidden at the beginning
   const [showButton, setShowButton] = useState(false);
-  const [pageHeight, setPageHeight] = useState();
+  const [pageHeight, setPageHeight] = useState(window.innerHeight);
   const [view, setView] = useState(false);
 
   useEffect(() => {
+    console.log("pageHeight in App, ", pageHeight);
     // set height for intersection observer
     setPageHeight(window.innerHeight);
     window.addEventListener("resize", () => {

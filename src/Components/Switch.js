@@ -8,6 +8,7 @@ import Topic from './Topic';
 
 
 function Switch ({ homeData, workData, lifeData, view, setView, pageHeight }) { 
+
   return (
     <AnimatePresence mode="wait">
       <Routes >

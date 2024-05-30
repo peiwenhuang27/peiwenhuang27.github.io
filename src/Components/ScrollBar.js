@@ -59,11 +59,6 @@ function ProgressBar ({ color, items, activeItem, handleClick }) {
             <ul className='navigation-list'>
                 {renderItems()}
             </ul>
-            {/* <div className="progress-bar"
-            style={{
-                background: `linear-gradient(to right, ${color} ${scroll}%, transparent 0)`
-            }}>
-            </div> */}
         </div>
     );
 }

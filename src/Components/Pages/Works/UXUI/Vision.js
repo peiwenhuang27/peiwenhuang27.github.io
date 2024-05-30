@@ -18,7 +18,7 @@ function Vision () {
 
     return (
         <div id="Ford-Vision">
-            <ProgressBar color="#2A6BAC" />
+            {/* <ProgressBar color="#2A6BAC" /> */}
             <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
             <div className="container">
                 <div className="topic-container py-5">

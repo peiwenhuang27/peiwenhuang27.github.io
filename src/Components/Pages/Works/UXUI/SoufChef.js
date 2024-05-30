@@ -23,7 +23,7 @@ function SousChef () {
 
     return (
         <div id="Sous-Chef">
-            <ProgressBar color="#c8333b" />
+            {/* <ProgressBar color="#c8333b" /> */}
             <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
             <div className="container">
                 <div className="topic-container py-5">

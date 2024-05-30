@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { createRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ReactLoading from "react-loading";
 // Import Swiper styles
@@ -11,9 +11,10 @@ import Iframe from 'react-iframe';
 import ProjectRec from "../../../ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 import ProgressBar from "../../../ScrollBar";
+import { Subsection } from "../../../Topic";
 
-
-function ToDone () {
+function ToDone ({ pageHeight, handleSubsectionClick }) {
+    const [activeItem, setActiveItem] = useState(0);
     const [isLoading, setIsLoading] = useState(false);
 
     const img_src = 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg';
@@ -30,108 +31,113 @@ function ToDone () {
         allowfullscreen />
     );
 
-
-    return (
-        <div id="todone">
-            <ProgressBar color="#8F7000" />
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
+    const items = [
+        {
+            name: "Intro",
+            content:
             <div className="container">
-                <div className="topic-container py-5">
-                    <ScrollReveal>
-                        <div className="topic-title-container mb-5">
-                                <h3 className="mb-1 color-dark text-bold date">May 2022</h3>
-                                <h2 className="mb-1">2Done: Gamified To-Do Planner</h2>
-                                <h3 className="theme mb-5">UX Design, UI Design, Procrastination, Anxiety</h3>
-                                <p className="mb-5">
-                                2Done is a gamified to-do planner to help procrastinators get work done.
-                                With an adventure-themed design of task completion interaction scheme 
-                                and a simplified project management system laid on adventure maps, 2Done aims to encourage people
-                                to enjoy the fun of being productive and alleviate anxiety induced by procrastination.
-                            </p>
-                        </div>
-                    </ScrollReveal>
+            <div className="topic-container py-5">
+                <ScrollReveal>
+                    <div className="topic-title-container mb-5">
+                            <h3 className="mb-1 color-dark text-bold date">May 2022</h3>
+                            <h2 className="mb-1">2Done: Gamified To-Do Planner</h2>
+                            <h3 className="theme mb-5">UX Design, UI Design, Procrastination, Anxiety</h3>
+                            <p className="mb-5">
+                            2Done is a gamified to-do planner to help procrastinators get work done.
+                            With an adventure-themed design of task completion interaction scheme 
+                            and a simplified project management system laid on adventure maps, 2Done aims to encourage people
+                            to enjoy the fun of being productive and alleviate anxiety induced by procrastination.
+                        </p>
+                    </div>
+                </ScrollReveal>
 
-                    <ScrollReveal>
-                        <div className="section-wrapper row mb-5">
-                            <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
-                                <h6 className="theme mb-3">Duration </h6>
-                                <ul>
-                                    <li>3 weeks</li>
-                                </ul>
-                            </div>
-                            <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
-                                <h6 className="theme mb-3">Role</h6>
-                                <ul>
-                                    <li>Lead Designer</li>
-                                </ul>
-                            </div>
-                            <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
-                                <h6 className="theme mb-3">Team</h6>
-                                <ul>
-                                    <li>4 people</li>
-                                </ul>
-                            </div>
-                            <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
-                                <h6 className="theme mb-3">Tool</h6>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>Miro</li>
-                                </ul>
-                            </div>
-                            <div className="topic-desc-container col mb-5">
-                                <h6 className="theme mb-3">Responsibilities</h6>
-                                <ul className="row">
-                                    <li className="col-md-6">Conducting 2 user interviews</li>
-                                    <li className="col-md-6">Leading group discussion</li>
-                                    <li className="col-md-6">Feature Ideation</li>
-                                    <li className="col-md-6">Implementing the low-fi & hi-fi prototype</li>
-                                </ul>
-                            </div>
+                <ScrollReveal>
+                    <div className="section-wrapper row mb-5">
+                        <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
+                            <h6 className="theme mb-3">Duration </h6>
+                            <ul>
+                                <li>3 weeks</li>
+                            </ul>
                         </div>
-                    </ScrollReveal>
-                </div>
-            </div>
-
-            <ScrollReveal>
-                <div className="theme-bg">
-                    <div className="container">
-                        <div className="topic-container section-wrapper">
-                            <h3 className="mb-5">💻 Demo</h3>
-                            <div className="d-flex justify-content-center">
-                                {isLoading ? (
-                                    <ReactLoading type="bubbles" color="#e0e0e0"
-                                    height={100} width={50} />
-                                ) : figma}
-                            </div>
+                        <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
+                            <h6 className="theme mb-3">Role</h6>
+                            <ul>
+                                <li>Lead Designer</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
+                            <h6 className="theme mb-3">Team</h6>
+                            <ul>
+                                <li>4 people</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
+                            <h6 className="theme mb-3">Tool</h6>
+                            <ul>
+                                <li>Figma</li>
+                                <li>Miro</li>
+                            </ul>
+                        </div>
+                        <div className="topic-desc-container col mb-5">
+                            <h6 className="theme mb-3">Responsibilities</h6>
+                            <ul className="row">
+                                <li className="col-md-6">Conducting 2 user interviews</li>
+                                <li className="col-md-6">Leading group discussion</li>
+                                <li className="col-md-6">Feature Ideation</li>
+                                <li className="col-md-6">Implementing the low-fi & hi-fi prototype</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-            </ScrollReveal>
+                </ScrollReveal>
+            </div>
+            </div>
+        },
+        {
+            name: "Demo",
+            content:
+            <div>
 
             <ScrollReveal>  
                 <div id="todone-prev-box-1" className=" m-0 p-0">
-                    <div className="p-5 d-flex flex-column align-items-center">
-                        <img className="w-sizer" src="/works/UXUI/2done/proto-1.png" alt="prototype" />
+                    <div className="container">
+                        <div className="topic-container subsection-wrapper">
+                            <h3 className="mb-0">💻 Demo</h3>
+                            <div className="d-flex flex-column align-items-center">
+                                <img className="w-sizer-lg" src="/works/UXUI/2done/proto-1.png" alt="prototype" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </ScrollReveal>
 
             <ScrollReveal>
                 <div id="todone-prev-box-2" className=" m-0 p-0">
-                    <div className="p-5 d-flex flex-column align-items-center">
-                        <img className="w-sizer" src="/works/UXUI/2done/proto-2.png" alt="prototype" />
+                    <div className="container">
+                        <div className="topic-container subsection-wrapper">
+                            <div className="d-flex flex-column align-items-center">
+                                <img className="w-sizer-lg" src="/works/UXUI/2done/proto-2.png" alt="prototype" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </ScrollReveal>
 
             <ScrollReveal>
                 <div id="todone-prev-box-3" className=" m-0 p-0">
-                    <div className="p-5 d-flex flex-column align-items-center">
-                        <img className="w-sizer" src="/works/UXUI/2done/proto-3.png" alt="prototype" />
+                    <div className="container">
+                        <div className="topic-container subsection-wrapper">
+                            <div className="d-flex flex-column align-items-center">
+                                <img className="w-sizer-lg" src="/works/UXUI/2done/proto-3.png" alt="prototype" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </ScrollReveal>
-            
+            </div>
+        },
+        {
+            name: "Background",
+            content:
             <div className="container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
@@ -157,7 +163,12 @@ function ToDone () {
                         </p>
                     </ScrollReveal>
                 </div>
-
+            </div>
+        },
+        {
+            name: "Objective",
+            content:
+            <div className="container">
                 <ScrollReveal>
                     <div className="topic-container subsection-wrapper">
                         <h3 className="mb-5">🎯 Objective</h3>
@@ -184,233 +195,246 @@ function ToDone () {
                         </div>
                     </div>
                 </ScrollReveal>
-
-                <div className="topic-container">
-                    <ScrollReveal>
-                        <div className="subsection-wrapper">
-                            <h3 className="col-md-6 mb-5">🪄 Design Process</h3>
-                            <h6 className="mb-3">Empathize- User interview</h6>
-                            <p>
-                            The interview questions centered around <b className="theme">experience of procrastination</b>, <b className="theme">anxiety management</b>, <b className="theme">how they eventually completed tasks in time</b>.
-                            </p>
-                            <div className="row my-5 align-items-center">
-                                <div className="col-lg-6 mb-5 d-flex flex-column justify-content-center align-items-center">
-                                    <h3 className="theme p-bold">11</h3>
-                                    <p className="w-sizer text-center">students who suffered from procrastination in face of overwhelming workload</p>
-                                </div>
-                                <div className="col-lg-6 mb-5 d-flex flex-column align-items-center">
-                                    <img className="w-100" src="/works/UXUI/2done/1.png" alt="interview questions" />
-                                </div>
-                            </div>
-                        </div>
-                    </ScrollReveal>
-
-                    <ScrollReveal>
-                        <div className="subsection-wrapper">
-                            <h6 className="mb-3">Define</h6>
-                            <p className="">In the interview, most respondents tended to first evaluate the time needed for tasks upon receiving them. Yet they proceeded to procrastinate, because <b className="theme">they thought there was enough time for them to relax</b> before starting working.
-    However, 3 participants mentioned experiencing significant stress before deadlines either because
-                            </p>
-                            <div className="row my-5">
-                                <div className="col-md-6 d-flex flex-column align-items-center">
-                                    <div className="w-sizer mb-3 d-flex flex-column align-items-center">
-                                        <img className="w-75" src="/works/UXUI/2done/girl.svg" alt="girl icon" />
-                                    </div>
-                                    <h5 className="theme w-sizer mb-3 text-center">Previous tasks took longer than expected and thus delayed later tasks</h5>
-                                </div>
-                                <div className="col-md-6 d-flex flex-column align-items-center">
-                                    <div className="w-sizer mb-3 d-flex flex-column align-items-center">
-                                        <img className="w-75" src="/works/UXUI/2done/boy.svg" alt="boy icon" />
-                                    </div>
-                                    <h5 className="theme w-sizer mb-3 text-center">They did not start early enough to complete the task</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </ScrollReveal>
-                    
-                    <ScrollReveal>
-                        <div className="subsection-wrapper">
-                            <h6 className="mb-3">User Journey Maps</h6>
-                            <div className="m-0 d-flex flex-column align-items-center">
-                                <Swiper
-                                    cssMode={true}
-                                    navigation={true}
-                                    pagination={true}
-                                    mousewheel={true}
-                                    keyboard={true}
-                                    modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                                    id="user-journey-map"
-                                >
-                                    <SwiperSlide>
-                                        <div className="d-flex justify-content-center align-items-center">
-                                            <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-1.jpg" alt="user journey map"/>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="d-flex justify-content-center align-items-center">
-                                            <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-2.jpg" alt="user journey map"/>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="d-flex justify-content-center align-items-center">
-                                            <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-3.jpg" alt="user journey map"/>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="d-flex justify-content-center align-items-center">
-                                            <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-4.jpg" alt="user journey map"/>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="d-flex justify-content-center align-items-center">
-                                            <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-5.jpg" alt="user journey map"/>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="d-flex justify-content-center align-items-center">
-                                            <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-6.jpg" alt="user journey map"/>
-                                        </div>
-                                    </SwiperSlide>
-                                </Swiper>
-                            </div>
-                        </div>
-                    </ScrollReveal>
-
+            </div>
+        },
+        {
+            name: "Design Process",
+            content:
+            <div className="container">
+            <div className="topic-container">
+                <ScrollReveal>
                     <div className="subsection-wrapper">
-                        <ScrollReveal>
-                            <h6 className="mb-3">Pain Points</h6>
-                            
-                            <p>The problems discussed in interviews were converged into two pain points:</p>
-
-                            <ul id="problem-list" className="row px-3 my-5 d-flex align-items-center justify-content-between">
-                                <li className="col-md-5 mb-5 d-flex align-items-center justify-content-center">Overestimation of One’s Efficiency</li>
-                                <li className="col-md-5 mb-5 d-flex align-items-center justify-content-center">Lack of Awareness of Dependencies of Tasks</li>
-                            </ul>
-                        </ScrollReveal>
-
-                        <ScrollReveal>
-                            <h4 className="theme">
-                            How might we develop a mobile application to help people who suffer from procrastination when 
-                                under significant workload learn to organize and complete tasks efficiently to reduce the anxiety induced by unfinished work?
-                            </h4>
-                        </ScrollReveal>
+                        <h3 className="col-md-6 mb-5">🪄 Design Process</h3>
+                        <h6 className="mb-3">Empathize- User interview</h6>
+                        <p>
+                        The interview questions centered around <b className="theme">experience of procrastination</b>, <b className="theme">anxiety management</b>, <b className="theme">how they eventually completed tasks in time</b>.
+                        </p>
+                        <div className="row my-5 align-items-center">
+                            <div className="col-lg-6 mb-5 d-flex flex-column justify-content-center align-items-center">
+                                <h3 className="theme p-bold">11</h3>
+                                <p className="w-sizer text-center">students who suffered from procrastination in face of overwhelming workload</p>
+                            </div>
+                            <div className="col-lg-6 mb-5 d-flex flex-column align-items-center">
+                                <img className="w-100" src="/works/UXUI/2done/1.png" alt="interview questions" />
+                            </div>
+                        </div>
                     </div>
+                </ScrollReveal>
 
+                <ScrollReveal>
                     <div className="subsection-wrapper">
-                        <ScrollReveal>
-                            <h3 className="my-5">🧠 Ideation</h3>
-
-                            <div className="row statistics-container my-5">
-                                <div className="col-md-4 d-flex flex-column align-items-center">
-                                    <h3 className="theme p-bold">Crazy 8</h3>
-                                    <p>Technique used</p>
+                        <h6 className="mb-3">Define</h6>
+                        <p className="">In the interview, most respondents tended to first evaluate the time needed for tasks upon receiving them. Yet they proceeded to procrastinate, because <b className="theme">they thought there was enough time for them to relax</b> before starting working.
+However, 3 participants mentioned experiencing significant stress before deadlines either because
+                        </p>
+                        <div className="row my-5">
+                            <div className="col-md-6 d-flex flex-column align-items-center">
+                                <div className="w-sizer mb-3 d-flex flex-column align-items-center">
+                                    <img className="w-75" src="/works/UXUI/2done/girl.svg" alt="girl icon" />
                                 </div>
-                                <div className="col-md-4 d-flex flex-column align-items-center">
-                                    <h3 className="theme p-bold">32</h3>
-                                    <p>Ideas brainstormed</p>
-                                </div>
-                                <div className="col-md-4 d-flex flex-column align-items-center">
-                                    <h3 className="theme p-bold">4</h3>
-                                    <p>Storyboards illustrated</p>
-                                </div>
+                                <h5 className="theme w-sizer mb-3 text-center">Previous tasks took longer than expected and thus delayed later tasks</h5>
                             </div>
-                        </ScrollReveal>
-
-                        <ScrollReveal>
-                            <div className="my-3 d-flex flex-column align-items-center">
-                                <img className="w-sizer-75" src="/works/UXUI/2done/3.png" alt="crazy-8 storyboards" />
-                                <p className="table-caption mt-3">The 4 feature storyboards</p>
+                            <div className="col-md-6 d-flex flex-column align-items-center">
+                                <div className="w-sizer mb-3 d-flex flex-column align-items-center">
+                                    <img className="w-75" src="/works/UXUI/2done/boy.svg" alt="boy icon" />
+                                </div>
+                                <h5 className="theme w-sizer mb-3 text-center">They did not start early enough to complete the task</h5>
                             </div>
-                        </ScrollReveal>
+                        </div>
                     </div>
-
+                </ScrollReveal>
+                
+                <ScrollReveal>
                     <div className="subsection-wrapper">
-                        <ul className="my-5">
-                            <ScrollReveal>
-                                <li className="subsection-wrapper">
-                                    <h6 className="theme mb-3">Gamified to-do list</h6>
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <p><b>Tower of Today’s Task</b><br/>
-                                            User conquers stories in the tower by completing tasks every day</p>
-                                        </div>
-                                        <div className="col-md-6">
-                                            <p><b>Project Islands in Treasure Map</b><br/>
-                                            Presents the adventure route of tasks computed by PERT for user to accomplish tasks in such order</p>
-                                        </div>
+                        <h6 className="mb-3">User Journey Maps</h6>
+                        <div className="m-0 d-flex flex-column align-items-center">
+                            <Swiper
+                                cssMode={true}
+                                navigation={true}
+                                pagination={true}
+                                mousewheel={true}
+                                keyboard={true}
+                                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                                id="user-journey-map"
+                            >
+                                <SwiperSlide>
+                                    <div className="d-flex justify-content-center align-items-center">
+                                        <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-1.jpg" alt="user journey map"/>
                                     </div>
-                                </li>
-                            </ScrollReveal>
- 
-                            <ScrollReveal>
-                                <li className="subsection-wrapper">
-                                    <h6 className="theme mb-3">Incorporation of PERT</h6>
-                                    <p>
-                                    PERT (Program Evaluation and Review Technique) is a project management technique that can be used to address the <b>dependencies of tasks</b> by viewing 
-                                        a series of tasks as a “project” consisting of multiple “activities”. PERT identifies a <b>critical path</b> of activities that could not be delayed and <b>slack time</b> each activity outside of the critical path can afford without delaying the project.
-                                    </p>
-                                </li>
-                            </ScrollReveal>
- 
-                            <ScrollReveal>
-                                <li className="subsection-wrapper">
-                                    <h6 className="theme mb-3">Completion History</h6>
-                                    <p>
-                                    Visualization of user's task accomplishment to reflect on their journey and better understand their work pattern.
-                                    </p>
-                                </li>
-                            </ScrollReveal>
- 
-                            <ScrollReveal>
-                                <li className="subsection-wrapper">
-                                    <h6 className="theme mb-3">Popup Reminder</h6>
-                                    <p>
-                                    Notification appears when a yesterday’s task remains unfinished after midnight 
-                                    to let the user decide whether to add it to today’s tasks or postpone it to another day.
-                                    </p>
-                                </li>
-                            </ScrollReveal>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="d-flex justify-content-center align-items-center">
+                                        <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-2.jpg" alt="user journey map"/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="d-flex justify-content-center align-items-center">
+                                        <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-3.jpg" alt="user journey map"/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="d-flex justify-content-center align-items-center">
+                                        <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-4.jpg" alt="user journey map"/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="d-flex justify-content-center align-items-center">
+                                        <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-5.jpg" alt="user journey map"/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="d-flex justify-content-center align-items-center">
+                                        <img className="w-100 journey-map-img" src="/works/UXUI/2done/2-6.jpg" alt="user journey map"/>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+                    </div>
+                </ScrollReveal>
+
+                <div className="subsection-wrapper">
+                    <ScrollReveal>
+                        <h6 className="mb-3">Pain Points</h6>
+                        
+                        <p>The problems discussed in interviews were converged into two pain points:</p>
+
+                        <ul id="problem-list" className="row px-3 my-5 d-flex align-items-center justify-content-between">
+                            <li className="col-md-5 mb-5 d-flex align-items-center justify-content-center">Overestimation of One’s Efficiency</li>
+                            <li className="col-md-5 mb-5 d-flex align-items-center justify-content-center">Lack of Awareness of Dependencies of Tasks</li>
                         </ul>
-                    </div>
+                    </ScrollReveal>
 
                     <ScrollReveal>
-                        <div className="my-5">
-                            <h4>
-                                We aim to build a <span className="theme">gamified to-do list</span> that encourages users to 
-                                    complete tasks with a fun user interface consisting of <span className="theme">Tower of Today’s Tasks</span> and <span className="theme">Project Treasure Map</span>, 
-                                    and uses <span className="theme">PERT</span> to assist users in controlling the amount of procrastination time.
-                            </h4>
+                        <h4 className="theme">
+                        How might we develop a mobile application to help people who suffer from procrastination when 
+                            under significant workload learn to organize and complete tasks efficiently to reduce the anxiety induced by unfinished work?
+                        </h4>
+                    </ScrollReveal>
+                </div>
+
+                <div className="subsection-wrapper">
+                    <ScrollReveal>
+                        <h3 className="my-5">Ideation</h3>
+
+                        <div className="row statistics-container my-5">
+                            <div className="col-md-4 d-flex flex-column align-items-center">
+                                <h3 className="theme p-bold">Crazy 8</h3>
+                                <p>Technique used</p>
+                            </div>
+                            <div className="col-md-4 d-flex flex-column align-items-center">
+                                <h3 className="theme p-bold">32</h3>
+                                <p>Ideas brainstormed</p>
+                            </div>
+                            <div className="col-md-4 d-flex flex-column align-items-center">
+                                <h3 className="theme p-bold">4</h3>
+                                <p>Storyboards illustrated</p>
+                            </div>
                         </div>
                     </ScrollReveal>
 
-                    <div className="subsection-wrapper">
+                    <ScrollReveal>
+                        <div className="my-3 d-flex flex-column align-items-center">
+                            <img className="w-sizer-75" src="/works/UXUI/2done/3.png" alt="crazy-8 storyboards" />
+                            <p className="table-caption mt-3">The 4 feature storyboards</p>
+                        </div>
+                    </ScrollReveal>
+                </div>
+
+                <div className="subsection-wrapper">
+                    <ul className="my-5">
                         <ScrollReveal>
-                            <h3 className="col-md-6 my-5">🛠️ Prototyping</h3>
-                            <div className="w-100 mb-5 d-flex flex-column align-items-center">
-                                <img className="w-sizer-75" src="/works/UXUI/2done/IA.png" alt="information structure" />
-                                <p className="table-caption mt-3">Information Structure</p>
-                            </div>
-                        </ScrollReveal>
-                    
-                        <ScrollReveal>
-                            <div className="row subsection-wrapper align-items-start">
-                                <div className="col-md-6 mb-5 d-flex flex-column">
-                                        <h6 className="mb-3">Low-Fi Prototype</h6>
-                                        <p>A low-fidelity prototype was developed with Figma, which would undergo a usability test in the next process.</p>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="w-100 d-flex flex-column align-items-center">
-                                        <img className="w-100" src="/works/UXUI/2done/6.png" alt="low-fi prototype figma screenshot" />
-                                        <p className="table-caption mt-3">Wireflow of the low-fi prototype</p>   
+                            <li className="subsection-wrapper">
+                                <h6 className="theme mb-3">Gamified to-do list</h6>
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <p><b>Tower of Today’s Task</b><br/>
+                                        User conquers stories in the tower by completing tasks every day</p>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <p><b>Project Islands in Treasure Map</b><br/>
+                                        Presents the adventure route of tasks computed by PERT for user to accomplish tasks in such order</p>
                                     </div>
                                 </div>
-                            </div>
+                            </li>
                         </ScrollReveal>
-                    </div>
 
+                        <ScrollReveal>
+                            <li className="subsection-wrapper">
+                                <h6 className="theme mb-3">Incorporation of PERT</h6>
+                                <p>
+                                PERT (Program Evaluation and Review Technique) is a project management technique that can be used to address the <b>dependencies of tasks</b> by viewing 
+                                    a series of tasks as a “project” consisting of multiple “activities”. PERT identifies a <b>critical path</b> of activities that could not be delayed and <b>slack time</b> each activity outside of the critical path can afford without delaying the project.
+                                </p>
+                            </li>
+                        </ScrollReveal>
+
+                        <ScrollReveal>
+                            <li className="subsection-wrapper">
+                                <h6 className="theme mb-3">Completion History</h6>
+                                <p>
+                                Visualization of user's task accomplishment to reflect on their journey and better understand their work pattern.
+                                </p>
+                            </li>
+                        </ScrollReveal>
+
+                        <ScrollReveal>
+                            <li className="subsection-wrapper">
+                                <h6 className="theme mb-3">Popup Reminder</h6>
+                                <p>
+                                Notification appears when a yesterday’s task remains unfinished after midnight 
+                                to let the user decide whether to add it to today’s tasks or postpone it to another day.
+                                </p>
+                            </li>
+                        </ScrollReveal>
+                    </ul>
+                </div>
+
+                <ScrollReveal>
+                    <div className="my-5">
+                        <h4>
+                            We aim to build a <span className="theme">gamified to-do list</span> that encourages users to 
+                                complete tasks with a fun user interface consisting of <span className="theme">Tower of Today’s Tasks</span> and <span className="theme">Project Treasure Map</span>, 
+                                and uses <span className="theme">PERT</span> to assist users in controlling the amount of procrastination time.
+                        </h4>
+                    </div>
+                </ScrollReveal>
+
+                <div className="subsection-wrapper">
+                    <ScrollReveal>
+                        <h3 className="col-md-6 my-5">Prototyping</h3>
+                        <div className="w-100 mb-5 d-flex flex-column align-items-center">
+                            <img className="w-sizer-75" src="/works/UXUI/2done/IA.png" alt="information structure" />
+                            <p className="table-caption mt-3">Information Structure</p>
+                        </div>
+                    </ScrollReveal>
+                
+                    <ScrollReveal>
+                        <div className="row subsection-wrapper align-items-start">
+                            <div className="col-md-6 mb-5 d-flex flex-column">
+                                    <h6 className="mb-3">Low-Fi Prototype</h6>
+                                    <p>A low-fidelity prototype was developed with Figma, which would undergo a usability test in the next process.</p>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="w-100 d-flex flex-column align-items-center">
+                                    <img className="w-100" src="/works/UXUI/2done/6.png" alt="low-fi prototype figma screenshot" />
+                                    <p className="table-caption mt-3">Wireflow of the low-fi prototype</p>   
+                                </div>
+                            </div>
+                        </div>
+                    </ScrollReveal>
+                </div>
+            </div>
+            </div>
+        },
+        {
+            name: "Iterations",
+            content:
+            <div>
+            <div className="container">
+                <div className="topic-container">
                     <div className="subsection-wrapper">
                         <ScrollReveal>
-                            <h3 className="my-5">🧪 Usability Evaluation</h3>
+                            <h3 className="my-5">🧪 Iterations</h3>
                             <div className="row mb-5">
                                 <div className="col-md-6 mb-3">
                                     <h6>Usability Test</h6>
@@ -597,7 +621,11 @@ function ToDone () {
                     </div>
                 </div>
             </ScrollReveal>
-            
+            </div>
+        },
+        {
+            name: "Challenges",
+            content:
             <div className="container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
@@ -629,7 +657,12 @@ function ToDone () {
                         </div>
                     </ScrollReveal>
                 </div>
-
+            </div>
+        },
+        {
+            name: "Takeaways",
+            content:
+            <div className="container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
                         <h3 className="mb-5">💭 Takeaways</h3>
@@ -651,24 +684,48 @@ function ToDone () {
                     </ScrollReveal>
                 </div>
             </div>
+        },
+    ];
+    items.map((item, key) => {
+        item.id = key;
+        item.ref = createRef(null);
+    });
 
-            <ScrollReveal>
-                <ProjectRec projects={projects} moreLink={"/Works/design"} />
-            </ScrollReveal>
+    return (
+        <div id="todone">
+            <ProgressBar color="#8F7000" items={items} activeItem={activeItem} handleClick={handleSubsectionClick} />
+            <div className="topic-main-wrapper">
+                <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
+                {items.map((item) => {
+                    return (
+                        <Subsection
+                        id={item.id}
+                        subsectionRef={item.ref}
+                        activeItem={activeItem}
+                        setActiveItem={setActiveItem}
+                        pageHeight={pageHeight}
+                        content={item.content} />
+                    );
+                })}
 
-            <div className="bg-1">
-                <div className="container topic-container subsection-wrapper">
-                    <h3 className="my-5">📑 References</h3>
-                        <p className="references mb-3">
-                        [1] Hooda, M., & Saini, A. (2017). Academic anxiety: An overview. Educational Quest, 8(3), 807-810.
-                        </p>
-                        <h6>Icons</h6>
-                        <p className="references mb-3">
-                        girl by ester barbato from <a href="https://thenounproject.com/browse/icons/term/girl/" target="_blank" rel="noreferrer noopenner" title="girl Icons">Noun Project</a>
-                        <br/>
-                        boy by ester barbato from <a href="https://thenounproject.com/browse/icons/term/boy/" target="_blank" rel="noreferrer noopenner" title="boy Icons">Noun Project</a>
+                <ScrollReveal>
+                    <ProjectRec projects={projects} moreLink={"/Works/design"} />
+                </ScrollReveal>
 
-                        </p>
+                <div className="bg-1">
+                    <div className="container topic-container subsection-wrapper">
+                        <h3 className="my-5">📑 References</h3>
+                            <p className="references mb-3">
+                            [1] Hooda, M., & Saini, A. (2017). Academic anxiety: An overview. Educational Quest, 8(3), 807-810.
+                            </p>
+                            <h6>Icons</h6>
+                            <p className="references mb-3">
+                            girl by ester barbato from <a href="https://thenounproject.com/browse/icons/term/girl/" target="_blank" rel="noreferrer noopenner" title="girl Icons">Noun Project</a>
+                            <br/>
+                            boy by ester barbato from <a href="https://thenounproject.com/browse/icons/term/boy/" target="_blank" rel="noreferrer noopenner" title="boy Icons">Noun Project</a>
+
+                            </p>
+                    </div>
                 </div>
             </div>
         </div>
