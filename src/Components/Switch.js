@@ -7,7 +7,7 @@ import Category from './Category';
 import Topic from './Topic';
 
 
-function Switch ({ homeData, workData, lifeData, view, setView }) { 
+function Switch ({ homeData, workData, lifeData, view, setView, pageHeight }) { 
   return (
     <AnimatePresence mode="wait">
       <Routes >
@@ -15,7 +15,7 @@ function Switch ({ homeData, workData, lifeData, view, setView }) {
         <Route path="/About" element={<About />} />
         <Route path="/Works">
           {workData.map((item) =>
-            <Route path={`${item.suffix}/:workId`} element={<Topic name={item.name} />} />
+            <Route path={`${item.suffix}/:workId`} element={<Topic name={item.name} pageHeight={pageHeight} />} />
           )}
 
           <Route path=":categoryId" element={<Category prefix="/Works" workData={workData} lifeData={lifeData} />} />

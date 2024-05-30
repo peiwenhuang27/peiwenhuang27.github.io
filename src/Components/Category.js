@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams, Outlet } from "react-router-dom";
-import Transitions from "./Transition";
+import Transitions from "./Helpers/Transition";
 import CategoryNav from "./CategoryNav";
 import TopicCard from "./Pages/Home/TopicCard";
 

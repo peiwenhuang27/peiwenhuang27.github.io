@@ -6,18 +6,23 @@ import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
 // MUST-HAVE
 // active key not correct with navbar <-> category tabs
-// pui engineering
 // subsection for all project role section
-
-// PARKING-LOT
-// ucre
-// capstone
 
 function App() {
   // The back-to-top button is hidden at the beginning
   const [showButton, setShowButton] = useState(false);
+  const [pageHeight, setPageHeight] = useState();
+  const [view, setView] = useState(false);
 
   useEffect(() => {
+    // set height for intersection observer
+    setPageHeight(window.innerHeight);
+    window.addEventListener("resize", () => {
+      setTimeout(() => {
+        setPageHeight(window.innerHeight);
+      }, 300);
+    });
+    // scroll to top button
     window.addEventListener("scroll", () => {
       if (window.scrollY > 300) {
         setShowButton(true);
@@ -27,15 +32,14 @@ function App() {
     });
   }, []);
 
-  // This function will scroll the window to the top 
+  // scroll the window to the top 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // for smoothly scrolling
+      behavior: 'smooth'
     });
   };
 
-  const [view, setView] = useState(false);
   const workData = [
     {'suffix': 'design', 'name': 'Design',
       'headline': 'Life is good; design makes it even better.',
@@ -141,7 +145,7 @@ function App() {
       <Header workData={workData} lifeData={lifeData} view={view} setView={setView} />
       <main>
         <Switch homeData={homeData} workData={workData} lifeData={lifeData}
-        view={view} setView={setView} />
+        view={view} setView={setView} pageHeight={pageHeight} />
         {showButton && <ScrollToTopBtn scrollFunc={scrollToTop} />}
         <Footer />
       </main>

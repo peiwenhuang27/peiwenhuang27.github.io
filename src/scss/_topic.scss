@@ -48,8 +48,38 @@ ul {
     h6 {
         color: $gray-600;
     }
+}
 
-    
+.topic-container-right {
+    padding: 48px 24px;
+}
+
+#topic-navigation {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+ 
+    .navigation-list {
+        width: 100%;
+        padding: 24px 48px 4px 48px;
+        display: flex;
+        justify-content: space-between;
+        color: $gray-500;
+    }
+
+    .navigation-list__item {
+        &:hover {
+            font-weight: 600;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+
+    .navigation-list__item--active {
+        font-weight: 600;
+        transition: 0.3s;
+    }
 }
 
 .topic-card {

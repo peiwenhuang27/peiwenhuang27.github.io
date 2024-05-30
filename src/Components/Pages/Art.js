@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Transitions from "../Transition";
+import Transitions from "../Helpers/Transition";
 import { InstaPost, InstaFeed } from "../Helpers/Insta";
 import Iframe from "react-iframe";
 

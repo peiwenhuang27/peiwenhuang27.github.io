@@ -1,38 +1,18 @@
-import { useState } from "react";
-import ReactLoading from "react-loading";
-import Iframe from 'react-iframe';
+import { createRef, useState } from "react";
 
 import ProjectRec from "../../../ProjectRec";
 import HorizontalScrollCarousel from "../../../HorizontalScrollCarousel";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 import ProgressBar from "../../../ScrollBar";
+import { Subsection } from "../../../Topic";
 
-// TODO
-// sidebar navigation
+function Fluffy ({ pageHeight, handleSubsectionClick }) {
+    const [activeItem, setActiveItem] = useState(0);
 
-
-function Fluffy () {
-    const [isLoading, setIsLoading] = useState(false);
-
-    const img_src = 'https://live.staticflickr.com/65535/53567884525_c62af19309_h.jpg';
-    
-    const hideSpinner = () => {
-        setIsLoading(false);
-    };
-
-    const figma = (
-        <Iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} 
-        width="800" height="450" 
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmowJpjVRC4mzX0TjmkIkf1%2FFluffy-Focus%3Fpage-id%3D612%253A753%26type%3Ddesign%26node-id%3D697-350%26viewport%3D272%252C357%252C0.02%26t%3DHtJWBR8zvCt140jN-1%26scaling%3Dscale-down%26starting-point-node-id%3D697%253A350%26show-proto-sidebar%3D1%26mode%3Ddesign"
-        onLoad={hideSpinner}
-        allowfullscreen />
-    );
-
-
-    return (
-        <div id="Fluffy-Focus">
-            <ProgressBar color="#417807" />
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
+    const items = [
+        {
+            name: "Intro",
+            content: 
             <div className="container">
                 <div className="topic-container py-5">
                     <ScrollReveal>
@@ -91,7 +71,10 @@ function Fluffy () {
                     </ScrollReveal>
                 </div>
             </div>
-
+        }, 
+        {
+            name: "Demo",
+            content:
             <div className="theme-bg container">
                 <div className="topic-container subsection-wrapper">
                     <h3 className="mb-5">💻 Demo</h3>
@@ -178,8 +161,10 @@ function Fluffy () {
                     </ul>
                 </div>
             </div> 
-            
-
+        },
+        {
+            name: "Background",
+            content:
             <div className="container">
                 <div className="topic-container section-wrapper">
                     <ScrollReveal>
@@ -237,7 +222,12 @@ function Fluffy () {
                         </ul>
                     </ScrollReveal>
                 </div>
-
+            </div>
+        },
+        {
+            name: "Objective",
+            content:
+            <div className="container">
                 <div className="topic-container section-wrapper">
                     <ScrollReveal>
                         <h3 className="my-5">🎯 Objective</h3>
@@ -292,9 +282,13 @@ function Fluffy () {
                             </li>
                         </ScrollReveal>
                     </ul>
-                    
                 </div>
-
+            </div>
+        },
+        {
+            name: "Ideation",
+            content:
+            <div className="container">
                 <div className="topic-container section-wrapper">
                     <ScrollReveal>
                         <h3 className="my-5">🧠 Ideation</h3>
@@ -370,10 +364,15 @@ function Fluffy () {
                         </ScrollReveal>
                     </ul>
                 </div>
-
+            </div>
+        },
+        {
+            name: "Iterations",
+            content:
+            <div className="container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
-                        <h3 className="mb-5">🪄 Design Process</h3>
+                        <h3 className="mb-5">🪄 Iterations</h3>
                         <h4 className="my-5 theme">How might we facilitate an attitudinal change in users with work-induced anxiety to adopt a optimistic mindset towards incoming tasks?</h4>
                     </ScrollReveal>
 
@@ -503,78 +502,80 @@ function Fluffy () {
                         </p>
                     </ScrollReveal>
                 </div>
-
+            </div>
+        },
+        {
+            name: "Final",
+            content:
+            <div className="container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
-                        <h3 className="my-5">🌕 Hi-fi Prototype</h3>
-                        <h6 className="mb-3">Iteration</h6>
+                        <h3 className="my-5">🎪 Final Showcase</h3>
                         <p className="my-5">
                         Based on feedback, we enhanced our persuasive approach to <b>deepen user engagement and subtly influence user behavior</b>. <br/><br/>
                         </p>
                     </ScrollReveal>
-                    <ul className="row mb-5">
-                        <li className="col-md-6 mb-5">
-                            <div className=" mb-4">
+                    <ul className="mb-5">
+                        <li className="row mb-5">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2dmZ3J3ZHo3cWZ5MzkyOHI2Y3F1dDBydGYwMDVlNDhnajc2NjJyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XZmPrQa21ClUdRY6Tr/giphy.gif" alt="Customization of Avatar"></img>
                             </div>
-                            <div className="mb-5">
+                            <div className="col-md-6 mb-5">
                                 <h6 className="theme mb-3">#1: Customization of Avatar</h6>
                                 <p>At the beginning of the game, players can pick an animal avatar as their “buddy” which serves as their own real-life reflection as well as an individual that would support and work with you. This setup introduces both a <b>distancing effect and body-doubling techniques</b>, offering social support through the avatar's interactions.</p>
                             </div>
                         </li>
-                        <li className="col-md-6 mb-5">
-                            <div className=" mb-4">
+                        <li className="row mb-5">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHdhYjF2eTIxeXhpZGx4bGo1a2JlczFpMzVrMnhrYTg4bjhtc3R1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xlXDa18T6yEtGA9f0W/giphy.gif" alt="Empowering Self-Affirmation through Avatar Dialogues"></img>
                             </div>
-                            <div className="mb-5">
+                            <div className="col-md-6 mb-5">
                                 <h6 className="theme mb-3">#2: Self-Affirmation Avatar Dialogues</h6>
                                 <p>The avatar delivers self-affirmation dialogues, which occur upon task completion, leveling up, and idling state, to fuel their enthusiasm for work and acknowledge their inherent value. Such mechanism nurtures a positive feedback loop; users are <b>continually empowered, fostering a resilient and confident mindset</b> crucial for success.</p>
                             </div>
                         </li>
-                        <li className="col-md-6 mb-5">
-                            <div className=" mb-4">
+                        <li className="row mb-5">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXNjNWp4ZjJmeGNobnh4aGk2NThoa3VuNDg1cXN3ZmMyY2ZzbWQ5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KU3ec5QdIIZanQJnSp/giphy.gif" alt="Task & Productivity Enhancement"></img>
                             </div>
-                            <div className="mb-5">
+                            <div className="col-md-6 mb-5">
                                 <h6 className="theme mb-3">#3: Task & Productivity Enhancement</h6>
                                 <p>Players can input tasks by specifying start time, duration, task description, and reminders. The “due date” is intentionally removed from task information to mitigate anxiety linked to approaching deadlines.</p>
                             </div>
                         </li>
-                        <li className="col-md-6 mb-5">
-                            <div className=" mb-4">
+                        <li className="row mb-5">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3pxaWl2NnExcmVpNDI3NnJpa3U3ZmxjaDg2cjI2ZG96bTBoYXN5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OCKgvJ5jJZCFybWiv5/giphy.gif" alt="Pomodoro Technique & Immersive Environments"></img>
                             </div>
-                            <div className="mb-5">
+                            <div className="col-md-6 mb-5">
                                 <h6 className="theme mb-3">#4: Pomodoro & Immersive Environments</h6>
                                 <p>The Pomodoro technique, employing a focus timer that alternates short breaks with dedicated work sessions, is incorporated in the focus session to instill efficient task organization as users input task specifics, facilitating an <b>improvement in their proficiency within the Elaboration Likelihood Model (ELM)</b>.</p>
                             </div>
                         </li>
-                        <li className="col-md-6 mb-5">
-                            <div className=" mb-4">
+                        <li className="row mb-5">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajk0YnZtNm03bzQ0ZGlrdHMybzU2bnpyOWc5ZWx4amZ6d3lrYmc0MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cv1s6W7xhMCFYsO6R5/giphy.gif" alt="Rewards & Environment Unlock"></img>
                             </div>
-                            <div className="mb-5">
+                            <div className="col-md-6 mb-5">
                                 <h6 className="theme mb-3">#5: Rewards & Environment Unlock</h6>
                                 <p>Congratulatory self-affirmations and a choice of reward items to embellish their virtual environment follow the focus session. By intermixing gaming elements like rewards and progression, the intervention retains a lighter tone, while the warm color palette and font choice subtly influence users' emotions, enhancing the overall experience.</p>
                             </div>
                         </li>
-                        <li className="col-md-6 mb-5">
-                            <div className=" mb-4">
+                        <li className="row mb-5">
+                            <div className="col-md-6 mb-4">
                                 <img className="w-100" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHJ6Z3phbzFvaWtyenRvMGxyMWE2ODV3N3g2NDE1NHU5cjVvOXoxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oxChvgPxbR0tQ42p3I/giphy.gif" alt="Progress Tracking & Visual Achievement"></img>
                             </div>
-                            <div className="mb-5">
+                            <div className="col-md-6 mb-5">
                                 <h6 className="theme mb-3">#6: Progress Tracking & Visual Achievement</h6>
                                 <p>User progress is visually represented by earning rewards upon task completion, leveling up to access new environments, and data visualizations showcasing task completion and focused time. This feature empowers users to review their achievements, <b>fostering sustained productivity by promoting consistency and commitment to their goals</b>.</p>
                             </div>
                         </li>
                     </ul>
-                    
                 </div>
 
-                <div className="topic-container subsection-wrapper">
+                <div className="topic-container">
                     <ScrollReveal>
-                        <h3 className="my-5">🪧 Results</h3>
-                        <h6 className="my-5">In-Class Science Fair</h6>
+                        <h6 className="mb-5">In-Class Science Fair</h6>
                         <div className="mt-5 d-flex flex-column align-items-center">
                             <img className="w-75 p-1" src="/works/UXUI/fluffy/result/1.jpg" alt="science fair" />
                         </div>
@@ -586,7 +587,12 @@ function Fluffy () {
                         </div>
                     </ScrollReveal>
                 </div>
-
+            </div>
+        },
+        {
+            name: "Conclusion",
+            content:
+            <div className="container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
                         <h3 className="my-5">📍 Conclusion</h3>
@@ -598,7 +604,12 @@ function Fluffy () {
                         </p>
                     </ScrollReveal>
                 </div>
-
+            </div>
+        },
+        {
+            name: "Takeaways",
+            content:
+            <div className="container">
                 <div className="topic-container section-wrapper">
                     <ScrollReveal>
                         <h3 className="my-5">💭 Takeaways</h3>
@@ -647,6 +658,31 @@ function Fluffy () {
                     </ul>
                 </div>
             </div>
+        }
+    ];
+
+    items.map((item, key) => {
+        item.id = key;
+        item.ref = createRef(null);
+    });
+
+    const img_src = 'https://live.staticflickr.com/65535/53567884525_c62af19309_h.jpg';
+  
+    return (
+        <div id="Fluffy-Focus">
+            <ProgressBar color="#417807" items={items} activeItem={activeItem} handleClick={handleSubsectionClick} />
+            <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
+            {items.map((item) => {
+                return (
+                    <Subsection
+                    id={item.id}
+                    subsectionRef={item.ref}
+                    activeItem={activeItem}
+                    setActiveItem={setActiveItem}
+                    pageHeight={pageHeight}
+                    content={item.content} />
+                );
+            })}
 
             <ScrollReveal>
                 <ProjectRec projects={projects} moreLink={"/Works/design"} />
@@ -728,8 +764,6 @@ bonding by WBcreative from <a href="https://thenounproject.com/browse/icons/term
                 </div>
             </div>
 
-
-            
         </div>
     );
 };

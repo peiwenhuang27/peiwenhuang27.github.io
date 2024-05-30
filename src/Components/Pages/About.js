@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Transitions from "../Transition";
+import Transitions from "../Helpers/Transition";
 import { EduIcon, SkillIcon, LangIcon, InterestIcon, ArrowIcon } from "../Icons";
 
 import { ScrollReveal } from "../Helpers/SmoothScroll";
@@ -39,24 +39,24 @@ function Education () {
             </div>
             
             <ScrollReveal>
-                <div className="subsection-wrapper w-100 d-flex flex-column align-items-center">
-                    <h5 className="text-center secondary mb-1">Carnegie-Mellon University, <br/> Master of Human-Computer Interaction</h5>
-                    <p className="text-center caption mb-5">August 2023 - August 2024 (expected) | Pittsburgh, Pennsylvania</p>
-                    <p className="text-center w-sizer-lg mb-0"><b>Overall GPA:</b> <b className="highlight">4.19/4.30</b> (Cumulative QPA: 4.20/4.30)</p>
-                    <p className="text-center w-sizer-lg">
-                    <b>Courses:</b> Interaction Design Fundamentals, Persuasive Design, User-centered Research & Evaluation
-                    </p>
-                </div>
-            </ScrollReveal>
-            
-            <ScrollReveal>
-                <div className="subsection-wrapper w-100 d-flex flex-column align-items-center">
-                    <h5 className="text-center secondary mb-1">National Taiwan University, <br/> Bachelor of Business Administration in Information Management</h5>
-                    <p className="text-center caption mb-5">September 2018-June 2022 | Taipei, Taiwan</p>
-                    <p className="text-center w-sizer-lg mb-0"><b>Major GPA:</b> 4.19/4.30 | Overall GPA: 4.16/4.30<br/>(received 2 NTU Presidential Awards)</p>
-                    <p className="text-center w-sizer-lg">
-                    <b>Graduate level courses:</b> Human-Computer Interaction, Social Media Analytics, Machine Learning, Information Retrieval and Text Mining, Big Data and Business Analytics.
-                    </p>
+                <div className="row">
+                    <div className="col-md-6 subsection-wrapper d-flex flex-column align-items-center">
+                        <h5 className="text-center secondary mb-1">Carnegie-Mellon University, <br/> Master of Human-Computer Interaction</h5>
+                        <p className="text-center caption mb-5">August 2023 - August 2024 (expected) | Pittsburgh, Pennsylvania</p>
+                        <p className="text-center w-sizer-lg mb-0"><b>Overall GPA:</b> <b className="highlight">4.19/4.30</b> (Cumulative QPA: 4.20/4.30)</p>
+                        <p className="text-center w-sizer-lg">
+                        <b>Courses:</b> Interaction Design Fundamentals, Persuasive Design, User-centered Research & Evaluation
+                        </p>
+                    </div>
+                
+                    <div className="col-md-6 subsection-wrapper d-flex flex-column align-items-center">
+                        <h5 className="text-center secondary mb-1">National Taiwan University, <br/> Bachelor of Business Administration in Information Management</h5>
+                        <p className="text-center caption mb-5">September 2018-June 2022 | Taipei, Taiwan</p>
+                        <p className="text-center w-sizer-lg mb-0"><b>Major GPA:</b> 4.19/4.30 | Overall GPA: 4.16/4.30<br/>(received 2 NTU Presidential Awards)</p>
+                        <p className="text-center w-sizer-lg">
+                        <b>Graduate level courses:</b> Human-Computer Interaction, Social Media Analytics, Machine Learning, Information Retrieval and Text Mining, Big Data and Business Analytics.
+                        </p>
+                    </div>
                 </div>
             </ScrollReveal>
         </div>
@@ -224,10 +224,6 @@ function About () {
                     
                     <ScrollReveal>
                         <Skills />
-                    </ScrollReveal>
-                    
-                    <ScrollReveal>
-                        <Languages />
                     </ScrollReveal>
                     
                     <ScrollReveal>

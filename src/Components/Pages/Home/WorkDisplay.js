@@ -25,7 +25,7 @@ function Intro () {
                             <li className="secondary"><b>Synonym</b>- Authenticity, Determination, Empathy, Kindness, Leadership</li>
                         </ul>
                         <button className="view-more-btn h-6 mt-5">
-                            <Link to="/about">Yes, and...</Link>
+                            <Link to="/about">About Me</Link>
                         </button>
                     </p>
                     <div className="col-md-4 mb-5 pfp-container col-md-4">
@@ -57,7 +57,7 @@ function Quote () {
 function ViewMoreBtn ({ link }) {
     return (
         <button className="view-more-btn h-6">
-            <Link to={link}>View All Projects</Link>
+            <Link to={link}>View More</Link>
         </button>
     );
 }

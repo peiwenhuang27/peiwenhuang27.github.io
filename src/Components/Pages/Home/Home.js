@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Banner from "./Banner";
 import WorkDisplay from "./WorkDisplay";
-import Transitions from "../../Transition";
+import Transitions from "../../Helpers/Transition";
 
 function Home ({ data }) {
     const location = useLocation();

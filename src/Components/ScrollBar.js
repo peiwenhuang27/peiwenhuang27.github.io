@@ -1,6 +1,7 @@
+import { act } from "react";
 import { useEffect, useState } from "react";
 
-function ProgressBar ({ color }) {
+function ProgressBar ({ color, items, activeItem, handleClick }) {
     const [scroll, setScrollPosition] = useState(0);
 
     const getDocHeight  =  ()  =>  {
@@ -34,12 +35,35 @@ function ProgressBar ({ color }) {
         listenToScrollEvent();
     }, []);
 
-    return (
-        <div className="progress-bar"
-        style={{
-            background: `linear-gradient(to right, ${color} ${scroll}%, transparent 0)`
-        }}>
+    function renderItems () {
+        return items.map((item) => {
+            const activeClass = Number(activeItem) === item.id ? "navigation-list__item--active" : "";
+            return (
+                <li
+                key={item.name}
+                id={item.id}
+                onClick={() => handleClick(item.ref.current)}
+                className={`navigation-list__item ${activeClass}`}
+                style={Number(activeItem) === item.id ? {
+                    color: `${color}`,
+                    borderBottom: `2px solid ${color}`
+                    }: null}>
+                    {item.name}
+                </li>
+            )
+        })
+    }
 
+    return (
+        <div id="topic-navigation">
+            <ul className='navigation-list'>
+                {renderItems()}
+            </ul>
+            {/* <div className="progress-bar"
+            style={{
+                background: `linear-gradient(to right, ${color} ${scroll}%, transparent 0)`
+            }}>
+            </div> */}
         </div>
     );
 }

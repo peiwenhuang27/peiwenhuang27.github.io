@@ -24,7 +24,7 @@ function Header ({ workData, lifeData = null }) {
     });
 
     return (
-        <div className="header d-flex align-items-center">
+        <div id="header" className="header d-flex align-items-center">
             <div className="container">
             <Navbar expand="lg" className="bg-body-tertiary">
                     <Navbar.Brand href="/">
