@@ -15,7 +15,7 @@ function LargeList ({ workData, lifeData, categoryIndex }) { // only for a categ
 
     return (
         <ScrollReveal>
-            <div className="topic-container subsection-wrapper">
+            <div className="topic-container-lg subsection-wrapper">
                 <CategoryNav defaultActiveKey={category.suffix} workData={workData} />
                 <div className="title">
                     <h4>{category.headline}</h4>

@@ -6,7 +6,13 @@ import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
 // MUST-HAVE
 // active key not correct with navbar <-> category tabs
-// subsection for Sous Chef / Petit Mood / Vision / TourBot
+// subsection for Petit Mood / TourBot
+// background blur for mobile mode
+
+// NICE-TO-HAVE
+// about: life in the dropdown
+// art / writing section in about page
+// check rwd
 
 function App() {
   // The back-to-top button is hidden at the beginning
@@ -54,6 +60,14 @@ function App() {
         'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
       },
       {
+        'title': 'Ford Vision', 
+        'id': 'Ford-Vision',
+        'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
+        'desc': 'Redefining Semi-Autonomous Electric Vehicle Paradigm',
+        'img': 'https://live.staticflickr.com/65535/53794621302_f58e9e53e6_k.jpg',
+        'ph': 'https://live.staticflickr.com/65535/53794621302_f58e9e53e6_k.jpg',
+      },
+      {
         'title': '2Done', 
         'id': '2Done',
         'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
@@ -61,31 +75,35 @@ function App() {
         'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
         'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
       },
+      // {
+      //   'title': 'Giant Eagle Sous Chef', 
+      //   'id': 'Sous-Chef',
+      //   'tags': ['Service Design', 'User Research', 'Giant Eagle', 'Meal Planning'],
+      //   'desc': 'Post-work Meals & Home-cook Starters',
+      //   'img': 'https://live.staticflickr.com/65535/53739446457_a00580cdc8_h.jpg',
+      //   'ph': 'https://live.staticflickr.com/65535/53739446457_bdd4cbf39e_c.jpg',
+      // },
+    ]
+    },
+    {'suffix': 'engineering', 'name': 'Engineering',
+    'headline': 'Achieving the impossible; that is engineering.\n(Yes, I coded this website too.)',
+      'items': [
       {
         'title': 'Mindfulness Alchemy', 
         'id': 'Mindfulness-Alchemy',
         'tags': ['Game Design', 'Web Developing', 'Social Computing', 'Mental Health', 'Self-Care'],
-        'desc': 'Staying Centered in a Restless World',
-        'img': 'https://live.staticflickr.com/65535/53740714969_2ddc44849e_b.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53740714969_2ddc44849e_b.jpg',
+        'desc': 'Web 3D Role-playing Game of Self-care Practice',
+        'img': 'https://live.staticflickr.com/65535/53802328958_a5fd4d9f27_b.jpg',
+        'ph': 'https://live.staticflickr.com/65535/53802328958_a5fd4d9f27_b.jpg',
       },
       {
-        'title': 'Ford Vision', 
-        'id': 'Ford-Vision',
-        'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-        'desc': 'Redefining Semi-Autonomous Electric Vehicle Paradigm',
-        'img': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
-      },
-      {
-        'title': 'Giant Eagle Sous Chef', 
-        'id': 'Sous-Chef',
-        'tags': ['Service Design', 'User Research', 'Giant Eagle', 'Meal Planning'],
-        'desc': 'Post-work Meals & Home-cook Starters',
-        'img': 'https://live.staticflickr.com/65535/53739446457_a00580cdc8_h.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53739446457_bdd4cbf39e_c.jpg',
-      },
-    ]
+        'title': 'TourBot', 
+        'id': 'TourBot', 
+        'tags': ['DataScience', 'NLP', 'DeepLearning', 'Frontend', 'UI'],
+        'desc': 'Task-oriented chatbot for travel recommendation', 
+        'img': 'https://live.staticflickr.com/65535/52516160951_2fcbbec56d_k.jpg',
+        'ph': 'https://live.staticflickr.com/65535/52516160951_1c09f8b8f1_m.jpg',
+      },]
     },
     {'suffix': 'research', 'name': 'Research',
     'headline': 'To research is to make known the unknown, and inform our response.',
@@ -107,30 +125,13 @@ function App() {
         'ph': 'https://live.staticflickr.com/65535/53740742939_7933acb0e1_b.jpg',
       },]
     },
-    {'suffix': 'engineering', 'name': 'Engineering',
-    'headline': 'Achieving the impossible; that is engineering.',
-      'items': [
-      {
-        'title': 'Mindfulness Alchemy', 
-        'id': 'Mindfulness-Alchemy',
-        'tags': ['Game Design', 'Web Developing', 'Social Computing', 'Mental Health', 'Self-Care'],
-        'desc': 'Staying Centered in a Restless World',
-        'img': 'https://live.staticflickr.com/65535/53740714969_2ddc44849e_b.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53740714969_2ddc44849e_b.jpg',
-      },
-      {
-        'title': 'TourBot', 
-        'id': 'TourBot', 
-        'tags': ['DataScience', 'NLP', 'DeepLearning', 'Frontend', 'UI'],
-        'desc': 'Task-oriented chatbot for travel recommendation', 
-        'img': 'https://live.staticflickr.com/65535/52516160951_2fcbbec56d_k.jpg',
-        'ph': 'https://live.staticflickr.com/65535/52516160951_1c09f8b8f1_m.jpg',
-      },]
-    },
   ];
   const homeData = [
     {'suffix': 'design', 'name': 'Design Projects',
-      'items': workData[0]['items'].slice(0, 3)
+      'items': workData[0]['items'].slice(0, 2)
+    },
+    {'suffix': 'engineering', 'name': '...Did I say I code too?',
+      'items': workData[1]['items'].slice(0, 1)
     },
   ];
 

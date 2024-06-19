@@ -26,16 +26,16 @@ function Banner () {
                                 <div className='h-6'>designer <span>»</span></div>
                             </Link>
                         </li>
-                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-2">
-                            <Link to="/Works/research" className="d-flex align-items-center">
-                                <div className="circle" id="circle-2"></div>
-                                <div className='h-6'>researcher <span>»</span></div>
-                            </Link>
-                        </li>
                         <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-3">
                             <Link to="/Works/engineering" className="d-flex align-items-center">
                                 <div className="circle" id="circle-3"></div>
                                 <div className='h-6'>engineer <span>»</span></div>
+                            </Link>
+                        </li>
+                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-2">
+                            <Link to="/Works/research" className="d-flex align-items-center">
+                                <div className="circle" id="circle-2"></div>
+                                <div className='h-6'>researcher <span>»</span></div>
                             </Link>
                         </li>
                         <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-4">

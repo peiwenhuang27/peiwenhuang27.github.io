@@ -54,13 +54,33 @@ function ProgressBar ({ color, items, activeItem, handleClick }) {
         })
     }
 
+    function renderElement () {
+        if (window.innerWidth <= 568) {
+            // mobile
+            return (
+                <div className="progress-bar"
+                style={{
+                    background: `linear-gradient(to right, ${color} ${scroll}%, transparent 0)`
+                }}>
+                </div>
+            );
+        }
+        else {
+            // desktop
+            return (
+                <div id="topic-navigation">
+                    <ul className='navigation-list'>
+                        {renderItems()}
+                    </ul>
+                </div>
+            );
+        }
+    }
+
     return (
-        <div id="topic-navigation">
-            <ul className='navigation-list'>
-                {renderItems()}
-            </ul>
-        </div>
+        renderElement()
     );
+    
 }
 
 export default ProgressBar;

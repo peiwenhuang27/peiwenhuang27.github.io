@@ -6,7 +6,7 @@ import CategoryBox from "./CategoryBox";
 
 function Intro () {
     return (
-        <div className="section-wrapper topic-container pt-5">
+        <div className="section-wrapper topic-container-lg pt-5">
             <div id="intro" className="intro">
                 <h4>Peiwen Huang (n.)</h4>
                 <div className="row">
@@ -42,7 +42,7 @@ function Intro () {
 function Quote () {
     return (
         <div className="quote-wrapper section-wrapper">
-            <div className="topic-container">
+            <div className="topic-container-lg">
                 <div className="quote quotation-mark">〝</div>
                 <div className="quote">
                 Do your little bit of good where you are; it’s those little bits of good put together that overwhelm the world.
@@ -64,7 +64,7 @@ function ViewMoreBtn ({ link }) {
 
 function WorkList ({ data, prefix }) {
     return (
-        <div className="topic-container subsection-wrapper-bottom">
+        <div className="topic-container-lg subsection-wrapper-bottom">
             <div className="work-list">
                 <ul className="w-100 work-cards flex-column">
                     {data.map(item =>

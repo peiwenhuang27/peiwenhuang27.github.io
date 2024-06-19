@@ -9,23 +9,20 @@ import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 
 function Alchemy () {
     const [isLoading, setIsLoading] = useState(false);
-    const img_src = 'https://live.staticflickr.com/65535/53740714969_5eea732b89_o.png';
-    
+    const img_src = 'https://live.staticflickr.com/65535/53802506955_acc7ed3403_o.png';
     const hideSpinner = () => {
         setIsLoading(false);
     };
 
-
-
     return (
         <div id="Mindfulness-Alchemy">
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})`, backgroundPositionY: "top" }} />
+            <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
             <div className="container">
                 <div className="topic-container py-5">
                     <ScrollReveal>
                         <div className="topic-title-container mb-5">
                                 <h3 className="mb-1 color-dark text-bold date">October 2023 - December 2023</h3>
-                                <h2 className="mb-1">Mindfulness Alchemy: Staying Centered in a Restless World</h2>
+                                <h2 className="mb-1">Mindfulness Alchemy: Web 3D Role-playing Game of Self-care Practice</h2>
                                 <h3 className="theme mb-5">Game Design, Web Developing, Social Computing, Mental Health, Self-Care</h3>
                                 <p className="mb-5">
                                 Are you, too, feeling a bit worn out from the fast-paced world? Mindful Alchemy is a <b>web-based 3D role-playing game to promote mindfulness</b> with gamified practices of breathing techniques, self-affirmation, and medicinal herb knowledge.

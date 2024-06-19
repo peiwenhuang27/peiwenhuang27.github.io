@@ -33,8 +33,7 @@ ul {
     }
 }
 
-.topic-container {
-    width: 80%;
+.topic-container, .topic-container-lg {
     margin: 0 auto;
     color: $primary;
 
@@ -49,6 +48,15 @@ ul {
         color: $gray-600;
     }
 }
+
+.topic-container {
+    width: 60%;
+}
+
+.topic-container-lg {
+    width: 80%;
+}
+
 
 .topic-container-right {
     padding: 48px 24px;
@@ -110,6 +118,10 @@ ul {
         }
         h1, p {
             text-align: right;
+
+            @include pad-sm {
+                text-align: left;
+            }
         }
     }
 
@@ -290,7 +302,7 @@ ul {
 
 .topic-main-wrapper {
     position: relative;
-    top: 70px; // height of topic-navigation
+    padding-top: 70px; // height of topic-navigation
 }
 .topic-cover-img {
     width: 100%;

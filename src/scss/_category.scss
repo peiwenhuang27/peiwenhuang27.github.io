@@ -2,6 +2,10 @@
     .title {
         h4 {
             color: $indigo-700;
+
+            @include pad-sm {
+                text-align: center;
+            }
         }
     }
 
@@ -20,6 +24,7 @@
     justify-content: start;
 
     @include mobile {
+        // flex-direction: column;
         justify-content: space-between;
     }
 
