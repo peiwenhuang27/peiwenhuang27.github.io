@@ -63,7 +63,7 @@ function App() {
         'title': 'Ford Vision', 
         'id': 'Ford-Vision',
         'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-        'desc': 'Redefining Semi-Autonomous Electric Vehicle Paradigm',
+        'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
         'img': 'https://live.staticflickr.com/65535/53794621302_f58e9e53e6_k.jpg',
         'ph': 'https://live.staticflickr.com/65535/53794621302_f58e9e53e6_k.jpg',
       },

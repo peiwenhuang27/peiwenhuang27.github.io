@@ -23,10 +23,10 @@ function LargeList ({ workData, lifeData, categoryIndex }) { // only for a categ
                 
                 <div className="my-5">
                     <div className="d-flex flex-column align-items-center">
-                        <ul className="w-100 row">
+                        <ul className="category-list w-100 row">
                             {
                                 category.items.map(item =>
-                                    <li className="col-lg-4 col-md-12 m-0 pb-4">
+                                    <li className="col-lg-4 col-md-12 mb-5">
                                         <TopicCard link={item.id} data={item} size="medium" />
                                     </li>
                                 )

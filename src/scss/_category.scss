@@ -11,6 +11,14 @@
 
 }
 
+.category-list {
+    li {
+        @include mobile {
+            padding: 0 !important;
+        }
+    }
+}
+
 .category-box {
     @include pad-sm {
         display: flex;

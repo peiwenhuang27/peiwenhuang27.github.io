@@ -317,119 +317,118 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
         {
             name: "Ideation",
             content:
-            <div className="container">
-                <div className="topic-container subsection-wrapper">
-                    <ScrollReveal>
-                        <h3 className="my-5">🪄 Ideating On A Transformational Role-playing Game</h3>
-                        <h4 className="my-5 theme">How might we facilitate attitudinal change;<br/>from work-induced anxiety to an optimistic mindset towards incoming tasks?</h4>
-                    {/* <p>By designing a transformational desktop RPG, we aim to increase user engagement and playfulness while embedding <b className="theme">psychology-based activities to boost productivity.</b></p> */}
-                    </ScrollReveal>
-                    <ScrollReveal>
-                        <div className="subsection-wrapper">
-                            <div className="d-flex justify-content-center">
-                                <DropdownToggle view={view} toggleView={toggleView} toggleTxt={"Show Feature's Supporting Psychology"}></DropdownToggle>
+            <div>
+                <div className="container">
+                    <div className="topic-container subsection-wrapper">
+                        <ScrollReveal>
+                            <h3 className="my-5">🪄 Ideating On A Transformational Role-playing Game</h3>
+                            <h4 className="my-5 theme">How might we facilitate attitudinal change;<br/>from work-induced anxiety to an optimistic mindset towards incoming tasks?</h4>
+                        {/* <p>By designing a transformational desktop RPG, we aim to increase user engagement and playfulness while embedding <b className="theme">psychology-based activities to boost productivity.</b></p> */}
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <div className="subsection-wrapper">
+                                <div className="d-flex justify-content-center">
+                                    <DropdownToggle view={view} toggleView={toggleView} toggleTxt={"Show Feature's Supporting Psychology"}></DropdownToggle>
+                                </div>
+                                <ul className="feature-list row subsection-wrapper justify-content-center">
+                                        <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
+                                            <div className="px-3 d-flex flex-column">
+                                                <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Avatar.svg" alt="avatar icon" />
+                                            </div>
+                                            <div className="text-center">
+                                                <h6 className="my-3">Personalized Avatar</h6>
+                                                <p className="dropdown-reveal"
+                                                style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
+                                                    Users can choose a character of their liking as their “buddy” in the game which will interact and work with users in the virtual environment. Such an environment simulates a <b>distancing effect</b> while providing a form of social support from the avatar.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
+                                            <div className="px-3 d-flex flex-column">
+                                                <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Communication.svg" alt="communication icon" />
+                                            </div>
+                                            <div className="text-center">
+                                                <h6 className="my-3">Self-affirmation Dialogues</h6>
+                                                <p className="dropdown-reveal"
+                                                style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
+                                                Through the avatar, users receive self-affirmations to remind themselves of positive attributes and/or values which forms a <b>positive feedback loop of sustained productivity and sense of self-confidence</b>.                                                                            
+                                                </p>
+                                                {/* <p className="dropdown-reveal"
+                                                style={{opacity: view ? "100%" : "0%"}}>
+                                                    Sustained productivity and sense of self-confidence
+                                                </p> */}
+                                            </div>
+                                        </li>
+                                        <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
+                                            <div className="px-3 d-flex flex-column">
+                                                <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Pomodoro.svg" alt="pomodoro icon" />
+                                            </div>
+                                            <div className="text-center">
+                                                <h6 className="my-3">Focus Pomodoro Sessions</h6>
+                                                <p className="dropdown-reveal"
+                                                style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
+                                                Adopting the Pomodoro technique, we design a focus timer <b>interweaving short breaks with work sessions</b> in which users focus with the avatar in the background working with them. By filling out details of the task, users learn to organize tasks efficiently, increasing their ability level in Elaboration Likelihood Model (ELM).                                            
+                                                </p>
+                                                {/* <p className="dropdown-reveal"
+                                                style={{opacity: view ? "100%" : "0%"}}>
+                                                    Increasing efficiency and motivation with higher ELM ability levels
+                                                </p> */}
+                                            </div>
+                                        </li>
+                                        <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
+                                            <div className="px-3 d-flex flex-column">
+                                                <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Badge.svg" alt="badge icon" />
+                                            </div>
+                                            <div className="text-center">
+                                                <h6 className="my-3">Visualized Progress & Achievement</h6>
+                                                <p className="dropdown-reveal"
+                                                style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
+                                                Users' progress is visible through gaining rewards upon completing tasks,  
+                                                leveling up and unlocking new environments, and data visualizations of task completion and time spent in focus that users can review and strive to sustain their productivity to ensure consistency and commitment.
+                                                </p> 
+                                                {/* <p className="dropdown-reveal"
+                                                style={{opacity: view ? "100%" : "0%"}}>
+                                                    Data visualizations ensuring consistency & commitment
+                                                </p> */}
+                                            </div>
+                                        </li>
+                                        <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
+                                            <div className="px-3 d-flex flex-column">
+                                                <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Reward.svg" alt="reward icon" />
+                                            </div>
+                                            <div className="text-center">
+                                                <h6 className="my-3">Task Completion Rewards</h6>
+                                                <p className="dropdown-reveal"
+                                                style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
+                                                After a focus session, users are congratulated for completing a task with a <b>self-affirmation and choice of reward item</b> to decorate their virtual environment. Personal relevance and motivation in ELM is increased through giving users control in choosing rewards and decorating, so they are more motivated to work on tasks.
+                                                </p>                                       
+                                                
+                                                {/* <p className="dropdown-reveal"
+                                                style={{opacity: view ? "100%" : "0%"}}>
+                                                    Higher personal relevance & motivation in ELM leading to higher work motivation
+                                                </p> */}
+                                            </div>
+                                        </li>
+                                </ul>
                             </div>
-                            <ul className="feature-list row subsection-wrapper justify-content-center">
-                                    <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
-                                        <div className="px-3 d-flex flex-column">
-                                            <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Avatar.svg" alt="avatar icon" />
-                                        </div>
-                                        <div className="text-center">
-                                            <h6 className="my-3">Personalized Avatar</h6>
-                                            <p className="dropdown-reveal"
-                                            style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
-                                                Users can choose a character of their liking as their “buddy” in the game which will interact and work with users in the virtual environment. Such an environment simulates a <b>distancing effect</b> while providing a form of social support from the avatar.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
-                                        <div className="px-3 d-flex flex-column">
-                                            <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Communication.svg" alt="communication icon" />
-                                        </div>
-                                        <div className="text-center">
-                                            <h6 className="my-3">Self-affirmation Dialogues</h6>
-                                            <p className="dropdown-reveal"
-                                            style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
-                                            Through the avatar, users receive self-affirmations to remind themselves of positive attributes and/or values which forms a <b>positive feedback loop of sustained productivity and sense of self-confidence</b>.                                                                            
-                                            </p>
-                                            {/* <p className="dropdown-reveal"
-                                            style={{opacity: view ? "100%" : "0%"}}>
-                                                Sustained productivity and sense of self-confidence
-                                            </p> */}
-                                        </div>
-                                    </li>
-                                    <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
-                                        <div className="px-3 d-flex flex-column">
-                                            <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Pomodoro.svg" alt="pomodoro icon" />
-                                        </div>
-                                        <div className="text-center">
-                                            <h6 className="my-3">Focus Pomodoro Sessions</h6>
-                                            <p className="dropdown-reveal"
-                                            style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
-                                            Adopting the Pomodoro technique, we design a focus timer <b>interweaving short breaks with work sessions</b> in which users focus with the avatar in the background working with them. By filling out details of the task, users learn to organize tasks efficiently, increasing their ability level in Elaboration Likelihood Model (ELM).                                            
-                                            </p>
-                                            {/* <p className="dropdown-reveal"
-                                            style={{opacity: view ? "100%" : "0%"}}>
-                                                Increasing efficiency and motivation with higher ELM ability levels
-                                            </p> */}
-                                        </div>
-                                    </li>
-                                    <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
-                                        <div className="px-3 d-flex flex-column">
-                                            <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Badge.svg" alt="badge icon" />
-                                        </div>
-                                        <div className="text-center">
-                                            <h6 className="my-3">Visualized Progress & Achievement</h6>
-                                            <p className="dropdown-reveal"
-                                            style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
-                                            Users' progress is visible through gaining rewards upon completing tasks,  
-                                            leveling up and unlocking new environments, and data visualizations of task completion and time spent in focus that users can review and strive to sustain their productivity to ensure consistency and commitment.
-                                            </p> 
-                                            {/* <p className="dropdown-reveal"
-                                            style={{opacity: view ? "100%" : "0%"}}>
-                                                Data visualizations ensuring consistency & commitment
-                                            </p> */}
-                                        </div>
-                                    </li>
-                                    <li className="col-md-6 mb-5 d-flex flex-column align-items-center">
-                                        <div className="px-3 d-flex flex-column">
-                                            <img className="w-sizer-lg mb-2" src="/works/UXUI/fluffy/Reward.svg" alt="reward icon" />
-                                        </div>
-                                        <div className="text-center">
-                                            <h6 className="my-3">Task Completion Rewards</h6>
-                                            <p className="dropdown-reveal"
-                                            style={{overflow: "hidden", height: view ? "auto" : "0", opacity: view ? "100%" : 0}}>
-                                            After a focus session, users are congratulated for completing a task with a <b>self-affirmation and choice of reward item</b> to decorate their virtual environment. Personal relevance and motivation in ELM is increased through giving users control in choosing rewards and decorating, so they are more motivated to work on tasks.
-                                            </p>                                       
-                                            
-                                            {/* <p className="dropdown-reveal"
-                                            style={{opacity: view ? "100%" : "0%"}}>
-                                                Higher personal relevance & motivation in ELM leading to higher work motivation
-                                            </p> */}
-                                        </div>
-                                    </li>
-                            </ul>
-                        </div>
-                    </ScrollReveal>
+                        </ScrollReveal>
+                    </div>
+                </div>
 
-                    <ScrollReveal>
-                        <div className="d-flex flex-column align-items-center mb-5">
-                            <div className="mt-5 mb-3 d-flex justify-content-center flex-wrap">
-                                <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-0-env.jpg" alt="environments" />
-                                <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/1-1-avatar.jpg" alt="animal avatars" />   
-                            </div>
-                            <p className="caption text-center">Sketches of the game environment & animal avatars <br/>(Yes, I drew these!)</p>
-                        </div>
-                        <div className="d-flex flex-column align-items-center mb-5">
-                            <div className="mt-0 mb-5 d-flex justify-content-center flex-wrap">                 
-                                <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-1-room.png" alt="room environment" />
-                                <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-2-attic.png" alt="attic environment" />
-                                <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-3-garden.png" alt="garden environment" />
-                                <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/1-2-cat.PNG" alt="garden environment" />
-                            </div>
-                            <p className="caption text-center">Digitized environments & animal avatar (Again, I drew these!)</p>
-                        </div>
-                    </ScrollReveal>
+                <div className="theme-bg">
+                    <div className="container subsection-wrapper">
+                        <ScrollReveal>
+                                <div className="artwork-feed d-flex justify-content-center mb-3">
+                                    <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-0-env.jpg" alt="environments" />
+                                    <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/1-1-avatar.jpg" alt="animal avatars" /> 
+                                    <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-1-room.png" alt="room environment" />
+                                    <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-2-attic.png" alt="attic environment" />
+                                    {/* <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/2-3-garden.png" alt="garden environment" /> */}
+                                    <img className="artwork p-1" src="/works/UXUI/fluffy/design/2-visual/1-2-cat.PNG" alt="garden environment" />  
+                                </div>
+                                <p className="caption text-center">Sketches & digitized illustrations of the game environment & animal avatars (Yes, I drew these!)</p>
+                        </ScrollReveal>
+                    </div>
                 </div>
             </div>
         },
@@ -440,77 +439,75 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
 
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
-                        <h3 className="my-5">🌒 Iterating Our Design from Low-fi Wireframes </h3>
-                        <div className="my-1 d-flex justify-content-center flex-wrap">
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/0.jpg" alt="brainstorming intervention" />
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/1.jpg" alt="user interface design session" />   
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/2.png" alt="low-fi prototype Figma" />  
-                        </div>
-                    </ScrollReveal>
-
-                    <ScrollReveal>
-                        <div className="subsection-wrapper">
-                            <h6 className="mb-5">User Test Results</h6>
-                            <ul className="list-disc">
-                                <li className="mb-5">
-                                    <p>
-                                        <b className="theme">Ambiguity in the interface</b><br/>
-                                        No clear instructions on how to proceed to the next step, icons with vague semantic meaning
-                                    </p>
-                                </li>
-                                <li className="mb-5">
-                                    <p>
-                                        <b className="theme">Insufficient customizability</b><br/>
-                                        Users wish to be able to set due dates/task start time/reminders for better task management, use the Pomodoro technique for longer tasks, and reschedule unfinished tasks
+                        <h3 className="my-5">🛠️ Testing & Iterating: Low-fi to Hi-fi Prototypes </h3>
+                        <div className="row align-items-start mb-5">
+                            <div className="col-md-6">
+                                <h6 className="mb-3">#1: Low-fi User Test Result</h6>
+                                <ul className="list-disc">
+                                    <li className="">
+                                        <p>
+                                            <b className="theme">Ambiguity in the interface</b><br/>
+                                            No clear instructions on how to proceed to the next step<br/>
+                                            → Added navigation sidebar & onboarding tutorial
                                         </p>
-                                </li>
-                                <li className="mb-5">
-                                    <p>
-                                        <b className="theme">Desire for additional motivation beyond receiving rewards upon task completion</b><br/>
-                                        Sneak peek of locked rewards or environments and overview of current progress and XP level to enhance goal-setting capabilities
-                                    </p>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li className="">
+                                        <p>
+                                            <b className="theme">Insufficient customizability</b><br/>
+                                            Desire for more customizable features (due dates, reminders, rescheduling)<br/>
+                                            → Added day/week/month task view, task prioritization
+                                            </p>
+                                    </li>
+                                    <li className="">
+                                        <p>
+                                            <b className="theme">More motivation beyond gaining rewards</b><br/>
+                                            Setting expectations / feeding forward to encourage goal completion<br/>
+                                            → Enhanced motivation factor of reward system: reward options, leveling up
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-md-6 d-flex justify-content-center flex-wrap">
+                                <img className="w-sizer-lg p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/2.png" alt="low-fi prototype Figma" />  
+                                {/* <img className="w-sizer-lg p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/0.jpg" alt="brainstorming intervention" /> */}
+                                <img className="w-sizer-lg p-1" src="/works/UXUI/fluffy/design/4-prototype/1-lofi/1.jpg" alt="user interface design session" />  
+                                <img className="w-sizer-lg p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/2.jpg" alt="midfi sketch- task creation" />   
+                            </div>
                         </div>
                     </ScrollReveal>
                 </div>
-
-                <div className="topic-container subsection-wrapper">
+                <div className="topic-container subsection-wrapper-bottom">
                     <ScrollReveal>
-                        <h3 className="my-5">🌓 Mid-fi Prototype</h3>
-                        <h6 className="mb-3">Iteration</h6>
-                        <div className="my-1 d-flex justify-content-center flex-wrap">
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/1.jpg" alt="midfi sketch- task page" />
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/2.jpg" alt="midfi sketch- task creation" />   
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/3.jpg" alt="midfi sketch- task kanban" />  
+                        <div className="row align-items-start mb-5 flex-row-reverse">
+                            <div className="col-md-6">
+                                <h6 className="mb-3">#2: Mid-fi User Test Result</h6>
+                                <p>
+                                    <ul className="list-disc">
+                                        <li className="">Enhanced ease of use with onboarding</li>
+                                        <li className="">Desire for a more tangible sense of accomplishment beyond rewards</li>
+                                        <li className="">Confusion about the avatar- whether it represents users themselves or a buddy, hindering social support and distancing effect</li>
+                                    </ul>
+                                    During testing, we started questioning...<br/>
+                                    <b className="theme">Have we immersed users in the narrative, and changed users' attitude and/or behavior with regards to task management?</b>
+                                </p>
+                            </div>
+                            <div className="col-md-6 d-flex justify-content-center flex-wrap">
+                                <img className="w-sizer-lg p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/4.png" alt="midfi figma prototype" />
+                                <img className="w-sizer-lg p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/5.png" alt="midfi figma prototype" />
+                            </div>
                         </div>
-
-                        <p>
-                            <ul className="list-disc my-5">
-                                <li className="mb-3">Increased customizability of task list- daily/weekly/monthly view, prioritizing task, drag-and-drop task reordering</li>
-                                <li className="mb-3">Added an onboarding tutorial</li>
-                                <li className="mb-3">Implemented the Pomodoro technique</li>
-                                <li className="mb-3">Enhanced clarity and motivation of the reward system- decoration choosing, leveling up</li>
-                                <li className="mb-3">Incorporated sidebar navigation</li>
-                            </ul>
-                        </p>
-                    </ScrollReveal>
-
-                    <ScrollReveal>
+                    
                         <div className="my-5 d-flex justify-content-center flex-wrap">
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/design/4-prototype/2-midfi/5.png" alt="midfi figma prototype" />
                         </div>
 
-                        <h6 className="mb-3">User Test Results</h6>
+                        
                         
                         <p className="my-5">
-                            <ul className="list-disc my-5">
-                                <li className="mb-3">Overall positivity expressed toward the onboarding dialogues- enhanced intuitiveness</li>
-                                <li className="mb-3">Suggestion to extend tutorial to the Pomodoro work session and reward page for greater coherence</li>
-                                <li className="mb-3">Desire for a more tangible sense of accomplishment beyond receiving rewards</li>
-                                <li className="mb-3">Confusion among users regarding the avatar's role- whether it represents users themselves or an NPC in the virtual world, which hinders sense of social support and distancing</li>
-                            </ul>
-                        Apart from insights gathered during usability testing, valuable input from Professor Kaufman significantly influenced our next steps. Currently, our design emphasized too many peripheral features, rather than delving into the substantive aspects of design—namely, <b>fostering a sense of immersion in the narrative, role-playing, and world-building elements</b>. Additionally, we were advised to explore ways of incorporating more distancing into the design, particularly in <b>defining user roles and framing the wording for task and dialogue</b>.
+                        In the last iteration, we explored more ways of incorporating distancing techniques, particularly by <br/><br/>
+                        <ul className="row">
+                            <li className="col-md-6 px-3"><b>Defining the avatar's role</b><br/> Leveraging body doubling by priming users to perceive the avatar as their virtual selves </li>
+                            <li className="col-md-6 px-3"><b>Fostering an encouraging environment</b><br/>Positively wording the dialogues with self-affirmations and goal-orientation</li>
+                        </ul>
                         </p>
                     </ScrollReveal>
                 </div>
@@ -520,18 +517,19 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
             name: "Final",
             content:
             <div className="container">
-                <div className="topic-container">
+                <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
                         <h3 className="my-5">🎪 Final Showcase</h3>
                         <div className="mt-5 d-flex flex-column align-items-center">
-                            <img className="w-sizer p-1" src="/works/UXUI/fluffy/result/1.jpg" alt="science fair" />
+                            
                         </div>
                         <div className="mb-5 d-flex justify-content-center flex-wrap">
+                            <img className="artwork p-1" src="/works/UXUI/fluffy/result/1.jpg" alt="science fair" />
                             <img className="artwork p-1" src="/works/UXUI/fluffy/result/2.jpg" alt="science fair" />
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/result/3.jpg" alt="science fair" />
-                            <img className="artwork p-1" src="/works/UXUI/fluffy/result/4.jpg" alt="science fair" />
                             <img className="artwork p-1" src="/works/UXUI/fluffy/result/5.jpg" alt="science fair" />
                         </div>
+                        <p className="caption text-center">Demonstrating the working prototype and hosting a poster session for external guests</p>
+
                     </ScrollReveal>
                 </div>
             </div>
@@ -539,10 +537,10 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
         {
             name: "Conclusion",
             content:
-            <div className="container">
+            <div className="theme-bg container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
-                        <h3 className="my-5">📍 So... What Did We Achieve?</h3>
+                        {/* <h3 className="my-5">📍 Conclusion</h3> */}
                         <h4 className="my-5">
                         Fluffy Focus represents a transformative approach to student productivity, integrating persuasive techniques to influence attitudinal and behavioral changes. 
                         </h4>
@@ -568,10 +566,10 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
                                     <div className="w-50 mb-3 d-flex flex-column align-items-center">
                                         <img className="w-sizer mb-2" src="/works/UXUI/fluffy/Persuasion.svg" alt="persuasion icon" />
                                     </div>
-                                    <h6 className="theme">Persuasive Goal over Usability</h6>
+                                    <h6 className="theme">Design Goal over Usability</h6>
                                 </div>                            
                                 <p className="col-md-8">
-                                As previously mentioned, our team initially put more emphasis on usability when running user tests. The purpose of these user tests, however, are not only about usability but also, if not more importantly, concept validation. Whether the user experiences a change in behavior and attitude toward immense workloads and procrastination is what we should primarily design our tests to verify. The same thing applies to other UX projects, in that we must first ensure that our product works before verifying our product works smoothly.
+                                Our team initially focused on usability in user tests, but these tests are also crucial for concept validation. Tests should be designed to validate successful behavior/attitude change, before stressing the usability of the interactions. This applies to almost any other UX projects as well.
                                 </p>
                             </li>
                         </ScrollReveal>
@@ -584,7 +582,7 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
                                     <h6 className="theme">Documentation Matters</h6>
                                 </div>
                                 <p className="col-md-8">
-                                During the project, a shared Google Drive was used to store all of our meeting documents, including notes, reports, and photos of our whiteboard sessions. Organizing these documents  immensely helped us access data across different phases efficiently, much similar to how engineers “recycle” modular parts of code. Documentation also significantly reduces redundancy since the team does not need to discuss same things all over due to absence of records.
+                                We used a shared Google Drive to store all meeting documents, including notes, reports, and photos of whiteboard sessions. This organization helped us efficiently access data across different phases, similar to how engineers reuse modular code. Documentation also reduced redundancy by preventing repeated discussions due to the absence of records.
                                 </p>
                             </li>
                         </ScrollReveal>
@@ -597,8 +595,14 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
                                     <h6 className="theme">Communication & Team Rapport</h6>
                                 </div>
                                 <p className="col-md-8">
-                                On a more personal note, I really enjoyed working in this team and the rapport we maintained. Although it could be attributed to individual differences and compatibility, I believe certain aspects that our team strived to succeed in could help me establish harmony within my other teams in the  future. First is communication; we’d always keep our group chat active either through work messages or chit chats so members would not shy from speaking up, and the result is any issue that arose got immediately resolved because of efficient communication. 
-                                <br/><br/>The second component of building a good team is viewing each other as “friends” rather than “colleagues.” At the beginning of the project, we barely knew each other; but a tradition we kept  was to start every meeting with greetings and chats, thus everyone could feel recognized and  relaxed. With this rapport established, members would naturally adopt a friendly tone and encourage more creativity when getting into serious conversations about the project.
+                                I really enjoyed working with this team and the rapport we maintained. While some of it may be due to individual compatibility, I believe certain aspects of our team's success can help me build harmony in future teams.
+                                <ul className="list-disc">
+                                    <li>Communication: We kept our group chat active with both work messages and casual conversations, encouraging everyone to speak up and quickly resolve any issues. 
+                                    </li>
+                                    <li>
+                                    Seeing each other as "friends" rather than just "colleagues": Initially, we barely knew each other, but we started every meeting with greetings and chats. This made everyone feel recognized and relaxed, fostering a friendly tone and encouraging creativity in our project discussions.
+                                    </li>
+                                </ul>
                                 </p>
                             </li>
                         </ScrollReveal>
@@ -758,7 +762,7 @@ const projects = [
             'title': 'Ford Vision', 
             'id': 'Ford-Vision',
             'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-            'desc': 'Redefining Semi-Autonomous Electric Vehicle Paradigm',
+            'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
             'img': 'https://live.staticflickr.com/65535/53794621302_83556ca979_o.png',
             'ph': 'https://live.staticflickr.com/65535/53794621302_83556ca979_o.png',
         }

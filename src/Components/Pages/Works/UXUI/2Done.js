@@ -752,9 +752,9 @@ const projects = [
             'title': 'Ford Vision', 
             'id': 'Ford-Vision',
             'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-            'desc': 'Redefining Semi-Autonomous Electric Vehicle Paradigm',
-            'img': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
-            'ph': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
+            'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
+            'img': 'https://live.staticflickr.com/65535/53794621302_83556ca979_o.png',
+            'ph': 'https://live.staticflickr.com/65535/53794621302_83556ca979_o.png',
         }
     },
 ];

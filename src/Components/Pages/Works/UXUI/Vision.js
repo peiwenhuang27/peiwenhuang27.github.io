@@ -27,7 +27,7 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
                         <ScrollReveal>
                             <div className="topic-title-container mb-5">
                                     <h3 className="mb-1 color-dark text-bold date">October 2023 - December 2023</h3>
-                                    <h2 className="mb-1">Ford Vision: Defining Semi-Autonomous Electric Vehicle Paradigm</h2>
+                                    <h2 className="mb-1">Ford Vision: Easy, Delightful Beginner's E-moped Experience </h2>
                                     <h3 className="theme mb-5">Interaction Design Fundamentals, Autonomous Vehicle, UX</h3>
                                     <p className="mb-5">
                                     As the trend of autonomous vehicles soaring higher than ever before, our team envisioned Vision— a Ford semi-autonomous electric moped, and integrated existing moped features and an innovative semi-autonomy interaction paradigm to provide seamless experience.
@@ -255,7 +255,7 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
                                 </div>
                             </div>
                             <p>
-                                In Interaction Design Fundamentals Class, we are challenged to design a semi-autonomous electric moped-- <b className="theme">specifically its dashboard and mobile control panel</b>, to provide a smooth, safe, and calm riding experience.
+                                We are challenged to design a semi-autonomous electric moped-- <b className="theme">specifically its dashboard and mobile control panel</b>, to provide a smooth, safe, and calm riding experience for beginner riders learning to use mopeds.
                             </p>
                         </div>
                     </ScrollReveal>
@@ -326,7 +326,7 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
                         <ScrollReveal>
                             <div className="row align-items-center my-5">
                                 <h3 className="mb-5">🪄 Ideating on Rider Pain Points</h3>
-                                <h4 className="mb-3 theme">How might we transfer the complexity of operating to the vehicle to ensure a safe & easy riding process?</h4>
+                                <h4 className="mb-3 theme">How might we transfer the complexity of operating to the vehicle to ensure a safe & easy riding process for beginners?</h4>
                                 <p className="my-5">
                                 After identifying essential features and flows with the task analysis, we focused on them in our ideation process with Crazy 8 & Concept sketching.
                                 Particularly, we paid extra attention to <b className="">selecting ideas that transferred the operating complexity to the vehicle</b> in the concept sketches.

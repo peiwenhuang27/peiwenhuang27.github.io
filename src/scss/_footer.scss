@@ -39,6 +39,12 @@
     h6, p {
         color: $secondary;
     }
+
+    p {
+        @include pad-sm {
+            text-align: center;
+        }
+    }
 }
 
 .email-svg, .linkedin-svg, .github-svg {
