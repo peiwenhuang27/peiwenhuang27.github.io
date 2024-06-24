@@ -55,6 +55,10 @@ ul {
 
 .topic-container-lg {
     width: 80%;
+
+    @include pad-sm {
+        width: 100%;
+    }
 }
 
 

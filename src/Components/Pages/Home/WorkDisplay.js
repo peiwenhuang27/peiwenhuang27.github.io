@@ -12,7 +12,6 @@ function Intro () {
                 <div className="row">
                     <p className="col-md-8 px-5 py-3">
                         <ul className="list-disc">
-                            
                             <li>someone who <b className="">creatively crafts transformative experiences for users</b>, instilling self-love, motivation and confidence
                             <ul className="list-circle">
                                 <li className="italic" style={{color: "#808080"}}><b>Peiwen Huang</b> focuses her work in mental health and social good, infusing into it applied psychology with a hint of playfulness.</li>
@@ -28,7 +27,7 @@ function Intro () {
                             <Link to="/about">About Me</Link>
                         </button>
                     </p>
-                    <div className="col-md-4 mb-5 pfp-container">
+                    <div className="col-md-4 pfp-container">
                         <div className="pfp-illustration" />
                     </div>
                     
@@ -56,7 +55,7 @@ function Quote () {
 
 function ViewMoreBtn ({ link }) {
     return (
-        <button className="view-more-btn h-6">
+        <button className="view-more-btn h-6 mb-5">
             <Link to={link}>View More</Link>
         </button>
     );

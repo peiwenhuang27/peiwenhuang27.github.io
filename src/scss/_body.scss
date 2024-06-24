@@ -238,7 +238,7 @@ hr {
             @include pad-sm {
                 display: flex;
                 flex-direction: column;
-                // align-content: center;
+                align-items: center;
             }
         }
 
