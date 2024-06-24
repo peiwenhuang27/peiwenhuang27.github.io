@@ -95,16 +95,16 @@ function Alchemy () {
 export default Alchemy;
 
 const projects = [
-    { // service design
-        'link': '/Works/design/Sous-Chef',
+    {
+        'link': '/Works/design/Fluffy-Focus',
         'data': {
-            'title': 'Sous Chef', 
-            'id': 'Sous-Chef',
-            'tags': ['Service Design', 'User Research', 'Giant Eagle', 'Meal Planning'],
-            'desc': 'Post-work Meals & Home-cook Starters',
-            'img': 'https://live.staticflickr.com/65535/53739446457_a00580cdc8_h.jpg',
-            'ph': 'https://live.staticflickr.com/65535/53739446457_bdd4cbf39e_c.jpg',
-          },
+            'title': 'Fluffy Focus', 
+            'id': 'Fluffy-Focus',
+            'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
+            'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
+            'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
+            'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
+          }
     },
     {
         'link': '/Works/research/Petit-Mood',

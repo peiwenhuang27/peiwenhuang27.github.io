@@ -28,7 +28,7 @@ function Intro () {
                             <Link to="/about">About Me</Link>
                         </button>
                     </p>
-                    <div className="col-md-4 mb-5 pfp-container col-md-4">
+                    <div className="col-md-4 mb-5 pfp-container">
                         <div className="pfp-illustration" />
                     </div>
                     

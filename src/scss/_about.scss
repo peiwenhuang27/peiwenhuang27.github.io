@@ -17,8 +17,8 @@
 
 .pfp-container {
     @include pad-sm {
-        width: 60%;
-        padding: 0 !important;
+        width: 80%;
+        padding: 0;
     }
 }
 
@@ -29,10 +29,6 @@
     background-image: url(../img/pfp-illustration.jpg);
     background-position: center;
     background-size: cover;
-
-    @include pad-sm {
-        margin-bottom: 20px;
-    }
 }
 
 .pfp-round {

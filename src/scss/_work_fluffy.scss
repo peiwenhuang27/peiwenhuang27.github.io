@@ -42,4 +42,27 @@
             align-items: center;
         }
     }
+
+    .form-switch {
+        padding: 24px 2em 24px 4em;
+        border-radius: 8px;
+        background-color: rgba(69, 122, 14, 0.05);
+
+        label {
+            color: #417807;
+        }
+    }
+
+    .form-check-input:checked {
+        background-color: #417807;
+        border-color: #417807;
+    }
+
+    .feature-list {
+        transition: all .3s ease-in;
+    }
+}
+
+.dropdown-reveal {
+    transition: all .3s ease-in;
 }
