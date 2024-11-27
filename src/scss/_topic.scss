@@ -50,7 +50,7 @@ ul {
 }
 
 .topic-container {
-    width: 60%;
+    width: 80%;
 
     @include pad-sm {
         width: 100%;
@@ -99,7 +99,7 @@ ul {
 }
 
 .topic-card {
-    h1, h4 {
+    h1, h4, h5 {
         @include hover-transition;
         @include underline-animation($highlight);
     }

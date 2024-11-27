@@ -1,0 +1,110 @@
+#Fairplay {
+    .theme {
+        color: #008075 !important;
+    }
+    .subtle {
+        color: #7F829F;
+    }
+    p, h1, h2, h3, h4, h5 {
+        color: #383B52;
+    }
+    h6 {
+        color: #008075;
+    }
+    b {
+        background-color: #DEEFEC;
+    }
+    
+    .theme-bg {
+        width: 100%;
+        background-color: #008075;
+
+        h1, h2, h3, h4, h5, h6, p {
+            color: #FAFCFC;
+        }
+        b {
+            background-color: transparent;
+        }
+        .caption {
+            color: #80BFBA;
+        }
+        
+        .theme {
+            color: #94DF68 !important;
+        }
+        .secondary {
+            color: #FBD66F !important;
+        }
+        .accent {
+            color: #ECF1F4 !important;
+        }
+    }
+    .secondary-bg {
+        width: 100%;
+        background-color: #F2FAF9;
+
+        b {
+            background-color: #C9EFB3;
+        }
+    }
+
+    .artwork {
+        height: 240px;
+        width: auto;
+        background-size: cover;
+        background-position: center;
+
+        @include max2 {
+            max-width: 100%;
+            // height: auto;
+        }
+    }
+    .hyperlink {
+        &:hover {
+            transition: .3s;
+            color: rgba(0, 128, 117, 0.75);
+        }
+    }
+    .responsive-center-list {
+        @include pad {
+            li {
+                flex-direction: column;
+                align-items: center;
+
+                h6, p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .icon-title {
+        @include pad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .form-switch {
+        padding: 24px 2em 24px 4em;
+        border-radius: 8px;
+        background-color: rgba(69, 122, 14, 0.05);
+
+        label {
+            color: #008075;
+        }
+    }
+
+    .form-check-input:checked {
+        background-color: #008075;
+        border-color: #008075;
+    }
+
+    .feature-list {
+        transition: all .3s ease-in;
+    }
+}
+
+.dropdown-reveal {
+    transition: all .3s ease-in;
+}

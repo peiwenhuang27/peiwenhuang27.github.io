@@ -38,6 +38,7 @@ hr {
     }
 
     .img-container {
+        background: url("https://live.staticflickr.com/65535/52516580065_a71e3f7f51_k.jpg");
         height: calc(100vh - 62px);
         background-position: center;
         background-size: cover;
@@ -46,7 +47,11 @@ hr {
 
         @include pad {
             height: auto;
-            
+        }
+        @include mobile {
+            background-attachment: scroll;
+            min-width: 100%;
+            min-height: calc(100vh - 62px);
         }
     }
 

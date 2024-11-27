@@ -81,9 +81,9 @@ h6, .h-6 {
   }
 }
 p { 
-  font-size: 18px; 
+  font-size: 16px; 
   font-style: normal; 
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2;
   word-wrap: break-word;
 
@@ -93,7 +93,10 @@ p {
   }
 }
 b, .p-bold {
-  font-weight: 500;
+  font-weight: 600;
+}
+b {
+  background-color: $pink-100;
 }
 .quote {
   font-size: 24px;
@@ -211,6 +214,10 @@ img {
   object-fit: contain;
   border-radius: 8px;
   @include filter-shadow;
+}
+
+.no-shadow {
+  @include no-shadow;
 }
 
 .progress-bar {

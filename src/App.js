@@ -5,9 +5,14 @@ import Footer from './Components/Footer';
 import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
 // MUST-HAVE
-// active key not correct with navbar <-> category tabs
 // subsection for Petit Mood / TourBot
 // background blur for mobile mode
+// intro screen block
+// hero page animation
+// self-intro
+// Fluffy UI
+// Vision mockup + large size mockups *N
+// remove 2Done
 
 // NICE-TO-HAVE
 // about: life in the dropdown
@@ -52,12 +57,12 @@ function App() {
       'headline': 'Life is good; design makes it even better.',
       'items': [
       {
-        'title': 'Fluffy Focus', 
-        'id': 'Fluffy-Focus',
-        'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
-        'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
-        'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
+        'title': 'FairPlay', 
+        'id': 'Fairplay',
+        'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
+        'desc': 'Your AI Advocate for All Things Customer Service',
+        'img': 'https://i.imgur.com/u0y4O00.jpeg',
+        'ph': 'https://i.imgur.com/u0y4O00.jpeg',
       },
       {
         'title': 'Ford Vision', 
@@ -66,6 +71,14 @@ function App() {
         'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
         'img': 'https://live.staticflickr.com/65535/53794621302_f58e9e53e6_k.jpg',
         'ph': 'https://live.staticflickr.com/65535/53794621302_f58e9e53e6_k.jpg',
+      },
+      {
+        'title': 'Fluffy Focus', 
+        'id': 'Fluffy-Focus',
+        'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
+        'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
+        'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
+        'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
       },
       {
         'title': '2Done', 

@@ -6,7 +6,7 @@ import CategoryBox from "./CategoryBox";
 
 function Intro () {
     return (
-        <div className="section-wrapper topic-container-lg pt-5">
+        <div className="subsection-wrapper topic-container-lg pt-5">
             <div id="intro" className="intro">
                 <h4>Peiwen Huang (n.)</h4>
                 <div className="row">
@@ -63,7 +63,7 @@ function ViewMoreBtn ({ link }) {
 
 function WorkList ({ data, prefix }) {
     return (
-        <div className="topic-container-lg subsection-wrapper-bottom">
+        <div className="topic-container-lg section-wrapper">
             <div className="work-list">
                 <ul className="w-100 work-cards flex-column">
                     {data.map(item =>
@@ -85,12 +85,10 @@ function WorkDisplay ({ data }) {
 
     return (
         <div className="main-body intro-body">
+            <WorkList data={data} prefix={prefix} />
             <ScrollReveal>
                 <Intro />
             </ScrollReveal>
-            
-            <WorkList data={data} prefix={prefix} />
-
             <ScrollReveal>
                 <Quote />
             </ScrollReveal>

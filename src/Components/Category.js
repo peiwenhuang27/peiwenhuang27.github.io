@@ -11,7 +11,7 @@ function LargeList ({ workData, lifeData, categoryIndex }) { // only for a categ
     useEffect(() => {
         // console.log("in useEffect, categoryIndex = ", categoryIndex);
     }, []);
-    let category = workData[categoryIndex]; /////////
+    let category = workData[categoryIndex];
 
     return (
         <ScrollReveal>
@@ -26,8 +26,8 @@ function LargeList ({ workData, lifeData, categoryIndex }) { // only for a categ
                         <ul className="category-list w-100 row">
                             {
                                 category.items.map(item =>
-                                    <li className="col-lg-4 col-md-12 mb-5">
-                                        <TopicCard link={item.id} data={item} size="medium" />
+                                    <li className="col-lg-6 col-md-12 mb-5">
+                                        <TopicCard link={item.id} data={item} size="small" />
                                     </li>
                                 )
                             }

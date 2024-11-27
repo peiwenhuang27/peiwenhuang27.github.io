@@ -36,7 +36,7 @@
 
 @mixin underline-animation($color) {
     display: inline-block;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
     background-image: linear-gradient($color, $color);
     background-position: 0 100%; /*OR bottom left*/
     background-size: 0% 2px;
@@ -135,6 +135,11 @@
 @mixin filter-shadow {
     filter: drop-shadow(0 2px 4px #e7e7e7);
     -webkit-filter: drop-shadow(0 2px 4px #e7e7e7);
+}
+
+@mixin no-shadow {
+    filter: none;
+    -webkit-filter: none;
 }
 
 @mixin text-image-fill($src) {

@@ -10,7 +10,7 @@ function ProjectRec ({ projects, moreLink }) {
                 <div className="row">
                     {projects.map(proj => 
                         <div className="col-md-6">
-                            <TopicCard link={proj.link} data={proj.data} size="medium" />
+                            <TopicCard link={proj.link} data={proj.data} size="small" />
                         </div>
                     )}
                 </div>

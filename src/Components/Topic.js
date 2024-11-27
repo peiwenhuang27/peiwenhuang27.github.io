@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useRef, useEffect } from "react";
 import Transitions from "./Helpers/Transition";
 
+import Fairplay from "./Pages/Works/UXUI/Fairplay";
 import Vision from "./Pages/Works/UXUI/Vision";
 import Fluffy from "./Pages/Works/UXUI/Fluffy";
 import PetitMood from './Pages/Works/UXUI/PetitMood';
@@ -28,6 +29,9 @@ function Topic ({ pageHeight }) {
         });
     }
 
+    if(workId === 'Fairplay') {
+        work = <Fairplay pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
+    }
     if(workId === 'Fluffy-Focus') {
         work = <Fluffy pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
