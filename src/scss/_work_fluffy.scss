@@ -1,10 +1,17 @@
 #Fluffy-Focus {
+    b {
+        background-color: #e9f1e0;
+    }
     .theme  {
         color: #417807 !important;
     }
     .theme-bg {
         width: 100%;
         background-color: rgba(69, 122, 14, 0.05);
+
+        b {
+            background-color: #c9e0af;
+        }
     }
     .artwork {
         height: 240px;

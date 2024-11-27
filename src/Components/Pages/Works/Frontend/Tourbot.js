@@ -105,7 +105,7 @@ function TourBot() {
                                 <p className="mb-5">
                                     As much as Internet makes travel information more accessible than ever, the channel of information input has also grown disorganized, increasing the retrieval time for user to obtain desired information. For instance, a customer needs to go through several travel blogs or agencies, compare among them to arrange their own itinerary, and search for individual hotels and restaurants to make reservations. 
                                     <br/>
-                                    To resolve this issue and attract customers, many travel agencies have developed <b className="theme">Task-Oriented Chatbot </b> to directly face customers and provide services such as travel recommendation or hotel booking.
+                                    To resolve this issue and attract customers, many travel agencies have developed <b className="">Task-Oriented Chatbot </b> to directly face customers and provide services such as travel recommendation or hotel booking.
                                     <br/>
                                 </p>
                                 <h6 className="mb-3">Task-Oriented Dialogue</h6>
@@ -122,7 +122,7 @@ function TourBot() {
                     <ScrollReveal>
                         <h3 className="my-5">🎯 Objective</h3>
                         <h4 className="subsection-wrapper-bottom statement">
-                        We aim to utilize Natural Language Processing to construct a <br/><span className="theme">cross-domain, task-oriented Deep Learning chatbot accessed by web interface,</span><br/> providing travel recommendation for itinerary planning reference.
+                        We aim to utilize Natural Language Processing to construct a <br/>cross-domain, task-oriented Deep Learning chatbot accessed by web interface,<br/> providing travel recommendation for itinerary planning reference.
                         </h4>
                     </ScrollReveal>
 
@@ -442,7 +442,7 @@ function TourBot() {
                                 </Latex>
                                 <p className="my-3">We incorporate class weight adjustments to penalize the system for classifying an utterance into an incorrect intent.
                                 <br/>
-                                After using the class weight mechanism, we have retrained the model and performed validation to verify the improvement of the model. Evidently in Table 1, the F1-scores for all intents have increased. The highest increase in F1 is observed to be 6.6% in Select, an intent specifically handling cross-domain user intents (e.g. recommending a hotel near a restaurant). This result suggests that our experiment successfully allows the model to recognize cross-domain intent more easily and therefore <b className="theme">reduce the risk of misclassification error propagating in the pipeline system</b>.
+                                After using the class weight mechanism, we have retrained the model and performed validation to verify the improvement of the model. Evidently in Table 1, the F1-scores for all intents have increased. The highest increase in F1 is observed to be 6.6% in Select, an intent specifically handling cross-domain user intents (e.g. recommending a hotel near a restaurant). This result suggests that our experiment successfully allows the model to recognize cross-domain intent more easily and therefore <b className="">reduce the risk of misclassification error propagating in the pipeline system</b>.
                                 </p>
                             </ScrollReveal>
 
@@ -505,7 +505,7 @@ function TourBot() {
                                     </p>
                                     <p className="p-bold my-3">Adjustment</p>
                                     <p>
-                                    We hope to use a deep learning model to replace the rule-based one in order to provide maximum flexibility in handling varying intents. Thus, we reference Transformer-DST [2], a model integrating NLU and DST with the encoder-decoder structure to “<b className="theme">jointly optimize state operation prediction and value generation for dialogue state tracking</b>.”
+                                    We hope to use a deep learning model to replace the rule-based one in order to provide maximum flexibility in handling varying intents. Thus, we reference Transformer-DST [2], a model integrating NLU and DST with the encoder-decoder structure to “<b className="">jointly optimize state operation prediction and value generation for dialogue state tracking</b>.”
                                     </p>
                                 </div>
                                 <div className="col-lg-6 d-flex flex-column align-items-center">
@@ -527,14 +527,14 @@ function TourBot() {
                             <p className="mb-5">
                             In the encoder of Transformer-DST, it predicts the action to take in a given slot in Dialogue State by directly taking the current utterance (input of NLU) along with dialogue history and slot tokens for Dialogue State. The actions include <i className="italic">carryover</i> (leaving the slot unchanged), <i className="italic">update</i> (inserting new value into the slot), and <i className="italic">delete</i> (deleting the slot value).
                             <br/>
-                            However, <b className="theme">the majority of actions in the data are <i className="italic">carryover</i></b>. As a result of imbalanced data, the encoder for our model always predicts carryover to maximize its accuracy.
+                            However, <b className="">the majority of actions in the data are <i className="italic">carryover</i></b>. As a result of imbalanced data, the encoder for our model always predicts carryover to maximize its accuracy.
                             </p>
                         </ScrollReveal>
 
                         <ScrollReveal>
                         <p className="p-bold my-3">Adjustment</p>
                         <p className="mb-5">
-                            We once again use our class weight formulation to penalize the encoder for misclassification. As a result, the model does start predicting actions other than carryover. But this also means <b className="theme"> a drastic decrease in the joint accuracy (-20%)</b>, since the model classifies many carryover’s into other actions.
+                            We once again use our class weight formulation to penalize the encoder for misclassification. As a result, the model does start predicting actions other than carryover. But this also means <b className=""> a drastic decrease in the joint accuracy (-20%)</b>, since the model classifies many carryover’s into other actions.
                         </p>
                         <div className="row mb-5">
                             <div className="col-md-6">
@@ -705,7 +705,7 @@ function TourBot() {
 
                         <ScrollReveal>
                             <h4 className="section-wrapper statement">
-                            Our experiments have shown that the Transformer structure of DST model can be utilized <span className="theme">not only in English but also Chinese</span>, although model refinement to further increase its accuracies may be needed.
+                            Our experiments have shown that the Transformer structure of DST model can be utilized not only in English but also Chinese, although model refinement to further increase its accuracies may be needed.
                             </h4>
                         </ScrollReveal>
                     </div>

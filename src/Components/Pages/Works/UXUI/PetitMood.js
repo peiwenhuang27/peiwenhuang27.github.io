@@ -108,7 +108,7 @@ function PetitMood () {
                         <div className="row align-items-start">
                             <p className="col-lg-8 mb-3">
                                 University students are the high-risk population to experience mental disturbance, such as depression disorder and anxiety disorder. Although most universities provide counseling services, along with other treatments available outside of school, the majority of them remain inaccessible due to unawareness of services or insurance coverage or skepticism about treatment effectiveness. To approach the conundrum, previous studies adopted clinic interventions of animal-assisted intervention (AAI) to reduce students’ measured health negative outcomes. However, not all schools have established AAIs; furthermore, some are simply not able to interact with animals because of allergy or other reasons.
-    <br/><br/>Motivated by such issues, this study intended to design and develop <b className="theme">a digital solution using mobile AR to help relieve negative emotions for university students self-use</b> to provide university students with an accessible means to understand and treat their mental health with care.
+    <br/><br/>Motivated by such issues, this study intended to design and develop <b className="">a digital solution using mobile AR to help relieve negative emotions for university students self-use</b> to provide university students with an accessible means to understand and treat their mental health with care.
                             </p>
                             <img className="col-lg-4 px-5" src="/works/UXUI/petit-mood/design-flow.png" alt="design flow"/>
                         </div>
@@ -277,16 +277,16 @@ function PetitMood () {
                                 <div className="table-body">
                                     <div className="w-100 row">
                                         <p className="col-md-4 my-2 p-bold italic">Basic</p>
-                                        <p className="col-md-8 my-2"><b className="theme">Status scores of fullness/cleanness/happiness</b></p>
+                                        <p className="col-md-8 my-2"><b className="">Status scores of fullness/cleanness/happiness</b></p>
                                     </div>
                                     <div className="w-100 row">
                                         <p className="col-md-4 my-2 p-bold italic">Performance</p>
-                                        <p className="col-md-8 my-2">Pet growth development, <b className="theme">Pet interaction upon tapping</b></p>
+                                        <p className="col-md-8 my-2">Pet growth development, <b className="">Pet interaction upon tapping</b></p>
                                     </div>
                                     <div className="w-100 row">
                                         <p className="col-md-4 my-2 p-bold italic">Excitement</p>
-                                        <p className="col-md-8 my-2"><b className="theme">Pet digesting the dairy</b>, Producing treasures after digesting negativity,
-                                        <b className="theme">Incorporation of approach-avoidance bias modification training (AAMT), Meditation practice, 
+                                        <p className="col-md-8 my-2"><b className="">Pet digesting the dairy</b>, Producing treasures after digesting negativity,
+                                        <b className="">Incorporation of approach-avoidance bias modification training (AAMT), Meditation practice, 
                                             Popping bubble while cleaning the pet</b>, Personalization of the pet, Outdoor games for dog-walking,
                                             Face recognition game to encourage smiling</p>
                                     </div>
@@ -350,8 +350,8 @@ function PetitMood () {
                                     <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_feeding.png" alt="feeding icon" />
                                     <h6 className="theme my-3">Feeding</h6>
                                     <p className="text-center">
-                                    Inspired by the gamified AAMT mobile application for cognitive bias modification [21, 23, 33, 39], this mini game requires user to <b className="theme">recognize the positive stimuli to approach it while avoiding the negative one</b>.
-                The stimuli are translated to healthy diet and junk food in the feeding scenario, each paired with a positive or negative statement made by the personified pet about itself. By identifying the positive stimulus for the pet, the player can <b className="theme">learn to apply the similar mindset to themselves</b>. 
+                                    Inspired by the gamified AAMT mobile application for cognitive bias modification [21, 23, 33, 39], this mini game requires user to <b className="">recognize the positive stimuli to approach it while avoiding the negative one</b>.
+                The stimuli are translated to healthy diet and junk food in the feeding scenario, each paired with a positive or negative statement made by the personified pet about itself. By identifying the positive stimulus for the pet, the player can <b className="">learn to apply the similar mindset to themselves</b>. 
                                     </p>
                                 </div>
                             </ScrollReveal>
@@ -363,7 +363,7 @@ function PetitMood () {
                                     <img className="mb-5" style={{width: "150px"}} src="/works/UXUI/petit-mood/icons/icon_cleaning.png" alt="cleaning icon" />
                                     <h6 className="theme my-3">Cleaning</h6>
                                     <p className="text-center">
-                                    For this mini-game, the player needs to clean up the pet with a bubble bath. After choosing their preferred essential oil to add in the AR pet’s bathtub, the pet will enjoy the bubble bath while the player can <b className="theme">pop the bubbles</b> arising from the bath. The act of popping bubbles is translated from the popular activity of popping Bubble Wrap to simulate a <b className="theme">repetitive, nervous motion that helps release tension and reduce stress</b> [11, 12].
+                                    For this mini-game, the player needs to clean up the pet with a bubble bath. After choosing their preferred essential oil to add in the AR pet’s bathtub, the pet will enjoy the bubble bath while the player can <b className="">pop the bubbles</b> arising from the bath. The act of popping bubbles is translated from the popular activity of popping Bubble Wrap to simulate a <b className="">repetitive, nervous motion that helps release tension and reduce stress</b> [11, 12].
                                     </p>
                                 </div>
                             </ScrollReveal>
@@ -434,7 +434,7 @@ function PetitMood () {
                                 <img className="w-100" src="/works/UXUI/petit-mood/table3.png" alt="SWOT analysis of Petit Mood" />
                             </div>
                             <p className="col-lg-6">
-                            Results of the SWOT analysis suggested apparent strengths of Petit Mood in <b className="theme">a clear goal to help users relieve negative emotions, the use of AR technology to simulate an immersive environment, dialogues relevant to the subject of mood, and a novel yet light gaming experience aimed at reducing stress</b>. These strengths validate the major objective of Petit Mood to facilitate users’ awareness and relief of their mental states. In addition, Petit Mood not only has similar basic functionalities to most existing pet games, but also provides users with more immersive and interactive spatial experiences through the application of AR, which breaks through the mostly flat and narrative interfaces and interaction. 
+                            Results of the SWOT analysis suggested apparent strengths of Petit Mood in <b className="">a clear goal to help users relieve negative emotions, the use of AR technology to simulate an immersive environment, dialogues relevant to the subject of mood, and a novel yet light gaming experience aimed at reducing stress</b>. These strengths validate the major objective of Petit Mood to facilitate users’ awareness and relief of their mental states. In addition, Petit Mood not only has similar basic functionalities to most existing pet games, but also provides users with more immersive and interactive spatial experiences through the application of AR, which breaks through the mostly flat and narrative interfaces and interaction. 
                             </p>
                             
                         </div>
@@ -452,7 +452,7 @@ function PetitMood () {
                             <div className="col-lg-6 mb-5">
                                 <h6 className="mb-3">Results</h6>
                                 <p>
-                                    <b className="theme">Relieving tension and anxiety and relieving depression or slump</b> received highest scores with lowest standard deviations, providing supporting evidence that Petit Mood could relieve users’ negative emotions.
+                                    <b className="">Relieving tension and anxiety and relieving depression or slump</b> received highest scores with lowest standard deviations, providing supporting evidence that Petit Mood could relieve users’ negative emotions.
                                 </p>
                                 <img className="w-100 my-5" src="/works/UXUI/petit-mood/table4.png" alt="Usability test results" />
                             </div>
@@ -466,7 +466,7 @@ function PetitMood () {
                         <div className="subsection-wrapper-bottom">
                             <h6 className="mb-3">User interview</h6>
                             <p>
-                            It is important to <b className="theme">prioritize users’ comfort</b> when conducting user interviews. By starting the interview with a bit chit-chat, users are more likely to relax and feel more welcome. Additionally, after asking a question, we as interviewers should not simply follow the interview outline but adjust our responses according to users’ answers. We may ask how exactly an event made users feel, or what was the consequences of an event. Much valuable information comes from extra questions, and it also makes interviewees feel heard.
+                            It is important to <b className="">prioritize users’ comfort</b> when conducting user interviews. By starting the interview with a bit chit-chat, users are more likely to relax and feel more welcome. Additionally, after asking a question, we as interviewers should not simply follow the interview outline but adjust our responses according to users’ answers. We may ask how exactly an event made users feel, or what was the consequences of an event. Much valuable information comes from extra questions, and it also makes interviewees feel heard.
                             </p>
                         </div>
                     </ScrollReveal>
@@ -475,7 +475,7 @@ function PetitMood () {
                         <div className="subsection-wrapper">
                             <h6 className="mb-3">Literature review</h6>
                             <p>
-                            In the process of performing a literature review, I realized the importance of structure. When an idea comes to mind, it is usually more abstract and unstructured. However, <b className="theme">we need to seek theoretical basis for our claim, and it needs to be proceeded with a strong structure</b>. For example, when we want to argue the advantage of an AR pet game, we should first address how real-life pets are conducive to human health, then how AR technology can simulate environments to create an immersive experience, finally hypothesize that AR pet game can achieve similar effects to real-life pets.
+                            In the process of performing a literature review, I realized the importance of structure. When an idea comes to mind, it is usually more abstract and unstructured. However, <b className="">we need to seek theoretical basis for our claim, and it needs to be proceeded with a strong structure</b>. For example, when we want to argue the advantage of an AR pet game, we should first address how real-life pets are conducive to human health, then how AR technology can simulate environments to create an immersive experience, finally hypothesize that AR pet game can achieve similar effects to real-life pets.
                             </p>
                         </div>
                     </ScrollReveal>

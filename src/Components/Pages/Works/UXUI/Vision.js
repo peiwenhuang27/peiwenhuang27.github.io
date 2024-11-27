@@ -7,9 +7,6 @@ import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 import ProgressBar from "../../../ScrollBar";
 import { Subsection } from "../../../Topic";
 
-// TODO
-// sidebar navigation
-
 
 function Vision ({ pageHeight, handleSubsectionClick }) {
     const [activeItem, setActiveItem] = useState(0);

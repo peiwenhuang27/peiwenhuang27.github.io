@@ -7,8 +7,7 @@ import ProgressBar from "../../../ScrollBar";
 import { Subsection } from "../../../Topic";
 
 // nice-to-have
-// scroll down dropdown list (features)
-// mid-fi trim
+// icon size difference
 
 function DropdownToggle ({ view, toggleView, toggleTxt }) {
     return (
