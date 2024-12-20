@@ -548,25 +548,25 @@ export default PetitMood;
 
 const projects = [
     {
-        'link': '/Works/design/Fluffy-Focus',
+        'link': '/Works/design/Fairplay',
         'data': {
-            'title': 'Fluffy Focus', 
-            'id': 'Fluffy-Focus',
-            'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
-            'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
-            'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-            'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-          }
+            'title': 'FairPlay', 
+            'id': 'Fairplay',
+            'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
+            'desc': 'Your AI Advocate for All Things Customer Service',
+            'img': 'https://i.imgur.com/RcjjaFq.png',
+            'ph': 'https://i.imgur.com/RcjjaFq.png',
+        }
     },
     {
-        'link': '/Works/design/Ford-Vision',
+        'link': '/Works/design/Vision',
         'data': {
-            'title': 'Ford Vision', 
-            'id': 'Ford-Vision',
+            'title': 'Vision', 
+            'id': 'Vision',
             'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
             'desc': 'Redefining Semi-Autonomous Electric Vehicle Paradigm',
-            'img': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
-            'ph': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
+            'img': 'https://i.imgur.com/tCWNnCe.png',
+            'ph': 'https://i.imgur.com/tCWNnCe.png',
         }
     },
 ];

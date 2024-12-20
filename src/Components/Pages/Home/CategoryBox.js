@@ -5,7 +5,7 @@ import { ScrollReveal } from "../../Helpers/SmoothScroll";
 
 function Title ({ link, title }) {
     return (
-        <div className="mb-5">
+        <div className="subsection-wrapper-bottom">
             <Link to={link} className="text-decoration-none">
                 <h4>{title}</h4>
             </Link>

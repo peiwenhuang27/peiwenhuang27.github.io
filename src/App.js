@@ -26,7 +26,6 @@ function App() {
   const [view, setView] = useState(false);
 
   useEffect(() => {
-    console.log("pageHeight in App, ", pageHeight);
     // set height for intersection observer
     setPageHeight(window.innerHeight);
     window.addEventListener("resize", () => {
@@ -61,12 +60,12 @@ function App() {
         'id': 'Fairplay',
         'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
         'desc': 'Your AI Advocate for All Things Customer Service',
-        'img': 'https://i.imgur.com/GHNN8GS.jpeg',
-        'ph': 'https://i.imgur.com/GHNN8GS.jpeg',
+        'img': 'https://i.imgur.com/RcjjaFq.png',
+        'ph': 'https://i.imgur.com/RcjjaFq.png',
       },
       {
-        'title': 'Ford Vision', 
-        'id': 'Ford-Vision',
+        'title': 'Vision', 
+        'id': 'Vision',
         'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
         'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
         'img': 'https://i.imgur.com/tCWNnCe.png',
@@ -124,10 +123,10 @@ function App() {
     },
   ];
   const homeData = [
-    {'suffix': 'design', 'name': 'Design Projects',
+    {'suffix': 'design', 'name': 'I champion users with empathy and a focus on details,',
       'items': workData[0]['items'].slice(0, 2)
     },
-    {'suffix': 'engineering', 'name': '...Did I say I code too?',
+    {'suffix': 'engineering', 'name': '... And leverage my coding skills to bring designs to life.',
       'items': workData[1]['items'].slice(0, 1)
     },
   ];

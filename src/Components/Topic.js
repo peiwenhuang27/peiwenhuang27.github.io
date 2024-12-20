@@ -35,7 +35,7 @@ function Topic ({ pageHeight }) {
     if(workId === 'Fluffy-Focus') {
         work = <Fluffy pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
-    if(workId === 'Ford-Vision') {
+    if(workId === 'Vision') {
         work = <Vision pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if(workId === 'Sous-Chef') {

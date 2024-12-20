@@ -97,15 +97,15 @@ export default SLZ;
 
 const projects = [
     {
-        'link': '/Works/design/Sous-Chef',
+        'link': '/Works/design/Fairplay',
         'data': {
-            'title': 'Sous Chef', 
-            'id': 'Sous-Chef',
-            'tags': ['Service Design', 'User Research', 'Giant Eagle', 'Meal Planning'],
-            'desc': 'Post-work Meals & Home-cook Starters',
-            'img': 'https://live.staticflickr.com/65535/53739446457_a00580cdc8_h.jpg',
-            'ph': 'https://live.staticflickr.com/65535/53739446457_bdd4cbf39e_c.jpg',
-          },
+            'title': 'FairPlay', 
+            'id': 'Fairplay',
+            'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
+            'desc': 'Your AI Advocate for All Things Customer Service',
+            'img': 'https://i.imgur.com/RcjjaFq.png',
+            'ph': 'https://i.imgur.com/RcjjaFq.png',
+        }
     },
     {
         'link': '/Works/research/Petit-Mood',

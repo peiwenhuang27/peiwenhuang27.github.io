@@ -1,63 +1,37 @@
 import { Link } from 'react-router-dom';
 import { LogoIcon, ArrowIcon } from '../../Icons';
-import ProgressiveImage from 'react-progressive-bg-image';
-
+import { ScrollReveal } from '../../Helpers/SmoothScroll';
 
 function Banner () {
-    const img_src = "https://live.staticflickr.com/65535/52516580065_a71e3f7f51_k.jpg";
-    const img_ph = "https://live.staticflickr.com/65535/52516580065_e5de0629f5_o.jpg";
-
 
     return (
-        <section className="banner">
-            <div className='img-container'>
-            {/* style={{ backgroundImage: `url(${img_src})` }}> */}
-                <div className='container section-wrapper d-flex flex-column justify-content-around'>
-                    <div className='mb-3 d-flex flex-column align-items-center'>
-                        {/* <LogoIcon /> */}
-                        <h1 className='text-center'>I am Peiwen Huang,<br/>catalyzing self-growth in my users (you!), as a </h1>
-                    </div>
-                    
-                    <div className='d-flex flex-column align-items-center'>                
-                    <ul className='list-wrapper row justify-content-center'>
-                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-1">
-                            <Link to="/Works/design" className="d-flex align-items-center">
-                                <div className="circle" id="circle-1"></div>
-                                <div className='h-6'>designer <span>»</span></div>
-                            </Link>
-                        </li>
-                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-3">
-                            <Link to="/Works/engineering" className="d-flex align-items-center">
-                                <div className="circle" id="circle-3"></div>
-                                <div className='h-6'>engineer <span>»</span></div>
-                            </Link>
-                        </li>
-                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-2">
-                            <Link to="/Works/research" className="d-flex align-items-center">
-                                <div className="circle" id="circle-2"></div>
-                                <div className='h-6'>researcher <span>»</span></div>
-                            </Link>
-                        </li>
-                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-4">
-                            <Link to="/Art" className="d-flex align-items-center">
-                                <div className="circle" id="circle-4"></div>
-                                <div className='h-6'>artist <span>»</span></div>
-                            </Link>
-                        </li>
-                        <li className="col-md-3 col-sm-6 m-3 h-6 d-flex justify-content-center" id="role-5">
-                            <a href="https://medium.com/@pwh27design" target="_blank" className="d-flex align-items-center" rel="noreferrer noopener">
-                                <div className="circle" id="circle-5"></div>
-                                <div className='h-6'>writer <span>»</span></div>
-                            </a>
-                        </li>
-                    </ul>
-                    </div>
-                    <Link to="/#works" className="svg-wrapper">
-                        <ArrowIcon />
-                    </Link>
+        <ScrollReveal>
+            <section className="banner section-wrapper topic-container-lg row align-items-center">
+                <div className="col-md-6 d-flex justify-content-center">
+                    <img className="w-sizer-lg no-shadow" src="/pfp-illustration.jpg" alt="Peiwen Huang illustration" />
                 </div>
-            </div>
-        </section>
+
+                <div className="col-md-6 d-flex justify-content-center">
+                    <div>
+                        <h6 className='m-0'>Product Designer</h6>
+                        <h1 className='mb-5'>Peiwen Huang</h1>
+                        
+                        
+                        <h3 className='mb-5'>
+                            <Link to="/Works/design" className='banner-link' id="banner-design-link">Design</Link> for People,<br/>
+                            <Link to="/Works/research" className='banner-link' id="banner-research-link">Research</Link> for Opportunity,<br/>
+                            <Link to="/Works/engineering" className='banner-link' id="banner-engineer-link">Engineer</Link> for Innovation.<br/>
+                            {/* Uphold simplicity, above all. */}
+                        </h3>
+
+                        <button className="primary-btn h-6">
+                            <Link to="/#works">Explore</Link>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+        </ScrollReveal>
     );
 };
 

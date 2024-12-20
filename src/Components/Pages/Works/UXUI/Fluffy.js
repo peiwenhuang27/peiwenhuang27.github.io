@@ -756,25 +756,25 @@ const cards = [
 // link, data
 const projects = [
     {
-        'link': '/Works/design/Ford-Vision',
+        'link': '/Works/design/Fairplay',
         'data': {
-            'title': 'Ford Vision', 
-            'id': 'Ford-Vision',
-            'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-            'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
-            'img': 'https://live.staticflickr.com/65535/53794621302_83556ca979_o.png',
-            'ph': 'https://live.staticflickr.com/65535/53794621302_83556ca979_o.png',
+            'title': 'FairPlay', 
+            'id': 'Fairplay',
+            'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
+            'desc': 'Your AI Advocate for All Things Customer Service',
+            'img': 'https://i.imgur.com/RcjjaFq.png',
+            'ph': 'https://i.imgur.com/RcjjaFq.png',
         }
     },
     {
-        'link': '/Works/design/2Done',
+        'link': '/Works/design/Vision',
         'data': {
-            'title': '2Done', 
-            'id': '2Done',
-            'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
-            'desc': 'Gamified to-do list desktop app for procrastination',
-            'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
-            'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
+            'title': 'Vision', 
+            'id': 'Vision',
+            'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
+            'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
+            'img': 'https://i.imgur.com/tCWNnCe.png',
+            'ph': 'https://i.imgur.com/tCWNnCe.png',
         }
-    },
+    }, 
 ];

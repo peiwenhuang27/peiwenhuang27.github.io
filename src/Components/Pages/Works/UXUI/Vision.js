@@ -592,12 +592,12 @@ const cards = [
         'link': '/Works/design/Fairplay',
         'data': {
             'title': 'FairPlay', 
-            'id': 'FairPlay',
+            'id': 'Fairplay',
             'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
             'desc': 'Your AI Advocate for All Things Customer Service',
-            'img': 'https://i.imgur.com/GHNN8GS.jpeg',
-            'ph': 'https://i.imgur.com/GHNN8GS.jpeg',
-        }        
+            'img': 'https://i.imgur.com/RcjjaFq.png',
+            'ph': 'https://i.imgur.com/RcjjaFq.png',
+        }
     },
     {
         'link': '/Works/design/Fluffy-Focus',

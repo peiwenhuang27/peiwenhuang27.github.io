@@ -96,6 +96,17 @@ export default Alchemy;
 
 const projects = [
     {
+        'link': '/Works/design/Fairplay',
+        'data': {
+            'title': 'FairPlay', 
+            'id': 'Fairplay',
+            'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
+            'desc': 'Your AI Advocate for All Things Customer Service',
+            'img': 'https://i.imgur.com/RcjjaFq.png',
+            'ph': 'https://i.imgur.com/RcjjaFq.png',
+        }
+    },
+    {
         'link': '/Works/design/Fluffy-Focus',
         'data': {
             'title': 'Fluffy Focus', 
@@ -105,16 +116,5 @@ const projects = [
             'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
             'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
           }
-    },
-    {
-        'link': '/Works/research/Petit-Mood',
-        'data': {
-            'title': 'Petit Mood', 
-            'id': 'Petit-Mood',
-            'tags': ['HCI', 'UX', 'AR', 'GameDesign', 'MentalHealth'],
-            'desc': 'An AR Pet game to relieve university students\' emotions',
-            'img': 'https://live.staticflickr.com/65535/52515678782_7a973a13a8_k.jpg',
-            'ph': 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_m.jpg',
-          },
     },
 ];

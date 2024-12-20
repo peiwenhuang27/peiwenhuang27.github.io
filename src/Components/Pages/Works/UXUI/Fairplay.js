@@ -1085,14 +1085,14 @@ const cards = [
 // link, data
 const projects = [
     {
-        'link': '/Works/design/Ford-Vision',
+        'link': '/Works/design/Vision',
         'data': {
-            'title': 'Ford Vision', 
-            'id': 'Ford-Vision',
+            'title': 'Vision', 
+            'id': 'Vision',
             'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
             'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
-            'img': 'https://live.staticflickr.com/65535/53794621302_83556ca979_o.png',
-            'ph': 'https://live.staticflickr.com/65535/53794621302_83556ca979_o.png',
+            'img': 'https://i.imgur.com/tCWNnCe.png',
+            'ph': 'https://i.imgur.com/tCWNnCe.png',
         }
     },
     {

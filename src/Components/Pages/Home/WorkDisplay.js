@@ -87,9 +87,6 @@ function WorkDisplay ({ data }) {
         <div className="main-body intro-body">
             <WorkList data={data} prefix={prefix} />
             <ScrollReveal>
-                <Intro />
-            </ScrollReveal>
-            <ScrollReveal>
                 <Quote />
             </ScrollReveal>
         </div>
