@@ -10,12 +10,12 @@ function Banner () {
 
     return (
         <section className="banner">
-            <div className='img-container' style={{ backgroundImage: `url(${img_src})` }}>
+            <div className='img-container'>
+            {/* style={{ backgroundImage: `url(${img_src})` }}> */}
                 <div className='container section-wrapper d-flex flex-column justify-content-around'>
                     <div className='mb-3 d-flex flex-column align-items-center'>
-                        <LogoIcon />
-                        <h1 className='text-center'>Peiwen Huang</h1>
-                        <h2 className='text-center'>I catalyze self-growth in my users (you!), as a </h2>
+                        {/* <LogoIcon /> */}
+                        <h1 className='text-center'>I am Peiwen Huang,<br/>catalyzing self-growth in my users (you!), as a </h1>
                     </div>
                     
                     <div className='d-flex flex-column align-items-center'>                

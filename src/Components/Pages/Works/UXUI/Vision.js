@@ -1,18 +1,27 @@
 import { useEffect, useState, useRef, createRef } from "react";
 import Iframe from 'react-iframe';
 
+import Video from "../../../Helpers/Video";
+
 import ProjectRec from "../../../ProjectRec";
 import HorizontalScrollCarousel, { HorizontalCarousel } from "../../../HorizontalScrollCarousel";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 import ProgressBar from "../../../ScrollBar";
 import { Subsection } from "../../../Topic";
 
+// put this in later section?
+{/* <div ref={demoVid} className="my-5" >
+    <div className="responsive-iframe">
+        <Iframe src="https://www.youtube.com/embed/9lJoc7X66kQ?si=0P3ZUJl_7qwqCqAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+    </div>
+</div> */}
+// Objective: What is semi-autonomous vehicles? Why are they important?
 
 function Vision ({ pageHeight, handleSubsectionClick }) {
     const [activeItem, setActiveItem] = useState(0);
 
     const demoVid = useRef(null);
-    const img_src = "https://live.staticflickr.com/65535/53794621302_83556ca979_o.png";   
+    const img_src = "https://i.imgur.com/fKD9Vjq.png";   
 
     const items = [
         {
@@ -24,53 +33,51 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
                         <ScrollReveal>
                             <div className="topic-title-container mb-5">
                                     <h3 className="mb-1 color-dark text-bold date">October 2023 - December 2023</h3>
-                                    <h2 className="mb-1">Ford Vision: Easy, Delightful Beginner's E-moped Experience </h2>
+                                    <h2 className="mb-1">Vision: Easy, Delightful Beginner's E-moped Experience </h2>
                                     <h3 className="theme mb-5">Interaction Design Fundamentals, Autonomous Vehicle, UX</h3>
                                     <p className="mb-5">
-                                    As the trend of autonomous vehicles soaring higher than ever before, our team envisioned Vision— a Ford semi-autonomous electric moped, and integrated existing moped features and an innovative semi-autonomy interaction paradigm to provide seamless experience.
+                                    As the trend of autonomous vehicles soaring higher than ever before, our team envisioned Vision— a semi-autonomous electric moped, and integrated existing moped features and an innovative semi-autonomy interaction paradigm to provide seamless experience.
                                 
                                     </p>
                             </div>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <div className="subsection-wrapper row mb-5">
-                                <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
-                                    <h6 className="theme mb-3">Duration </h6>
-                                    <ul>
-                                        <li>2 months</li>
-                                    </ul>
-                                </div>
-                                <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
-                                    <h6 className="theme mb-3">Role</h6>
-                                    <ul>
-                                        <li>Lead Designer</li>
-                                        <li>Researcher</li>
-                                    </ul>
-                                </div>
-                                <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
-                                    <h6 className="theme mb-3">Team</h6>
-                                    <ul>
-                                        <li>4 people</li>
-                                    </ul>
-                                </div>
-                                <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
-                                    <h6 className="theme mb-3">Tool</h6>
-                                    <ul>
-                                        <li>Figma</li>
-                                    </ul>
-                                </div>
-                                <div className="topic-desc-container col mb-5">
-                                    <h6 className="theme mb-3">Responsibilities</h6>
-                                    <ul className="row">
-                                        <li className="col-md-6">Designing mobile & moped interface</li>
-                                        <li className="col-md-6">Building physical & digital prototype</li>
-                                        <li className="col-md-6">Brainstorming features</li>
-                                        <li className="col-md-6">Conducting background research</li>
-                                        <li className="col-md-6">Running usability tests</li>
-                                    </ul>
+                            <div className="subsection-wrapper">
+                                <div className="row">
+                                    <div className="topic-desc-container col-md-6 mb-5">
+                                        <h6 className="theme mb-3">Duration</h6>
+                                        <ul>
+                                            <li>2 months</li>
+                                        </ul>
+                                    </div>
+                                    <div className="topic-desc-container col-md-6 mb-5">
+                                        <h6 className="theme mb-3">Tool</h6>
+                                        <ul>
+                                            <li>Figma</li>
+                                        </ul>
+                                    </div>
+                                    <div className="topic-desc-container col-md-6 mb-5">
+                                        <h6 className="theme mb-3">Role</h6>
+                                        <ul>
+                                            <li>Lead Designer</li>
+                                            <li>Researcher</li>
+                                        </ul>
+                                    </div>
+                                    <div className="topic-desc-container col-md-6 mb-5">
+                                        <h6 className="theme mb-3">Team</h6>
+                                        4 people
+                                    </div>
+                                    <div className="topic-desc-container col mb-5">
+                                        <h6 className="theme mb-3">Responsibilities</h6>
+                                        <ul className="list-disc">
+                                            <li>Conducted comprehensive background research, including guerrilla and moderated interviews with 4 experienced moped users.</li>
+                                            <li>Led internal brainstorming sessions to identify and develop 6 key product features from 3 main pain points.</li>
+                                            <li>Spearheaded the design of mobile and moped UIs, utilizing Figma for digital prototypes and building physical prototypes for thorough testing.</li>
+                                            <li>Conducted usability tests with 3 users, receiving positive feedback on innovative smart mirrors and the intuitive integration of moped controls with screen components.</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <p className="italic">Note: This project is not officially associated with Ford.</p>
                         </ScrollReveal>
                     </div>
                 </div>
@@ -80,151 +87,107 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
             name: "Demo",
             content:
             <div>
-                <ScrollReveal>
-                    <div className="theme-bg">
-                        <div className="container">
-                            <div className="topic-container subsection-wrapper">
-                                <h3 className="mb-5">💻 Demo</h3>
-                                <div ref={demoVid} className="my-5" >
-                                    <div className="responsive-iframe">
-                                        <Iframe src="https://www.youtube.com/embed/9lJoc7X66kQ?si=0P3ZUJl_7qwqCqAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ScrollReveal>
-
                 <div className="container">
-                    <div className="topic-container section-wrapper">
-                        <ScrollReveal>
-                        <h3 className="col-md-6">Final Showcase</h3>
-                        <div className="my-5 d-flex flex-column align-items-center">
-                            <img className="w-100" src="/works/UXUI/vision/Moodboard.png" alt="moodboard of science fair" />
-                            <p className="table-caption mt-3">In-class Science Fair Demo Session</p>
-                        </div>
-                        </ScrollReveal>
+                    <div className="topic-container subsection-wrapper">
+                        <h3 className="">💻 Demo: Revolutionize Your Ride with Vision E-Moped</h3>
                         
                         <ScrollReveal>
                             <div className="section-wrapper">
-                                <div className="my-3 row align-items-start">
-                                    <div className="col-md-3">
-                                        <h6 className=" theme">Unlocking Moped</h6>
-                                        <p className="text-bold">Mobile</p>
-                                    </div>
-                                    
-                                    <div className="col-md-9 mb-3 d-flex justify-content-center">
-                                        <img className="w-100" src="/works/UXUI/vision/prototype/2-mobile_turn_on.png" alt="mobile turn on" />
-                                    </div>
-                                </div>
-
-                                <div className="my-3 row">
-                                    <div className="col-md-3">
-                                        <p className="text-bold">Dashboard</p>
-                                    </div>
-                                    
-                                    <div className="col-md-9 mb-3 d-flex justify-content-center">
-                                        <img className="w-100" src="/works/UXUI/vision/prototype/3-moped_turn_on.png" alt="moped turn on" />
-                                    </div>
-                                </div>
-                            </div>
-                        </ScrollReveal>
-                        
-                        <ScrollReveal>
-                            <div className="section-wrapper">
-                                <div className="my-3 row align-items-start">
-                                    <div className="col-md-3">
-                                        <h6 className="theme">GPS Navigation</h6>
-                                        <p className="text-bold">Mobile</p>
-                                    </div>
-                                    
-                                    <div className="col-md-9 mb-3 d-flex justify-content-center">
-                                        <img className="w-100" src="/works/UXUI/vision/prototype/4-mobile_GPS.png" alt="mobile GPS" />
-                                    </div>
-                                </div>
-
-                                <div className="my-3 row">
-                                    <div className="col-md-3">
-                                        <p className="text-bold">Dashboard</p>
-                                    </div>
-                                    
-                                    <div className="col-md-9 mb-3 d-flex justify-content-center">
-                                        <img className="w-100" src="/works/UXUI/vision/prototype/5-moped_GPS.png" alt="moped GPS" />
-                                    </div>
-                                </div>
-                            </div>
-                        </ScrollReveal>
-
-                        <ScrollReveal>
-                            <div className="section-wrapper">
-                                <div className="my-3 row align-items-start">
-                                    <div className="col-md-3">
-                                        <h6 className="theme">Auto Mode</h6>
-                                        <p className="text-bold mb-0">Hand-off</p>
-                                        <p className="caption">Press Auto Button to turn on automatic driving mode</p>
-                                    </div>
-                                    
-                                    <div className="col-md-9 mb-3 d-flex justify-content-center">
-                                        <img className="w-100" src="/works/UXUI/vision/prototype/6-auto_handover.png" alt="auto handover" />
-                                    </div>
-                                </div>
-                                <div className="my-3 row align-items-start">
-                                    <div className="col-md-3">
-                                        <p className="text-bold mb-0">Take-over</p>
-                                        <p className="caption">Prompts to switch to Manual mode in emergencies, or automatically pulls over to await inspection</p>
-                                    </div>
-                                    
-                                    <div className="col-md-9 mb-3 d-flex justify-content-center">
-                                        <img className="w-100" src="/works/UXUI/vision/prototype/9-auto_takeover.png" alt="auto takeover" />
-                                    </div>
-                                </div>
-                            </div>
-                        </ScrollReveal>
-
-                        <ScrollReveal>
-                            <div className="section-wrapper">
-                                <div className="my-3 row align-items-start">
-                                    <div className="col-md-3">
-                                        <h6 className="theme">Power Saving</h6>
-                                        <p className="text-bold mb-0">Dashboard</p>
-                                        <p className="caption">Low battery warning: suggests to turn on Power Saving Mode</p>
-                                    </div>
-                                    
-                                    <div className="col-md-9 mb-3 d-flex justify-content-center">
-                                        <img className="w-100" src="/works/UXUI/vision/prototype/7-power_saving.png" alt="power saving" />
-                                    </div>
-                                </div>
-                                <div className="my-3 row align-items-start">
-                                    <div className="col-md-3">
-                                        <h6 className="theme">Battery Charging</h6>
-                                        <p className="text-bold mb-0">Dashboard</p>
-                                        <p className="caption">Prompts to start charging when pulled over</p>
-                                    </div>
-                                    
-                                    <div className="col-md-9 mb-3 d-flex justify-content-center">
-                                        <img className="w-100" src="/works/UXUI/vision/prototype/8-charging.png" alt="battery charging" />
-                                    </div>
-                                </div>
-                            </div>
-                        </ScrollReveal>
-
-                        <ScrollReveal>
-                            <div className="section-wrapper">
-                                <div className="my-3 row align-items-start">
+                                <div className="row align-items-start">
                                     <div className="col-md-6">
-                                        <h6 className="theme">Smart Rearview Mirrors</h6>
-                                        <p className="caption">AI rearview overlay to detect overtaking vehicles</p>
+                                        <h5 className="theme mb-3">Keyless Unlocking Made Effortless</h5>
                                         <p>
-                                            <ul className="list-disc">
-                                                <li>Detects and displays the speed of trailing vehicles</li>
-                                                <li><b className="theme">Analyzes & alerts the rider of potential high-speed passes</b></li>
-                                                <li>Recognizes different vehicles, eg. informs of nearby police cars</li>
-                                            </ul>
+                                        Say goodbye to fumbling for keys! Unlock and start your Vision moped effortlessly with Touch ID. Convenience is just a touch away.
+                                        </p>
+                                    </div>
+
+                                    <div className="col-md-6 mb-4 d-flex justify-content-center">
+                                        <Video src="https://i.imgur.com/WgF6Weo.mp4" width="540" />
+                                    </div>
+                                </div>
+                            </div>
+                        </ScrollReveal>
+                        
+                        <ScrollReveal>
+                            <div className="section-wrapper">
+                                <div className="row align-items-start">
+                                    <div className="col-md-6">
+                                        <h5 className="theme mb-3">Built-In GPS Navigation</h5>
+                                        <p>
+                                        First time on the road? No problem. Vision's GPS navigation ensures you'll always find your way, so you can focus on the ride ahead with confidence.
                                         </p>
                                     </div>
                                     
-                                    <div className="col-md-6 mb-3 d-flex justify-content-center">
-                                        <img className="w-100" src="/works/UXUI/vision/prototype/10-mirrors.png" alt="smart mirrors" />
+                                    <div className="col-md-6 mb-4 d-flex justify-content-center">
+                                        <Video src="https://i.imgur.com/Z5uVH6V.mp4" width="540" />
+                                    </div>
+                                </div>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal>
+                            <div className="section-wrapper">
+                                <div className="row align-items-start">
+                                    <div className="col-md-6">
+                                        <h5 className="theme mb-3">AUTO Mode: Hands-Free Freedom</h5>
+                                        <p>
+                                        Experience the future of commuting: Vision's AUTO mode can take the wheel. Sit back, and enjoy the ride as Vision drives autonomously. Need to take control? Simply steer anytime you're ready.
+                                        </p>
+                                    </div>
+                                    
+                                    <div className="col-md-6 mb-4 d-flex justify-content-center">
+                                        <Video src="https://i.imgur.com/TU3bZu1.mp4" width="540" />
+                                    </div>
+                                </div>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal>
+                            <div className="section-wrapper">
+                                <div className="row align-items-start">
+                                    <div className="col-md-6">
+                                        <h5 className="theme mb-3">Emergency Takeover</h5>
+                                        <p>
+                                        Safety comes first. Vision detects road emergencies, navigating obstacles, and even pulling over for alerts like low tire pressure.
+                                        </p>
+                                    </div>
+                                    
+                                    <div className="col-md-6 mb-4 d-flex justify-content-center">
+                                        <Video src="https://i.imgur.com/W2n1xNc.mp4" width="540" />
+                                    </div>
+                                </div>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal>
+                            <div className="section-wrapper">
+                                <div className="row align-items-start">
+                                    <div className="col-md-6">
+                                        <h5 className="theme mb-3">Mobile Integration at Your Fingertips</h5>
+                                        <p>
+                                        From unlocking your moped to setting up navigation and viewing trip insights, Vision keeps everything at your fingertips. Enjoy the ease of managing your ride straight from your smartphone.
+                                        </p>
+                                    </div>
+                                    
+                                    <div className="col-md-6 mb-4 d-flex justify-content-center">
+                                        <Video src="https://i.imgur.com/9FVRrUh.mp4" width="270" />
+                                    </div>
+                                </div>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal>
+                            <div className="section-wrapper">
+                                <div className="row align-items-start">
+                                    <div className="col-md-6">
+                                        <h5 className="theme">Smart Mirrors for Safer Rides</h5>
+                                        <p>
+                                        No more unexpected surprises! Vision's Smart Mirrors analyze your surroundings, alerting you to overtaking vehicles and nearby police cars to keep you informed and safe on the road.
+                                        </p>
+                                    </div>
+                                    
+                                    <div className="col-md-6 mb-4 d-flex justify-content-center">
+                                        <Video src="https://i.imgur.com/NzoLqKH.mp4" width="540" />
                                     </div>
                                 </div>
                             </div>
@@ -240,20 +203,27 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
                 <div className="container">
                     <ScrollReveal>
                         <div className="topic-container subsection-wrapper">
-                            <div className="row align-items-start">
-                                <h3 className="col-md-6 mb-5">🎯 Objective</h3>
-                                <div className="col-md-6">
-                                    <div className="mb-5">
-                                        <h6>Audience</h6>
-                                        <p>
-                                        First-time users of moped
-                                        </p>
-                                    </div>
+                            <h3 className="mb-5">🎯 Objective</h3>
+                            
+                            <div className="row">
+                                <div className="col-md-8 mb-3">
+                                    <h5 className="theme mb-3">What are semi-autonomous vehicles?<br/>Why do we need them?</h5>
+                                    
+                                    <p className="mb-5">
+                                    A semi-autonomous vehicle—whether it's a car, bike, or moped—can handle acceleration, deceleration, and stopping without human input. While it includes features like lane-keeping and self-parking, drivers still need to keep their hands on the wheel. <b>Automakers promote these features mainly for safety, helping to prevent accidents caused by driver fatigue or distractions.</b>
+                                    </p>
                                 </div>
+
+                                <div className="col-md-4">
+                                <h6 className="mb-3">Design Challenge</h6>
+                                
+                                <p className="mb-5">
+                                Focusing on first-time moped riders, we aim to design a semi-autonomous electric moped dashboard and mobile control panel to deliver a smooth, safe, and calming experience for beginners learning to ride.
+                                </p>
                             </div>
-                            <p>
-                                We are challenged to design a semi-autonomous electric moped-- <b className="theme">specifically its dashboard and mobile control panel</b>, to provide a smooth, safe, and calm riding experience for beginner riders learning to use mopeds.
-                            </p>
+                            </div>
+                            
+                            
                         </div>
                     </ScrollReveal>
                 </div>
@@ -266,48 +236,51 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
                 <div className="container">
                     <div className="topic-container subsection-wrapper">
                         <ScrollReveal>
-                            <h3 className="my-5">📚 From Guerrilla Research, We found</h3>
-                            <div className="subsection-wrapper-bottom row">
-                                <div className="col-md-4 my-5 px-3 align-items-center">
-                                    <div className="w-50 d-flex flex-column">
-                                        <img className="w-sizer-sm" src="/works/UXUI/vision/Type=Safety.svg" alt="safety icon" />
-                                    </div>
-                                    <div className="py-3">
-                                        <h6 className="theme my-3">#1: Ride Safety</h6>
-                                        <p>Users <b>desire for rider safety features</b> in the dashboard, such as
-                                            <ul className="list-disc">
-                                                <li>blind-spot monitoring</li>
-                                                <li>real-time traffic alerts</li>
-                                            </ul>
-                                        </p>
+                            <h3>📚 Talking to Riders in Guerrilla Research, We Highlighted</h3>
+                            <div className="section-wrapper row">
+                                <h6 className="mb-3">Rider Safety</h6>
+                                <div className="col-md-6 mb-3">
+                                    <h5 className="theme mb-3">Users strongly desire for rider safety features.</h5>
+                                    <div className="w-25 d-flex flex-column">
+                                        <img className="w-sizer-sm no-shadow" src="/works/UXUI/vision/Type=Safety.svg" alt="safety icon" />
                                     </div>
                                 </div>
-                                <div className="col-md-4 my-5 px-3 align-items-center">
-                                    <div className="w-50 d-flex flex-column">
-                                        <img className="w-sizer-sm" src="/works/UXUI/vision/Type=Dashboard.svg" alt="dashboard icon" />
-                                    </div>
-                                    <div className="py-3">
-                                        <h6 className="theme my-3">#2: Status Check </h6>
-                                        <p>
-                                        <b className="">Time & battery level</b> are the most checked dashboard informatiom
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 my-5 px-3 align-items-center">
-                                    <div className="w-50 d-flex flex-column">
-                                        <img className="w-sizer-sm" src="/works/UXUI/vision/Type=Battery.svg" alt="battery icon" />
-                                    </div>
-                                    <div className="py-3">
-                                        <h6 className="theme my-3">#3: Battery Anxiety</h6>
-                                        <p>
-                                            <b>Fear of moped breaking down</b> necessitates battery-related features
-                                            <ul className="list-disc">
-                                                <li>Automatic charging</li>
-                                                <li>Solar panels</li>
-                                            </ul>
-                                        </p>
+
+                                <p className="col-md-6 mb-3">
+                                    These safety features include blind-spot monitoring and real-time traffic alerts; especially for beginner riders, safety features help them practice and better get used to road conditions.
+                                </p>
+                            </div>
+                        </ScrollReveal>
+                            
+                        <ScrollReveal>
+                            <div className="section-wrapper row">
+                                <h6 className="mb-3">Status Check</h6>
+                                <div className="col-md-6 mb-3">
+                                    <h5 className="theme mb-3">What time is it? Am I going to make it in time?</h5>
+                                    <div className="w-25 d-flex flex-column">
+                                        <img className="w-sizer-sm no-shadow" src="/works/UXUI/vision/Type=Dashboard.svg" alt="dashboard icon" />
                                     </div>
                                 </div>
+
+                                <p className="col-md-6 mb-3">
+                                Time and battery level are the most frequently checked dashboard info. Riders regularly glance at them to stay on schedule, emphasizing the need for easy access without compromising riding safety.
+                                </p>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal>
+                            <div className="section-wrapper row">
+                                <h6 className="mb-3">Battery Anxiety</h6>
+                                <div className="col-md-6 mb-3">
+                                    <h5 className="theme mb-3">Riders fear getting stranded on the road.</h5>
+                                    <div className="w-25 d-flex flex-column">
+                                        <img className="w-sizer-sm no-shadow" src="/works/UXUI/vision/Type=Battery.svg" alt="battery icon" />
+                                    </div>
+                                </div>
+
+                                <p className="col-md-6 mb-3">
+                                    Users also often look at battery levels while on the move due to fears of the moped breaking down. This necessitates battery-related features such as automatic charging, or solar panels.
+                                </p>
                             </div>
                         </ScrollReveal>
                     </div>
@@ -323,60 +296,46 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
                         <ScrollReveal>
                             <div className="row align-items-center my-5">
                                 <h3 className="mb-5">🪄 Ideating on Rider Pain Points</h3>
-                                <h4 className="mb-3 theme">How might we transfer the complexity of operating to the vehicle to ensure a safe & easy riding process for beginners?</h4>
+                                <h5 className="mb-3 theme">How might we transfer the complexity of operating to the vehicle to ensure a safe & easy riding process for beginners?</h5>
                                 <p className="my-5">
                                 After identifying essential features and flows with the task analysis, we focused on them in our ideation process with Crazy 8 & Concept sketching.
                                 Particularly, we paid extra attention to <b className="">selecting ideas that transferred the operating complexity to the vehicle</b> in the concept sketches.
-                            </p>
+                                </p>
+                            </div>
+                            <div className="d-flex justify-content-center">
+                                <div>
+                                    <img className="artwork p-1 no-shadow" src="/works/UXUI/vision/phase-2/task-analysis.png" alt="Task analysis" />
+                                </div>
+                                <div>
+                                    <img className="artwork p-1 no-shadow" src="/works/UXUI/vision/phase-2/storyboard/collage.png" alt="Storyboarding" />
+                                </div>
+                                <div>
+                                    <img className="artwork p-1 no-shadow" src="/works/UXUI/vision/phase-2/crazy8/IMG_9962.jpeg" alt="Crazy 8" />
+                                </div>
+                                <div>
+                                    <img className="artwork p-1 no-shadow" src="/works/UXUI/vision/phase-2/concept/S__25214979.jpg" alt="Concept Sketching" />
+                                </div>
                             </div>
                         </ScrollReveal>
                     </div>
-                
-                    <ScrollReveal>
-                        <div className="artwork-feed my-5 d-flex justify-content-start">
-                            <div>
-                                <h6 className="theme">Abstraction Laddering</h6>
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-2/abstract/IMG_9961.jpeg" alt="Abstraction Laddering" />
-                            </div>
-                            <div>
-                                <h6 className="theme">Task Analysis</h6>
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-2/task-analysis.png" alt="Task analysis" />
-                            </div>
-                            <div>
-                                <h6 className="theme">Storyboarding</h6>
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-2/storyboard/collage.png" alt="Storyboarding" />
-                            </div>
-                            <div>
-                                <h6 className="theme">Crazy 8</h6>
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-2/crazy8/IMG_9962.jpeg" alt="Crazy 8" />
-                            </div>
-                            <div>
-                                <h6 className="theme">Sketching</h6>
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-2/sketch.png" alt="Sketching" />
-                            </div>
-                            <div>
-                                <h6 className="theme">Concept Sketching</h6>
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-2/concept/S__25214979.jpg" alt="Concept Sketching" />
-                            </div>
-                            <div>
-                                <h6 className="theme">Worst Possible Ideas</h6>
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-2/wpi/PXL_20231105_032554069.jpg" alt="Worst Possible Ideas" />
-                            </div>
-                        </div>
-                    </ScrollReveal>
+                </div>
 
+                <div className="container theme-bg">
                     <div className="topic-container subsection-wrapper">
                         <ScrollReveal>
-                                <h6>Planning the MVP</h6>
-                                <p className="my-3">
-                                We selected the following necessary features as MVP to implement in first round of prototype:
-                                    <ul className="list-disc">
-                                        <li className="my-3">Locking/unlocking and turning on/off moped with Face ID via either moped or mobile</li>
-                                        <li className="my-3">Switching on/off autonomy (self-driving) mode</li>
-                                        <li className="my-3">Setting up GPS navigation</li>
-                                        <li className="my-3">Low battery warning</li>
-                                    </ul>
-                                </p>
+                            <h6 className="mb-3">Planning the MVP</h6>
+                                <div className="row">
+                                    <h5 className="col-md-6 theme mb-3">Selected MVP-necessary Features</h5>
+                                    
+                                    <p className="col-md-6 mb-3">
+                                        <ul className="list-disc">
+                                            <li>Locking, unlocking and turning on, off moped with Face ID via either moped or mobile</li>
+                                            <li>Switching on, off autonomy (self-driving) mode</li>
+                                            <li>Setting up GPS navigation</li>
+                                            <li>Low battery warning</li>
+                                        </ul>
+                                    </p>
+                                </div>
                         </ScrollReveal>
                     </div>
                 </div>
@@ -387,196 +346,125 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
             content:
             <div>
                 <div className="container">
-                    <div className="topic-container subsection-wrapper">
-
+                    <div className="topic-container section-wrapper">
                         <ScrollReveal>
-                            <h3 className="my-5">🛠️ Low-fidelity prototyping, more fluidity iterating</h3>
-                            <div className="artwork-feed d-flex align-items-center">
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-3/3.jpg" alt="paper prototype" />
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-3/1.jpg" alt="physical prototype" />
-                                <img className="artwork p-1" src="/works/UXUI/vision/phase-3/4.jpg" alt="user testing" />
+                            <h3 className="mb-5">🛠️ Low-fidelity prototyping, more fluidity iterating</h3>
+                            <div className="row">
+                                <p className="col-md-6 mb-3">
+                                    To satisfy riders' need of frequent status check,
+                                    <ul className="list-disc">
+                                        <li>Speed</li>
+                                        <li>Time</li>
+                                        <li>Battery Level</li>
+                                        <li>Warnings</li>
+                                        <li>Auto/Manual Mode</li>
+                                    </ul>
+                                    are constantly displayed on the moped screen. The middle panel of the screen would switch between the current activity such as navigation, parking, charging and so on.
+                                </p>
+                                <div className="col-md-6 mb-5 d-flex justify-content-center">
+                                    <img className="artwork p-1 no-shadow" src="/works/UXUI/vision/phase-3/1.jpg" alt="physical prototype" />
+                                    <img className="artwork p-1 no-shadow" src="/works/UXUI/vision/phase-3/4.jpg" alt="user testing" />
+                                </div>
                             </div>
-                            {/* <h6 className="my-3">Showing Crucial Information Only</h6> */}
-                            <p className="my-3">
-                                To satisfy <b className="theme">riders' need of frequent status check</b>,
-                                <ul className="list-disc row mx-3">
-                                    <li className="col-md-4">Speed</li>
-                                    <li className="col-md-4">Time</li>
-                                    <li className="col-md-4">Battery Level</li>
-                                    <li className="col-md-4">Warnings</li>
-                                    <li className="col-md-4">Auto/Manual Mode</li>
-                                </ul>
-                                are constantly displayed on the moped screen. The middle panel of the screen would switch between the current activity such as navigation, parking, charging and so on.
-                            </p>
                             
                         </ScrollReveal>
-                    </div>
-                </div>
+                    
+                        <ScrollReveal>
+                            <div className="row subsection-wrapper">
+                                <p className="col-md-6 mb-5">
+                                With <b>3 rounds of usability testing & guerrilla research</b>, we rapidly iterated to address the most pressing issues...
+                                </p>
 
-                <div className="theme-bg container subsection-wrapper">
-                    <div className="topic-container">
-                        
-                        <p>With 3 rounds of <b className="theme">usability testing & guerrilla research</b>, we rapidly iterated to address the most pressing issues...
-</p>
+                                <div className="col-md-6 d-flex justify-content-center">
+                                    <img className="artwork p-1 no-shadow" src="/works/UXUI/vision/phase-4/IMG_7723.jpg" alt="user testing" />
+                                    <img className="artwork p-1 no-shadow" src="/works/UXUI/vision/phase-5/IMG_7752.jpg" alt="user testing" />
+                                </div>
+                            </div>
+                        </ScrollReveal>
                     </div>
-                    <HorizontalCarousel cards={cards} />
                 </div>
 
                 <div className="container">
                     <div className="topic-container subsection-wrapper">
-                        <ScrollReveal>
-                            <h3 className="my-5">Hi-fi Prototype after Iterating on...</h3>
-                            <div className="row align-items-center">
-                                <h6 className="mb-3 theme">
-                                    #1: Warning with Suggestion to Resolve Issue
-                                </h6>
-
-                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
-                                    <img className="w-100" src="/works/UXUI/vision/phase-3/c-1.png" alt="challenge 1" />
-                                    <p className="table-caption mt-1 mb-3">Low battery warning popup</p>
-                                </div>
-
-                                <div className="col-md-2 d-flex flex-column align-items-center my-3">
-                                    <img className="arrow-right" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
-                                </div>
-
-                                <div className="col-md-5 p-3 d-flex flex-column align-items-center">
-                                    <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-1-i-1.png" alt="challenge 1" />
-                                    <p className="table-caption mt-1 mb-3">Low battery warning on the side</p>
-                                    <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-1-i-2.png" alt="challenge 2" />
-                                    <p className="table-caption mt-1 mb-3">Popup shows only when vehicle stops</p>
-                                </div>
-                            </div>
-                            {/* <div className="row">
-                                <div className="col-md-5">
-                                    <h6 className="mb-3">
-                                        Before
-                                    </h6>
-                                    <p className="mb-3">
-                                        <ul className="list-disc">
-                                            <li>Low battery warning pop-up during driving</li>
-                                            <li>Violating <b>Nielsen’s usability heuristics– “User Control and Freedom”</b></li>
-                                        </ul>
-                                    </p>
-                                </div>
-                                <div className="col-md-2"></div>
-                                <div className="col-md-5 my-3">
-                                    <h6 className="mb-3">
-                                        Iteration
-                                    </h6>
-                                    <p className="mb-3">
-                                        <ul className="list-disc">
-                                            <li>Notification not blocking user’s view of dashboard</li>
-                                            <li>After parking, battery warning then pops up</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div> */}
-                        </ScrollReveal>
-                        
-                        <div className="subsection-wrapper">
-                            <ScrollReveal>
-                                <div className="row align-items-center">
-                                    <h6 className="mb-3 theme">
-                                        #2: Follow the Law of Proximity to eliminate confusion
-                                    </h6>
-
-                                    <div className="col-md-5 p-3 d-flex flex-column align-items-center">
-                                        <img className="w-100" src="/works/UXUI/vision/phase-3/c-2.png" alt="challenge 1" />
-                                        <p className="table-caption mt-1 mb-3">ECO MODE on the side</p>
-                                    </div>
-
-                                    <div className="col-md-2 d-flex flex-column align-items-center my-3">
-                                        <img className="arrow-right" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
-                                    </div>
-
-                                    <div className="col-md-5 p-3 d-flex flex-column align-items-center">
-                                        <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-2-i-1.png" alt="challenge 1" />
-                                        <p className="table-caption mt-1 mb-3">Power Saving toggle on upper right</p>
-                                    </div>
-                                </div>
-                                {/* <div className="row">
-                                    <div className="col-md-5">
-                                        <h6 className="mb-3">
-                                            Before
-                                        </h6>
-                                        <p className="mb-3">
-                                        <ul className="list-disc">
-                                                <li>Displaying information in relatively flat visual hierarchy</li>
-                                                <li>Eco (energy saving) Mode prominently showing on the dashboard, drawing excessive visual attention</li>
-                                                <li>Confusion about “Eco Mode” due to vague naming and far-away location from battery</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                    <div className="col-md-2"></div>
-                                    <div className="col-md-5 my-3">
-                                        <h6 className="mb-3">
-                                            Iteration
-                                        </h6>
-                                        <p className="mb-3">
-                                            <ul className="list-disc">
-                                                <li>Renaming Eco Mode to <b>Power Saving</b></li>
-                                                <li>Changing to <b>toggle to indicate controllability</b></li>
-                                                <li>Placing toggle closer to battery, following the <b>Law of Proximity</b></li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div> */}
-                            </ScrollReveal>
-
+                            <h3 className="mb-5">🛵 Hi-fi Prototype after Iterating on...</h3>
                             
-                        </div>
-
-                        <div className="subsection-wrapper">
                             <ScrollReveal>
-                                <div className="row align-items-center">
-                                    <h6 className="mb-3 theme">
-                                        #3: Default state- manual mode (autonomy off)
-                                    </h6>
-                                    
-                                    <div className="col-md-5 p-3 d-flex flex-column align-items-center">
-                                        <img className="w-100" src="/works/UXUI/vision/phase-3/c-4-1.png" alt="challenge 1" />
-                                        <p className="table-caption mt-1 mb-3">Auto Mode shown under speedometer of dashboard</p>
+                                <div className="row subsection-wrapper">
+                                    <div className="col-md-6">
+                                        <h6>Popups</h6>
+                                        <h5 className="theme mb-3">Displaying Only Time-Sensitive Alerts While Actively Riding</h5>
+                                        <p className="mb-5">
+                                        Instead of showing the low battery warning popup when users are actively riding, we opted for only displaying it when the vehicle has stopped moving. This prevents users' from potentially panicking over battery power on the road, especially when it must only be resolved by charging the moped when not in use.
+                                        </p>
                                     </div>
 
-                                    <div className="col-md-2 d-flex flex-column align-items-center my-3">
-                                        <img className="arrow-right" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
-                                    </div>
-
-                                    <div className="col-md-5 p-3 d-flex flex-column align-items-center">
-                                        <img className="w-100 m-2" src="/works/UXUI/vision/phase-3/c-4-i-1.png" alt="challenge 4" />
-                                        <p className="table-caption mt-1 mb-3">Manual Mode shown under speedometer of dashboard</p>
+                                    <div className="col-md-6 mb-5">
+                                        <div className="d-flex flex-column align-items-center mb-3">
+                                            <img className="w-sizer-lg" src="/works/UXUI/vision/phase-3/c-1.png" alt="challenge 1" />
+                                            <p className="table-caption my-1">Before</p>
+                                        </div>
+                                        {/* <div className="d-flex flex-column align-items-center">
+                                            <img className="no-shadow" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
+                                        </div> */}
+                                        <div className="d-flex flex-column align-items-center">
+                                            <img className="w-sizer-lg" src="/works/UXUI/vision/prototype/improve-1.png" alt="challenge 2" />
+                                            <p className="table-caption my-1">After</p>
+                                        </div>
                                     </div>
                                 </div>
-                                {/* <div className="row">
-                                    <div className="col-md-5">
-                                        <h6 className="mb-3">
-                                            Before
-                                        </h6>
-                                        <p className="mb-3">
-                                            <ul className="list-disc">
-                                                <li>Default driving in autonomy mode (self-driving)</li>
-                                                <li>Guerrilla research revealed users’ confusion of being unable to manually start driving</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                    <div className="col-md-2"></div>
-                                    <div className="col-md-5 my-3">
-                                        <h6 className="mb-3">
-                                            Iteration
-                                        </h6>
-                                        <p className="mb-3">
-                                            <ul className="list-disc">
-                                                <li>Setting default state as manual driving mode to give users control on autonomy</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div> */}
                             </ScrollReveal>
 
-                        </div>
+                            <ScrollReveal>
+                                <div className="row subsection-wrapper">
+                                    <div className="col-md-6">
+                                        <h6>Layout</h6>
+                                        <h5 className="theme mb-3">Following Law of Proximity for Grouping Similar Dashboard Information</h5>
+                                        <p className="mb-5">
+                                        User feedback about the dashboard's navigability highlighted the importance of effective layout design. Using the Law of Proximity, I re-clustered related information: controls (speedometer and riding mode) and status (time, battery, odometer). Inspired by Apple CarPlay, non-route information was repositioned on the left for quick, glanceable access.
+                                        </p>
+                                    </div>
 
-                        
+                                    <div className="col-md-6 mb-5">
+                                        <div className="d-flex flex-column align-items-center mb-3">
+                                            <img className="w-sizer-lg" src="/works/UXUI/vision/phase-3/c-3-2.png" alt="challenge 1" />
+                                            <p className="table-caption my-1">Before</p>
+                                        </div>
+                                        {/* <div className="d-flex flex-column align-items-center">
+                                            <img className="no-shadow" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
+                                        </div> */}
+                                        <div className="d-flex flex-column align-items-center">
+                                            <img className="w-sizer-lg" src="/works/UXUI/vision/prototype/improve-2.png" alt="challenge 2" />
+                                            <p className="table-caption my-1">After</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ScrollReveal>
+
+                            <ScrollReveal>
+                                <div className="row subsection-wrapper">
+                                    <div className="col-md-6">
+                                        <h6>Riding Mode</h6>
+                                        <h5 className="theme mb-3">Defaulting to Manual Riding Mode for First-Time Users</h5>
+                                        <p className="mb-5">
+                                        During usability tests, users accustomed to manual riding were surprised when the moped switched to autonomous mode. To ease this transition, the default mode for first-time riders should be manual. Tutorials, mobile app tips, or post-ride popups can guide users in switching or defaulting to AUTO mode when they are ready.
+                                        </p>
+                                    </div>
+
+                                    <div className="col-md-6 mb-5">
+                                        <div className="d-flex flex-column align-items-center mb-3">
+                                            <img className="w-sizer-lg" src="/works/UXUI/vision/phase-3/c-4-1.png" alt="challenge 1" />
+                                            <p className="table-caption my-1">Before</p>
+                                        </div>
+                                        {/* <div className="d-flex flex-column align-items-center">
+                                            <img className="no-shadow" src="/works/UXUI/vision/Type=Down.svg" alt="arrow down icon" />
+                                        </div> */}
+                                        <div className="d-flex flex-column align-items-center">
+                                            <img className="w-sizer-lg" src="/works/UXUI/vision/prototype/improve-3.png" alt="challenge 2" />
+                                            <p className="table-caption my-1">After</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ScrollReveal>
                     </div>     
                 </div>
 
@@ -590,10 +478,14 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
                 <div className="container">
                     <ScrollReveal>
                         <div className="topic-container subsection-wrapper">
-                            <h3 className="mb-5">💭 Takeaways</h3>
+                            <h3 className="mb-3">💭 Takeaways</h3>
                             <p className="mb-5">
-                            This Ford Vision project helped me consolidate almost everything I learned in this Interaction Design Fundamentals course. From doing <b className="theme">background research, affinity diagramming, brainstorming, to actually prototyping by leveraging visual design principles and usability heuristics</b>, and evaluating with usability tests and guerrilla research.
-                            <br/><br/>Another thing I greatly enjoyed out of this project was the rapport and collaboration among team members, which was a key factor in our production of the comprehensive, attention-to-detail physical and digital prototypes.
+                            This Ford Vision project helped me consolidate almost everything I learned in this Interaction Design Fundamentals course. From doing <b>background research, affinity diagramming, brainstorming, to actually prototyping by leveraging visual design principles and usability heuristics</b>, and evaluating with usability tests and guerrilla research.
+                            Another thing I greatly enjoyed out of this project was the rapport and collaboration among team members, which was a key factor in our production of the comprehensive, attention-to-detail physical and digital prototypes.
+                            </p>
+                            <p className="caption subtle">
+                            note: This is an academic project for educational purpose, and is not officially associated with any moped brand. All resources used are credited to the owner(s) and are not commercialized within the scope of the project.
+
                             </p>
                         </div>
                     </ScrollReveal>
@@ -630,8 +522,8 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
 
                 <div className="bg-1">
                     <div className="container">
-                        <div className="topic-container py-3">
-                            <h3 className="my-5">📑 References</h3>
+                        <div className="topic-container subsection-wrapper">
+                            <h3 className="mb-3">📑 References</h3>
                             <p className="references mb-3">
                             Nielsen, J. (1994, April 24). <span className="italic">10 usability heuristics for user interface design.</span> Nielsen Norman Group. <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noreferrer noopener">https://www.nngroup.com/articles/ten-usability-heuristics/</a><br/>
                             </p>
@@ -644,6 +536,14 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
     Scooter by Prashanth Rapolu from <a href="https://thenounproject.com/browse/icons/term/scooter/" target="_blank" title="Scooter Icons">Noun Project</a> (CC BY 3.0)
     <br/>
     down by unlimicon from <a href="https://thenounproject.com/browse/icons/term/down/" target="_blank" title="down Icons">Noun Project</a> (CC BY 3.0)
+                            </p>
+                            <h6>Style Guides & Assets</h6>
+                            <p className="references mb-3">
+                                Ford Brand Standards Guide.  <a href="https://www.scribd.com/document/642811289/Ford-Brand-Standards-Guide-pdf" target="_blank" rel="noreferrer noopener">https://www.scribd.com/document/642811289/Ford-Brand-Standards-Guide-pdf</a>
+                                <br/>
+                                Physical Moped Mockup. <a href="https://electrek.co/2018/06/08/bolts-new-400-km-range-electric-scooter/" target="_blank" rel="noreferrer noopener">https://electrek.co/2018/06/08/bolts-new-400-km-range-electric-scooter/</a>
+                                <br/>
+                                Scooter Model. <a href="https://emojis.sh/emoji/scooter-JrVe5nbUHv" target="_blank" rel="noreferrer noopener">https://emojis.sh/emoji/scooter-JrVe5nbUHv</a>
                             </p>
                         </div>
                     </div>
@@ -689,6 +589,17 @@ const cards = [
   ];
   const projects = [
     {
+        'link': '/Works/design/Fairplay',
+        'data': {
+            'title': 'FairPlay', 
+            'id': 'FairPlay',
+            'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
+            'desc': 'Your AI Advocate for All Things Customer Service',
+            'img': 'https://i.imgur.com/GHNN8GS.jpeg',
+            'ph': 'https://i.imgur.com/GHNN8GS.jpeg',
+        }        
+    },
+    {
         'link': '/Works/design/Fluffy-Focus',
         'data': {
             'title': 'Fluffy Focus', 
@@ -698,16 +609,5 @@ const cards = [
             'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
             'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
           }
-    },
-    {
-        'link': '/Works/design/2Done',
-        'data': {
-            'title': '2Done', 
-            'id': '2Done',
-            'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
-            'desc': 'Gamified to-do list mobile app for procrastination',
-            'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
-            'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
-        }
     },
 ];

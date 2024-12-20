@@ -61,8 +61,16 @@ function App() {
         'id': 'Fairplay',
         'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
         'desc': 'Your AI Advocate for All Things Customer Service',
-        'img': 'https://i.imgur.com/u0y4O00.jpeg',
-        'ph': 'https://i.imgur.com/u0y4O00.jpeg',
+        'img': 'https://i.imgur.com/GHNN8GS.jpeg',
+        'ph': 'https://i.imgur.com/GHNN8GS.jpeg',
+      },
+      {
+        'title': 'Ford Vision', 
+        'id': 'Ford-Vision',
+        'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
+        'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
+        'img': 'https://i.imgur.com/tCWNnCe.png',
+        'ph': 'https://i.imgur.com/tCWNnCe.png',
       },
       {
         'title': 'Fluffy Focus', 
@@ -71,14 +79,6 @@ function App() {
         'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
         'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
         'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-      },
-      {
-        'title': 'Ford Vision', 
-        'id': 'Ford-Vision',
-        'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-        'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
-        'img': 'https://live.staticflickr.com/65535/53794621302_f58e9e53e6_k.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53794621302_f58e9e53e6_k.jpg',
       },
     ]
     },

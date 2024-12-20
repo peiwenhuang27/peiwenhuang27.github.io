@@ -1,10 +1,17 @@
 #Ford-Vision {
+    b {
+        background-color: #e1f0ff;
+    }
     .theme  {
         color: #2A6BAC !important;
     }
     .theme-bg {
         width: 100%;
         background-color: #ecf4fc;
+
+        b {
+            background-color: #c7e2fb;
+        }
     }
     .artwork {
         height: 300px;

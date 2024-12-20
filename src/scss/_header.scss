@@ -3,7 +3,6 @@
     top: 0;
     left: 0;
     right: 0;
-    // width: 100%;
     z-index: 200;
     background-color: white;
     padding: 0;
@@ -101,7 +100,7 @@
 .header-item {
     margin: 0 0 0 16px;
     color: $gray-500;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
     @include underline-animation($highlight);
