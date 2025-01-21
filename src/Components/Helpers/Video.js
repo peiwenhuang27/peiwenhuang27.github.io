@@ -8,7 +8,7 @@ export default class Video extends Component {
       const src = this.props.src;
       const width = this.props.width;
       const html = `
-          <video width=${width} autoPlay muted loop>
+          <video width=${width} autoPlay playsinline muted loop>
               <source src=${src} />
           </video>
         `;
