@@ -6,9 +6,6 @@ import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 import ProgressBar from "../../../ScrollBar";
 import { Subsection } from "../../../Topic";
 
-// nice-to-have
-// icon size difference
-
 function DropdownToggle ({ view, toggleView, toggleTxt }) {
     return (
         // how to change color?
@@ -20,7 +17,7 @@ function DropdownToggle ({ view, toggleView, toggleTxt }) {
     );
 }
 
-function Fluffy ({ pageHeight, handleSubsectionClick }) {
+function Fluffy ({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
     const [activeItem, setActiveItem] = useState(0);
     // show supporting psychology
     const [ view, toggleView ] = useState(false);
@@ -45,13 +42,20 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
                     </ScrollReveal>
                     <ScrollReveal>
                         <div className="subsection-wrapper row mb-5">
-                            <div className="topic-desc-container col-md-4 mb-5">
+                            <div className="topic-desc-container col-md-6 mb-5">
                                 <h6 className="theme mb-3">Duration</h6>
                                 <ul>
                                     <li>3 months</li>
                                 </ul>
                             </div>
-                            <div className="topic-desc-container col-md-4 mb-5">
+                            <div className="topic-desc-container col-md-6 mb-5">
+                                <h6 className="theme mb-3">Tool</h6>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Miro</li>
+                                </ul>
+                            </div>
+                            <div className="topic-desc-container col-md-6 mb-5">
                                 <h6 className="theme mb-3">Role</h6>
                                 <ul>
                                     <li>Lead Designer</li>
@@ -59,28 +63,22 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
                                     <li>Researcher</li>
                                 </ul>
                             </div>
-                            <div className="topic-desc-container col-md-4 mb-5">
+                            <div className="topic-desc-container col-md-6 mb-5">
                                 <h6 className="theme mb-3">Team</h6>
                                 <ul>
                                     <li>5 people</li>
                                 </ul>
                             </div>
-                            <div className="topic-desc-container col-md-4 mb-5">
-                                <h6 className="theme mb-3">Tool</h6>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>Miro</li>
-                                </ul>
-                            </div>
+                            
                             <div className="topic-desc-container col mb-5">
                                 <h6 className="theme mb-3">Responsibilities</h6>
-                                <ul className="row">
-                                    <li className="col-md-6">Feature conceptualization</li>
-                                    <li className="col-md-6">Wireframing & prototyping</li>
-                                    <li className="col-md-6">UX writing</li>
-                                    <li className="col-md-6">Visual style design</li>
-                                    <li className="col-md-6">User research & testing</li>
-                                    <li className="col-md-6">Literature review</li>
+                                <ul className="list-disc">
+                                    <li className="">Feature conceptualization</li>
+                                    <li className="">Wireframing & prototyping</li>
+                                    <li className="">UX writing</li>
+                                    <li className="">Visual style design</li>
+                                    <li className="">User research & testing</li>
+                                    <li className="">Literature review</li>
                                 </ul>
                             </div>
                         </div>
@@ -636,7 +634,7 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
                 })}
 
                 <ScrollReveal>
-                    <ProjectRec projects={projects} moreLink={"/Works/design"} />
+                    <ProjectRec projects={projRecs} moreLink={projRecLink} />
                 </ScrollReveal>
 
                 <div className="bg-1">
@@ -720,61 +718,3 @@ function Fluffy ({ pageHeight, handleSubsectionClick }) {
 };
 
 export default Fluffy;
-
-const cards = [
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/1.png",
-        title: "Title 1",
-        id: 1,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/2.png",
-        title: "Title 2",
-        id: 2,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/3.png",
-        title: "Title 3",
-        id: 3,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/4.png",
-        title: "Title 4",
-        id: 4,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/5.png",
-        title: "Title 5",
-        id: 5,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/6.png",
-        title: "Title 1",
-        id: 6,
-    },
-];
-// link, data
-const projects = [
-    {
-        'link': '/Works/design/Fairplay',
-        'data': {
-            'title': 'FairPlay', 
-            'id': 'Fairplay',
-            'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
-            'desc': 'Your AI Advocate for All Things Customer Service',
-            'img': 'https://i.imgur.com/RcjjaFq.png',
-            'ph': 'https://i.imgur.com/RcjjaFq.png',
-        }
-    },
-    {
-        'link': '/Works/design/Vision',
-        'data': {
-            'title': 'Vision', 
-            'id': 'Vision',
-            'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-            'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
-            'img': 'https://i.imgur.com/tCWNnCe.png',
-            'ph': 'https://i.imgur.com/tCWNnCe.png',
-        }
-    }, 
-];

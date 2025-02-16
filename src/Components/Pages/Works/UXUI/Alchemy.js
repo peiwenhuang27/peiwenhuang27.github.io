@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import ProjectRec from "../../../ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 
-function Alchemy () {
+function Alchemy ({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
     const [isLoading, setIsLoading] = useState(false);
     const img_src = 'https://live.staticflickr.com/65535/53802506955_acc7ed3403_o.png';
     const hideSpinner = () => {
@@ -39,40 +39,41 @@ function Alchemy () {
 
                     <ScrollReveal>
                         <div className="section-wrapper row mb-5">
-                            <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
+                            <div className="topic-desc-container col-md-6 col-sm-6 mb-5">
                                 <h6 className="theme mb-3">Duration </h6>
                                 <ul>
                                     <li>3 months</li>
                                 </ul>
                             </div>
-                            <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
+                            <div className="topic-desc-container col-md-6 col-sm-6 mb-5">
+                                <h6 className="theme mb-3">Tool</h6>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>ReactJS & R3F</li>
+                                    <li>SketchFab</li>
+                                    <li>BlockadeLab</li>
+                                </ul>
+                            </div>
+                            <div className="topic-desc-container col-md-6 col-sm-6 mb-5">
                                 <h6 className="theme mb-3">Role</h6>
                                 <ul>
                                     <li>Game Designer</li>
                                     <li>UI Engineer</li>
                                 </ul>
                             </div>
-                            <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
+                            <div className="topic-desc-container col-md-6 col-sm-6 mb-5">
                                 <h6 className="theme mb-3">Team</h6>
                                 <ul>
-                                    <li>1 person</li>
+                                    <li>Solo Project</li>
                                 </ul>
                             </div>
-                            <div className="topic-desc-container col-md-4 col-sm-6 mb-5">
-                                <h6 className="theme mb-3">Tool</h6>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>React Three Fiber</li>
-                                    <li>SketchFab</li>
-                                    <li>BlockadeLab</li>
-                                </ul>
-                            </div>
+                            
                             <div className="topic-desc-container col mb-5">
                                 <h6 className="theme mb-3">Responsibilities</h6>
-                                <ul className="row">
-                                    <li className="col-md-6">Mapping attitudinal goals to gamified elements</li>
-                                    <li className="col-md-6">Designing UI visuals</li>
-                                    <li className="col-md-6">Developing game interface</li>
+                                <ul className="list-disc">
+                                    <li>Mapping attitudinal goals to gamified elements</li>
+                                    <li>Designing UI visuals</li>
+                                    <li>Developing game interface</li>
                                 </ul>
                             </div>
                         </div>
@@ -85,7 +86,7 @@ function Alchemy () {
 
 
             <ScrollReveal>
-                <ProjectRec projects={projects} moreLink={"/Works/design"} />
+                <ProjectRec projects={projRecs} moreLink={projRecLink} />
             </ScrollReveal>
 
         </div>
@@ -93,28 +94,3 @@ function Alchemy () {
 };
 
 export default Alchemy;
-
-const projects = [
-    {
-        'link': '/Works/design/Fairplay',
-        'data': {
-            'title': 'FairPlay', 
-            'id': 'Fairplay',
-            'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
-            'desc': 'Your AI Advocate for All Things Customer Service',
-            'img': 'https://i.imgur.com/RcjjaFq.png',
-            'ph': 'https://i.imgur.com/RcjjaFq.png',
-        }
-    },
-    {
-        'link': '/Works/design/Fluffy-Focus',
-        'data': {
-            'title': 'Fluffy Focus', 
-            'id': 'Fluffy-Focus',
-            'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
-            'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
-            'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-            'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-          }
-    },
-];

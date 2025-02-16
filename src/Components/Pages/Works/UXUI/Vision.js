@@ -17,10 +17,9 @@ import { Subsection } from "../../../Topic";
 </div> */}
 // Objective: What is semi-autonomous vehicles? Why are they important?
 
-function Vision ({ pageHeight, handleSubsectionClick }) {
+function Vision ({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
     const [activeItem, setActiveItem] = useState(0);
 
-    const demoVid = useRef(null);
     const img_src = "https://i.imgur.com/fKD9Vjq.png";   
 
     const items = [
@@ -517,7 +516,7 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
                 })}
 
                 <ScrollReveal>
-                    <ProjectRec projects={projects} moreLink={"/Works/design"} />
+                    <ProjectRec projects={projRecs} moreLink={projRecLink} />
                 </ScrollReveal>
 
                 <div className="bg-1">
@@ -554,60 +553,3 @@ function Vision ({ pageHeight, handleSubsectionClick }) {
 };
 
 export default Vision;
-
-const cards = [
-    {
-      url: "/works/UXUI/vision/phase-5/IMG_7774.jpg",
-      title: "Title 1",
-      id: 1,
-    },
-    {
-      url: "/works/UXUI/vision/phase-4/IMG_7723.jpg",
-      title: "Title 2",
-      id: 2,
-    },
-    {
-      url: "/works/UXUI/vision/phase-5/IMG_7752.jpg",
-      title: "Title 3",
-      id: 3,
-    },
-    {
-      url: "/works/UXUI/vision/phase-5/IMG_7763.jpg",
-      title: "Title 4",
-      id: 4,
-    },
-    {
-      url: "/works/UXUI/vision/phase-4/IMG_7728.png",
-      title: "Title 5",
-      id: 5,
-    },
-    {
-      url: "/works/UXUI/vision/phase-4/IMG_7727.png",
-      title: "Title 1",
-      id: 6,
-    },
-  ];
-  const projects = [
-    {
-        'link': '/Works/design/Fairplay',
-        'data': {
-            'title': 'FairPlay', 
-            'id': 'Fairplay',
-            'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
-            'desc': 'Your AI Advocate for All Things Customer Service',
-            'img': 'https://i.imgur.com/RcjjaFq.png',
-            'ph': 'https://i.imgur.com/RcjjaFq.png',
-        }
-    },
-    {
-        'link': '/Works/design/Fluffy-Focus',
-        'data': {
-            'title': 'Fluffy Focus', 
-            'id': 'Fluffy-Focus',
-            'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
-            'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
-            'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-            'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-          }
-    },
-];

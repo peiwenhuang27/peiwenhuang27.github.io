@@ -9,19 +9,4 @@
         width: 100%;
         background-color: #EDEBFF;
     }
-    .view-more-btn {
-        background-color: #EDEBFF;
-
-        a {
-            text-decoration: none;
-            color: #605A94;
-        }
-    
-        &:hover {
-            background-color: #605A94;
-            a {
-                color: white;
-            }
-        }
-    }
 }

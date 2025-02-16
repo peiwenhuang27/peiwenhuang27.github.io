@@ -4,10 +4,9 @@ import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 import ProgressBar from "../../../ScrollBar";
 import { Subsection } from "../../../Topic";
 
-function Elite({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
+function Hanabi({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
     const [activeItem, setActiveItem] = useState(0);
-    const img_src = "https://live.staticflickr.com/65535/52505254991_f45213c95a_h.jpg";
-
+    const img_src = "https://live.staticflickr.com/65535/52505936586_9dd5f32352_k.jpg";
 
     const items = [
         {
@@ -17,12 +16,11 @@ function Elite({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
                 <div className="topic-container py-5">
                     <ScrollReveal>
                         <div className="topic-title-container mb-5">
-                                <h3 className="mb-1 color-dark text-bold date">August 2019</h3>
-                                <h2 className="mb-1">Elite Camp: 18th NTU x PKU Elite Camp Memory Book</h2>
-                                <h3 className="theme mb-5">Visual Design, Graphic Design, Editorial</h3>
+                                <h3 className="mb-1 color-dark text-bold date">March 2020</h3>
+                                <h2 className="mb-1">Hanabi: NTU IM Night Event Visuals</h2>
+                                <h3 className="theme mb-5">Visual Design, Graphic Design, Event Visuals</h3>
                                 <p className="mb-5">
-                                Elite Camp is an annual summer camp facilitating interaction between  <a className="link" href="https://management.ntu.edu.tw/en" target="_blank" rel="noreferrer noopener">College of Management at National Taiwan University (NTU)</a> and <a className="link" href="https://en.gsm.pku.edu.cn/index.htm" target="_blank" rel="noreferrer noopener">Guanghua School of Management at Peking University (PKU)</a> sponsored by Dr. Samuel Yin. This project was the commemorative brochure produced at the end of the camp. <br/>
-The large, brush fonts shows a sense of bravery and boldness, accentuated by the lion stone statues in The Palace Museum at Beijing. Small texts of city names decorating the background are cities visited in the camp. In addition, the overall nostalgic theme is created by adding vintage filters to the photo to mimic old newspapers.
+                                花火, hanabi-- is the Japanese word of “fireworks”. The background of the design uses navy blue for a nighttime feeling, accentuating the main peach pink palette. The radial shape of the design imitates firework explosion, the middle of which is a kaleidoscopic pattern. This design implies the similarity between life and kaleidoscope; ever-changing, forming a uniquely beautiful view at any moment. Some moments in, nevertheless, are as resplendent as fireworks, blossoming in the nightsky of life.  
                                 </p>
                         </div>
                     </ScrollReveal>
@@ -32,33 +30,32 @@ The large, brush fonts shows a sense of bravery and boldness, accentuated by the
                                 <div className="topic-desc-container col-md-6 mb-5">
                                     <h6 className="theme mb-3">Duration</h6>
                                     <ul>
-                                        <li>1 month</li>
+                                        <li>2 weeks</li>
                                     </ul>
                                 </div>
                                 <div className="topic-desc-container col-md-6 mb-5">
                                     <h6 className="theme mb-3">Tool</h6>
                                     <ul>
                                         <li>Illustrator</li>
-                                        <li>InDesign</li>
                                     </ul>
                                 </div>
                                 <div className="topic-desc-container col-md-6 mb-5">
                                     <h6 className="theme mb-3">Role</h6>
                                     <ul>
-                                        <li>Lead Visual Designer</li>
+                                        <li>Visual Designer</li>
                                     </ul>
                                 </div>
                                 <div className="topic-desc-container col-md-6 mb-5">
                                     <h6 className="theme mb-3">Team</h6>
                                     <ul>
-                                        <li>10 People</li>
+                                        <li>Freelance Project</li>
                                     </ul>
                                 </div>
                                 <div className="topic-desc-container col-md-12 mb-5">
                                     <h6 className="theme mb-3">Responsibilities</h6>
                                     <ul>
-                                        <li>Spearheaded book visuals, cover design, section pages</li>
-                                        <li>Established the design system, including the typology, color scheme, and components</li>
+                                        <li>Designed the event visual logo</li>
+                                        <li>Established the event's online presence, including social media profile</li>
                                     </ul>
                                 </div>
                             </div>
@@ -77,12 +74,12 @@ The large, brush fonts shows a sense of bravery and boldness, accentuated by the
                     </div>
                 </ScrollReveal>
                 <ScrollReveal>
-                    <div className="row justify-content-end">
-                        <img className="col-md-8" src="https://live.staticflickr.com/65535/52505731565_b2ed905e93_h.jpg" alt="pages preview" />
+                    <div className="row justify-content-end mb-3">
+                        <img className="col-md-8" src="https://live.staticflickr.com/65535/52506209299_67ecabf218_h.jpg" alt="logo preview" />
                     </div>
                 </ScrollReveal>
             </>
-        }
+        },
     ];
 
     items.map((item, key) => {
@@ -91,7 +88,7 @@ The large, brush fonts shows a sense of bravery and boldness, accentuated by the
     });
 
     return (
-        <div id="Elite-Camp">
+        <div id="Hanabi">
             <div>
                 <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
                 {items.map((item) => {
@@ -112,8 +109,7 @@ The large, brush fonts shows a sense of bravery and boldness, accentuated by the
             </div>
         </div>
     );
-
 };
 
 
-export default Elite;
+export default Hanabi;

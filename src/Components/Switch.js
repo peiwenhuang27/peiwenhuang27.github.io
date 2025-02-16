@@ -16,7 +16,7 @@ function Switch ({ homeData, workData, lifeData, view, setView, pageHeight }) {
         <Route path="/About" element={<About />} />
         <Route path="/Works">
           {workData.map((item) =>
-            <Route path={`${item.suffix}/:workId`} element={<Topic name={item.name} pageHeight={pageHeight} />} />
+            <Route path={`${item.suffix}/:workId`} element={<Topic name={item.name} pageHeight={pageHeight} workData={workData} />} />
           )}
 
           <Route path=":categoryId" element={<Category prefix="/Works" workData={workData} lifeData={lifeData} />} />

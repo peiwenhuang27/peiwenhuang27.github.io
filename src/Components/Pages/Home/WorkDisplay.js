@@ -73,7 +73,7 @@ function WorkList ({ data, prefix }) {
                     )}
                 </ul>
                 <ScrollReveal>
-                    <ViewMoreBtn link="/Works/design" />
+                    <ViewMoreBtn link="/Works/uiux" />
                 </ScrollReveal>
             </div>
         </div>

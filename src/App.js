@@ -5,19 +5,15 @@ import Footer from './Components/Footer';
 import { ScrollToTopBtn } from './Components/Helpers/ScrollToTop';
 
 // MUST-HAVE
-// subsection for Petit Mood / TourBot
-// background blur for mobile mode
-// intro screen block
 // hero page animation
-// self-intro
 // Fluffy UI
 // Vision mockup + large size mockups *N
-// remove 2Done
 
 // NICE-TO-HAVE
 // about: life in the dropdown
 // art / writing section in about page
 // check rwd
+// unicode converting topic to id (weblink)
 
 function App() {
   // The back-to-top button is hidden at the beginning
@@ -52,34 +48,64 @@ function App() {
   };
 
   const workData = [
-    {'suffix': 'design', 'name': 'Design',
-      'headline': 'Life is good; design makes it even better.',
+    {'suffix': 'uiux', 'name': 'UI/UX',
+      'headline': 'Users come first, whatever our product is.',
       'items': [
       {
         'title': 'FairPlay', 
         'id': 'Fairplay',
-        'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
+        'tags': ['UI/UX', 'Product/App Design', 'E-Commerce'],
         'desc': 'Your AI Advocate for All Things Customer Service',
         'img': 'https://i.imgur.com/RcjjaFq.png',
-        'ph': 'https://i.imgur.com/RcjjaFq.png',
       },
       {
         'title': 'Vision', 
         'id': 'Vision',
-        'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
+        'tags': ['UI/UX', 'Interaction Design', 'Autonomous Vehicle'],
         'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
         'img': 'https://i.imgur.com/tCWNnCe.png',
-        'ph': 'https://i.imgur.com/tCWNnCe.png',
       },
       {
         'title': 'Fluffy Focus', 
         'id': 'Fluffy-Focus',
-        'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
+        'tags': ['UI/UX','Gamification', 'Behavior Change', 'Persuasive Psychology'],
         'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
         'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
       },
-    ]
+      ]
+    },
+    {'suffix': 'visual', 'name': 'Visual',
+      'headline': 'Making ideas visible with beauty and story.',
+      'items': [
+      {
+        'title': 'Les Saisons de l\'Année', 
+        'id': 'Les-Saisons-de-lAnnee',
+        'tags': ['Visual Design', 'Graphic Design', 'Poster', 'Collage Art'],
+        'desc': 'Poster Series of Personified Seasons',
+        'img': "https://live.staticflickr.com/65535/52505805268_7fce1ebdc9_k.jpg",
+      },
+      // {
+      //   'title': 'New Era', 
+      //   'id': 'New-Era',
+      //   'tags': ['Visual Design', 'Graphic Design', 'Poster', 'Collage Art', 'Surrealism'],
+      //   'desc': 'Poster of An Envisioned Future',
+      //   'img': "https://live.staticflickr.com/65535/52505805468_8e26ceb65e_k.jpg",
+      // },
+      {
+        'title': 'Elite Camp', 
+        'id': 'Elite-Camp',
+        'tags': ['Visual Design', 'Graphic Design', 'Editorial'],
+        'desc': '18th NTU x PKU Elite Camp Memory Book',
+        'img': "https://live.staticflickr.com/65535/52505254991_f45213c95a_h.jpg",
+      },
+      {
+        'title': 'Hanabi', 
+        'id': 'Hanabi',
+        'tags': ['Visual Design', 'Graphic Design', 'Event Visuals'],
+        'desc': 'NTU IM Night Event Visuals',
+        'img': "https://live.staticflickr.com/65535/52505936586_9dd5f32352_k.jpg",
+      },
+      ]
     },
     {'suffix': 'engineering', 'name': 'Engineering',
     'headline': 'Achieving the impossible; that is engineering.\n(Yes, I coded this website too.)',
@@ -90,7 +116,6 @@ function App() {
         'tags': ['Game Design', 'Web Developing', 'Social Computing', 'Mental Health', 'Self-Care'],
         'desc': 'Web 3D Role-playing Game of Self-care Practice',
         'img': 'https://live.staticflickr.com/65535/53802328958_a5fd4d9f27_b.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53802328958_a5fd4d9f27_b.jpg',
       },
       {
         'title': 'TourBot', 
@@ -98,7 +123,6 @@ function App() {
         'tags': ['DataScience', 'NLP', 'DeepLearning', 'Frontend', 'UI'],
         'desc': 'Task-oriented chatbot for travel recommendation', 
         'img': 'https://live.staticflickr.com/65535/52516160951_2fcbbec56d_k.jpg',
-        'ph': 'https://live.staticflickr.com/65535/52516160951_1c09f8b8f1_m.jpg',
       },]
     },
     {'suffix': 'research', 'name': 'Research',
@@ -110,7 +134,6 @@ function App() {
         'tags': ['HCI', 'UX', 'AR', 'GameDesign', 'MentalHealth'],
         'desc': 'An AR Pet game to relieve university students\' emotions',
         'img': 'https://live.staticflickr.com/65535/52515678782_7a973a13a8_k.jpg',
-        'ph': 'https://live.staticflickr.com/65535/52515678782_b86ed4f440_m.jpg',
       },
       {
         'title': 'Park Smart, Deliver Fast', 
@@ -118,16 +141,15 @@ function App() {
         'tags': ['User Research', 'City Planing'],
         'desc': 'Pittsburgh Smart Loading Zone Google Map Integration',
         'img': 'https://live.staticflickr.com/65535/53740742939_7933acb0e1_b.jpg',
-        'ph': 'https://live.staticflickr.com/65535/53740742939_7933acb0e1_b.jpg',
       },]
     },
   ];
   const homeData = [
-    {'suffix': 'design', 'name': 'I champion users with empathy and a focus on details,',
+    {'suffix': 'uiux', 'name': 'I champion users with empathy and a focus on details,',
       'items': workData[0]['items'].slice(0, 2)
     },
     {'suffix': 'engineering', 'name': '... And leverage my coding skills to bring designs to life.',
-      'items': workData[1]['items'].slice(0, 1)
+      'items': workData[2]['items'].slice(0, 1)
     },
   ];
 

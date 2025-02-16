@@ -211,8 +211,8 @@ b {
 
 img {
   object-fit: contain;
-  border-radius: 8px;
-  @include filter-shadow;
+  // border-radius: 8px;
+  // @include filter-shadow;
 }
 
 .no-shadow {

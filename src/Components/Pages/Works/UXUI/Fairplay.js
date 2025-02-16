@@ -10,7 +10,7 @@ import { Subsection } from "../../../Topic";
 // update
 // cover image
 
-function Fairplay ({ pageHeight, handleSubsectionClick }) {
+function Fairplay ({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
     const [activeItem, setActiveItem] = useState(0);
 
     const items = [
@@ -51,13 +51,13 @@ We proudly introduce FairPlay, an <b>AI-powered mobile app designed to mediate c
                                 <div className="topic-desc-container col-md-6 mb-5">
                                     <h6 className="theme mb-3">Role</h6>
                                     <ul>
-                                        <li>Product Designer</li>
+                                        <li>UX Designer</li>
                                     </ul>
                                 </div>
                                 <div className="topic-desc-container col-md-6 mb-5">
                                     <h6 className="theme mb-3">Team</h6>
                                     <ul>
-                                        <li>1 Product Designer (me), 1 Product Manager, 2 UX Researchers, 1 Strategist</li>
+                                        <li>1 UX Designer (me), 1 Product Manager, 2 UX Researchers, 1 Strategist</li>
                                     </ul>
                                 </div>
                                 <div className="topic-desc-container col mb-5">
@@ -1041,7 +1041,7 @@ We proudly introduce FairPlay, an <b>AI-powered mobile app designed to mediate c
                 })}
 
                 <ScrollReveal>
-                    <ProjectRec projects={projects} moreLink={"/Works/design"} />
+                    <ProjectRec projects={projRecs} moreLink={projRecLink} />
                 </ScrollReveal>
             </div>
         </div>
@@ -1049,61 +1049,3 @@ We proudly introduce FairPlay, an <b>AI-powered mobile app designed to mediate c
 };
 
 export default Fairplay;
-
-const cards = [
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/1.png",
-        title: "Title 1",
-        id: 1,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/2.png",
-        title: "Title 2",
-        id: 2,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/3.png",
-        title: "Title 3",
-        id: 3,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/4.png",
-        title: "Title 4",
-        id: 4,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/5.png",
-        title: "Title 5",
-        id: 5,
-    },
-    {
-        url: "/works/UXUI/fluffy/design/4-prototype/3-hifi/6.png",
-        title: "Title 1",
-        id: 6,
-    },
-];
-// link, data
-const projects = [
-    {
-        'link': '/Works/design/Vision',
-        'data': {
-            'title': 'Vision', 
-            'id': 'Vision',
-            'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-            'desc': 'Easy, Delightful Beginner\'s E-moped Experience',
-            'img': 'https://i.imgur.com/tCWNnCe.png',
-            'ph': 'https://i.imgur.com/tCWNnCe.png',
-        }
-    },
-    {
-        'link': '/Works/design/2Done',
-        'data': {
-            'title': '2Done', 
-            'id': '2Done',
-            'tags': ['UX', 'UI', 'Procrastination', 'Anxiety', 'MentalHealth'],
-            'desc': 'Gamified to-do list desktop app for procrastination',
-            'img': 'https://live.staticflickr.com/65535/52515681442_5ac6984461_k.jpg',
-            'ph': 'https://live.staticflickr.com/65535/52515681442_301610b0ec_m.jpg',
-        }
-    },
-];

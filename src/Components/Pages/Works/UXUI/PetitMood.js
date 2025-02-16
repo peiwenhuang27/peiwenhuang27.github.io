@@ -1,14 +1,21 @@
+import { createRef, useState } from "react";
+
 import Iframe from "react-iframe";
 
 import ProjectRec from "../../../ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
+import ProgressBar from "../../../ScrollBar";
+import { Subsection } from "../../../Topic";
 
-function PetitMood () {
+function PetitMood ({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
+    const [activeItem, setActiveItem] = useState(0);
+
     const img_src = 'https://live.staticflickr.com/65535/52515678782_7a973a13a8_k.jpg';
-    return (
-        <div id="Petit-Mood">
-            <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
 
+    const items = [
+        {
+            name: "Intro",
+            content:
             <div className="container">
                 <div className="topic-container py-5">
                     <ScrollReveal>
@@ -82,7 +89,10 @@ function PetitMood () {
                     </ScrollReveal>
                 </div>
             </div>
-
+        },
+        {
+            name: "Demo",
+            content:
             <ScrollReveal>
                 <div className="theme-bg">
                     <div className="container">
@@ -100,7 +110,10 @@ function PetitMood () {
                     </div>
                 </div>
             </ScrollReveal>
-            
+        },
+        {
+            name: "Background",
+            content:
             <ScrollReveal>
                 <div className="container">
                     <div className="topic-container subsection-wrapper">
@@ -108,14 +121,17 @@ function PetitMood () {
                         <div className="row align-items-start">
                             <p className="col-lg-8 mb-3">
                                 University students are the high-risk population to experience mental disturbance, such as depression disorder and anxiety disorder. Although most universities provide counseling services, along with other treatments available outside of school, the majority of them remain inaccessible due to unawareness of services or insurance coverage or skepticism about treatment effectiveness. To approach the conundrum, previous studies adopted clinic interventions of animal-assisted intervention (AAI) to reduce students’ measured health negative outcomes. However, not all schools have established AAIs; furthermore, some are simply not able to interact with animals because of allergy or other reasons.
-    <br/><br/>Motivated by such issues, this study intended to design and develop <b className="">a digital solution using mobile AR to help relieve negative emotions for university students self-use</b> to provide university students with an accessible means to understand and treat their mental health with care.
+                                <br/><br/>Motivated by such issues, this study intended to design and develop <b className="">a digital solution using mobile AR to help relieve negative emotions for university students self-use</b> to provide university students with an accessible means to understand and treat their mental health with care.
                             </p>
                             <img className="col-lg-4 px-5" src="/works/UXUI/petit-mood/design-flow.png" alt="design flow"/>
                         </div>
                     </div>
                 </div>
             </ScrollReveal>
-
+        },
+        {
+            name: "Methods",
+            content:
             <div className="container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
@@ -158,7 +174,10 @@ function PetitMood () {
 
                 </div>
             </div>
-
+        },
+        {
+            name: "Persona",
+            content:
             <ScrollReveal>
                 <div style={{backgroundColor: "#FEEEE3", width: "100%"}}>
                     <div className="container">
@@ -253,7 +272,10 @@ function PetitMood () {
                     </div>
                 </div>
             </ScrollReveal>
-            
+        },
+        {
+            name: "Prototyping",
+            content:
             <div className="container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
@@ -407,8 +429,10 @@ function PetitMood () {
                     </div>
                 </div>
             </div>
-
-
+        },
+        {
+            name: "Findings",
+            content:
             <div className="container">
                 <ScrollReveal>
                     <div className="topic-container subsection-wrapper">
@@ -440,7 +464,12 @@ function PetitMood () {
                         </div>
                     </div>
                 </ScrollReveal>
-
+            </div>
+        },
+        {
+            name: "Usability",
+            content:
+            <div className="container">
                 <ScrollReveal>
                     <div className="topic-container subsection-wrapper">
                         <h3 className="my-5">🧪 Usability Evaluation</h3>
@@ -459,7 +488,12 @@ function PetitMood () {
                         </div>
                     </div>
                 </ScrollReveal>
-            
+            </div>
+        },
+        {
+            name: "Takeaways",
+            content:
+            <div className="container">
                 <div className="topic-container subsection-wrapper">
                     <ScrollReveal>
                         <h3 className="my-5">💭 Takeaways</h3>
@@ -490,53 +524,78 @@ function PetitMood () {
                     </ScrollReveal> 
                 </div>
             </div>
-            
-            <ScrollReveal>
-                <ProjectRec projects={projects} moreLink={"/Works/design"} />
-            </ScrollReveal>
+        }
+    ];
 
-            <div className="bg-1">
-                <div className="container topic-container subsection-wrapper">
-                    <h3 className="my-5">📑 References</h3>
-                    <p className="references">
-                    [1] Fraser Anderson, Michelle Annett, Walter F. Bischof, and Pierre Boulanger. 2010. Virtual equine assisted therapy. In 2010 IEEE Virtual Reality Conference (VR). 255–256. https://doi.org/10.1109/VR.2010.5444776 
-[2] Sandra Barker, Randolph Barker, Nancy McCain, and Christine Schubert. 2016. A Randomized Cross-over Exploratory Study of the Effect of Visiting Therapy Dogs on College Student Stress Before Final Exams. Anthrozoös 29 (01 2016), 35–46. https://doi.org/10.1080/08927936.2015.1069988 
-[3] Sahara Byrne, Geri Gay, J. Pollack, Amy Gonzales, Daniela Retelny, Theodore Lee, and Brian Wansink. 2012. Caring for Mobile Phone-Based Virtual Pets can Influence Youth Eating Behaviors. Journal of Children and Media 6 (02 2012), 83–99. https://doi.org/10.1080/17482798.2011.633410 
-[4] Pressley Chakales, Jacklyn Locklear, and Tracy Wharton. 2020. Medicine and Horsemanship: The Effects of Equine-assisted Activities and Therapies on Stress and Depression in Medical Students. Cureus 12 (02 2020). https://doi.org/10.7759/cureus.6896 
-[5] Samar Chakma, Taswib Islam, Md Shahjalal, and Dipak Mitra. 2021. Depression among pet owners and non-pet owners: a comparative cross-sectional study in Dhaka, Bangladesh. F1000Research 10 (07 2021), 574. https://doi.org/10.12688/f1000research.53276.1 
-[6] Hsi-Chung Chen, Chia-Hsuan Wu, Yue-Joe Lee, Shih-Cheng Liao, and Ming- Been Lee. 2005. Validity of the five-item Brief Symptom Rating Scale among subjects admitted for general health screening. Journal of the Formosan Medical Association = Taiwan yi zhi 104, 11 (November 2005), 824—829. 
-[7]  Feng-Kuang Chiang, Xiaojing Shang, and Lu Qiao. 2022. Augmented reality in vocational training: A systematic review of research and applications. Computers in Human Behavior 129 (04 2022), 107125. https://doi.org/10.1016/j.chb.2021.107125 
-[8]  John P. Chin, Virginia A. Diehl, and Kent L. Norman. 1988. Development of an Instrument Measuring User Satisfaction of the Human-Computer Interface. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (Washington, D.C., USA) (CHI ’88). Association for Computing Machinery, New York, NY, USA, 213–218. https://doi.org/10.1145/57167.57203 
-[9]  Myeon-Gyun Cho. 2021. A Study on Augmented Reality-based Virtual Pets for the Elderly Living Alone. In 2021 International Conference on Information and Communication Technology Convergence (ICTC). IEEE, 1280–1283. https: //doi.org/10.1109/ICTC52510.2021.9620928 
-[10]  Emily Cooke, Claire Henderson-Wilson, Elyse Warner, and Anthony LaMontagne. 2022. Animal-assisted interventions in universities: a scoping review of implementation and associated outcomes. Health Promotion International (01 2022). https://doi.org/10.1093/heapro/daac001 
-[11]  Kathleen M. Dillon. 1992. Popping Sealed Air-Capsules to Reduce Stress. Psycho- logical Reports 71, 1 (1992), 243–246. https://doi.org/10.2466/pr0.1992.71.1.243 
-[12]  David Eilam, Rony Izhar, and Joel Mort. 2011. Threat detection: Behavioral practices in animals and humans. Neuroscience & Biobehavioral Reviews 35, 4 (2011), 999–1006. https://doi.org/10.1016/j.neubiorev.2010.08.002 Threat-Detection and Precaution: Neurophysiological, Behavioral, Cognitive and Psychiatric Aspects. 
-[13]  Daniel Eisenberg, Ezra Golberstein, and Sarah E. Gollust. 2007. Help-Seeking and Access to Mental Health Care in a University Student Population. Medical Care 45, 7 (2007), 594–601. http://www.jstor.org/stable/40221479 [14]  Catherine K Ettman, Salma M Abdalla, Gregory H Cohen, Laura Sampson, Patrick M Vivier, and Sandro Galea. 2020. Prevalence of depression symptoms in US adults before and during the COVID-19 pandemic. JAMA network open 3, 9 (2020), e2019686–e2019686. [15]  Eileen B. Folse, Carolyn C. Minder, Melanie J. Aycock, and Ronald T. Santana. 1994. Animal-Assisted Therapy and Depression in Adult College Students. Anthrozoös 7, 3 (1994), 188–194. https://doi.org/10.2752/089279394787001880 [16]  Rebecca Johnson, Richard Meadows, Jennifer Haubner, and Kathleen Sevedge. 2008. Animal-Assisted Activity Among Patients With Cancer: Effects on Mood, Fatigue, Self-Perceived Health, and Sense of Coherence. Oncology nursing forum 35 (04 2008), 225–32. https://doi.org/10.1188/08.ONF.225-232 
-[17]  Ezgi Karadag, Sevgin Samancioglu, Dilek Ozden, and Ercan Bakir. 2017. Effects of aromatherapy on sleep quality and anxiety of patients. Nursing in critical care 22, 2 (2017), 105–112. 
-[18]  Katherine Kruger and James Serpell. 2006. Animal-Assisted Interventions in Mental Health: Definitions and Theoretical Foundations. Vol. 2. 21–38. 
-[19]  Ming-Been Lee, Shih-Cheng Liao, Yue-Joe Lee, Chia-Hsuan Wu, Mei-Chih Tseng, Shur-Fen Gau, and Chi-lun Rau. 2003. Development and verification of validity and reliability of a short screening instrument to identify psychiatric morbidity. Journal of the Formosan Medical Association 102, 10 (2003), 687–694. 
-[20]  Chaolan Lin, Travis Faas, Lynn Dombrowski, and Erin Brady. 2017. Beyond cute: exploring user types and design opportunities of virtual reality pet games. In Proceedings of the 23rd ACM Symposium on Virtual Reality Software and Technology. 1–10. https://doi.org/10.1145/3139131.3139132 
-[21]  Philip Lindner, William Hamilton, Alexander Miloff, and Per Carlbring. 2019. How to Treat Depression With Low-Intensity Virtual Reality Interventions: Perspectives on Translating Cognitive Behavioral Techniques Into the Virtual Reality Modality and How to Make Anti-Depressive Use of Virtual Reality–Unique Experiences. Frontiers in Psychiatry 10 (2019), 792. https://doi.org/10.3389/fpsyt.2019.00792 
-[22]  I-Cheng Lu, Mei-Chu Yen Jean, Sio-Meng Lei, Hsiang-Huo Cheng, Jung-Der Wang, et al. 2011. BSRS-5 (5-item Brief Symptom Rating Scale) scores affect every aspect of quality of life measured by WHOQOL-BREF in healthy workers. Quality of Life Research 20, 9 (2011), 1469–1475. 
-[23]  Christian Aljoscha Lukas, Bjoern Eskofier, and Matthias Berking. 2021. A Gamified Smartphone-Based Intervention for Depression: Randomized Controlled Pilot Trial. JMIR Ment Health 8, 7 (20 Jul 2021), e16643. https://doi.org/10.2196/16643 
-[24]  Heewon Na, Soyeon Park, and Suh-Yeon Dong. 2022. Mixed Reality-Based Interaction between Human and Virtual Cat for Mental Stress Management. Sensors22(022022). https://doi.org/10.3390/s22031159 
-[25] Yuko Nakano, Masato Matsushima, Azusa Nakamori, Junshiro Hiroma, Eiji Matsuo, Hidetaka Wakabayashi, Shuhei Yoshida, Hiroko Ichikawa, Makoto Kaneko, Rieko Mutai, Yoshifumi Sugiyama, Eriko Yoshida, and Tetsuya Kobayashi. 2019. Depression and anxiety in pet owners after a diagnosis of cancer in their pets: A cross-sectional study in Japan. BMJ Open 9 (02 2019), bmjopen–2018. https://doi.org/10.1136/bmjopen-2018-024512 
-[26]  Daiki Namekata and Mariko Yamamoto. 2021. Companion Animal Ownership and Mood States of University Students Majoring in Animal Sciences during the COVID-19 Pandemic in Japan. Animals 11 (102021), 2887. https://doi.org/10.3390/ani11102887 
-[27] Nahal Norouzi, Gerd Bruder, Jeremy Bailenson, and Greg Welch. 2019. Investigating Augmented Reality Animals as Companions. In 2019 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct). IEEE, 400–403. https://doi.org/10.1109/ISMAR-Adjunct.2019.000-1 
-[28] Jason Ong and David Sholtes. 2010. A Mindfulness-Based Approach to the Treatment of Insomnia. Journal of clinical psychology 66 (11 2010), 1175–84. https://doi.org/10.1002/jclp.20736 
-[29] Mikaella E. Patsali, Danai-Priskila V. Mousa, Eleni V.K. Papadopoulou, Konstantina K.K. Papadopoulou, Chrysi K. Kaparounaki, Ioannis Diakogiannis, and Konstantinos N Fountoulakis. 2020. University students’ changes in mental health status and determinants of behavior during the COVID-19 lockdown in Greece. Psychiatry Research 292 (2020), 113298. https://doi.org/10.1016/j.psychres.2020.113298 
-[30] Gina Paul, Barb Elam, and Steven J. Verhulst. 2007. A Longitudinal Study of Students’ Perceptions of Using Deep Breathing Meditation to Reduce Testing Stresses. Teaching and Learning in Medicine 19, 3 (2007), 287–292. https://doi.org/10.1080/10401330701366754 PMID: 17594225. 
-[31] James Pennebaker. 1997. Writing About Emotional Experiences as a Therapeutic Process. Psychological Science - PSYCHOL SCI 8 (05 1997), 162–166. https://doi.org/10.1111/j.1467-9280.1997.tb00403.x 
-[32] James Pennebaker. 1999. Disclosure and health: an interview with James W. Pennebaker. Interview by Harris Dienstfrey. Advances in mind-body medicine 15 (02 1999), 161–3, 166. 
-[33] Arianna Prudenzi, Brendan Rooney, Giovambattista Presti, Marco Lombardo, Daniele Lombardo, Concetta Messina, and Louise Mchugh. 2019. Testing the effectiveness of virtual reality as a defusion technique for coping with unwanted thoughts. Virtual Reality 23 (06 2019). https://doi.org/10.1007/s10055-018-0372-1 
-[34] Hannah Ritchie Saloni Dattani and Max Roser. 2021. Mental Health. Our World in Data (2021). https://ourworldindata.org/mental-health 
-[35] Matthew J. Savage, Ruth James, Daniele Magistro, James Donaldson, Laura C. Healy, Mary Nevill, and Philip J. Hennis. 2020. Mental health and movement behaviour during the COVID-19 pandemic in UK university students: Prospective cohort study. Mental Health and Physical Activity 19 (2020), 100357. https: //doi.org/10.1016/j.mhpa.2020.100357 
-[36] Carol Smith, Mary Leenerts, and Byron Gajewski. 2003. A Systematically Tested Intervention for Managing Reactive Depression. Nursing research 52 (11 2003), 401–9. https://doi.org/10.1097/00006199-200311000-00008 
-[37] Lily Tsai and David Kaufman. 2014. Interacting with a Computer-Simulated Pet: Factors Influencing Children’s Humane Attitudes and Empathy. Journal of Educational Computing Research 51 (09 2014), 145–161. https://doi.org/10.2190/EC.51.2.a 
-[38] SESAR 3 Joint Undertaking. 2012. Questionnaire for User Interface Satisfaction (QUIS). Retrieved Jul 4, 2022 from https://ext.eurocontrol.int/ehp/?q=node/1611 
-[39] Janna N. Vrijsen, Verena S. Fischer, Bernhard W. Müller, Norbert Scherbaum, Eni S. Becker, Mike Rinck, and Indira Tendolkar. 2018. Cognitive bias modification as an add-on treatment in clinical depression: Results from a placebo-controlled, single-blinded randomized control trial. Journal of Affective Disorders 238 (2018), 342–350. https://doi.org/10.1016/j.jad.2018.06.025 [40] Xiaomei Wang, Sudeep Hegde, Changwon Son, Bruce Keller, Alec Smith, and Farzan Sasangohar. 2020. Investigating Mental Health of US College Students During the COVID-19 Pandemic: Cross-Sectional Survey Study. J Med Internet Res 22, 9 (17 Sep 2020), e22817. https://doi.org/10.2196/22817 
-[41] Daniel Wessel, Helke Kohlbrandt, and Tilo Mentler. 2019. Human-Centered Development of an Activity Diary App for People with Depression. In Proceedings of Mensch und Computer 2019. 427–431. https://doi.org/10.1145/3340764.3344434
-                    </p>
+    items.map((item, key) => {
+        item.id = key;
+        item.ref = createRef(null);
+    });
+
+    return (
+        <div id="Petit-Mood">
+            <ProgressBar color="#A15D00" items={items} activeItem={activeItem} handleClick={handleSubsectionClick} />
+            <div className="topic-main-wrapper">
+                <div className="topic-cover-img" style={{ backgroundImage:`url(${img_src})` }} />
+                {items.map((item) => {
+                    return (
+                        <Subsection
+                        id={item.id}
+                        subsectionRef={item.ref}
+                        activeItem={activeItem}
+                        setActiveItem={setActiveItem}
+                        pageHeight={pageHeight}
+                        content={item.content} />
+                    );
+                })}
+
+                <ScrollReveal>
+                    <ProjectRec projects={projRecs} moreLink={projRecLink} />
+                </ScrollReveal>
+
+                <div className="bg-1">
+                    <div className="container topic-container subsection-wrapper">
+                        <h3 className="my-5">📑 References</h3>
+                        <p className="references">
+                        [1] Fraser Anderson, Michelle Annett, Walter F. Bischof, and Pierre Boulanger. 2010. Virtual equine assisted therapy. In 2010 IEEE Virtual Reality Conference (VR). 255–256. https://doi.org/10.1109/VR.2010.5444776 
+    [2] Sandra Barker, Randolph Barker, Nancy McCain, and Christine Schubert. 2016. A Randomized Cross-over Exploratory Study of the Effect of Visiting Therapy Dogs on College Student Stress Before Final Exams. Anthrozoös 29 (01 2016), 35–46. https://doi.org/10.1080/08927936.2015.1069988 
+    [3] Sahara Byrne, Geri Gay, J. Pollack, Amy Gonzales, Daniela Retelny, Theodore Lee, and Brian Wansink. 2012. Caring for Mobile Phone-Based Virtual Pets can Influence Youth Eating Behaviors. Journal of Children and Media 6 (02 2012), 83–99. https://doi.org/10.1080/17482798.2011.633410 
+    [4] Pressley Chakales, Jacklyn Locklear, and Tracy Wharton. 2020. Medicine and Horsemanship: The Effects of Equine-assisted Activities and Therapies on Stress and Depression in Medical Students. Cureus 12 (02 2020). https://doi.org/10.7759/cureus.6896 
+    [5] Samar Chakma, Taswib Islam, Md Shahjalal, and Dipak Mitra. 2021. Depression among pet owners and non-pet owners: a comparative cross-sectional study in Dhaka, Bangladesh. F1000Research 10 (07 2021), 574. https://doi.org/10.12688/f1000research.53276.1 
+    [6] Hsi-Chung Chen, Chia-Hsuan Wu, Yue-Joe Lee, Shih-Cheng Liao, and Ming- Been Lee. 2005. Validity of the five-item Brief Symptom Rating Scale among subjects admitted for general health screening. Journal of the Formosan Medical Association = Taiwan yi zhi 104, 11 (November 2005), 824—829. 
+    [7]  Feng-Kuang Chiang, Xiaojing Shang, and Lu Qiao. 2022. Augmented reality in vocational training: A systematic review of research and applications. Computers in Human Behavior 129 (04 2022), 107125. https://doi.org/10.1016/j.chb.2021.107125 
+    [8]  John P. Chin, Virginia A. Diehl, and Kent L. Norman. 1988. Development of an Instrument Measuring User Satisfaction of the Human-Computer Interface. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (Washington, D.C., USA) (CHI ’88). Association for Computing Machinery, New York, NY, USA, 213–218. https://doi.org/10.1145/57167.57203 
+    [9]  Myeon-Gyun Cho. 2021. A Study on Augmented Reality-based Virtual Pets for the Elderly Living Alone. In 2021 International Conference on Information and Communication Technology Convergence (ICTC). IEEE, 1280–1283. https: //doi.org/10.1109/ICTC52510.2021.9620928 
+    [10]  Emily Cooke, Claire Henderson-Wilson, Elyse Warner, and Anthony LaMontagne. 2022. Animal-assisted interventions in universities: a scoping review of implementation and associated outcomes. Health Promotion International (01 2022). https://doi.org/10.1093/heapro/daac001 
+    [11]  Kathleen M. Dillon. 1992. Popping Sealed Air-Capsules to Reduce Stress. Psycho- logical Reports 71, 1 (1992), 243–246. https://doi.org/10.2466/pr0.1992.71.1.243 
+    [12]  David Eilam, Rony Izhar, and Joel Mort. 2011. Threat detection: Behavioral practices in animals and humans. Neuroscience & Biobehavioral Reviews 35, 4 (2011), 999–1006. https://doi.org/10.1016/j.neubiorev.2010.08.002 Threat-Detection and Precaution: Neurophysiological, Behavioral, Cognitive and Psychiatric Aspects. 
+    [13]  Daniel Eisenberg, Ezra Golberstein, and Sarah E. Gollust. 2007. Help-Seeking and Access to Mental Health Care in a University Student Population. Medical Care 45, 7 (2007), 594–601. http://www.jstor.org/stable/40221479 [14]  Catherine K Ettman, Salma M Abdalla, Gregory H Cohen, Laura Sampson, Patrick M Vivier, and Sandro Galea. 2020. Prevalence of depression symptoms in US adults before and during the COVID-19 pandemic. JAMA network open 3, 9 (2020), e2019686–e2019686. [15]  Eileen B. Folse, Carolyn C. Minder, Melanie J. Aycock, and Ronald T. Santana. 1994. Animal-Assisted Therapy and Depression in Adult College Students. Anthrozoös 7, 3 (1994), 188–194. https://doi.org/10.2752/089279394787001880 [16]  Rebecca Johnson, Richard Meadows, Jennifer Haubner, and Kathleen Sevedge. 2008. Animal-Assisted Activity Among Patients With Cancer: Effects on Mood, Fatigue, Self-Perceived Health, and Sense of Coherence. Oncology nursing forum 35 (04 2008), 225–32. https://doi.org/10.1188/08.ONF.225-232 
+    [17]  Ezgi Karadag, Sevgin Samancioglu, Dilek Ozden, and Ercan Bakir. 2017. Effects of aromatherapy on sleep quality and anxiety of patients. Nursing in critical care 22, 2 (2017), 105–112. 
+    [18]  Katherine Kruger and James Serpell. 2006. Animal-Assisted Interventions in Mental Health: Definitions and Theoretical Foundations. Vol. 2. 21–38. 
+    [19]  Ming-Been Lee, Shih-Cheng Liao, Yue-Joe Lee, Chia-Hsuan Wu, Mei-Chih Tseng, Shur-Fen Gau, and Chi-lun Rau. 2003. Development and verification of validity and reliability of a short screening instrument to identify psychiatric morbidity. Journal of the Formosan Medical Association 102, 10 (2003), 687–694. 
+    [20]  Chaolan Lin, Travis Faas, Lynn Dombrowski, and Erin Brady. 2017. Beyond cute: exploring user types and design opportunities of virtual reality pet games. In Proceedings of the 23rd ACM Symposium on Virtual Reality Software and Technology. 1–10. https://doi.org/10.1145/3139131.3139132 
+    [21]  Philip Lindner, William Hamilton, Alexander Miloff, and Per Carlbring. 2019. How to Treat Depression With Low-Intensity Virtual Reality Interventions: Perspectives on Translating Cognitive Behavioral Techniques Into the Virtual Reality Modality and How to Make Anti-Depressive Use of Virtual Reality–Unique Experiences. Frontiers in Psychiatry 10 (2019), 792. https://doi.org/10.3389/fpsyt.2019.00792 
+    [22]  I-Cheng Lu, Mei-Chu Yen Jean, Sio-Meng Lei, Hsiang-Huo Cheng, Jung-Der Wang, et al. 2011. BSRS-5 (5-item Brief Symptom Rating Scale) scores affect every aspect of quality of life measured by WHOQOL-BREF in healthy workers. Quality of Life Research 20, 9 (2011), 1469–1475. 
+    [23]  Christian Aljoscha Lukas, Bjoern Eskofier, and Matthias Berking. 2021. A Gamified Smartphone-Based Intervention for Depression: Randomized Controlled Pilot Trial. JMIR Ment Health 8, 7 (20 Jul 2021), e16643. https://doi.org/10.2196/16643 
+    [24]  Heewon Na, Soyeon Park, and Suh-Yeon Dong. 2022. Mixed Reality-Based Interaction between Human and Virtual Cat for Mental Stress Management. Sensors22(022022). https://doi.org/10.3390/s22031159 
+    [25] Yuko Nakano, Masato Matsushima, Azusa Nakamori, Junshiro Hiroma, Eiji Matsuo, Hidetaka Wakabayashi, Shuhei Yoshida, Hiroko Ichikawa, Makoto Kaneko, Rieko Mutai, Yoshifumi Sugiyama, Eriko Yoshida, and Tetsuya Kobayashi. 2019. Depression and anxiety in pet owners after a diagnosis of cancer in their pets: A cross-sectional study in Japan. BMJ Open 9 (02 2019), bmjopen–2018. https://doi.org/10.1136/bmjopen-2018-024512 
+    [26]  Daiki Namekata and Mariko Yamamoto. 2021. Companion Animal Ownership and Mood States of University Students Majoring in Animal Sciences during the COVID-19 Pandemic in Japan. Animals 11 (102021), 2887. https://doi.org/10.3390/ani11102887 
+    [27] Nahal Norouzi, Gerd Bruder, Jeremy Bailenson, and Greg Welch. 2019. Investigating Augmented Reality Animals as Companions. In 2019 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct). IEEE, 400–403. https://doi.org/10.1109/ISMAR-Adjunct.2019.000-1 
+    [28] Jason Ong and David Sholtes. 2010. A Mindfulness-Based Approach to the Treatment of Insomnia. Journal of clinical psychology 66 (11 2010), 1175–84. https://doi.org/10.1002/jclp.20736 
+    [29] Mikaella E. Patsali, Danai-Priskila V. Mousa, Eleni V.K. Papadopoulou, Konstantina K.K. Papadopoulou, Chrysi K. Kaparounaki, Ioannis Diakogiannis, and Konstantinos N Fountoulakis. 2020. University students’ changes in mental health status and determinants of behavior during the COVID-19 lockdown in Greece. Psychiatry Research 292 (2020), 113298. https://doi.org/10.1016/j.psychres.2020.113298 
+    [30] Gina Paul, Barb Elam, and Steven J. Verhulst. 2007. A Longitudinal Study of Students’ Perceptions of Using Deep Breathing Meditation to Reduce Testing Stresses. Teaching and Learning in Medicine 19, 3 (2007), 287–292. https://doi.org/10.1080/10401330701366754 PMID: 17594225. 
+    [31] James Pennebaker. 1997. Writing About Emotional Experiences as a Therapeutic Process. Psychological Science - PSYCHOL SCI 8 (05 1997), 162–166. https://doi.org/10.1111/j.1467-9280.1997.tb00403.x 
+    [32] James Pennebaker. 1999. Disclosure and health: an interview with James W. Pennebaker. Interview by Harris Dienstfrey. Advances in mind-body medicine 15 (02 1999), 161–3, 166. 
+    [33] Arianna Prudenzi, Brendan Rooney, Giovambattista Presti, Marco Lombardo, Daniele Lombardo, Concetta Messina, and Louise Mchugh. 2019. Testing the effectiveness of virtual reality as a defusion technique for coping with unwanted thoughts. Virtual Reality 23 (06 2019). https://doi.org/10.1007/s10055-018-0372-1 
+    [34] Hannah Ritchie Saloni Dattani and Max Roser. 2021. Mental Health. Our World in Data (2021). https://ourworldindata.org/mental-health 
+    [35] Matthew J. Savage, Ruth James, Daniele Magistro, James Donaldson, Laura C. Healy, Mary Nevill, and Philip J. Hennis. 2020. Mental health and movement behaviour during the COVID-19 pandemic in UK university students: Prospective cohort study. Mental Health and Physical Activity 19 (2020), 100357. https: //doi.org/10.1016/j.mhpa.2020.100357 
+    [36] Carol Smith, Mary Leenerts, and Byron Gajewski. 2003. A Systematically Tested Intervention for Managing Reactive Depression. Nursing research 52 (11 2003), 401–9. https://doi.org/10.1097/00006199-200311000-00008 
+    [37] Lily Tsai and David Kaufman. 2014. Interacting with a Computer-Simulated Pet: Factors Influencing Children’s Humane Attitudes and Empathy. Journal of Educational Computing Research 51 (09 2014), 145–161. https://doi.org/10.2190/EC.51.2.a 
+    [38] SESAR 3 Joint Undertaking. 2012. Questionnaire for User Interface Satisfaction (QUIS). Retrieved Jul 4, 2022 from https://ext.eurocontrol.int/ehp/?q=node/1611 
+    [39] Janna N. Vrijsen, Verena S. Fischer, Bernhard W. Müller, Norbert Scherbaum, Eni S. Becker, Mike Rinck, and Indira Tendolkar. 2018. Cognitive bias modification as an add-on treatment in clinical depression: Results from a placebo-controlled, single-blinded randomized control trial. Journal of Affective Disorders 238 (2018), 342–350. https://doi.org/10.1016/j.jad.2018.06.025 [40] Xiaomei Wang, Sudeep Hegde, Changwon Son, Bruce Keller, Alec Smith, and Farzan Sasangohar. 2020. Investigating Mental Health of US College Students During the COVID-19 Pandemic: Cross-Sectional Survey Study. J Med Internet Res 22, 9 (17 Sep 2020), e22817. https://doi.org/10.2196/22817 
+    [41] Daniel Wessel, Helke Kohlbrandt, and Tilo Mentler. 2019. Human-Centered Development of an Activity Diary App for People with Depression. In Proceedings of Mensch und Computer 2019. 427–431. https://doi.org/10.1145/3340764.3344434
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -545,28 +604,3 @@ function PetitMood () {
 };
 
 export default PetitMood;
-
-const projects = [
-    {
-        'link': '/Works/design/Fairplay',
-        'data': {
-            'title': 'FairPlay', 
-            'id': 'Fairplay',
-            'tags': ['Product Design', 'App Design', 'Consumer Products', 'Advocacy'],
-            'desc': 'Your AI Advocate for All Things Customer Service',
-            'img': 'https://i.imgur.com/RcjjaFq.png',
-            'ph': 'https://i.imgur.com/RcjjaFq.png',
-        }
-    },
-    {
-        'link': '/Works/design/Vision',
-        'data': {
-            'title': 'Vision', 
-            'id': 'Vision',
-            'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-            'desc': 'Redefining Semi-Autonomous Electric Vehicle Paradigm',
-            'img': 'https://i.imgur.com/tCWNnCe.png',
-            'ph': 'https://i.imgur.com/tCWNnCe.png',
-        }
-    },
-];

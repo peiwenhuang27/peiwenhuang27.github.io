@@ -5,7 +5,7 @@ import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 
 var Latex = require("react-latex");
 
-function TourBot() {
+function TourBot({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
     const img_src = 'https://live.staticflickr.com/65535/52516160951_2fcbbec56d_k.jpg';
     const form1 = `$$\\text{class weight}=\\frac{\\text{\\# of samples NOT in class \\it{i}}}{\\text{\\# of samples in class \\it{i}}}, \\alpha=0.05$$`;
     const form2 = `$$\\text{recall-adjusted class weight}=\\frac{\\text{initial class weight for category \\it{i}}}{\\text{recall for category \\it{i}} + C}, C=0.8$$`;
@@ -757,7 +757,7 @@ function TourBot() {
             </div>
 
             <ScrollReveal>
-                <ProjectRec projects={projects} moreLink={"/Works/design"} />
+                <ProjectRec projects={projRecs} moreLink={projRecLink} />
             </ScrollReveal>
 
             <div className="bg-1">
@@ -777,28 +777,3 @@ function TourBot() {
 };
 
 export default TourBot;
-
-const projects = [
-    {
-        'link': '/Works/design/Fluffy-Focus',
-        'data': {
-            'title': 'Fluffy Focus', 
-            'id': 'Fluffy-Focus',
-            'tags': ['Persuasive Design', 'Behavior Change', 'Game Design', 'UX', 'Psychology'],
-            'desc': 'Transformational Desktop RPG Against Work-Induced Anxiety',
-            'img': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-            'ph': 'https://live.staticflickr.com/65535/53567884525_c169b9e51c_b.jpg',
-          }
-    },
-    {
-        'link': '/Works/design/Ford-Vision',
-        'data': {
-            'title': 'Ford Vision', 
-            'id': 'Ford-Vision',
-            'tags': ['Interaction Design Fundamentals', 'UX', 'Autonomous Vehicle'],
-            'desc': 'Redefining Semi-Autonomous Electric Vehicle Paradigm',
-            'img': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
-            'ph': 'https://live.staticflickr.com/65535/53573556154_cdbcf18027_b.jpg',
-        }
-    },
-];

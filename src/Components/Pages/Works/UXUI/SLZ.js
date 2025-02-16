@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { createRef, useState } from "react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -6,17 +6,12 @@ import "swiper/css/pagination";
 
 import ProjectRec from "../../../ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
+import ProgressBar from "../../../ScrollBar";
+import { Subsection } from "../../../Topic";
 
-function SLZ () {
-    const [isLoading, setIsLoading] = useState(false);
-
+function SLZ ({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
+    const [activeItem, setActiveItem] = useState(0);
     const img_src = 'https://live.staticflickr.com/65535/53740501173_cf89e967ac_h.jpg';
-    
-    const hideSpinner = () => {
-        setIsLoading(false);
-    };
-
-
 
     return (
         <div id="SLZ">
@@ -71,9 +66,9 @@ function SLZ () {
                             <div className="topic-desc-container col mb-5">
                                 <h6 className="theme mb-3">Responsibilities</h6>
                                 <ul className="row">
-                                    <li className="col-md-6">Moderating 4 user interviews</li>
-                                    <li className="col-md-6">Producing research reports</li>
-                                    <li className="col-md-6">Leading research synthesis sessions</li>
+                                    <li className="col-md-6">Moderated 4 user interviews</li>
+                                    <li className="col-md-6">Produced research reports</li>
+                                    <li className="col-md-6">Led research synthesis sessions</li>
                                 </ul>
                             </div>
                         </div>
@@ -82,11 +77,8 @@ function SLZ () {
                 </div>
             </div>
 
-            
-
-
             <ScrollReveal>
-                <ProjectRec projects={projects} moreLink={"/Works/design"} />
+                <ProjectRec projects={projRecs} moreLink={projRecLink} />
             </ScrollReveal>
 
         </div>

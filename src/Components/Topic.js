@@ -13,8 +13,12 @@ import SLZ from "./Pages/Works/UXUI/SLZ";
 import TourBot from "./Pages/Works/Frontend/Tourbot";
 import Bookworm from "./Pages/Works/UXUI/Bookworm";
 import Alchemy from "./Pages/Works/UXUI/Alchemy";
+import Saisons from "./Pages/Works/Poster/Saisons";
+import Surreal from "./Pages/Works/Poster/Surreal";
+import Elite from "./Pages/Works/Editorial/Elite";
+import Hanabi from "./Pages/Works/Event/Hanabi";
 
-function Topic ({ pageHeight }) {
+function Topic ({ pageHeight, workData }) {
     let { workId } = useParams();
     let work;
     // click to navigate to a section within a project
@@ -28,24 +32,73 @@ function Topic ({ pageHeight }) {
             behavior: "smooth"
         });
     }
+    function removeCurrentProj(projects, id) {
+        if (projects.length > 1) {
+            let trimmed = projects.filter(proj => proj.id !== id);
+            if (trimmed.length > 2) {
+                return (trimmed.slice(0, 2));
+            }
+            return trimmed;
+        }
+        return projects;
+    }
+
+    // UIUX
+    let set_UIUX = workData.find((entry) => entry.name === 'UI/UX');
+    let projRecLink_UIUX = '/Works/' + set_UIUX.suffix;
 
     if(workId === 'Fairplay') {
-        work = <Fairplay pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
+        work = <Fairplay pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_UIUX} projRecs={removeCurrentProj(set_UIUX.items, workId)} />;
     }
     if(workId === 'Fluffy-Focus') {
-        work = <Fluffy pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
+        work = <Fluffy pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_UIUX} projRecs={removeCurrentProj(set_UIUX.items, workId)} />;
     }
     if(workId === 'Vision') {
-        work = <Vision pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
+        work = <Vision pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_UIUX} projRecs={removeCurrentProj(set_UIUX.items, workId)} />;
     }
-    if(workId === 'Sous-Chef') {
-        work = <SousChef pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
+
+    // Visual
+    let set_Visual = workData.find((entry) => entry.name === 'Visual');
+    let projRecLink_Visual = '/Works/' + set_Visual.suffix;
+
+    if ( workId === 'Les-Saisons-de-lAnnee') {
+        work = <Saisons pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_Visual} projRecs={removeCurrentProj(set_Visual.items, workId)} />;
     }
+    if ( workId === 'New-Era') {
+        work = <Surreal pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_Visual} projRecs={removeCurrentProj(set_Visual.items, workId)} />;
+    }
+    if ( workId === 'Elite-Camp') {
+        work = <Elite pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_Visual} projRecs={removeCurrentProj(set_Visual.items, workId)} />;
+    }
+    if ( workId === 'Hanabi') {
+        work = <Hanabi pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_Visual} projRecs={removeCurrentProj(set_Visual.items, workId)} />;
+    }
+
+    // Engineering
+    let set_Eng = workData.find((entry) => entry.name === 'Engineering');
+    let projRecLink_Eng = '/Works/' + set_Eng.suffix;
+
+    if ( workId === 'TourBot') {
+        work = <TourBot pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_Eng} projRecs={removeCurrentProj(set_Eng.items, workId)} />;
+    }
+    if ( workId === 'Mindfulness-Alchemy') {
+        work = <Alchemy pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_Eng} projRecs={removeCurrentProj(set_Eng.items, workId)} />;
+    }
+
+    // Research
+    let set_Res = workData.find((entry) => entry.name === 'Research');
+    let projRecLink_Res = '/Works/' + set_Res.suffix;
+
     if(workId === 'Petit-Mood') {
-        work = <PetitMood pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
+        work = <PetitMood pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_Res} projRecs={removeCurrentProj(set_Res.items, workId)} />;
     }
     if(workId === 'SLZ') {
-        work = <SLZ pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
+        work = <SLZ pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} projRecLink={projRecLink_Res} projRecs={removeCurrentProj(set_Res.items, workId)} />;
+    }
+
+    // Not in use
+    if(workId === 'Sous-Chef') {
+        work = <SousChef pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if(workId === 'Bookworm-Meeter') {
         work = <Bookworm pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
@@ -56,13 +109,7 @@ function Topic ({ pageHeight }) {
     if (workId === 'Mindful-Diary') {
         work = <Mindful pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
-    if ( workId === 'TourBot') {
-        work = <TourBot pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
-    }
-    if ( workId === 'Mindfulness-Alchemy') {
-        work = <Alchemy pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
-    }
-
+    
     return (
         <Transitions key="topic">
             {work}
