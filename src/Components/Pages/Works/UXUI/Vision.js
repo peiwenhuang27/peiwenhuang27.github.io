@@ -479,7 +479,7 @@ function Vision ({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
                         <div className="topic-container subsection-wrapper">
                             <h3 className="mb-3">💭 Takeaways</h3>
                             <p className="mb-5">
-                            This Ford Vision project helped me consolidate almost everything I learned in this Interaction Design Fundamentals course. From doing <b>background research, affinity diagramming, brainstorming, to actually prototyping by leveraging visual design principles and usability heuristics</b>, and evaluating with usability tests and guerrilla research.
+                            This Vision project helped me consolidate almost everything I learned in this Interaction Design Fundamentals course. From doing <b>background research, affinity diagramming, brainstorming, to actually prototyping by leveraging visual design principles and usability heuristics</b>, and evaluating with usability tests and guerrilla research.
                             Another thing I greatly enjoyed out of this project was the rapport and collaboration among team members, which was a key factor in our production of the comprehensive, attention-to-detail physical and digital prototypes.
                             </p>
                             <p className="caption subtle">

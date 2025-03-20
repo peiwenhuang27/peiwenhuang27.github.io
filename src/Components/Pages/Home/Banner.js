@@ -7,13 +7,13 @@ function Banner () {
     return (
         <ScrollReveal>
             <section className="banner section-wrapper topic-container-lg row align-items-center">
-                {/* <div className="col-md-6 d-flex justify-content-center">
+                <div className="col-md-6 d-flex justify-content-center">
                     <img className="w-sizer-lg no-shadow" src="/pfp-illustration.jpg" alt="Peiwen Huang illustration" />
-                </div> */}
+                </div>
 
                 <div className="col-md-6 d-flex justify-content-center">
                     <div>
-                        <h6 className='m-0'>UX Designer</h6>
+                        <h6 className='m-0'>Product Designer</h6>
                         <h1 className='mb-5'>Peiwen Huang</h1>
                         
                         
