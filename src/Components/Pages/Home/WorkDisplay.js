@@ -4,66 +4,57 @@ import { Link } from "react-router-dom";
 import { ScrollReveal } from "../../Helpers/SmoothScroll";
 import CategoryBox from "./CategoryBox";
 
-function Intro () {
-    return (
-        <div className="subsection-wrapper topic-container-lg pt-5">
-            <div id="intro" className="intro">
-                <h4>Peiwen Huang (n.)</h4>
-                <div className="row">
-                    <p className="col-md-8 px-5 py-3">
-                        <ul className="list-disc">
-                            <li>someone who <b className="">creatively crafts transformative experiences for users</b>, instilling self-love, motivation and confidence
-                            <ul className="list-circle">
-                                <li className="italic" style={{color: "#808080"}}><b>Peiwen Huang</b> focuses her work in mental health and social good, infusing into it applied psychology with a hint of playfulness.</li>
-                            </ul>
-                            </li>
-                            <li>the intersection of UX designer, researcher, engineer, artist, and poet</li>
-                            <li>your empathetic sidekick on the way to self-efficacy</li>
-                        </ul>
-                        <ul>
-                            <li className="secondary"><b>Synonym</b>- Authenticity, Determination, Empathy, Kindness, Leadership</li>
-                        </ul>
-                        <button className="view-more-btn h-6 mt-5">
-                            <Link to="/about">About Me</Link>
-                        </button>
-                    </p>
-                    <div className="col-md-4 pfp-container">
-                        <div className="pfp-illustration" />
-                    </div>
-                    
-                </div>
-                
-            </div>
-        </div>
-    );
-}
-
 function Quote () {
     return (
         <div className="quote-wrapper section-wrapper">
-            <div className="topic-container-lg">
-                <div className="quote quotation-mark">〝</div>
-                <div className="quote">
-                Do your little bit of good where you are; it’s those little bits of good put together that overwhelm the world.
-                <br/>_<br/>
-                <div className="quote-author">Desmond Tutu</div>
+            <div className="topic-container-lg d-flex flex-column align-items-center">
+            <h4 className="mb-5">Looking to create, collaborate, or just have a chat?</h4>
+            <p className="text-center w-sizer">
+            Let’s connect—whether it’s about design, mindfulness, or the perfect cup of tea.
+
+
+            </p>
+            {/* <h4 className="text-center">Do your little bit of good where you are; it’s those little bits of good put together that overwhelm the world.<br/><span className="italic">by Desmond Tutu</span></h4>                 */}
+            </div>
+        </div>
+    );
+}
+
+function FinalCTA () {
+    return (
+        <div id="final-CTA" className="section-wrapper">
+            <div className="topic-container">
+                <h1 className="col-md-8 mb-5">Looking to create, collaborate, or just have a great chat?</h1>
+                <div className="d-flex">
+                    <button className="primary-btn h-6">
+                        <a href="mailto:pwh27design@gmail.com" target="_blank" rel="noreferrer noopener">
+                        Email Me
+                        </a>
+                    </button>
+                    <button className="view-more-btn h-6">
+                        <a href="https://drive.google.com/file/d/1jDE4psau-YQiJkma2WFhWQx2ABuxqJeJ/view?usp=sharing" target="_blank" rel="noreferrer noopener">
+                        View Resume
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
     );
 }
 
-function ViewMoreBtn ({ link }) {
+function ViewMoreBtn ({ link, id="", text = "View More" }) {
     return (
-        <button className="view-more-btn h-6 mb-5">
-            <Link to={link}>View More</Link>
+        <button
+        className="view-more-btn h-6"
+        id={id}>
+            <Link to={link}>{text}</Link>
         </button>
     );
 }
 
 function WorkList ({ data, prefix }) {
     return (
-        <div className="topic-container-lg section-wrapper">
+        <div className="topic-container-lg subsection-wrapper">
             <div className="work-list">
                 <ul className="w-100 work-cards flex-column">
                     {data.map(item =>
@@ -72,8 +63,31 @@ function WorkList ({ data, prefix }) {
                         </li>
                     )}
                 </ul>
+                
                 <ScrollReveal>
-                    <ViewMoreBtn link="/Works/uiux" />
+                        <h4 className="text-center mb-3">Browse Projects by Category</h4>
+                        <div className="group-btn">
+                            <ViewMoreBtn 
+                            link="/Works/uiux"
+                            id="uiux-link"
+                            text="UIUX"
+                            />
+                            <ViewMoreBtn 
+                            link="/Works/visual"
+                            id="visual-link"
+                            text="Visual"
+                            />
+                            <ViewMoreBtn 
+                            link="/Works/research"
+                            id="research-link"
+                            text="Research"
+                            />
+                            <ViewMoreBtn 
+                            link="/Works/engineering"
+                            id="engineering-link"
+                            text="Engineering"
+                            />
+                        </div>
                 </ScrollReveal>
             </div>
         </div>
@@ -87,7 +101,7 @@ function WorkDisplay ({ data }) {
         <div className="main-body intro-body">
             <WorkList data={data} prefix={prefix} />
             <ScrollReveal>
-                <Quote />
+                <FinalCTA />
             </ScrollReveal>
         </div>
     );

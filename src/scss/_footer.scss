@@ -13,11 +13,11 @@
     border: none;
     @include box-shadow;
     transition: .3s;
-  }
+}
   
   .back-to-top:hover {
     background: rgba(16, 55, 84, 0.6);
-  }
+}
 
 .footer {
     width: 100%;
@@ -38,9 +38,6 @@
 
     h6, p {
         color: $secondary;
-    }
-
-    p {
         @include pad-sm {
             text-align: center;
         }

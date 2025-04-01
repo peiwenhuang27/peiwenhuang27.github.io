@@ -13,24 +13,39 @@ function TopicCard ({ link, data, size, reverse = false }) { // title, tags, des
     const flexDirection = reverse ? "flex-row-reverse" : "";
     const justifyDirection = reverse ? "justify-content-end" : "";
 
+    function Tag () {
+        let tagStyle = "topic-tag";
+        if ( size !== 'large') {
+            tagStyle = "topic-tag-sm";
+        }
+        return (
+            <div className="d-flex flex-wrap">
+                {data.tags.map((item, key) => {
+                    return (
+                        <p key={key} className={tagStyle}>{item}</p>
+                    );
+                })}
+            </div>
+        );
+    }
+
     
     if ( size === 'large' ) {
         return (
             <div className="subsection-wrapper-bottom mb-5">
                 <Link to={link} className={`topic-card text-decoration-none row ${flexDirection} ${justifyDirection}`}>
-                    <div className="col-md-8 mb-5">
+                    <div className="col-md-8 mb-3">
                         <div className="topic-card-img-container-lg" >
                             <div className="topic-card-img" style={{ backgroundImage:`url(${data.img})` }} />
                         </div>
                     </div>
                     
-                    <div className={`topic-card-title-container col-md-4 mb-5 d-flex justify-content-start`}>
+                    <div className={`topic-card-title-container col-md-4 mb-5 d-flex justify-content-end`}>
                         {/* an extra container so underline length = heading */}
                         <div>
-                            <h5 className="mb-0">{data.title}</h5>
-                            {/* <p className="p-bold mb-0">{data.desc}</p> */}
-                            <p className="p-bold mb-1">{data.desc}</p>
-                            <p>{tag}</p>
+                            <h4 className="mb-3">{data.title}</h4>
+                            <p className="mb-3">{data.desc}</p>
+                            <Tag>{tag}</Tag>
                         </div>
                     </div>
                     
@@ -54,8 +69,8 @@ function TopicCard ({ link, data, size, reverse = false }) { // title, tags, des
                         {/* an extra container so underline length = heading */}
                         <div>
                             <h5 className="mb-0">{data.title}</h5>
-                            <p className="p-bold mb-1">{data.desc}</p>
-                            <p>{tag}</p>
+                            <p className="mb-3">{data.desc}</p>
+                            <Tag>{tag}</Tag>
                         </div>
                     </div>
                     
@@ -78,8 +93,8 @@ function TopicCard ({ link, data, size, reverse = false }) { // title, tags, des
                         {/* an extra container so underline length = heading */}
                         <div >
                             <h5 className="mb-1">{data.title}</h5>
-                            <p className="p-bold mb-1">{data.desc}</p>
-                            <p>{tag}</p>
+                            <p className="mb-3">{data.desc}</p>
+                            <Tag>{tag}</Tag>
                         </div>
                     </div>
                     

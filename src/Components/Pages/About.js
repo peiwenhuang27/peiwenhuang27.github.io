@@ -19,7 +19,7 @@ function Intro () {
                 <p>
                 This question fuels my work as a product designer. I thrive on the challenge of enriching lives and pushing boundaries. With the right tools, designed at the right time, we can transform dreams into realities and turn pain points into opportunities.
                 <br/><br/>
-                Whether it's <Link to="/Works/design/Fairplay">advocating for consumer rights with advanced LLM technology</Link>, <Link to="/Works/design/Vision">reimagining transportation through accessible semi-autonomous electric mopeds</Link>, or <Link to="/Works/design/Fluffy-Focus">bringing mindfulness to productivity tools</Link>, I've had the privilege of wearing many hats: product designer, UX researcher, frontend engineer, and above all, a collaborative leader. <b>At the core of it all, I'm driven by empathy, curiosity, and the belief that good design can break limits.</b>
+                Whether it's <Link to="/Works/uiux/Fairplay">advocating for consumer rights with advanced LLM technology</Link>, <Link to="/Works/uiux/Vision">reimagining transportation through accessible semi-autonomous electric mopeds</Link>, or <Link to="/Works/uiux/Fluffy-Focus">bringing mindfulness to productivity tools</Link>, I've had the privilege of wearing many hats: product designer, UX researcher, frontend engineer, and above all, a collaborative leader. <b>At the core of it all, I'm driven by empathy, curiosity, and the belief that good design can break limits.</b>
                 <br/><br/>
                 When I'm not designing, you'll find me drawing, making music, writing poetry, or hunting down the best cafes in town (while perfecting my own tea game at home). If you're passionate about designing for impact—or just want to swap tea recommendations—let's connect!
                 </p>
@@ -31,7 +31,7 @@ function Intro () {
 
 function Education () {
     return (
-        <div className="education section-wrapper">
+        <div className="education subsection-wrapper">
             <div className="about-icon d-flex align-items-center">
                 <EduIcon />
                 <h4 className="mx-3">Education</h4>
@@ -64,52 +64,32 @@ function Education () {
 
 function Skills () {
     return (
-        <div className="skills section-wrapper">
+        <div className="skills subsection-wrapper">
             <div className="about-icon d-flex align-items-center">
                 <SkillIcon />
                 <h4 className="mx-3">Skills</h4>
             </div>
         
-            <div className="row subsection-wrapper">
-                <div className="col-lg-3 col-sm-6">
-                    <h6>Design</h6>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Illustrator</li>
-                        <li>Photoshop</li>
-                        <li>InDesign</li>
-                        <li>Premiere Pro</li>
-                    </ul>
+            <div className="row gx-5 subsection-wrapper">
+                <div className="col-lg-4 col-sm-6">
+                    <h6 className="mb-5">Design</h6>
+                    <p>
+                    Figma, Photoshop, Illustrator, Premiere, Prototyping, Wireframing, UI flows, User story, User journey, Personas, Design systems, Service blueprints
+                    </p>
                 </div>
-                <div className="col-lg-3 col-sm-6">
-                    <h6>Programming</h6>
-                    <ul>
-                        <li>C++</li>
-                        <li>Python</li>
-                        <li>HTML</li>
-                        <li>CSS/SCSS</li>
-                        <li>Javascript</li>
-                    </ul>
+                
+                <div className="col-lg-4 col-sm-6">
+                    <h6 className="mb-5">Research</h6>
+                    <p>
+                    Usability Testing, User Interview, Directed Storytelling, Questionnaires, Quantitative Data Analysis, Contextual Inquiry, Heuristic Evaluation, Guerrilla, Speed Dating
+                    </p>
                 </div>
-                <div className="col-lg-3 col-sm-6">
-                    <h6>Tool/Environment</h6>
-                    <ul>
-                        <li>Docker</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                        <li>Jupyter</li>
-                        <li>Google Cloud Platform</li>
-                    </ul>
-                </div>
-                <div className="col-lg-3 col-sm-6">
-                    <h6>Framework</h6>
-                    <ul>
-                        <li>Tensorflow</li>
-                        <li>Keras</li>
-                        <li>PyTorch</li>
-                        <li>Scikit-learn</li>
-                        <li>ReactJS</li>
-                    </ul>
+
+                <div className="col-lg-4 col-sm-6">
+                    <h6 className="mb-5">Engineering</h6>
+                    <p>
+                    HTML, CSS, Javascript, React, C++, Python, GitHub, Frontend, System Design, Machine Learning, Natural Language Processing
+                    </p>
                 </div>
             </div>
         </div>
@@ -118,24 +98,32 @@ function Skills () {
 
 function Languages () {
     return (
-        <div className="languages section-wrapper d-flex flex-column align-items-center">
+        <div className="languages subsection-wrapper">
             <div className="about-icon d-flex align-items-center">
                 <LangIcon />
                 <h4 className="mx-3">Languages</h4>
             </div>
-            <div className="w-sizer row mt-3 justify-content-center">
-                <div className="col-md-6 d-flex flex-column align-items-center mb-5">
+            <div className="row gx-5 subsection-wrapper">
+                <div className="col-lg-3 col-sm-6">
                     <h6>English</h6>
-                    <ul>
-                        <li>Superior</li>
-                        <li><b className="highlight">TOEFL 119/120</b></li>
-                        <li>GRE 339/340</li>
-                    </ul>
+                    <p>
+                        Bilingual (TOEFL 119/120, TOEIC 990/990, GRE 339/340)
+                    </p>
                 </div>
-                <div className="col-md-6 d-flex flex-column align-items-center mb-5">
+                <div className="col-lg-3 col-sm-6">
+                    <h6>Japanese</h6>
+                    <p>Conversational (obtaining JLPT N1 in July, 2025)</p>
+                </div>
+                <div className="col-lg-3 col-sm-6">
                     <h6>Mandarin</h6>
                     <ul>
                         <li>Native</li>
+                    </ul>
+                </div>
+                <div className="col-lg-3 col-sm-6">
+                    <h6>French</h6>
+                    <ul>
+                        <li>Beginner</li>
                     </ul>
                 </div>
             </div>
@@ -145,45 +133,28 @@ function Languages () {
 
 function Interests () {
     return (
-        <div className="interests section-wrapper">
+        <div className="interests subsection-wrapper">
             <div className="about-icon d-flex align-items-center">
                 <InterestIcon />
                 <h4 className="mx-3">Interests</h4>
             </div>
 
-            <div className="row subsection-wrapper">
+            <div className="row gx-5 subsection-wrapper">
                 <div className="col-lg-3 col-sm-6">
-                    <h6>Art</h6>
-                    <ul>
-                        <li>Illustration</li>
-                        <li>Digital Art</li>
-                        <li>Journaling</li>
-                        <li>Photagraphy</li>
-                    </ul>
+                    <h6 className="mb-3">Art</h6>
+                    <p>Illustration, Digital art, Journaling, Photagraphy</p>
                 </div>
                 <div className="col-lg-3 col-sm-6">
-                    <h6>Music</h6>
-                    <ul>
-                        <li>Singing</li>
-                        <li>Guitar</li>
-                        <li>Piano</li>
-                        <li>Song Writing</li>
-                    </ul>
+                    <h6 className="mb-3">Music</h6>
+                    <p>Singing, Guitar, Piano, Song writing</p>
                 </div>
                 <div className="col-lg-3 col-sm-6">
-                    <h6>Literature</h6>
-                    <ul>
-                        <li>Reading</li>
-                        <li>Poetry Art</li>
-                        <li>Prose</li>
-                    </ul>
+                    <h6 className="mb-3">Literature</h6>
+                    <p>Reading, Poetry writing</p>
                 </div>
                 <div className="col-lg-3 col-sm-6">
-                    <h6>Mindfulness</h6>
-                    <ul>
-                        <li>Yoga</li>
-                        <li>Meditation</li>
-                    </ul>
+                    <h6 className="mb-3">Mindfulness</h6>
+                    <p>Tea zen, Yoga, meditation</p>
                 </div>
             </div>
         </div>
@@ -223,6 +194,10 @@ function About () {
                     
                     <ScrollReveal>
                         <Skills />
+                    </ScrollReveal>
+
+                    <ScrollReveal>
+                        <Languages />
                     </ScrollReveal>
                     
                     <ScrollReveal>

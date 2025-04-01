@@ -6,16 +6,16 @@ function Footer () {
         <div className="footer">
             <div className="container">
                 <div>
-                    <h6>Let's connect.</h6>
+                    <h6>Let's Connect!</h6>
                     <ul className="contact-menu">
-                        <li>
-                            <a href="mailto:pwh27design@gmail.com" target="_blank" rel="noreferrer noopener">
-                                <EmailIcon />
-                            </a>
-                        </li>
                         <li>
                             <a href="https://www.linkedin.com/in/peiwen-h" target="_blank" rel="noreferrer noopener">
                                 <LinkedInIcon />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:pwh27design@gmail.com" target="_blank" rel="noreferrer noopener">
+                                <EmailIcon />
                             </a>
                         </li>
                         <li>
@@ -26,7 +26,7 @@ function Footer () {
                     </ul>
                 </div>
                 
-                <p className="caption">Design and Code with ❤ © 2024 Peiwen Huang</p>
+                <p className="caption">Design and Code with ❤ © 2025 Peiwen Huang</p>
             </div>
 
             <Outlet />

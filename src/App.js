@@ -54,7 +54,7 @@ function App() {
       {
         'title': 'FairPlay', 
         'id': 'Fairplay',
-        'tags': ['UI/UX', 'Product/App Design', 'E-Commerce'],
+        'tags': ['UI/UX', 'Product/App Design', 'E-Commerce', 'Large Language Models', 'Customer Service'],
         'desc': 'Your AI Advocate for All Things Customer Service',
         'img': 'https://i.imgur.com/RcjjaFq.png',
       },
@@ -84,13 +84,6 @@ function App() {
         'desc': 'Poster Series of Personified Seasons',
         'img': "https://live.staticflickr.com/65535/52505805268_7fce1ebdc9_k.jpg",
       },
-      // {
-      //   'title': 'New Era', 
-      //   'id': 'New-Era',
-      //   'tags': ['Visual Design', 'Graphic Design', 'Poster', 'Collage Art', 'Surrealism'],
-      //   'desc': 'Poster of An Envisioned Future',
-      //   'img': "https://live.staticflickr.com/65535/52505805468_8e26ceb65e_k.jpg",
-      // },
       {
         'title': 'Elite Camp', 
         'id': 'Elite-Camp',
@@ -113,7 +106,7 @@ function App() {
       {
         'title': 'Mindfulness Alchemy', 
         'id': 'Mindfulness-Alchemy',
-        'tags': ['Game Design', 'Web Developing', 'Social Computing', 'Mental Health', 'Self-Care'],
+        'tags': ['Web Developing', 'Frontend', 'Game Design', 'Social Computing', 'Mindfulness'],
         'desc': 'Web 3D Role-playing Game of Self-care Practice',
         'img': 'https://live.staticflickr.com/65535/53802328958_a5fd4d9f27_b.jpg',
       },

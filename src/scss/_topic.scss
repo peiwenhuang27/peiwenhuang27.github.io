@@ -114,6 +114,21 @@ ul {
         color: $secondary;
     }
 
+    .topic-tag, .topic-tag-sm {
+        padding: 0 12px;
+        border: 1px solid $highlight;
+        border-radius: 50px;
+        margin-right: 8px;
+        font-size: 14px;
+        color: $highlight;
+    }
+    .topic-tag-sm {
+        padding: 0.2em 0.5em;
+        margin-right: 0.5em;
+        border-color: $gray-600;
+        color: $gray-600;
+    }
+
     .text-reverse {
         div {
             display: flex;

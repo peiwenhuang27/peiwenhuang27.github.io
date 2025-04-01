@@ -18,20 +18,12 @@ function CategoryBox ({ prefix, data }) { // for one category (suffix, name, ite
     
     return (
         <div id={data.suffix} className="category-box mb-5">
-            <ScrollReveal>
-                <Title link={link} title={data.name} />
-            </ScrollReveal>
-            
             <ul>
                 {data.items.map((item, key) => {
-                    let reverse = false;
-                    if (key % 2 === 1) {
-                        reverse = true;
-                    }
                     return (
                         <li className="mb-5">
                             <ScrollReveal>
-                                <TopicCard link={`${link}/${item.id}`} data={item} reverse={reverse} size="large" />
+                                <TopicCard link={`${link}/${item.id}`} data={item} size="large" />
                             </ScrollReveal>
                         </li>
                     );

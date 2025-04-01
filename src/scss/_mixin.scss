@@ -117,7 +117,7 @@
 }
 
 @mixin text-shadow-lighter {
-    text-align: $text-shadow-lighter;
+    text-shadow: $text-shadow-lighter;
 }
 
 @mixin box-shadow {
@@ -215,9 +215,9 @@
 
 @mixin p-text {
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-size: 18px; 
+    font-size: 16px; 
     font-style: normal; 
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @mixin p-bold {
