@@ -3,19 +3,10 @@ import Iframe from 'react-iframe';
 
 import Video from "../../../Helpers/Video";
 
-import ProjectRec from "../../../ProjectRec";
-import HorizontalScrollCarousel, { HorizontalCarousel } from "../../../HorizontalScrollCarousel";
+import ProjectRec from "../../../Navigation/ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
-import ProgressBar from "../../../ScrollBar";
-import { Subsection } from "../../../Topic";
-
-// put this in later section?
-{/* <div ref={demoVid} className="my-5" >
-    <div className="responsive-iframe">
-        <Iframe src="https://www.youtube.com/embed/9lJoc7X66kQ?si=0P3ZUJl_7qwqCqAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-    </div>
-</div> */}
-// Objective: What is semi-autonomous vehicles? Why are they important?
+import ProgressBar from "../../../Helpers/ScrollBar";
+import { Subsection } from "../../../Containers/Topic";
 
 function Vision ({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
     const [activeItem, setActiveItem] = useState(0);

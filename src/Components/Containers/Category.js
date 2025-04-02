@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams, Outlet } from "react-router-dom";
-import Transitions from "./Helpers/Transition";
-import CategoryNav from "./CategoryNav";
-import TopicCard from "./Pages/Home/TopicCard";
+import Transitions from "../Helpers/Transition";
+import CategoryNav from "../Navigation/CategoryNav";
+import TopicCard from "../Pages/Home/TopicCard";
 
-import { ScrollReveal } from "./Helpers/SmoothScroll";
+import { ScrollReveal } from "../Helpers/SmoothScroll";
 
 function LargeList ({ workData, lifeData, categoryIndex }) { // only for a category, suffix, name, items
     useEffect(() => {

@@ -1,22 +1,22 @@
 import { useParams } from "react-router-dom";
 import { useRef, useEffect } from "react";
-import Transitions from "./Helpers/Transition";
+import Transitions from "../Helpers/Transition";
 
-import Fairplay from "./Pages/Works/UXUI/Fairplay";
-import Vision from "./Pages/Works/UXUI/Vision";
-import Fluffy from "./Pages/Works/UXUI/Fluffy";
-import PetitMood from './Pages/Works/UXUI/PetitMood';
-import SousChef from "./Pages/Works/UXUI/SoufChef";
-import ToDone from './Pages/Works/UXUI/2Done';
-import Mindful from "./Pages/Works/UXUI/Mindful";
-import SLZ from "./Pages/Works/UXUI/SLZ";
-import TourBot from "./Pages/Works/Frontend/Tourbot";
-import Bookworm from "./Pages/Works/UXUI/Bookworm";
-import Alchemy from "./Pages/Works/UXUI/Alchemy";
-import Saisons from "./Pages/Works/Poster/Saisons";
-import Surreal from "./Pages/Works/Poster/Surreal";
-import Elite from "./Pages/Works/Editorial/Elite";
-import Hanabi from "./Pages/Works/Event/Hanabi";
+import Fairplay from "../Pages/Works/UXUI/Fairplay";
+import Vision from "../Pages/Works/UXUI/Vision";
+import Fluffy from "../Pages/Works/UXUI/Fluffy";
+import PetitMood from '../Pages/Works/UXUI/PetitMood';
+import SousChef from "../Pages/Works/UXUI/SoufChef";
+import ToDone from '../Pages/Works/UXUI/2Done';
+import Mindful from "../Pages/Works/UXUI/Mindful";
+import SLZ from "../Pages/Works/UXUI/SLZ";
+import TourBot from "../Pages/Works/Frontend/Tourbot";
+import Bookworm from "../Pages/Works/UXUI/Bookworm";
+import Alchemy from "../Pages/Works/UXUI/Alchemy";
+import Saisons from "../Pages/Works/Poster/Saisons";
+import Surreal from "../Pages/Works/Poster/Surreal";
+import Elite from "../Pages/Works/Editorial/Elite";
+import Hanabi from "../Pages/Works/Event/Hanabi";
 
 function Topic ({ pageHeight, workData }) {
     let { workId } = useParams();
@@ -143,5 +143,27 @@ function Subsection ({ id, subsectionRef, activeItem, setActiveItem, pageHeight,
       )
 }
 
+function TopicNav ({ items, activeItem }) {
+    function renderItems () {
+        return items.map((item) => {
+            const activeClass = activeItem === item.name ? "navigation-list__item--active" : "";
+            return (
+                <li
+                key={item.name}
+                id={item.name}
+                className={`navigation-list__item ${activeClass}`}>
+                    {item.name}
+                </li>
+            )
+        })
+    }
+
+    return (
+        <ul className='navigation-list'>
+            {renderItems()}
+        </ul>
+    )
+}
+
 export default Topic;
-export { Subsection };
+export { Subsection, TopicNav };

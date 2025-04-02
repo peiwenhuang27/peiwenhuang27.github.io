@@ -1,6 +1,6 @@
 import Iframe from "react-iframe";
 
-import ProjectRec from "../../../ProjectRec";
+import ProjectRec from "../../../Navigation/ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 
 var Latex = require("react-latex");

@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import ProjectRec from "../../../ProjectRec";
+import ProjectRec from "../../../Navigation/ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
 
 function Alchemy ({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {

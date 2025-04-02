@@ -1,8 +1,8 @@
 import { createRef, useState } from "react";
-import ProjectRec from "../../../ProjectRec";
+import ProjectRec from "../../../Navigation/ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
-import ProgressBar from "../../../ScrollBar";
-import { Subsection } from "../../../Topic";
+import ProgressBar from "../../../Helpers/ScrollBar";
+import { Subsection } from "../../../Containers/Topic";
 
 function Saisons({ pageHeight, handleSubsectionClick, projRecLink, projRecs }) {
     const [activeItem, setActiveItem] = useState(0);

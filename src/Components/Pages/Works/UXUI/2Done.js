@@ -8,10 +8,10 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import Iframe from 'react-iframe';
 
-import ProjectRec from "../../../ProjectRec";
+import ProjectRec from "../../../Navigation/ProjectRec";
 import { ScrollReveal } from "../../../Helpers/SmoothScroll";
-import ProgressBar from "../../../ScrollBar";
-import { Subsection } from "../../../Topic";
+import ProgressBar from "../../../Helpers/ScrollBar";
+import { Subsection } from "../../../Containers/Topic";
 
 function ToDone ({ pageHeight, handleSubsectionClick }) {
     const [activeItem, setActiveItem] = useState(0);

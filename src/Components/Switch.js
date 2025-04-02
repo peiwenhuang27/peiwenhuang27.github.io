@@ -3,8 +3,8 @@ import { AnimatePresence } from "framer-motion";
 import Home from './Pages/Home/Home';
 import About from './Pages/About';
 import Art from "./Pages/Art";
-import Category from './Category';
-import Topic from './Topic';
+import Category from './Containers/Category';
+import Topic from './Containers/Topic';
 
 
 function Switch ({ homeData, workData, lifeData, view, setView, pageHeight }) { 

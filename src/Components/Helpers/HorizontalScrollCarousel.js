@@ -1,7 +1,7 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-import { ArrowIcon } from "./Icons";
+import { ArrowIcon } from "../Icons";
 
 // TODO: arrow icon
 

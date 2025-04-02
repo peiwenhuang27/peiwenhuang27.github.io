@@ -4,7 +4,7 @@ import { InstaPost, InstaFeed } from "../Helpers/Insta";
 import Iframe from "react-iframe";
 
 import { ReadMoreBtn } from "./About";
-import HorizontalScrollCarousel from "../HorizontalScrollCarousel";
+import HorizontalScrollCarousel from "../Helpers/HorizontalScrollCarousel";
 import { ScrollReveal } from "../Helpers/SmoothScroll";
 
 function Art () {

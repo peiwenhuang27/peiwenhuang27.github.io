@@ -32,7 +32,7 @@ function FinalCTA () {
                         </a>
                     </button>
                     <button className="view-more-btn h-6">
-                        <a href="https://drive.google.com/file/d/1jDE4psau-YQiJkma2WFhWQx2ABuxqJeJ/view?usp=sharing" target="_blank" rel="noreferrer noopener">
+                        <a href="https://drive.google.com/file/d/1OtgL2i_m52GLWoLSNlxkjCioLtKkw4IM/view?usp=sharing" target="_blank" rel="noreferrer noopener">
                         View Resume
                         </a>
                     </button>

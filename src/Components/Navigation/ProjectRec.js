@@ -1,5 +1,5 @@
-import TopicCard from "./Pages/Home/TopicCard";
-import { ViewMoreBtn } from "./Pages/Home/WorkDisplay";
+import TopicCard from "../Pages/Home/TopicCard";
+import { ViewMoreBtn } from "../Pages/Home/WorkDisplay";
 
 function ProjectRec ({ projects, moreLink }) {
     return (

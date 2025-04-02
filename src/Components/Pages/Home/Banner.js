@@ -77,7 +77,7 @@ function Intro() {
 
     const text = 
     <div>
-        <h1 className='color-bg mb-0'>Peiwen Huang</h1>
+        <h1 className='img-bg mb-0'>Peiwen Huang</h1>
         <h3 className='mb-3'>Product & UX Designer</h3>
         <p>Hey there / 您好 / こんにちは！<br/>
             I'm a designer with backgrounds in engineering and business:<br/><br/>
@@ -119,7 +119,7 @@ function Banner () {
                 <ScrollReveal>
                     <div>
                         <h3>Where design, strategy, and engineering unite</h3>
-                        <h1 className='mb-5'>Peiwen crafts <span className='color-bg'>seamless, insight-driven</span> experiences that empower users.</h1>
+                        <h1 className='mb-5'>Peiwen crafts <span className='img-bg'>seamless, insight-driven</span> experiences that empower users.</h1>
                     
                         <button className="primary-btn h-6">
                             <Link to="/Works/uiux">Explore</Link>

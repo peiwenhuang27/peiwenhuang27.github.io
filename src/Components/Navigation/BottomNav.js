@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
-import { ArrowIcon } from "./Icons";
+import { ArrowIcon } from "../Icons";
 
 function BottomNav ({ leftTxt = null, leftSuffix = null, rightTxt = null, rightSuffix = null}) {
     if ( leftTxt === null ) {
