@@ -165,7 +165,7 @@ function ReadMoreBtn () {
     return (
         <div className="readmoreBtn section-wrapper">
             <h5 className="my-4">Let's get serious.</h5>
-            <Link className="about-link h-4 d-flex flex-column align-items-center justify-content-center" to="/Works/design">
+            <Link className="about-link h-4 d-flex flex-column align-items-center justify-content-center" to="/Works/uiux">
             View My Works in Design, Research, and Engineering »
                 
             </Link>

@@ -7,8 +7,26 @@
     }
 }
 
+.photo {
+    height: 200px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    @include pad-sm {
+        height: 100px;
+    }
+}
+.artwork {
+    height: 300px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    @include pad-sm {
+        height: 180px;
+    }
+}
+
 .artwork-feed {
-    position: absolute;
     left: 16px;
     width: 100vw;
     overflow: scroll;
@@ -20,15 +38,5 @@
     /* Hide scrollbar for Chrome, Safari and Opera */
     &::-webkit-scrollbar {
     display: none;
-    }
-}
-
-.artwork {
-    height: 300px;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    @include pad-sm {
-        height: 180px;
     }
 }

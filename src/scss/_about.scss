@@ -89,16 +89,6 @@
     font-weight: normal !important;
 }
 
-.photo {
-    height: 260px;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    @include pad-sm {
-        height: 100px;
-    }
-}
-
 .about-references {
     color: $gray-600;
     font-size: 12px !important;
