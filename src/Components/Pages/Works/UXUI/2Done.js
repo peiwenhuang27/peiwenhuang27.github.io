@@ -5,7 +5,7 @@ import ReactLoading from "react-loading";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import Iframe from 'react-iframe';
 
 import ProjectRec from "../../../Navigation/ProjectRec";

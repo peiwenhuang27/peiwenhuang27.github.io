@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
 function Bookworm () {
     const img_src = 'https://live.staticflickr.com/65535/52516423519_c9e86789fa_k.jpg';
