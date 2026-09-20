@@ -7,11 +7,9 @@ import Vision from "../Pages/Works/UXUI/Vision";
 import Fluffy from "../Pages/Works/UXUI/Fluffy";
 import PetitMood from '../Pages/Works/UXUI/PetitMood';
 import SousChef from "../Pages/Works/UXUI/SoufChef";
-import ToDone from '../Pages/Works/UXUI/2Done';
 import Mindful from "../Pages/Works/UXUI/Mindful";
 import SLZ from "../Pages/Works/UXUI/SLZ";
 import TourBot from "../Pages/Works/Frontend/Tourbot";
-import Bookworm from "../Pages/Works/UXUI/Bookworm";
 import Alchemy from "../Pages/Works/UXUI/Alchemy";
 import Saisons from "../Pages/Works/Poster/Saisons";
 import Surreal from "../Pages/Works/Poster/Surreal";
@@ -99,12 +97,6 @@ function Topic ({ pageHeight, workData }) {
     // Not in use
     if(workId === 'Sous-Chef') {
         work = <SousChef pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
-    }
-    if(workId === 'Bookworm-Meeter') {
-        work = <Bookworm pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
-    }
-    if(workId === '2Done') {
-        work = <ToDone pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
     }
     if (workId === 'Mindful-Diary') {
         work = <Mindful pageHeight={pageHeight} handleSubsectionClick={handleSubsectionClick} />;
